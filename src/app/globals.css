@@ -1,27 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafaf9;
-  --foreground: #1c1917;
+  --background: #FAF7F2;
+  --surface: #FFFFFF;
+  --text-primary: #1A1612;
+  --text-secondary: #6B6157;
+  --text-muted: #A89E95;
+  --accent: #C27558;
+  --accent-hover: #A85E44;
+  --border: #E8E0D6;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-dm-sans), system-ui, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-dm-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
 }
 
-.plate-card:hover .plate-image {
-  transform: scale(1.05);
+::selection {
+  background: #C2755833;
 }
 
-.plate-card:hover {
-  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+::-webkit-scrollbar {
+  width: 6px;
 }
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+.cuisine-card {
+  cursor: pointer;
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+.cuisine-card:hover {
+  transform: translateY(-2px);
+}
+.cuisine-card.active {
+  border-color: var(--accent);
+  box-shadow: 0 8px 32px rgba(194, 117, 88, 0.15);
+}
+
+.series-card:hover .series-image {
+  transform: scale(1.03);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 500ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.animate-fade-up-delay-1 { animation-delay: 80ms; opacity: 0; }
+.animate-fade-up-delay-2 { animation-delay: 160ms; opacity: 0; }

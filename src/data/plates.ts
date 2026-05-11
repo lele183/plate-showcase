@@ -1,4 +1,4 @@
-export interface PlateCollection {
+export interface PlateSeries {
   id: string;
   brand: string;
   brandFullName: string;
@@ -10,57 +10,57 @@ export interface PlateCollection {
   fullCollectionLink: string;
 }
 
-export interface RestaurantType {
+export interface Cuisine {
   id: string;
   name: string;
-  icon: string;
+  nameCn: string;
   description: string;
-  collections: PlateCollection[];
+  series: PlateSeries[];
 }
 
-export const restaurantTypes: RestaurantType[] = [
+export const cuisines: Cuisine[] = [
   {
     id: "italian",
-    name: "Italian Restaurant",
-    icon: "🍝",
-    description: "Classic and rustic elegance for traditional Italian cuisine",
-    collections: [
+    name: "Italian",
+    nameCn: "意大利菜",
+    description: "Classic rustic elegance",
+    series: [
       {
         id: "abco",
         brand: "ABCO",
-        brandFullName: "ABCO - Classic Bright White Porcelain",
+        brandFullName: "ABCO — Classic Bright White Porcelain",
         style: "Classic Bright White",
-        description: "Timeless bright white porcelain that complements any Italian dish presentation",
+        description: "Timeless bright white porcelain that elevates any pasta and antipasto presentation",
         itemNumbers: ["AC-16", "AC-3"],
         image: "/plates/RO-2210.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/63AC_merge.pdf",
         fullCollectionLink: "https://yancochina.com/collections/abco",
       },
       {
-        id: "diamond-white",
-        brand: "DIAMOND",
-        brandFullName: "DIAMOND - White Porcelain",
-        style: "Pure White Porcelain",
-        description: "Clean, pure white finish perfect for colorful Mediterranean dishes",
-        itemNumbers: ["DB-109", "DB-314"],
+        id: "green-band",
+        brand: "GREEN BAND",
+        brandFullName: "GREEN BAND — Green Rim Pattern Stoneware",
+        style: "Green Rim Stoneware",
+        description: "Rustic stoneware with hand-painted green rim — warm and inviting for trattorias",
+        itemNumbers: ["GB-16", "GB-3"],
         image: "/plates/NS-110T.png",
-        pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/15DB_merge.pdf",
-        fullCollectionLink: "https://yancochina.com/collections/diamond",
+        pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/77GB_merge.pdf",
+        fullCollectionLink: "https://yancochina.com/collections/green-band",
       },
     ],
   },
   {
     id: "greek",
-    name: "Greek Restaurant",
-    icon: "🏛️",
-    description: "Mediterranean vibes with traditional blue and white patterns",
-    collections: [
+    name: "Greek",
+    nameCn: "希腊菜",
+    description: "Mediterranean warmth",
+    series: [
       {
         id: "mars",
         brand: "MARS",
-        brandFullName: "MARS - Blue Rim Patterned Chinaware",
+        brandFullName: "MARS — Blue Rim Patterned Chinaware",
         style: "Blue Rim Pattern",
-        description: "Elegant blue rim patterns inspired by traditional Greek pottery",
+        description: "Traditional blue-rimmed Greek pottery aesthetic, perfect for seafood and mezze",
         itemNumbers: ["MR-706", "MR-710", "MR-214"],
         image: "/plates/MR-710.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/09MR_merge.pdf",
@@ -69,9 +69,9 @@ export const restaurantTypes: RestaurantType[] = [
       {
         id: "sentry-blue",
         brand: "SENTRY",
-        brandFullName: "SENTRY - Blue Design Melamine",
+        brandFullName: "SENTRY — Blue Design Melamine",
         style: "Blue Melamine",
-        description: "Durable melamine with blue design, perfect for outdoor Mediterranean settings",
+        description: "Durable melamine with Greek-inspired blue motif for outdoor terrace dining",
         itemNumbers: ["SN-107", "SN-110", "SN-214"],
         image: "/plates/BM-110.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/91SN_merge.pdf",
@@ -81,16 +81,16 @@ export const restaurantTypes: RestaurantType[] = [
   },
   {
     id: "modern",
-    name: "Modern Contemporary",
-    icon: "✨",
-    description: "Sleek and minimalist designs for contemporary cuisine",
-    collections: [
+    name: "Modern",
+    nameCn: "现代菜",
+    description: "Contemporary minimalism",
+    series: [
       {
         id: "diamond-black",
         brand: "DIAMOND BLACK",
-        brandFullName: "DIAMOND BLACK - Dark Bronze Matte Porcelain",
-        style: "Dark Bronze Matte",
-        description: "Sophisticated matte black finish for modern appetizer presentation",
+        brandFullName: "DIAMOND BLACK — Dark Bronze Matte Porcelain",
+        style: "Matte Black",
+        description: "Sophisticated matte dark finish for avant-garde small plates and tapas",
         itemNumbers: ["DB-109", "DB-314"],
         image: "/plates/BM-110.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/15DB_merge.pdf",
@@ -99,9 +99,9 @@ export const restaurantTypes: RestaurantType[] = [
       {
         id: "moderne",
         brand: "MODERNE",
-        brandFullName: "MODERNE - Matte Black Melamine",
-        style: "Matte Black",
-        description: "Ultra-modern matte black melamine for trendy small plates",
+        brandFullName: "MODERNE — Matte Black Melamine",
+        style: "Matte Black Melamine",
+        description: "Ultra-modern melamine with clean lines, ideal for contemporary bistro service",
         itemNumbers: ["MO-109", "MO-314"],
         image: "/plates/NS-110T.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/120MO.pdf",
@@ -111,16 +111,16 @@ export const restaurantTypes: RestaurantType[] = [
   },
   {
     id: "casual",
-    name: "Casual Dining",
-    icon: "🍽️",
-    description: "Durable and family-friendly options for relaxed settings",
-    collections: [
+    name: "Casual",
+    nameCn: "休闲餐厅",
+    description: "Family-friendly warmth",
+    series: [
       {
         id: "sentry",
         brand: "SENTRY",
-        brandFullName: "SENTRY - Durable Melamine",
+        brandFullName: "SENTRY — Heavy-Duty Melamine",
         style: "Heavy-duty Melamine",
-        description: "Break-resistant melamine perfect for high-volume casual dining",
+        description: "Break-resistant melamine built for high-volume family dining and fast service",
         itemNumbers: ["SN-107", "SN-110", "SN-214"],
         image: "/plates/BM-110.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/91SN_merge.pdf",
@@ -129,9 +129,9 @@ export const restaurantTypes: RestaurantType[] = [
       {
         id: "nordic",
         brand: "NORDIC",
-        brandFullName: "NORDIC - Stoneware",
+        brandFullName: "NORDIC — Natural Stoneware",
         style: "Natural Stoneware",
-        description: "Rustic stoneware with natural tones for comfort food presentation",
+        description: "Organic stoneware with earthy textures, perfect for comfort food and brunch",
         itemNumbers: ["NS-110T", "NS-210"],
         image: "/plates/NS-110T.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/NS_merge.pdf",
@@ -142,15 +142,15 @@ export const restaurantTypes: RestaurantType[] = [
   {
     id: "fine-dining",
     name: "Fine Dining",
-    icon: "⭐",
-    description: "Upscale presentation pieces for sophisticated establishments",
-    collections: [
+    nameCn: "高端餐饮",
+    description: "Upscale sophistication",
+    series: [
       {
         id: "royal",
         brand: "ROYAL",
-        brandFullName: "ROYAL - Premium Porcelain",
+        brandFullName: "ROYAL — Gold Rim Premium Porcelain",
         style: "Gold Rim Premium",
-        description: "Elegant gold-rimmed porcelain for luxury dining experiences",
+        description: "Luxurious gold-rimmed porcelain for Michelin-level tasting menus",
         itemNumbers: ["RO-2210", "RO-2215"],
         image: "/plates/RO-2210.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/RO_merge.pdf",
@@ -159,9 +159,9 @@ export const restaurantTypes: RestaurantType[] = [
       {
         id: "abco-premium",
         brand: "ABCO",
-        brandFullName: "ABCO - Fine White Porcelain",
+        brandFullName: "ABCO — Fine White Porcelain",
         style: "Fine White",
-        description: "Restaurant-grade white porcelain with refined edges",
+        description: "Restaurant-grade white porcelain with refined feather-edge for fine dining",
         itemNumbers: ["AC-16", "AC-3"],
         image: "/plates/RO-2210.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/63AC_merge.pdf",
