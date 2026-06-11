@@ -13,7 +13,6 @@ export interface PlateSeries {
 export interface Cuisine {
   id: string;
   name: string;
-  nameCn: string;
   description: string;
   series: PlateSeries[];
 }
@@ -22,7 +21,6 @@ export const cuisines: Cuisine[] = [
   {
     id: "italian",
     name: "Italian",
-    nameCn: "意大利菜",
     description: "Classic rustic elegance",
     series: [
       {
@@ -43,7 +41,7 @@ export const cuisines: Cuisine[] = [
         style: "Green Rim Stoneware",
         description: "Rustic stoneware with hand-painted green rim — warm and inviting for trattorias",
         itemNumbers: ["GB-16", "GB-3"],
-        image: "/generated/italian-green-band.jpg",
+        image: "/generated/italian-green-band-provided.png",
         pdfLink: "https://yancochina.com/wp-content/uploads/2026/04/77GB_merge.pdf",
         fullCollectionLink: "https://yancochina.com/collections/green-band",
       },
@@ -52,7 +50,6 @@ export const cuisines: Cuisine[] = [
   {
     id: "greek",
     name: "Greek",
-    nameCn: "希腊菜",
     description: "Mediterranean warmth",
     series: [
       {
@@ -82,7 +79,6 @@ export const cuisines: Cuisine[] = [
   {
     id: "modern",
     name: "Modern",
-    nameCn: "现代菜",
     description: "Contemporary minimalism",
     series: [
       {
@@ -112,7 +108,6 @@ export const cuisines: Cuisine[] = [
   {
     id: "casual",
     name: "Casual",
-    nameCn: "休闲餐厅",
     description: "Family-friendly warmth",
     series: [
       {
@@ -142,7 +137,6 @@ export const cuisines: Cuisine[] = [
   {
     id: "fine-dining",
     name: "Fine Dining",
-    nameCn: "高端餐饮",
     description: "Upscale sophistication",
     series: [
       {

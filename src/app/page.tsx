@@ -1,13 +1,56 @@
 "use client";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { cuisines } from "@/data/plates";
 import CuisineSelector from "@/components/CuisineSelector";
 import SeriesGrid from "@/components/SeriesGrid";
 
 export default function Home() {
-  const [selectedCuisine, setSelectedCuisine] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const selected = cuisines.find((c) => c.id === selectedCuisine);
+  const normalizedQuery = searchQuery.trim().toLowerCase();
+  const matchingCuisines = useMemo(() => {
+    if (!normalizedQuery) {
+      return [];
+    }
+
+    const queryTerms = normalizedQuery
+      .split(/[^a-z0-9]+/)
+      .filter((term) => term.length > 2);
+    const cuisineNameMatches = cuisines.filter((cuisine) => {
+      const cuisineName = cuisine.name.toLowerCase();
+      const cuisineId = cuisine.id.replace(/-/g, " ");
+
+      return (
+        normalizedQuery.includes(cuisineName) ||
+        normalizedQuery.includes(cuisineId) ||
+        cuisineName.split(/\s+/).every((term) => queryTerms.includes(term))
+      );
+    });
+
+    if (cuisineNameMatches.length > 0) {
+      return cuisineNameMatches;
+    }
+
+    return cuisines.filter((cuisine) => {
+      const searchableText = [
+        cuisine.id,
+        cuisine.name,
+        cuisine.description,
+        ...cuisine.series.flatMap((series) => [
+          series.brand,
+          series.brandFullName,
+          series.style,
+          series.description,
+          ...series.itemNumbers,
+        ]),
+      ].join(" ").toLowerCase();
+
+      return (
+        searchableText.includes(normalizedQuery) ||
+        queryTerms.some((term) => searchableText.includes(term))
+      );
+    });
+  }, [normalizedQuery]);
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--background)" }}>
@@ -44,7 +87,7 @@ export default function Home() {
 
       {/* Main */}
       <main className="max-w-6xl mx-auto px-6 py-12">
-        {/* Step 1 */}
+        {/* Search */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
             <span
@@ -57,18 +100,17 @@ export default function Home() {
               className="text-lg font-medium"
               style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
             >
-              Select your cuisine
+              Search your cuisine
             </h2>
           </div>
           <CuisineSelector
-            cuisines={cuisines}
-            selected={selectedCuisine}
-            onSelect={setSelectedCuisine}
+            value={searchQuery}
+            onChange={setSearchQuery}
           />
         </section>
 
-        {/* Step 2 — always visible when something is selected */}
-        {selected && (
+        {/* Results */}
+        {matchingCuisines.length > 0 && (
           <section>
             <div className="flex items-center gap-3 mb-6">
               <span
@@ -84,18 +126,33 @@ export default function Home() {
                 Recommended series
               </h2>
             </div>
-            <SeriesGrid cuisine={selected} series={selected.series} />
+            <div className="space-y-12">
+              {matchingCuisines.map((cuisine) => (
+                <SeriesGrid key={cuisine.id} cuisine={cuisine} series={cuisine.series} />
+              ))}
+            </div>
           </section>
         )}
 
         {/* Empty state */}
-        {!selectedCuisine && (
+        {!normalizedQuery && (
           <div
             className="text-center py-20 rounded-2xl border-2 border-dashed"
             style={{ borderColor: "var(--border)" }}
           >
             <p className="text-sm" style={{ color: "var(--text-muted)", fontFamily: "var(--font-body)" }}>
-              Select a cuisine above to explore matching dinnerware series
+              Search for a cuisine to explore matching dinnerware series
+            </p>
+          </div>
+        )}
+
+        {normalizedQuery && matchingCuisines.length === 0 && (
+          <div
+            className="text-center py-20 rounded-2xl border-2 border-dashed"
+            style={{ borderColor: "var(--border)" }}
+          >
+            <p className="text-sm" style={{ color: "var(--text-muted)", fontFamily: "var(--font-body)" }}>
+              No matching cuisine found
             </p>
           </div>
         )}

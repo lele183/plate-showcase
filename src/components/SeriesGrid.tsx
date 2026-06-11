@@ -12,17 +12,12 @@ export default function SeriesGrid({ cuisine, series }: Props) {
     <div>
       {/* Cuisine header */}
       <div className="mb-8">
-        <div className="flex items-baseline gap-4">
-          <h2
-            className="text-4xl font-semibold tracking-tight"
-            style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
-          >
-            {cuisine.name}
-          </h2>
-          <span className="text-base" style={{ color: "var(--text-muted)", fontFamily: "var(--font-body)" }}>
-            {cuisine.nameCn}
-          </span>
-        </div>
+        <h2
+          className="text-4xl font-semibold tracking-tight"
+          style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
+        >
+          {cuisine.name}
+        </h2>
         <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)", fontFamily: "var(--font-body)" }}>
           {cuisine.description}
         </p>
