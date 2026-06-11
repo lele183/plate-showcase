@@ -16,7 +16,8 @@ export default function Home() {
     const queryTerms = normalizedQuery
       .split(/[^a-z0-9]+/)
       .filter((term) => term.length > 2);
-    const cuisineNameMatches = cuisines.filter((cuisine) => {
+
+    return cuisines.filter((cuisine) => {
       const cuisineName = cuisine.name.toLowerCase();
       const cuisineId = cuisine.id.replace(/-/g, " ");
 
@@ -24,30 +25,6 @@ export default function Home() {
         normalizedQuery.includes(cuisineName) ||
         normalizedQuery.includes(cuisineId) ||
         cuisineName.split(/\s+/).every((term) => queryTerms.includes(term))
-      );
-    });
-
-    if (cuisineNameMatches.length > 0) {
-      return cuisineNameMatches;
-    }
-
-    return cuisines.filter((cuisine) => {
-      const searchableText = [
-        cuisine.id,
-        cuisine.name,
-        cuisine.description,
-        ...cuisine.series.flatMap((series) => [
-          series.brand,
-          series.brandFullName,
-          series.style,
-          series.description,
-          ...series.itemNumbers,
-        ]),
-      ].join(" ").toLowerCase();
-
-      return (
-        searchableText.includes(normalizedQuery) ||
-        queryTerms.some((term) => searchableText.includes(term))
       );
     });
   }, [normalizedQuery]);
@@ -112,20 +89,6 @@ export default function Home() {
         {/* Results */}
         {matchingCuisines.length > 0 && (
           <section>
-            <div className="flex items-center gap-3 mb-6">
-              <span
-                className="text-xs font-medium tracking-widest uppercase px-2 py-1 rounded"
-                style={{ background: "var(--text-primary)", color: "white", fontFamily: "var(--font-body)" }}
-              >
-                Step 2
-              </span>
-              <h2
-                className="text-lg font-medium"
-                style={{ fontFamily: "var(--font-display)", color: "var(--text-primary)" }}
-              >
-                Recommended series
-              </h2>
-            </div>
             <div className="space-y-12">
               {matchingCuisines.map((cuisine) => (
                 <SeriesGrid key={cuisine.id} cuisine={cuisine} series={cuisine.series} />
