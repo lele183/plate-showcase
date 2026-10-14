@@ -11,12 +11,15 @@ export default function Header() {
   const [mobile, setMobile] = useState(false);
   return (
     <>
-      <div className="announcement">
-        Thoughtfully selected. Beautifully served.{" "}
-        <span>
-          Discover the 2026 Yanco collection <ArrowUpRight size={13} />
+      <Link href="/catalog" className="announcement">
+        <span className="announcement-copy">
+          Thoughtfully selected. Beautifully served.
         </span>
-      </div>
+        <span className="announcement-cta">
+          Discover the 2026 Yanco collection
+          <ArrowUpRight size={13} aria-hidden="true" />
+        </span>
+      </Link>
       <header className="site-header">
         <div className="header-inner">
           <Link href="/" className="brand" aria-label="Yanco home">

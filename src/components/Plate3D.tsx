@@ -5,9 +5,11 @@ import type { CatalogItem, Collection } from "@/lib/types";
 export default function Plate3D({
   item,
   collection,
+  onUnavailable,
 }: {
   item: CatalogItem;
   collection: Collection;
+  onUnavailable: (itemId: string) => void;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const [failed, setFailed] = useState(false);
@@ -27,6 +29,7 @@ export default function Plate3D({
         renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       } catch {
         setFailed(true);
+        onUnavailable(item.id);
         return;
       }
       renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
@@ -156,12 +159,17 @@ export default function Plate3D({
         renderer.domElement.remove();
       };
     }
-    mount().catch(() => setFailed(true));
+    mount().catch(() => {
+      if (!cancelled) {
+        setFailed(true);
+        onUnavailable(item.id);
+      }
+    });
     return () => {
       cancelled = true;
       dispose();
     };
-  }, [item, collection, supported]);
+  }, [item, collection, supported, onUnavailable]);
   return (
     <div className="three-view" ref={host}>
       {failed || !supported ? (

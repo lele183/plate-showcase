@@ -114,6 +114,9 @@ test("3D falls back to the verified photograph when WebGL is unavailable", async
     page.getByText("Static source preview · 3D is unavailable in this browser"),
   ).toBeVisible();
   await expect(
+    page.getByRole("button", { name: "Detail view", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(
     page.getByRole("img", { name: "Mars MR-710 source photograph" }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Tabletop", exact: true }).click();

@@ -65,7 +65,8 @@ export default function CatalogBrowser({
           className="text-link"
           href="/catalog/yanco-2026.pdf"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
+          download="Yanco-2026-Catalog.pdf"
         >
           Download the catalog <ArrowUpRight size={17} />
         </a>

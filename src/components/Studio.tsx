@@ -81,6 +81,7 @@ export default function Studio({
       y: 0,
     }),
     [view, setView] = useState("top"),
+    [unavailable3DItem, setUnavailable3DItem] = useState(""),
     [message, setMessage] = useState(""),
     [busy, setBusy] = useState(false),
     [uploadId, setUploadId] = useState<string | null>(null),
@@ -412,6 +413,9 @@ export default function Studio({
         <h1>Choose a collection to begin.</h1>
       </div>
     );
+  const detailOnly =
+    !["plate", "platter", "tray", "saucer"].includes(item.type) ||
+    unavailable3DItem === item.id;
   return (
     <div className="page-container">
       <div className="page-heading">
@@ -425,15 +429,17 @@ export default function Studio({
         <div className="studio-view-switch">
           <button
             className={view === "top" ? "active" : ""}
+            aria-pressed={view === "top"}
             onClick={() => setView("top")}
           >
             <Move size={13} /> Tabletop
           </button>
           <button
             className={view === "3d" ? "active" : ""}
+            aria-pressed={view === "3d"}
             onClick={() => setView("3d")}
           >
-            <Box size={13} /> Illustrative 3D
+            <Box size={13} /> {detailOnly ? "Detail view" : "Illustrative 3D"}
           </button>
         </div>
       </div>
@@ -441,7 +447,12 @@ export default function Studio({
         <div>
           <div className="studio-scene-shell">
             {view === "3d" ? (
-              <Plate3D item={item} collection={collection} />
+              <Plate3D
+                key={item.id}
+                item={item}
+                collection={collection}
+                onUnavailable={setUnavailable3DItem}
+              />
             ) : (
               <div
                 className={`studio-scene surface-${scene.tabletop}`}
@@ -545,7 +556,9 @@ export default function Studio({
               <span>
                 {view === "top"
                   ? "Illustrative tabletop scene"
-                  : "Illustrative geometry; source imagery"}{" "}
+                  : detailOnly
+                    ? "Source photograph"
+                    : "Illustrative geometry; source imagery"}{" "}
                 · Original product colors
               </span>
             </div>

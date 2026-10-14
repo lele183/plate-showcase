@@ -58,7 +58,7 @@ The snapshot covers **83 collections and 184 product pages**, with **3,133 catal
 
 The 196-page scan is processed by `extract-catalog-pages.py`, `prepare-ocr-crops.py`, `ocr-catalog.ps1`, `ocr-source-catalog.mts`, and `build-catalog.py` in `scripts`. Ignored `.cache` folders contain intermediate page images and OCR. Source paths may need updating if the supplied PDF moves.
 
-Install the local catalog-processing Python dependencies with `pip install -r scripts/requirements-catalog.txt`. The reproducible build also prepares separate tabletop cutouts with `catalog_studio_images.py`: only connected white margins are removed, preserving the original catalog photographs. AI is reserved for explicitly requested food layers.
+Install the local catalog-processing Python dependencies with `pip install -r scripts/requirements-catalog.txt`. The reproducible build also prepares separate tabletop cutouts with `catalog_studio_images.py`: connected white margins are removed, then a one-pixel alpha inset and translucent edge color repair reduce scan halos on dark tables. This follows each photographed silhouette, including irregular pieces, and preserves the original catalog photographs. Run `python scripts/catalog_studio_images.py` to refresh cutouts without rerunning OCR, and `python scripts/test_catalog_studio_images.py` to verify shape and glaze preservation. AI is reserved for explicitly requested food layers.
 
 The three illustrative starter food cutouts in `public/food/*-v2.webp` were prepared with the built-in imagegen tool. Their input assets and complete prompts are recorded in `resources/starter-food-provenance.json`. Runtime food previews use the separate authenticated, quota-controlled OpenAI integration.
 

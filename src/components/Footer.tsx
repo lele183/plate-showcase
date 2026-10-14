@@ -21,7 +21,12 @@ export default function Footer() {
         <div>
           <span className="eyebrow">LET’S SET YOUR TABLE</span>
           <p>Explore every piece in our latest catalog.</p>
-          <a href="/catalog/yanco-2026.pdf" target="_blank" rel="noreferrer">
+          <a
+            href="/catalog/yanco-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Yanco-2026-Catalog.pdf"
+          >
             View the full catalog <ArrowUpRight size={16} />
           </a>
         </div>

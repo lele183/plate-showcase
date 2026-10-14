@@ -240,11 +240,19 @@ svg {
   letter-spacing: 0.45px;
   padding: 10px 20px;
 }
-.announcement span {
+.announcement-cta {
   display: flex;
   gap: 5px;
   align-items: center;
   color: #bdcbc5;
+}
+.announcement:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.announcement:focus-visible {
+  outline: 2px solid #edf0ec;
+  outline-offset: -4px;
 }
 .site-header {
   position: sticky;
@@ -1668,7 +1676,7 @@ dialog::backdrop {
     font-size: 8px;
     gap: 10px;
   }
-  .announcement span {
+  .announcement-cta {
     display: none;
   }
   .header-inner {
