@@ -1,6 +1,13 @@
 import { test, expect } from "@playwright/test";
 import { open } from "node:fs/promises";
+import sharp from "sharp";
 import seed from "../../src/data/catalog.json";
+
+test.use({
+  launchOptions: {
+    args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"],
+  },
+});
 
 test("catalog header and footer download a valid PDF", async ({
   page,
@@ -94,6 +101,7 @@ test("unsupported pieces use an accurate detail label and preserve the tabletop 
 test("supported plate renders an angled model that responds to rotation", async ({
   page,
 }) => {
+  test.setTimeout(60000);
   await page.goto("/studio?collection=legna");
   await page
     .getByRole("button", { name: "Illustrative 3D", exact: true })
@@ -103,21 +111,52 @@ test("supported plate renders an angled model that responds to rotation", async 
   await expect(
     page.getByText("Drag to rotate · Pinch to zoom · Illustrative geometry"),
   ).toBeVisible();
-  const before = await canvas.screenshot();
   const bounds = (await canvas.boundingBox())!;
-  await page.mouse.move(
-    bounds.x + bounds.width * 0.4,
-    bounds.y + bounds.height * 0.5,
+  const viewport = await page.evaluate(() => ({
+    width: innerWidth,
+    height: innerHeight,
+  }));
+  const firstScreenshot = await page.screenshot();
+  const metadata = await sharp(firstScreenshot).metadata();
+  const pixelRatio = metadata.width! / viewport.width;
+  const visibleHeight = Math.min(
+    viewport.height,
+    metadata.height! / pixelRatio,
   );
+  const visibleTop = Math.max(bounds.y, 140) + 10;
+  const visibleBottom = Math.min(bounds.y + bounds.height, visibleHeight) - 10;
+  const pointerY = (visibleTop + visibleBottom) / 2;
+  const crop = {
+    left: Math.round(bounds.x * pixelRatio),
+    top: Math.round(visibleTop * pixelRatio),
+    width: Math.floor(bounds.width * pixelRatio),
+    height: Math.floor((visibleBottom - visibleTop) * pixelRatio),
+  };
+  const before = await sharp(firstScreenshot).extract(crop).png().toBuffer();
+  expect(
+    await page.evaluate(
+      ({ x, y }) => document.elementFromPoint(x, y)?.tagName,
+      { x: bounds.x + bounds.width * 0.4, y: pointerY },
+    ),
+  ).toBe("CANVAS");
+  await page.mouse.move(bounds.x + bounds.width * 0.4, pointerY);
   await page.mouse.down();
   await page.mouse.move(
     bounds.x + bounds.width * 0.7,
-    bounds.y + bounds.height * 0.65,
+    Math.min(visibleBottom, pointerY + 30),
     { steps: 12 },
   );
   await page.mouse.up();
   await expect
-    .poll(async () => (await canvas.screenshot()).equals(before))
+    .poll(async () =>
+      (
+        await sharp(await page.screenshot())
+          .extract(crop)
+          .png()
+          .toBuffer()
+      ).equals(before),
+      { timeout: 20000 },
+    )
     .toBe(false);
   await expect(
     page.getByRole("button", { name: "Illustrative 3D", exact: true }),

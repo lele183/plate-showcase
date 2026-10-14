@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- Canvas export uses the exact source images and user blob URLs. */
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import {
   ArrowRight,
@@ -14,6 +14,10 @@ import {
   Box,
 } from "lucide-react";
 import type { CatalogItem, Collection, Scene } from "@/lib/types";
+import {
+  THREE_D_SUPPORTED_TYPES,
+  STUDIO_FALLBACK_CROP_RADIUS,
+} from "@/types/catalog";
 import { useAuth } from "./AuthProvider";
 import { uploadFile, studioPhoto } from "@/lib/upload";
 const Plate3D = dynamic(() => import("./Plate3D"), {
@@ -81,7 +85,9 @@ export default function Studio({
       y: 0,
     }),
     [view, setView] = useState("top"),
-    [unavailable3DItem, setUnavailable3DItem] = useState(""),
+    [unavailable3DItems, setUnavailable3DItems] = useState<
+      Record<string, boolean>
+    >({}),
     [message, setMessage] = useState(""),
     [busy, setBusy] = useState(false),
     [uploadId, setUploadId] = useState<string | null>(null),
@@ -101,6 +107,11 @@ export default function Studio({
     } | null>(null);
   const foodSource =
     localPhoto || scene.foodUrl || starterFoodImages[scene.food] || "";
+  const handleUnavailable3D = useCallback((failedId: string) => {
+    setUnavailable3DItems((previous) =>
+      previous[failedId] ? previous : { ...previous, [failedId]: true },
+    );
+  }, []);
   useEffect(() => {
     try {
       const pending = JSON.parse(
@@ -349,6 +360,12 @@ export default function Studio({
         });
       const plate = await load(item.studioImage || item.image);
       const ratio = Math.min(952 / plate.width, 952 / plate.height);
+      ctx.save();
+      if (!item.studioImage) {
+        ctx.beginPath();
+        ctx.arc(700, 700, 952 * STUDIO_FALLBACK_CROP_RADIUS, 0, Math.PI * 2);
+        ctx.clip();
+      }
       ctx.shadowColor = "#0004";
       ctx.shadowBlur = 22;
       ctx.shadowOffsetY = 20;
@@ -359,6 +376,7 @@ export default function Studio({
         plate.width * ratio,
         plate.height * ratio,
       );
+      ctx.restore();
       ctx.shadowColor = "transparent";
       if (foodSource) {
         const food = await load(foodSource);
@@ -414,8 +432,9 @@ export default function Studio({
       </div>
     );
   const detailOnly =
-    !["plate", "platter", "tray", "saucer"].includes(item.type) ||
-    unavailable3DItem === item.id;
+    !THREE_D_SUPPORTED_TYPES.has(item.type) ||
+    Boolean(unavailable3DItems[item.id]);
+  const isFallbackStudioImage = !item.studioImage;
   return (
     <div className="page-container">
       <div className="page-heading">
@@ -451,7 +470,8 @@ export default function Studio({
                 key={item.id}
                 item={item}
                 collection={collection}
-                onUnavailable={setUnavailable3DItem}
+                onUnavailable={handleUnavailable3D}
+                detailOnly={detailOnly}
               />
             ) : (
               <div
@@ -461,7 +481,16 @@ export default function Studio({
                 <div className="scene-glass" />
                 <div className="cutlery fork" />
                 <div className="cutlery knife" />
-                <div className="scene-plate">
+                <div
+                  className={`scene-plate${isFallbackStudioImage ? " scene-plate--fallback" : ""}`}
+                  style={
+                    isFallbackStudioImage
+                      ? {
+                          clipPath: `circle(${STUDIO_FALLBACK_CROP_RADIUS * 100}% at 50% 50%)`,
+                        }
+                      : undefined
+                  }
+                >
                   <img
                     src={item.studioImage || item.image}
                     alt={`${collection.name} ${item.sku}`}
@@ -555,7 +584,9 @@ export default function Studio({
               </span>
               <span>
                 {view === "top"
-                  ? "Illustrative tabletop scene"
+                  ? isFallbackStudioImage
+                    ? "Source photo crop · Cutout unavailable"
+                    : "Illustrative tabletop scene"
                   : detailOnly
                     ? "Source photograph"
                     : "Illustrative geometry; source imagery"}{" "}

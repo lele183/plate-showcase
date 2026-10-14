@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { CATALOG_PDF_URL, CATALOG_PDF_FILENAME } from "@/types/catalog";
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -22,10 +23,10 @@ export default function Footer() {
           <span className="eyebrow">LET’S SET YOUR TABLE</span>
           <p>Explore every piece in our latest catalog.</p>
           <a
-            href="/catalog/yanco-2026.pdf"
+            href={CATALOG_PDF_URL}
             target="_blank"
             rel="noopener noreferrer"
-            download="Yanco-2026-Catalog.pdf"
+            download={CATALOG_PDF_FILENAME}
           >
             View the full catalog <ArrowUpRight size={16} />
           </a>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { X, ArrowUpRight, ArrowRight, LoaderCircle } from "lucide-react";
 import type { CatalogItem, Collection } from "@/lib/types";
+import { CATALOG_PDF_URL } from "@/types/catalog";
 import { ColorDots } from "./CollectionCard";
 export default function CollectionDialog({
   collection,
@@ -88,7 +89,7 @@ export default function CollectionDialog({
             <div className="section-heading compact">
               <h3>The pieces</h3>
               <a
-                href={`${collection.sourceUrl || "/catalog/yanco-2026.pdf"}#page=${collection.pdfPages[0]}`}
+                href={`${collection.sourceUrl || CATALOG_PDF_URL}#page=${collection.pdfPages[0]}`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -159,7 +160,7 @@ export default function CollectionDialog({
                         Preview this piece <ArrowRight size={12} />
                       </Link>
                       <a
-                        href={`${collection.sourceUrl || "/catalog/yanco-2026.pdf"}#page=${i.pdfPage}`}
+                        href={`${collection.sourceUrl || CATALOG_PDF_URL}#page=${i.pdfPage}`}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -181,7 +182,7 @@ export default function CollectionDialog({
                         ].map((reference) => (
                           <a
                             key={reference.pdfPage}
-                            href={`${collection.sourceUrl || "/catalog/yanco-2026.pdf"}#page=${reference.pdfPage}`}
+                            href={`${collection.sourceUrl || CATALOG_PDF_URL}#page=${reference.pdfPage}`}
                             target="_blank"
                             rel="noreferrer"
                           >

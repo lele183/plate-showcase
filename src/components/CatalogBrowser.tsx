@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Search, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Collection } from "@/lib/types";
+import { CATALOG_PDF_URL, CATALOG_PDF_FILENAME } from "@/types/catalog";
 import CollectionCard from "./CollectionCard";
 import CollectionDialog from "./CollectionDialog";
 export default function CatalogBrowser({
@@ -63,10 +64,10 @@ export default function CatalogBrowser({
         </div>
         <a
           className="text-link"
-          href="/catalog/yanco-2026.pdf"
+          href={CATALOG_PDF_URL}
           target="_blank"
           rel="noopener noreferrer"
-          download="Yanco-2026-Catalog.pdf"
+          download={CATALOG_PDF_FILENAME}
         >
           Download the catalog <ArrowUpRight size={17} />
         </a>

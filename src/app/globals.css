@@ -1256,6 +1256,9 @@ dialog::backdrop {
   height: 100%;
   object-fit: contain;
 }
+.scene-plate--fallback {
+  border-radius: 50%;
+}
 .scene-food {
   position: absolute;
   left: 50%;
@@ -1447,11 +1450,16 @@ dialog::backdrop {
   background: #e6e5dc;
 }
 .three-view canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
   touch-action: none;
 }
 .three-note {
+  z-index: 1;
+  pointer-events: none;
   position: absolute;
   bottom: 16px;
   left: 0;
