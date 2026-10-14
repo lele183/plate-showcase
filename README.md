@@ -1,6 +1,10 @@
 # Yanco dinnerware showroom
 
-Public Next.js website with deterministic recommendations, a searchable source-linked catalog, and a plating studio. Anonymous visitors can use the baseline catalog and starter scenes. Supabase accounts unlock private imports, saved projects, and explicitly requested food-photo previews.
+Public Next.js website with deterministic recommendations, a searchable source-linked catalog, and a plating studio. Anonymous visitors can browse, read menus on their device, and save local starter scenes. Supabase accounts unlock hosted imports, cross-device saved projects, and explicitly requested food-photo previews.
+
+Catalog filters and studio arrangements have shareable URLs. Collection details group matching product families under one photograph, with each size/SKU retaining its own specifications, preview, and source links. The close button stays outside the scrolling content; Escape closes the dialog and returns focus to its trigger.
+
+Guest menus and up to 20 studio settings use `yanco_guest_workspace_v1` in this browser's local storage. Text, DOCX, and text-based PDF menus (first 40 pages, 20 MB) are read locally; images get a local preview with editable menu text. Scanned text extraction and larger hosted imports require sign-in. Drafts are not automatically uploaded on sign-in; open a local scene to save it to your account, or copy menu text into the account's menu panel. Shared studio links include starter layers and placement, without private image references.
 
 ## Development
 
@@ -13,6 +17,8 @@ npm run dev
 ```
 
 Open http://localhost:4173. Each private setting goes on its own `NAME=value` line in the ignored `.env.local` file, **without commas**.
+
+`predev` and `prebuild` copy the installed PDF.js worker to a versioned public asset for local guest PDF reading. The generated worker is ignored by Git and lint; its version follows the lockfile.
 
 | Setting                                              | Value                                                                                                                                                     |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,8 +86,8 @@ npm run test:e2e
 node scripts/test-public-site.mjs
 ```
 
-Unit tests cover interpretation, fractions, strict constraints, refinement, ranking, and imports. Desktop/phone browser tests cover selection, source links, downloads, account states, resumable upload UI, scene persistence, job recovery, review/activation, and AI failure behavior. Account/workspace browser responses are mocked; run the separate hosted test to verify actual Supabase policies. Live email delivery awaits SMTP configuration, and paid AI verification awaits a replacement server key.
+Unit tests cover interpretation, fractions, strict constraints, refinement, ranking, imports, display families, URL validation, and local draft validation. Desktop/phone browser tests cover selection, grouped size specifications, scrolling dialogs, keyboard focus, URL sharing/reloads, local PDF/DOCX/image menus, downloads, account states, resumable upload UI, scene persistence, job recovery, review/activation, and AI failure behavior. Account/workspace browser responses are mocked; run the separate hosted test to verify actual Supabase policies. Live email delivery awaits SMTP configuration, and paid AI verification awaits a replacement server key.
 
-The final verification passed 36 unit tests and 28 desktop/phone browser checks, TypeScript, ESLint, the production build, real hosted isolation/uploads, and deployed Workflow processing. Public production checks verified the 83-collection/3,133-record seed, assets, source discrepancies, strict recommendations, and anonymous route protection; three observed recommendation responses took 148–282 ms. Production is published at https://plate-showcase.vercel.app.
+The current UI validation passed 44 unit tests, TypeScript, ESLint, and the production build. All 64 desktop/phone browser cases were verified across the full suite and a final focused 20-case run after the keyboard fix. Public production smoke checks cover the 83-collection/3,133-record seed, assets, source discrepancies, strict recommendations, and anonymous route protection. Production is published at https://plate-showcase.vercel.app.
 
 The real hosted policy test now passes, including a 7 MB resumable upload, owner-only tables/files, cached quota reservations, and cross-catalog association checks. `scripts/test-live-site.mjs` also verifies deployed saved scenes, menu processing, failure/retry recovery, PDF.js/Tesseract OCR, crop edits, source-text preservation, activation, cancellation, and missing-key behavior. It uses disposable confirmed accounts and removes its private files. It sends no email and invokes no paid AI generation. Set `LIVE_SITE_URL` to the deployment origin, then run it with Node and `--env-file=.env.local`; the one-page fixture is `.cache/live-catalog.pdf`.

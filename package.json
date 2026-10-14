@@ -6,6 +6,8 @@
     "node": "24.x"
   },
   "scripts": {
+    "predev": "node scripts/prepare-pdf-worker.mjs",
+    "prebuild": "node scripts/prepare-pdf-worker.mjs",
     "dev": "next dev --port 4173",
     "build": "next build --webpack",
     "start": "next start",

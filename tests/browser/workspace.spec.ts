@@ -159,6 +159,14 @@ test("saved studio scenes reopen with the same surface and placement", async ({
   await page.goto("/workspace");
   await page.getByRole("link", { name: "Open setting" }).click();
   await expect(page.locator(".studio-scene")).toHaveClass(/surface-dark/);
+  await page.getByLabel("Rotation", { exact: true }).fill("45");
+  await page.reload();
+  await expect(page.getByLabel("Rotation", { exact: true })).toHaveValue("45");
+  await page
+    .getByRole("button", { name: "Reset placement", exact: true })
+    .click();
+  await page.reload();
+  await expect(page.getByLabel("Rotation", { exact: true })).toHaveValue("0");
 });
 test("import corrections and activation require a source review", async ({
   page,

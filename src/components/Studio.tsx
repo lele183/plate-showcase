@@ -12,6 +12,7 @@ import {
   LoaderCircle,
   Move,
   Box,
+  Link as LinkIcon,
 } from "lucide-react";
 import type { CatalogItem, Collection, Scene } from "@/lib/types";
 import {
@@ -20,6 +21,13 @@ import {
 } from "@/types/catalog";
 import { useAuth } from "./AuthProvider";
 import { uploadFile, studioPhoto } from "@/lib/upload";
+import {
+  studioSettings,
+  studioView,
+  studioParams,
+  replaceQuery,
+} from "@/lib/url-state";
+import { saveGuestScene } from "@/lib/guest-workspace";
 const Plate3D = dynamic(() => import("./Plate3D"), {
   ssr: false,
   loading: () => (
@@ -52,39 +60,30 @@ export default function Studio({
   initialItems,
   sceneId,
   previewJobId,
-  initialItemId,
+  initialScene,
+  initialView,
 }: {
   collections: Collection[];
   initialCollection: Collection;
   initialItems: CatalogItem[];
   sceneId?: string;
   previewJobId?: string;
-  initialItemId?: string;
+  initialScene: Scene;
+  initialView: "top" | "3d";
 }) {
   const { user, openAuth } = useAuth();
   const [collection, setCollection] = useState(initialCollection),
     [items, setItems] = useState(initialItems),
     [item, setItem] = useState(
-      initialItems.find((i) => i.id === initialItemId) ||
+      initialItems.find((i) => i.id === initialScene.itemId) ||
         initialItems.find((i) => i.sku === "MR-710") ||
         initialItems.find((i) => i.type === "plate") ||
         initialItems[0],
     );
-  const [scene, setScene] = useState<Scene>({
-      collectionId: initialCollection.id,
-      itemId:
-        initialItems.find((i) => i.id === initialItemId)?.id ||
-        initialItems.find((i) => i.sku === "MR-710")?.id ||
-        initialItems.find((i) => i.type === "plate")?.id ||
-        initialItems[0]?.id,
-      tabletop: "oak",
-      food: "salmon",
-      scale: 1,
-      rotation: 0,
-      x: 0,
-      y: 0,
-    }),
-    [view, setView] = useState("top"),
+  const [scene, setScene] = useState<Scene>(initialScene),
+    [view, setView] = useState(initialView),
+    [copied, setCopied] = useState(false),
+    [copyFallback, setCopyFallback] = useState(""),
     [unavailable3DItems, setUnavailable3DItems] = useState<
       Record<string, boolean>
     >({}),
@@ -95,8 +94,90 @@ export default function Studio({
     [jobId, setJobId] = useState<string | null>(previewJobId || null),
     [jobProgress, setJobProgress] = useState(0);
   const crop = scene.cropPercent || 100;
-  const setCrop = (value: number) =>
-    setScene((s) => ({ ...s, cropPercent: value }));
+  const currentScene = useRef(initialScene);
+  const currentView = useRef(initialView);
+  const selectionRequest = useRef(0);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const change = useCallback((patch: Partial<Scene>) => {
+    const next = { ...currentScene.current, ...patch };
+    if (!["custom", "ai"].includes(next.food)) next.foodUrl = undefined;
+    currentScene.current = next;
+    setScene(next);
+    replaceQuery(
+      studioParams(
+        next,
+        currentView.current,
+        new URLSearchParams(location.search),
+      ),
+    );
+  }, []);
+  function changeView(next: "top" | "3d") {
+    currentView.current = next;
+    setView(next);
+    replaceQuery(
+      studioParams(
+        currentScene.current,
+        next,
+        new URLSearchParams(location.search),
+      ),
+    );
+  }
+  async function copyLink() {
+    const publicScene = { ...scene };
+    if (["custom", "ai"].includes(publicScene.food)) publicScene.food = "none";
+    const url = `${location.origin}/studio?${studioParams(publicScene, view)}`;
+    setCopyFallback("");
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+      copyTimer.current = setTimeout(() => setCopied(false), 2000);
+      if (["custom", "ai"].includes(scene.food))
+        setMessage(
+          "Studio link copied with your dinnerware and placement. Your private food photo stays in your account.",
+        );
+    } catch {
+      setCopyFallback(url);
+    }
+  }
+  const selectCollection = useCallback(
+    async (id: string, itemId?: string, restored?: Scene) => {
+      const request = ++selectionRequest.current;
+      setMessage("");
+      try {
+        const r = await fetch(
+          `/api/catalog?collection=${encodeURIComponent(id)}`,
+        );
+        const data = await r.json();
+        if (request !== selectionRequest.current) return;
+        if (!r.ok) throw Error(data.error || "Unable to load this collection.");
+        if (!data.collection || !data.items?.length)
+          throw Error("This collection has no pieces to preview.");
+        setCollection(data.collection);
+        setItems(data.items);
+        const next =
+          data.items.find(
+            (i: CatalogItem) =>
+              i.id === itemId || i.sku.toLowerCase() === itemId?.toLowerCase(),
+          ) ||
+          data.items.find((i: CatalogItem) => i.sku === "MR-710") ||
+          data.items.find((i: CatalogItem) => i.type === "plate") ||
+          data.items[0];
+        setItem(next);
+        change({ ...(restored || {}), collectionId: id, itemId: next.id });
+      } catch (e) {
+        if (request !== selectionRequest.current) return;
+        setMessage(
+          e instanceof Error ? e.message : "Unable to load this collection.",
+        );
+      }
+    },
+    [change],
+  );
+  const cancelSelection = useCallback(() => {
+    selectionRequest.current++;
+  }, []);
+  const setCrop = (value: number) => change({ cropPercent: value });
   const sceneRef = useRef<HTMLDivElement>(null),
     fileRef = useRef<HTMLInputElement>(null),
     drag = useRef<{
@@ -124,15 +205,37 @@ export default function Studio({
       ) {
         localStorage.removeItem("yanco-studio-auth-draft");
         queueMicrotask(() => {
-          setScene(pending.scene);
           void selectCollection(
             pending.scene.collectionId,
             pending.scene.itemId,
+            pending.scene,
           );
         });
       }
     } catch {}
-  }, []);
+  }, [selectCollection]);
+  useEffect(() => {
+    const restore = () => {
+      const params = new URLSearchParams(location.search);
+      const id =
+        collections.find((c) => c.id === params.get("collection"))?.id ||
+        "mars";
+      currentView.current = studioView(params);
+      setView(currentView.current);
+      setLocalPhoto(null);
+      void selectCollection(id, params.get("item") || undefined, {
+        ...studioSettings(params),
+        collectionId: id,
+        itemId: "",
+      });
+    };
+    window.addEventListener("popstate", restore);
+    return () => {
+      window.removeEventListener("popstate", restore);
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+      cancelSelection();
+    };
+  }, [collections, selectCollection, cancelSelection]);
   function authenticate() {
     localStorage.setItem(
       "yanco-studio-auth-draft",
@@ -146,19 +249,38 @@ export default function Studio({
   }
   useEffect(() => {
     if (!sceneId || !user) return;
-    fetch("/api/scenes")
+    const controller = new AbortController();
+    fetch("/api/scenes", { signal: controller.signal })
       .then((r) => r.json())
       .then((data) => {
         const saved = data.scenes?.find(
           (s: { id: string; data: Scene }) => s.id === sceneId,
         );
-        if (saved) {
-          setScene(saved.data);
-          selectCollection(saved.data.collectionId, saved.data.itemId);
+        if (saved && !controller.signal.aborted) {
+          const params = new URLSearchParams(location.search);
+          const restored =
+            params.get("layout") === "1"
+              ? { ...saved.data, ...studioSettings(params) }
+              : saved.data;
+          const id =
+            params.get("layout") === "1"
+              ? params.get("collection") || restored.collectionId
+              : restored.collectionId;
+          void selectCollection(
+            id,
+            params.get("layout") === "1"
+              ? params.get("item") || restored.itemId
+              : restored.itemId,
+            restored,
+          );
         }
       })
-      .catch(() => setMessage("Unable to load this saved scene."));
-  }, [sceneId, user]);
+      .catch(() => {
+        if (!controller.signal.aborted)
+          setMessage("Unable to load this saved scene.");
+      });
+    return () => controller.abort();
+  }, [sceneId, user, selectCollection]);
   useEffect(() => {
     if (!jobId || !user) return;
     let cancelled = false;
@@ -170,12 +292,11 @@ export default function Studio({
         if (cancelled) return;
         setJobProgress(d.job.progress);
         if (d.job.status === "completed") {
-          setScene((s) => ({
-            ...s,
+          change({
             foodUrl: d.job.result.url,
             food: "ai",
             cropPercent: 100,
-          }));
+          });
           setLocalPhoto(null);
           setJobId(null);
           setBusy(false);
@@ -207,39 +328,13 @@ export default function Studio({
       cancelled = true;
       clearInterval(timer);
     };
-  }, [jobId, user]);
+  }, [jobId, user, change]);
   useEffect(
     () => () => {
       if (localPhoto?.startsWith("blob:")) URL.revokeObjectURL(localPhoto);
     },
     [localPhoto],
   );
-  function change(patch: Partial<Scene>) {
-    setScene((s) => ({ ...s, ...patch }));
-  }
-  async function selectCollection(id: string, itemId?: string) {
-    setMessage("");
-    try {
-      const r = await fetch(
-        `/api/catalog?collection=${encodeURIComponent(id)}`,
-      );
-      const data = await r.json();
-      if (!data.collection || !data.items?.length)
-        throw Error("This collection has no pieces to preview.");
-      setCollection(data.collection);
-      setItems(data.items);
-      const next =
-        data.items.find((i: CatalogItem) => i.id === itemId) ||
-        data.items.find((i: CatalogItem) => i.type === "plate") ||
-        data.items[0];
-      setItem(next);
-      setScene((s) => ({ ...s, collectionId: id, itemId: next.id }));
-    } catch (e) {
-      setMessage(
-        e instanceof Error ? e.message : "Unable to load this collection.",
-      );
-    }
-  }
   async function photo(file?: File) {
     if (!file) return;
     if (!user) {
@@ -300,7 +395,20 @@ export default function Studio({
   }
   async function save() {
     if (!user) {
-      authenticate();
+      try {
+        saveGuestScene(
+          `${collection.name} on ${surfaces.find(([v]) => v === scene.tabletop)?.[1]}`,
+          { ...scene, collectionId: collection.id, itemId: item.id },
+          view,
+        );
+        setMessage(
+          "Scene saved on this device. Find it in My workspace; sign in to save across devices.",
+        );
+      } catch {
+        setMessage(
+          "This device could not save your scene. Try copying its studio link instead.",
+        );
+      }
       return;
     }
     setMessage("");
@@ -449,14 +557,14 @@ export default function Studio({
           <button
             className={view === "top" ? "active" : ""}
             aria-pressed={view === "top"}
-            onClick={() => setView("top")}
+            onClick={() => changeView("top")}
           >
             <Move size={13} /> Tabletop
           </button>
           <button
             className={view === "3d" ? "active" : ""}
             aria-pressed={view === "3d"}
-            onClick={() => setView("3d")}
+            onClick={() => changeView("3d")}
           >
             <Box size={13} /> {detailOnly ? "Detail view" : "Illustrative 3D"}
           </button>
@@ -650,6 +758,7 @@ export default function Studio({
                   key={v}
                   title={l}
                   aria-label={l}
+                  aria-pressed={scene.tabletop === v}
                   className={`surface-${v} ${scene.tabletop === v ? "selected" : ""}`}
                   onClick={() => change({ tabletop: v })}
                 />
@@ -662,6 +771,8 @@ export default function Studio({
               {foods.map(([v, l]) => (
                 <button
                   key={v}
+                  aria-label={l}
+                  aria-pressed={scene.food === v}
                   className={scene.food === v ? "selected" : ""}
                   onClick={() => {
                     setLocalPhoto(null);
@@ -682,6 +793,7 @@ export default function Studio({
                 max="1.8"
                 step=".05"
                 value={scene.scale}
+                aria-valuetext={`${Math.round(scene.scale * 100)} percent`}
                 onChange={(e) => change({ scale: Number(e.target.value) })}
               />
               <span>{Math.round(scene.scale * 100)}%</span>
@@ -694,20 +806,48 @@ export default function Studio({
                 min="-180"
                 max="180"
                 value={scene.rotation}
+                aria-valuetext={`${scene.rotation} degrees`}
                 onChange={(e) => change({ rotation: Number(e.target.value) })}
               />
               <span>{scene.rotation}°</span>
             </div>
-            <button
-              className="text-link"
-              onClick={() => {
-                change({ x: 0, y: 0, scale: 1, rotation: 0 });
-                setCrop(100);
-              }}
-            >
-              <RotateCcw size={12} />
-              Reset placement
-            </button>
+            <div className="studio-placement-actions">
+              <button
+                className="text-link"
+                onClick={() => {
+                  change({
+                    x: 0,
+                    y: 0,
+                    scale: 1,
+                    rotation: 0,
+                    cropPercent: 100,
+                  });
+                }}
+              >
+                <RotateCcw size={12} />
+                Reset placement
+              </button>
+              <button className="text-link" onClick={copyLink}>
+                <LinkIcon size={12} />
+                {copied ? "Link copied" : "Copy studio link"}
+              </button>
+            </div>
+            {copied && (
+              <span className="sr-only" role="status">
+                Studio link copied
+              </span>
+            )}
+            {copyFallback && (
+              <label className="small-note">
+                Copy this studio link
+                <input
+                  aria-label="Studio link"
+                  readOnly
+                  value={copyFallback}
+                  onFocus={(event) => event.target.select()}
+                />
+              </label>
+            )}
           </div>
           <div className="control-group">
             <input
@@ -734,6 +874,7 @@ export default function Studio({
                   min="100"
                   max="250"
                   value={crop}
+                  aria-valuetext={`${crop} percent`}
                   onChange={(e) => setCrop(Number(e.target.value))}
                 />
               </div>
@@ -758,6 +899,14 @@ export default function Studio({
               Save to workspace
               <ArrowRight size={15} />
             </button>
+            {!user && (
+              <p className="small-note">
+                Saved on this device.{" "}
+                <button className="text-link" onClick={authenticate}>
+                  Sign in to save across devices
+                </button>
+              </p>
+            )}
             <button
               className="button secondary"
               disabled={busy}

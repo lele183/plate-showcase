@@ -197,12 +197,14 @@ export default function Selector({
           <div className="mode-switch" aria-label="Selector mode">
             <button
               className={!expert ? "selected" : ""}
+              aria-pressed={!expert}
               onClick={() => setExpert(false)}
             >
               Quick select
             </button>
             <button
               className={expert ? "selected" : ""}
+              aria-pressed={expert}
               onClick={() => setExpert(true)}
             >
               <SlidersHorizontal size={15} />
@@ -353,6 +355,11 @@ export default function Selector({
                 <button
                   key={label}
                   type="button"
+                  aria-pressed={
+                    brief.concept === exampleBrief.concept &&
+                    brief.tabletop === exampleBrief.tabletop &&
+                    brief.theme === exampleBrief.theme
+                  }
                   onClick={() => updateBrief(exampleBrief)}
                 >
                   {label}

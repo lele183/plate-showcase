@@ -3,23 +3,54 @@ import { useEffect, useMemo, useState } from "react";
 import { Search, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Collection } from "@/lib/types";
 import { CATALOG_PDF_URL, CATALOG_PDF_FILENAME } from "@/types/catalog";
+import { catalogFilters, replaceQuery } from "@/lib/url-state";
 import CollectionCard from "./CollectionCard";
 import CollectionDialog from "./CollectionDialog";
 export default function CatalogBrowser({
   initial,
   itemCount,
+  initialFilters,
 }: {
   initial: Collection[];
   itemCount: number;
+  initialFilters: ReturnType<typeof catalogFilters>;
 }) {
   const [collections, setCollections] = useState(initial),
-    [query, setQuery] = useState(""),
-    [category, setCategory] = useState("all"),
-    [color, setColor] = useState("all"),
-    [budget, setBudget] = useState("all"),
+    [query, setQuery] = useState(initialFilters.query),
+    [category, setCategory] = useState(initialFilters.category),
+    [color, setColor] = useState(initialFilters.color),
+    [budget, setBudget] = useState(initialFilters.budget),
     [selected, setSelected] = useState<Collection | null>(null),
     [page, setPage] = useState(1),
     [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const restore = () => {
+      const filters = catalogFilters(new URLSearchParams(location.search));
+      setQuery(filters.query);
+      setCategory(filters.category);
+      setColor(filters.color);
+      setBudget(filters.budget);
+      setPage(1);
+    };
+    window.addEventListener("popstate", restore);
+    return () => window.removeEventListener("popstate", restore);
+  }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const params = new URLSearchParams(location.search);
+      for (const [key, value] of Object.entries({
+        q: query,
+        category,
+        color,
+        budget,
+      })) {
+        if (!value || value === "all") params.delete(key);
+        else params.set(key, value);
+      }
+      replaceQuery(params);
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [query, category, color, budget]);
   useEffect(() => {
     const controller = new AbortController();
     const timeout = setTimeout(() => {
@@ -34,7 +65,7 @@ export default function CatalogBrowser({
         })
         .catch(() => {})
         .finally(() => setLoading(false));
-    }, 250);
+    }, 150);
     return () => {
       clearTimeout(timeout);
       controller.abort();
@@ -80,10 +111,20 @@ export default function CatalogBrowser({
         <input
           id="catalog-search"
           type="search"
+          maxLength={200}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search a collection, piece, or item number…"
         />
+        {query && (
+          <button
+            className="text-link"
+            aria-label="Clear search"
+            onClick={() => setQuery("")}
+          >
+            Clear
+          </button>
+        )}
         <label className="sr-only" htmlFor="color-filter">
           Color filter
         </label>
@@ -133,6 +174,7 @@ export default function CatalogBrowser({
           <button
             key={v}
             className={category === v ? "active" : ""}
+            aria-pressed={category === v}
             onClick={() => {
               setCategory(v);
               setPage(1);

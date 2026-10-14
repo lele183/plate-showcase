@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import {
   Upload,
   FileText,
-  BookOpen,
   ArrowRight,
   LoaderCircle,
   RefreshCw,
@@ -16,6 +15,7 @@ import {
 import { useAuth } from "./AuthProvider";
 import { uploadFile } from "@/lib/upload";
 import { emptyBrief, type Scene, type RestaurantBrief } from "@/lib/types";
+import GuestWorkspace from "./GuestWorkspace";
 type Job = {
   id: string;
   kind: string;
@@ -180,17 +180,7 @@ export default function Workspace() {
         )}
       </div>
       {!user ? (
-        <div className="empty-state">
-          <BookOpen size={30} style={{ margin: "auto", color: "#748568" }} />
-          <h2>A place for your restaurant.</h2>
-          <p>
-            Sign in to save your scenes, upload your menu, and explore personal
-            dinnerware catalogs across devices.
-          </p>
-          <button className="button primary" onClick={openAuth}>
-            Sign in or create an account <ArrowRight size={17} />
-          </button>
-        </div>
+        <GuestWorkspace />
       ) : (
         <>
           {message && (
@@ -422,6 +412,7 @@ export default function Workspace() {
               ))}
             </div>
           </section>
+          <GuestWorkspace signedIn />
         </>
       )}
     </div>
