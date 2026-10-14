@@ -1,0 +1,913 @@
+{
+ "pages": [
+  {
+   "collection": "deli",
+   "page": 164,
+   "complete": true,
+   "color": "red",
+   "groups": [
+    {
+     "name": "Scallop Edged Display Tray Red",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      850,
+      665,
+      1050
+     ],
+     "imageGroup": "scallop-edged-display-tray-red-0",
+     "rows": [
+      [
+       "DC-6013R",
+       "13 1/2\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray Red",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      885,
+      790,
+      1460,
+      1055
+     ],
+     "imageGroup": "scallop-edged-display-tray-red-1",
+     "rows": [
+      [
+       "DC-6014R",
+       "14\" X 5 1/4\" X 1\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray Red",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      1165,
+      755,
+      1355
+     ],
+     "imageGroup": "scallop-edged-display-tray-red-2",
+     "rows": [
+      [
+       "DC-6019R",
+       "19\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray Red",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      880,
+      1160,
+      1525,
+      1355
+     ],
+     "imageGroup": "scallop-edged-display-tray-red-3",
+     "rows": [
+      [
+       "DC-6021R",
+       "21\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray Red",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      1445,
+      630,
+      1710
+     ],
+     "imageGroup": "scallop-edged-display-tray-red-4",
+     "rows": [
+      [
+       "DC-6114R",
+       "14\" X 9 1/2\" X 2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray Red",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      895,
+      1475,
+      1520,
+      1680
+     ],
+     "imageGroup": "scallop-edged-display-tray-red-5",
+     "rows": [
+      [
+       "DC-6117R",
+       "17 1/2\" X 6 3/4\" X 2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray White",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      1830,
+      665,
+      2045
+     ],
+     "imageGroup": "scallop-edged-display-tray-white-6",
+     "rows": [
+      [
+       "DC-6013W",
+       "13 1/2\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ],
+     "color": "white"
+    },
+    {
+     "name": "Scallop Edged Display Tray White",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      885,
+      1770,
+      1460,
+      2060
+     ],
+     "imageGroup": "scallop-edged-display-tray-white-7",
+     "rows": [
+      [
+       "DC-6014W",
+       "14\" X 5 1/4\" X 1\" 6 DZ"
+      ]
+     ],
+     "color": "white"
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "red",
+     "white",
+     "black"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "deli",
+   "page": 165,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Scallop Edged Display Tray White",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      205,
+      755,
+      400
+     ],
+     "imageGroup": "scallop-edged-display-tray-white-0",
+     "rows": [
+      [
+       "DC-6019W",
+       "19\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray White",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      865,
+      185,
+      1530,
+      395
+     ],
+     "imageGroup": "scallop-edged-display-tray-white-1",
+     "rows": [
+      [
+       "DC-6021W",
+       "21\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray White",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      140,
+      535,
+      640,
+      810
+     ],
+     "imageGroup": "scallop-edged-display-tray-white-2",
+     "rows": [
+      [
+       "DC-6114W",
+       "14\" X 9 1/2\" X 2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray White",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      920,
+      565,
+      1540,
+      785
+     ],
+     "imageGroup": "scallop-edged-display-tray-white-3",
+     "rows": [
+      [
+       "DC-6117W",
+       "17 1/2\" X 6 3/4\" X 2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scallop Edged Display Tray Black",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      1030,
+      675,
+      1225
+     ],
+     "imageGroup": "scallop-edged-display-tray-black-4",
+     "rows": [
+      [
+       "DC-6013B",
+       "13 1/2\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Scallop Edged Display Tray Black",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      950,
+      935,
+      1525,
+      1210
+     ],
+     "imageGroup": "scallop-edged-display-tray-black-5",
+     "rows": [
+      [
+       "DC-6014B",
+       "14\" X 5 1/4\" X 1\" 6 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Scallop Edged Display Tray Black",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1395,
+      755,
+      1615
+     ],
+     "imageGroup": "scallop-edged-display-tray-black-6",
+     "rows": [
+      [
+       "DC-6019B",
+       "19\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Scallop Edged Display Tray Black",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      865,
+      1390,
+      1515,
+      1605
+     ],
+     "imageGroup": "scallop-edged-display-tray-black-7",
+     "rows": [
+      [
+       "DC-6021B",
+       "21\" X 5 1/4\" X 1\" 12 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Scallop Edged Display Tray Black",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      130,
+      1765,
+      630,
+      2050
+     ],
+     "imageGroup": "scallop-edged-display-tray-black-8",
+     "rows": [
+      [
+       "DC-6114B",
+       "14\" X 9 1/2\" X 2\" 6 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Scallop Edged Display Tray Black",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      900,
+      1795,
+      1525,
+      2005
+     ],
+     "imageGroup": "scallop-edged-display-tray-black-9",
+     "rows": [
+      [
+       "DC-6117B",
+       "17 1/2\" X 6 3/4\" X 2\" 6 DZ"
+      ]
+     ],
+     "color": "black"
+    }
+   ]
+  },
+  {
+   "collection": "gn-pan",
+   "page": 166,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      180,
+      725,
+      500
+     ],
+     "imageGroup": "gn-food-pan-0",
+     "rows": [
+      [
+       "GN-120",
+       "20.87\" X 12.8\" X 2.56\" 3 DZ / 530 X 325 X 65MM GN 1/1 5.5L",
+       {
+        "capacityOz": 185.977125
+       }
+      ]
+     ],
+     "cropMasks": [
+      [
+       430,
+       485,
+       725,
+       500
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      975,
+      165,
+      1505,
+      455
+     ],
+     "imageGroup": "gn-food-pan-1",
+     "rows": [
+      [
+       "GN-121",
+       "20.87\" X 12.8\" X 3.94\" 3 DZ / 530 X 325 X 100MM GN 1/1 8L",
+       {
+        "capacityOz": 270.512182
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      120,
+      670,
+      550,
+      915
+     ],
+     "imageGroup": "gn-food-pan-2",
+     "rows": [
+      [
+       "GN-212",
+       "12.8\" X 10.43\" X 2.56\" 6 DZ / 325 X 265 X 65MM GN 1/2 2.3L",
+       {
+        "capacityOz": 77.772252
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      625,
+      665,
+      1040,
+      930
+     ],
+     "imageGroup": "gn-food-pan-3",
+     "rows": [
+      [
+       "GN-213",
+       "12.8\" X 10.43\" X 3.94\" 6 DZ / 325 X 265 X 100MM GN 1/2 3.6L",
+       {
+        "capacityOz": 121.730482
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      1095,
+      675,
+      1535,
+      920
+     ],
+     "imageGroup": "gn-food-pan-4",
+     "rows": [
+      [
+       "GN-313",
+       "13.94\" X 12.8\" X 2.56\" 6 DZ / 350 X 323 X 65MM GN 2/3"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1135,
+      535,
+      1355
+     ],
+     "imageGroup": "gn-food-pan-5",
+     "rows": [
+      [
+       "GN-512",
+       "12.8\" X 6.93\" X 2.56\" 6 DZ / 325 X 176 X 65MM GN 1/3"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      625,
+      1150,
+      1040,
+      1355
+     ],
+     "imageGroup": "gn-food-pan-6",
+     "rows": [
+      [
+       "GN-513",
+       "12.8\" X 6.93\" X 3.94\" 6 DZ / 325 X 176 X 100MM GN 1/3 2.3L",
+       {
+        "capacityOz": 77.772252
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      1130,
+      1120,
+      1525,
+      1355
+     ],
+     "imageGroup": "gn-food-pan-7",
+     "rows": [
+      [
+       "GN-610",
+       "10.43\" X 6.38\" X 2.56\" 6 DZ / 265 X 162 X 65MM GN 1/4"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1550,
+      740,
+      1795
+     ],
+     "imageGroup": "gn-food-pan-8",
+     "rows": [
+      [
+       "GN-420",
+       "20.87\" X 6.38\" X 2.56\" 3 DZ / 530 162 X 65MM GN 2/4"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      940,
+      1535,
+      1345,
+      1775
+     ],
+     "imageGroup": "gn-food-pan-9",
+     "rows": [
+      [
+       "GN-611",
+       "10.43\" X 6.38\" X 3.94\" 6 DZ / 265 X 162 X 100MM GN 1/4 1.5L",
+       {
+        "capacityOz": 50.721034
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      145,
+      1890,
+      450,
+      2110
+     ],
+     "imageGroup": "gn-food-pan-10",
+     "rows": [
+      [
+       "GN-706",
+       "6.93\" X 6.38\" 2.56\" 6 DZ / 176 X 162 X 65MM GN 1/6",
+       {
+        "dimensions": {
+         "length": 6.93,
+         "width": 6.38,
+         "height": 2.56
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      850,
+      1890,
+      1190,
+      2110
+     ],
+     "imageGroup": "gn-food-pan-11",
+     "rows": [
+      [
+       "GN-707",
+       "6.93\" X 6.38\" 3.94\" 6 DZ / 176 X 162 X 100MM GN 1/6 0.9L",
+       {
+        "capacityOz": 30.43262,
+        "dimensions": {
+         "length": 6.93,
+         "width": 6.38,
+         "height": 3.94
+        }
+       }
+      ]
+     ],
+     "cropMasks": [
+      [
+       1160,
+       1980,
+       1190,
+       2110
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "white",
+     "black"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "gn-pan",
+   "page": 167,
+   "complete": true,
+   "color": "black",
+   "groups": [
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      160,
+      735,
+      495
+     ],
+     "imageGroup": "gn-food-pan-0",
+     "rows": [
+      [
+       "GN-120BK",
+       "20.87\" X 12.8\" X 2.56\" 3 DZ / 530 X 325 X 65MM GN 1/1 5.5L",
+       {
+        "capacityOz": 185.977125
+       }
+      ]
+     ],
+     "cropMasks": [
+      [
+       450,
+       480,
+       735,
+       495
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      945,
+      165,
+      1485,
+      455
+     ],
+     "imageGroup": "gn-food-pan-1",
+     "rows": [
+      [
+       "GN-121BK",
+       "20.87\" X 12.8\" X 3.94\" 3 DZ / 530 X 325 X 100MM GN 1/1 8L",
+       {
+        "capacityOz": 270.512182
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      120,
+      670,
+      550,
+      915
+     ],
+     "imageGroup": "gn-food-pan-2",
+     "rows": [
+      [
+       "GN-212BK",
+       "12.8\" X 10.43\" X 2.56\" 6 DZ / 325 X 265 X 65MM GN 1/2 2.3L",
+       {
+        "capacityOz": 77.772252
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      625,
+      665,
+      1040,
+      930
+     ],
+     "imageGroup": "gn-food-pan-3",
+     "rows": [
+      [
+       "GN-213BK",
+       "12.8\" X 10.43\" X 3.94\" 6 DZ / 325 X 265 X 100MM GN 1/2 3.6L",
+       {
+        "capacityOz": 121.730482
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      1095,
+      675,
+      1535,
+      920
+     ],
+     "imageGroup": "gn-food-pan-4",
+     "rows": [
+      [
+       "GN-313BK",
+       "13.94\" X 12.8\" X 2.56\" 6 DZ / 350 X 323 X 65MM GN 2/3"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1135,
+      535,
+      1355
+     ],
+     "imageGroup": "gn-food-pan-5",
+     "rows": [
+      [
+       "GN-512BK",
+       "12.8\" X 6.93\" X 2.56\" 6 DZ / 325 X 176 X 65MM GN 1/3"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      625,
+      1150,
+      1040,
+      1355
+     ],
+     "imageGroup": "gn-food-pan-6",
+     "rows": [
+      [
+       "GN-513BK",
+       "12.8\" X 6.93\" X 3.94\" 6 DZ / 325 X 176 X 100MM GN 1/3 2.3L",
+       {
+        "capacityOz": 77.772252
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      1130,
+      1120,
+      1525,
+      1355
+     ],
+     "imageGroup": "gn-food-pan-7",
+     "rows": [
+      [
+       "GN-610BK",
+       "10.43\" X 6.38\" X 2.56\" 6 DZ / 265 X 162 X 65MM GN 1/4"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1550,
+      740,
+      1795
+     ],
+     "imageGroup": "gn-food-pan-8",
+     "rows": [
+      [
+       "GN-420BK",
+       "20.87\" X 6.38\" X 2.56\" 3 DZ / 530 162 X 65MM GN 2/4"
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      940,
+      1535,
+      1345,
+      1775
+     ],
+     "imageGroup": "gn-food-pan-9",
+     "rows": [
+      [
+       "GN-611BK",
+       "10.43\" X 6.38\" X 3.94\" 6 DZ / 265 X 162 X 100MM GN 1/4 1.5L",
+       {
+        "capacityOz": 50.721034
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      145,
+      1890,
+      438,
+      2110
+     ],
+     "imageGroup": "gn-food-pan-10",
+     "rows": [
+      [
+       "GN-706BK",
+       "6.93\" X 6.38\" 2.56\" 6 DZ / 176 X 162 X 65MM GN 1/6",
+       {
+        "dimensions": {
+         "length": 6.93,
+         "width": 6.38,
+         "height": 2.56
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "GN Food Pan Black",
+     "type": "pan",
+     "shape": "rectangular",
+     "crop": [
+      850,
+      1890,
+      1190,
+      2110
+     ],
+     "imageGroup": "gn-food-pan-11",
+     "rows": [
+      [
+       "GN-707BK",
+       "6.93\" X 6.38\" 3.94\" 6 DZ / 176 X 162 X 100MM GN 1/6 0.9L",
+       {
+        "capacityOz": 30.43262,
+        "dimensions": {
+         "length": 6.93,
+         "width": 6.38,
+         "height": 3.94
+        }
+       }
+      ]
+     ],
+     "cropMasks": [
+      [
+       1135,
+       2020,
+       1190,
+       2110
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

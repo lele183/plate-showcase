@@ -1,0 +1,28 @@
+{"pages":[
+ {"collection":"milando","page":109,"color":"white","type":"plate","shape":"round","rows":[
+  {"name":"Round Plate","sku":"MD-107","specification":"7\" 4 DZ","crop":[125,710,450,1040],"imageGroup":"plate"},
+  {"name":"Round Plate","sku":"MD-114","specification":"13 1/2\" 1 DZ","crop":[125,710,450,1040],"imageGroup":"plate"}
+ ]},
+ {"collection":"osaka","page":110,"collectionColor":"white","collectionAttributes":{"colors":["white"]},"color":"white","type":"plate","shape":"round","rows":[
+  {"name":"Round Plate","sku":"OK-1712","specification":"12\" 2 DZ","crop":[135,1695,460,1900]}
+ ]},
+ {"collection":"discover","page":113,"collectionColor":"gray, white","collectionAttributes":{"colors":["gray","white"]},"color":"gray, white","type":"plate","shape":"oval","rows":[
+  {"name":"Oval Plate","sku":"DI-409","specification":"9\" X 1 1/4\"H 2 DZ","crop":[1120,1095,1525,1395]}
+ ]},
+ {"collection":"yofo","page":119,"color":"gray, brown","type":"sauce dish","shape":"rectangular","rows":[
+  {"name":"Triple Sauce Dish","sku":"YO-9113","specification":"8\" X 2 3/4\" X 3/4\" 2 OZ EACH 4 DZ","crop":[845,1790,1170,1945]}
+ ]},
+ {"collection":"rome","page":125,"color":"white","groups":[
+  {"name":"3-Compartment Dessert Dish","type":"sauce dish","shape":"rectangular","crop":[345,175,600,230],"imageGroup":"three-dessert","rows":[["RM-064","7 1/2\" X 2 1/2\" 4 DZ"]]},
+  {"name":"2-Compartment Dessert Dish","type":"sauce dish","shape":"rectangular","crop":[1035,225,1135,320],"imageGroup":"two-dessert","rows":[["RM-063","5 1/8\" X 2 1/2\" 4 DZ"]]},
+  {"name":"Square Plate","type":"plate","shape":"square","crop":[315,535,730,800],"imageGroup":"square","rows":[["RM-110","10\" 2 DZ"]]},
+  {"name":"Rectangular Plate","type":"plate","shape":"rectangular","crop":[260,1490,765,1645],"imageGroup":"rectangular","rows":[["RM-4407","13 3/4\" X 6 1/2\" 2 DZ"]]}
+ ]},
+ {"collection":"rome","page":127,"color":"black","type":"plate","shape":"rectangular","rows":[
+  {"name":"Rectangular Plate Black","sku":"RM-218BK","specification":"18 X 10 1/2\" 1 DZ","crop":[190,1950,565,2015]}
+ ]},
+ {"collection":"nessico","page":132,"color":"white","type":"platter","shape":"oval","rows":[
+  {"name":"Oval Platter with Narrow Rim White","sku":"NS-510W","specification":"9 3/4\" X 6 3/4\" 2 DZ","crop":[1030,140,1505,465],"imageGroup":"narrow-oval"},
+  {"name":"Oval Platter with Narrow Rim White","sku":"NS-512W","specification":"12\" X 6 3/4\" 2 DZ","crop":[1030,140,1505,465],"imageGroup":"narrow-oval"}
+ ]}
+]}

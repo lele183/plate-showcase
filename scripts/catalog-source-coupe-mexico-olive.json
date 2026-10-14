@@ -1,0 +1,614 @@
+{
+  "pages": [
+    {
+      "collection": "coupe",
+      "page": 128,
+      "complete": true,
+      "color": "white",
+      "groups": [
+        {
+          "name": "Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            680,
+            1070,
+            1000,
+            1270
+          ],
+          "imageGroup": "bowl-0",
+          "rows": [
+            [
+              "CO-306",
+              "6 1/2\" X 2 1/2\" 16 OZ 4 DZ"
+            ],
+            [
+              "CO-307",
+              "7 1/2\" X 2 7/8\" 32 OZ 2 DZ"
+            ],
+            [
+              "CO-308",
+              "8 1/2\" X 3 1/2\" 38 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Salad Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            1100,
+            1040,
+            1460,
+            1270
+          ],
+          "imageGroup": "salad-bowl-1",
+          "rows": [
+            [
+              "CO-408",
+              "8 3/4\" X 2\" 18 OZ 2 DZ"
+            ],
+            [
+              "CO-410",
+              "9 7/8\" X 2 1/4\" 30 OZ 2 DZ"
+            ],
+            [
+              "CO-411",
+              "11\" X 2 1/2\" 46 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Round Plate",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            90,
+            1535,
+            485,
+            1940
+          ],
+          "imageGroup": "round-plate-2",
+          "rows": [
+            [
+              "CO-107",
+              "7\" 4 DZ"
+            ],
+            [
+              "CO-109",
+              "9\" 2 DZ"
+            ],
+            [
+              "CO-110",
+              "10\" 2 DZ"
+            ],
+            [
+              "CO-111",
+              "11\" 2 DZ"
+            ],
+            [
+              "CO-112",
+              "12\" 2 DZ"
+            ],
+            [
+              "CO-113",
+              "13\" 1 DZ"
+            ],
+            [
+              "CO-114",
+              "14\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Round Plate",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            555,
+            1495,
+            1000,
+            1940
+          ],
+          "imageGroup": "round-plate-3",
+          "rows": [
+            [
+              "CO-1016",
+              "16\" 1 DZ"
+            ],
+            [
+              "CO-1018",
+              "18\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Oval Platter (catalog: Rectangular Platter)",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            1030,
+            1540,
+            1530,
+            1920
+          ],
+          "imageGroup": "rectangular-platter-4",
+          "rows": [
+            [
+              "CO-208",
+              "8\" X 5 1/2\" 4 DZ"
+            ],
+            [
+              "CO-210",
+              "10\" X 7\" 2 DZ"
+            ],
+            [
+              "CO-212",
+              "12\" X 8 1/2\" 1 DZ"
+            ],
+            [
+              "CO-214",
+              "14\" X 10\" 1 DZ"
+            ],
+            [
+              "CO-216",
+              "16\" X 12\" 1 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "white"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "mexico",
+      "page": 129,
+      "complete": true,
+      "color": "red",
+      "groups": [
+        {
+          "name": "Square Plate",
+          "type": "plate",
+          "shape": "square",
+          "crop": [
+            150,
+            830,
+            520,
+            1200
+          ],
+          "imageGroup": "square-plate-0",
+          "rows": [
+            [
+              "ME-106",
+              "6\" 4 DZ"
+            ],
+            [
+              "ME-108",
+              "8\" 4 DZ"
+            ],
+            [
+              "ME-110",
+              "10\" 2 DZ"
+            ],
+            [
+              "ME-112",
+              "12\" 1 DZ"
+            ],
+            [
+              "ME-114",
+              "14\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            1015,
+            795,
+            1520,
+            1105
+          ],
+          "imageGroup": "rectangular-plate-1",
+          "rows": [
+            [
+              "ME-210",
+              "10 X 6\" 2 DZ"
+            ],
+            [
+              "ME-212",
+              "12 X 7 1/2\" 2 DZ"
+            ],
+            [
+              "ME-214",
+              "14 X 8\" 1 DZ"
+            ],
+            [
+              "ME-216",
+              "16 X 9 1/2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Deep Square Plate",
+          "type": "plate",
+          "shape": "square",
+          "crop": [
+            145,
+            1330,
+            505,
+            1575
+          ],
+          "imageGroup": "deep-square-plate-2",
+          "rows": [
+            [
+              "ME-306",
+              "6\" X 1 3/4\" 14 OZ 4 DZ"
+            ],
+            [
+              "ME-307",
+              "7\" X 2\" 22 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Square Bowl",
+          "type": "bowl",
+          "shape": "square",
+          "crop": [
+            670,
+            1330,
+            945,
+            1580
+          ],
+          "imageGroup": "square-bowl-3",
+          "rows": [
+            [
+              "ME-404",
+              "3 3/4\" X 2 1/2\" 10 OZ 6 DZ"
+            ],
+            [
+              "ME-405",
+              "5\" X 2 3/4\" 18 OZ 4 DZ"
+            ],
+            [
+              "ME-407",
+              "7 1/4\" X 3 1/8\" 2 QT. 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Sheer Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            1120,
+            1310,
+            1515,
+            1575
+          ],
+          "imageGroup": "sheer-bowl-4",
+          "rows": [
+            [
+              "ME-308",
+              "8\" 16 OZ 4 DZ"
+            ],
+            [
+              "ME-309",
+              "9 1/4\" 24 OZ 2 DZ"
+            ],
+            [
+              "ME-310",
+              "10\" 36 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            185,
+            1795,
+            450,
+            1990
+          ],
+          "imageGroup": "bowl-5",
+          "rows": [
+            [
+              "ME-504",
+              "4 1/2\" X 2\" 10 OZ 4 DZ"
+            ],
+            [
+              "ME-505",
+              "5\" X 2 1/2\" 14 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Stackable Taco Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            560,
+            1775,
+            1010,
+            1970
+          ],
+          "imageGroup": "stackable-taco-plate-6",
+          "rows": [
+            [
+              "ME-1765",
+              "14 3/4\" X 8 3/4\" X 1 3/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Square Bowl",
+          "type": "bowl",
+          "shape": "square",
+          "crop": [
+            1110,
+            1740,
+            1525,
+            1990
+          ],
+          "imageGroup": "square-bowl-7",
+          "rows": [
+            [
+              "ME-4106",
+              "6\" X 3\" 26 OZ 2 DZ"
+            ],
+            [
+              "ME-4107",
+              "7 1/2\" X 3 1/2\" 2 QT 2 DZ"
+            ],
+            [
+              "ME-4109",
+              "10\" X 4\" 4 QT 1 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "red"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "olive",
+      "page": 130,
+      "complete": true,
+      "color": "yellow green red brown",
+      "groups": [
+        {
+          "name": "Square Plate",
+          "type": "plate",
+          "shape": "square",
+          "crop": [
+            145,
+            615,
+            485,
+            950
+          ],
+          "imageGroup": "square-plate-0",
+          "rows": [
+            [
+              "OL-106",
+              "6\" 4 DZ"
+            ],
+            [
+              "OL-108",
+              "8\" 4 DZ"
+            ],
+            [
+              "OL-110",
+              "10\" 2 DZ"
+            ],
+            [
+              "OL-112",
+              "12\" 1 DZ"
+            ],
+            [
+              "OL-114",
+              "14\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            585,
+            630,
+            1070,
+            940
+          ],
+          "imageGroup": "rectangular-plate-1",
+          "rows": [
+            [
+              "OL-210",
+              "10\" X 6\" 2 DZ"
+            ],
+            [
+              "OL-212",
+              "12\" X 7 1/2\" 2 DZ"
+            ],
+            [
+              "OL-214",
+              "14\" X 8\" 1 DZ"
+            ],
+            [
+              "OL-216",
+              "16\" X 9 1/2\" 1 DZ"
+            ],
+            [
+              "OL-218",
+              "18\" X 10 1/2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Square Bowl",
+          "type": "bowl",
+          "shape": "square",
+          "crop": [
+            1180,
+            680,
+            1525,
+            925
+          ],
+          "imageGroup": "square-bowl-2",
+          "rows": [
+            [
+              "OL-405",
+              "5\" X 3\" 20 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Bowl with Handle",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            125,
+            1220,
+            565,
+            1445
+          ],
+          "imageGroup": "bowl-with-handle-3",
+          "rows": [
+            [
+              "OL-509",
+              "9\" X 2 1/2\" 1 QT. 12 PC"
+            ],
+            [
+              "OL-512",
+              "12 1/2\" X 3\" 2 QT 6 PC"
+            ],
+            [
+              "OL-513",
+              "13 1/2\" X 3 1/4\" 3 QT 6 PC"
+            ]
+          ]
+        },
+        {
+          "name": "Display Stand with Rubber Feet",
+          "type": "stand",
+          "shape": "round",
+          "crop": [
+            680,
+            1195,
+            975,
+            1470
+          ],
+          "imageGroup": "display-stand-with-rubber-feet-4",
+          "rows": [
+            [
+              "OL-512-S",
+              "6 3/4\" X 3 3/4\" 4 PC"
+            ],
+            [
+              "OL-513-S",
+              "8 1/2\" X 2 3/4\" 4 PC"
+            ]
+          ],
+          "color": "yellow"
+        },
+        {
+          "name": "Square Bowl",
+          "type": "bowl",
+          "shape": "square",
+          "crop": [
+            1105,
+            1220,
+            1525,
+            1445
+          ],
+          "imageGroup": "square-bowl-5",
+          "rows": [
+            [
+              "OL-4106",
+              "6\" X 3\"H 26 OZ 2 DZ"
+            ],
+            [
+              "OL-4107",
+              "7 5/8\" X 3 1/2\"H 2 QT 50 OZ 2 DZ",
+              {
+                "capacityOz": null,
+                "reviewNeeded": true,
+                "sourceNote": "The printed quart and ounce capacities disagree. Confirm capacity with Yanco before ordering; both values are preserved in the source specification."
+              }
+            ],
+            [
+              "OL-4109",
+              "10\" X 4 1/4\"H 4 QT 110 OZ 1 DZ",
+              {
+                "capacityOz": null,
+                "reviewNeeded": true,
+                "sourceNote": "The printed quart and ounce capacities disagree. Confirm capacity with Yanco before ordering; both values are preserved in the source specification."
+              }
+            ]
+          ]
+        },
+        {
+          "name": "Deep Turkey Platter",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            130,
+            1635,
+            720,
+            1965
+          ],
+          "imageGroup": "deep-turkey-platter-6",
+          "rows": [
+            [
+              "OL-3022",
+              "22\" X 18\" X 1 1/4\" 6 PC"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            970,
+            1680,
+            1510,
+            1950
+          ],
+          "imageGroup": "rectangular-tray-7",
+          "rows": [
+            [
+              "OL-614",
+              "13 3/4\" X 10\" X 2 1/2\" 1 DZ"
+            ],
+            [
+              "OL-618",
+              "17 3/4\" X 11 3/4\" X 2 1/2\" 6 PC"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "yellow",
+          "green",
+          "red",
+          "brown"
+        ],
+        "material": "melamine"
+      }
+    }
+  ]
+}

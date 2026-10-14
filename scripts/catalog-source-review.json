@@ -1,0 +1,648 @@
+{
+ "pages": [
+  {
+   "collection": "aqua-spirits",
+   "page": 179,
+   "complete": true,
+   "type": "glass",
+   "shape": "round",
+   "color": "clear",
+   "rows": [
+    {
+     "sku": "AS-001",
+     "name": "Shot",
+     "specification": "H2 5/8\" X T1 3/8\" X B1 1/8\" X D1 3/8\" 0.95 OZ 4 DZ",
+     "crop": [
+      1045,
+      1260,
+      1175,
+      1465
+     ]
+    },
+    {
+     "sku": "AS-510",
+     "name": "Banquet Goblet",
+     "specification": "H5 1/4\" X T2 7/8\" X B2 3/4\" 10.5 OZ 2 DZ",
+     "crop": [
+      175,
+      1630,
+      395,
+      1985
+     ]
+    },
+    {
+     "sku": "AS-511",
+     "name": "Goblet",
+     "specification": "H6 1/8\" X T2 7/8\" X B2 3/4\" 11.5 OZ 2 DZ",
+     "crop": [
+      560,
+      1585,
+      790,
+      1985
+     ]
+    },
+    {
+     "sku": "AS-512",
+     "name": "Stemless Wine",
+     "specification": "H3 3/4\" X T2 3/4\" X B2 1/8\" 12 OZ 2 DZ",
+     "crop": [
+      885,
+      1700,
+      1140,
+      1980
+     ]
+    },
+    {
+     "sku": "AS-516",
+     "name": "Stemless Wine",
+     "specification": "H4 1/2\" X T2 1/2\" X B1 7/8\" 16 OZ 2 DZ",
+     "crop": [
+      1270,
+      1670,
+      1505,
+      1985
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "aqua-spirits",
+   "page": 180,
+   "complete": true,
+   "type": "glass",
+   "shape": "round",
+   "color": "clear",
+   "rows": [
+    {
+     "sku": "AS-311",
+     "name": "Champagne Coupe",
+     "specification": "H7 1/4\" X T4 1/4\" X B3 1/8\" 10.5 OZ 2 DZ",
+     "crop": [
+      165,
+      220,
+      455,
+      665
+     ]
+    },
+    {
+     "sku": "AS-411",
+     "name": "Margarita",
+     "specification": "H7 1/2\" X T4 1/2\" X B3 1/4\" 11.5 OZ 2 DZ",
+     "crop": [
+      540,
+      245,
+      785,
+      665
+     ]
+    },
+    {
+     "sku": "AS-415",
+     "name": "Margarita",
+     "specification": "H7 1/4\" X T4 3/4\" X B3 1/8\" 15.5 OZ 2 DZ",
+     "crop": [
+      860,
+      245,
+      1145,
+      670
+     ]
+    },
+    {
+     "sku": "AS-508",
+     "name": "Martini",
+     "specification": "H7 1/2\" X T4 1/2\" X B3 1/8\" 8.5 OZ 2 DZ",
+     "crop": [
+      1210,
+      220,
+      1515,
+      675
+     ]
+    },
+    {
+     "sku": "AS-505",
+     "name": "Brandy",
+     "specification": "H4 1/8\" X T2\" X B2 1/4\" 6 OZ 2 DZ",
+     "crop": [
+      195,
+      1010,
+      390,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-509",
+     "name": "Brandy",
+     "specification": "H4 1/2\" X T2 1/4\" X B2 1/2\" 9.25 OZ 2 DZ",
+     "crop": [
+      540,
+      1010,
+      765,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-108",
+     "name": "Wine",
+     "specification": "H5 5/8\" X T2 7/8\" X B2 3/4\" X D3 1/8\" 8.5 OZ 2 DZ",
+     "crop": [
+      925,
+      970,
+      1135,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-110",
+     "name": "Wine",
+     "specification": "H6 5/8\" X T2 5/8\" X B2 1/2\" X D2 5/8\" 10 OZ 2 DZ",
+     "crop": [
+      1280,
+      955,
+      1480,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-111",
+     "name": "Wine",
+     "specification": "H7 7/8\" X T2 1/2\" X B2 7/8\" X D3 1/8\" 11 OZ 2 DZ",
+     "crop": [
+      185,
+      1550,
+      405,
+      1990
+     ]
+    },
+    {
+     "sku": "AS-112",
+     "name": "Wine",
+     "specification": "H8 1/4\" X T2 3/8\" X B2 3/4\" X D3\" 12 OZ 2 DZ",
+     "crop": [
+      560,
+      1550,
+      765,
+      1990
+     ]
+    },
+    {
+     "sku": "AS-113",
+     "name": "Red Wine",
+     "specification": "H7 3/4\" X T2 7/8\" X B3\" X D3 5/8\" 13.5 OZ 2 DZ",
+     "crop": [
+      915,
+      1560,
+      1135,
+      1990
+     ]
+    },
+    {
+     "sku": "AS-114",
+     "name": "Banquet Goblet",
+     "specification": "H6 1/2\" X T2 3/4\" X B3\" X D3 3/8\" 14 OZ 2 DZ",
+     "crop": [
+      1290,
+      1595,
+      1490,
+      1990
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "aqua-spirits",
+   "page": 181,
+   "complete": true,
+   "type": "glass",
+   "shape": "round",
+   "color": "clear",
+   "rows": [
+    {
+     "sku": "AS-208",
+     "name": "White Wine",
+     "specification": "H6 3/8\" X T2 3/8\" X B2 3/4\" X D2 3/4\" 8.5 OZ 2 DZ",
+     "crop": [
+      170,
+      195,
+      395,
+      665
+     ]
+    },
+    {
+     "sku": "AS-211",
+     "name": "Goblet",
+     "specification": "H7 1/4\" X T2 7/8\" X B2 7/8\" X D3 3/8\" 11 OZ 2 DZ",
+     "crop": [
+      550,
+      195,
+      775,
+      665
+     ]
+    },
+    {
+     "sku": "AS-214",
+     "name": "Tall Goblet",
+     "specification": "H8 1/4\" X T2 3/4\" X B3\" X D3 3/8\" 14 OZ 2 DZ",
+     "crop": [
+      895,
+      195,
+      1120,
+      665
+     ]
+    },
+    {
+     "sku": "AS-305",
+     "name": "Martini",
+     "specification": "H6 3/8\" X T4 1/8\" X B3\" X D4 1/8\" 5.5 OZ 2 DZ",
+     "crop": [
+      1240,
+      195,
+      1505,
+      665
+     ]
+    },
+    {
+     "sku": "AS-308",
+     "name": "Wine",
+     "specification": "H7 1/4\" X T2 3/8\" X B2 3/4\" X D3\" 8 OZ 2 DZ",
+     "crop": [
+      180,
+      875,
+      415,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-314",
+     "name": "Poco Grande",
+     "specification": "H7\" X T3 1/8\" X B2 7/8\" X D3 1/8\" 14 OZ 2 DZ",
+     "crop": [
+      550,
+      875,
+      765,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-406",
+     "name": "Flute",
+     "specification": "H9\" X T2\" X B2 5/8\" X 2 5/8\" 6.25 OZ 2 DZ",
+     "crop": [
+      930,
+      855,
+      1110,
+      1315
+     ],
+     "diameter": 2.625
+    },
+    {
+     "sku": "AS-408",
+     "name": "Cocktail Coupe",
+     "specification": "H6\" X T3 3/4\" X B3\" X D4 1/8\" 8.5 OZ 2 DZ",
+     "crop": [
+      1250,
+      955,
+      1505,
+      1315
+     ]
+    },
+    {
+     "sku": "AS-412",
+     "name": "Beer",
+     "specification": "H7 1/8\" X T2 1/2\" X B2 3/4\" X D2 7/8\" 12 OZ 2 DZ",
+     "crop": [
+      185,
+      1535,
+      400,
+      1995
+     ]
+    },
+    {
+     "sku": "AS-413",
+     "name": "Tall Beer",
+     "specification": "H8 3/8\" X T3 1/8\" X B2 7/8\" X D3 1/8\" 13.5 OZ 2 DZ",
+     "crop": [
+      535,
+      1535,
+      780,
+      1995
+     ]
+    },
+    {
+     "sku": "AS-414",
+     "name": "Goblet",
+     "specification": "H9 1/8\" X T2 3/4\" X B3\" X 3\" 14 OZ 2 DZ",
+     "crop": [
+      915,
+      1530,
+      1130,
+      1995
+     ],
+     "diameter": 3
+    },
+    {
+     "sku": "AS-708",
+     "name": "Wine",
+     "specification": "H8\" X T2 1/8\" X B2 3/4\" X D3\" 8.5 OZ 2 DZ",
+     "crop": [
+      1240,
+      1585,
+      1520,
+      1995
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "aqua-mist",
+   "page": 182,
+   "complete": true,
+   "type": "glass",
+   "shape": "round",
+   "color": "clear",
+   "rows": [
+    {
+     "sku": "AM-101",
+     "name": "Shot",
+     "specification": "H2 1/8\" X T1 7/8\" X B1 1/2\" X D1 7/8\" 1.5 OZ 4 DZ",
+     "crop": [
+      555,
+      1070,
+      750,
+      1285
+     ]
+    },
+    {
+     "sku": "AM-105",
+     "name": "Double Shot",
+     "specification": "H3\" X T2 3/4\" X B1 5/8\" X D2 3/4\" 5 OZ 2 DZ",
+     "crop": [
+      840,
+      945,
+      1135,
+      1280
+     ]
+    },
+    {
+     "sku": "AM-209",
+     "name": "Double Rocks",
+     "specification": "H3 5/8\" X T3 3/8\" X B2 1/2\" X D3 3/8\" 9 OZ 2 DZ",
+     "crop": [
+      1220,
+      945,
+      1485,
+      1260
+     ],
+     "imageGroup": "double-rocks"
+    },
+    {
+     "sku": "AM-210",
+     "name": "Double Rocks",
+     "specification": "H3 7/8\" X T3 1/2\" X B2 3/4\" X D3 1/2\" 10 OZ 2 DZ",
+     "crop": [
+      1220,
+      945,
+      1485,
+      1260
+     ],
+     "imageGroup": "double-rocks"
+    },
+    {
+     "sku": "AM-212",
+     "name": "Double Rocks",
+     "specification": "H4\" X 3 5/8\" X B2 3/4\" X D3 5/8\" 12 OZ 2 DZ",
+     "crop": [
+      1220,
+      945,
+      1485,
+      1260
+     ],
+     "imageGroup": "double-rocks"
+    },
+    {
+     "sku": "AM-213",
+     "name": "Beverage",
+     "specification": "H5 1/2\" X T3\" X B2 1/2\" 13 OZ 2 DZ",
+     "crop": [
+      135,
+      1580,
+      375,
+      1980
+     ]
+    },
+    {
+     "sku": "AM-214",
+     "name": "Stackable Beverage",
+     "specification": "H4 3/4\" X T3 1/2\" X B2 7/8\" 15 OZ 2 DZ",
+     "crop": [
+      495,
+      1595,
+      770,
+      1980
+     ]
+    },
+    {
+     "sku": "AM-416",
+     "name": "Nonic",
+     "specification": "H6 1/8\" X T3\" X B2 1/4\" 16 OZ 2 DZ",
+     "crop": [
+      865,
+      1580,
+      1115,
+      1980
+     ]
+    },
+    {
+     "sku": "AM-420",
+     "name": "Nonic",
+     "specification": "H6 1/8\" X T3 1/2\" X B2 1/2\" 20 OZ 2 DZ",
+     "crop": [
+      1240,
+      1530,
+      1490,
+      1980
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "aqua-mist",
+   "page": 183,
+   "complete": true,
+   "type": "glass",
+   "shape": "round",
+   "color": "clear",
+   "rows": [
+    {
+     "sku": "AM-110",
+     "name": "Cooler",
+     "specification": "H4 7/8\" X T3 1/8\" X B2 1/2\" X D3 1/8\" 10.5 OZ 2 DZ",
+     "crop": [
+      195,
+      205,
+      430,
+      660
+     ],
+     "imageGroup": "cooler"
+    },
+    {
+     "sku": "AM-112",
+     "name": "Cooler",
+     "specification": "H5 7/8\" X T3 1/8\" X B2 1/4\" X D3 1/8\" 12 OZ 2 DZ",
+     "crop": [
+      195,
+      205,
+      430,
+      660
+     ],
+     "imageGroup": "cooler"
+    },
+    {
+     "sku": "AM-116",
+     "name": "Cooler",
+     "specification": "H6 3/8\" X T3 3/8\" X B2 1/2\" X D3 3/8\" 16 OZ 2 DZ",
+     "crop": [
+      195,
+      205,
+      430,
+      660
+     ],
+     "imageGroup": "cooler"
+    },
+    {
+     "sku": "AM-309",
+     "name": "Hi-Ball",
+     "specification": "H6 1/2\" X T2 3/8\" X B2 1/4\" X D2 3/8\" 9.5 OZ 2 DZ",
+     "crop": [
+      565,
+      180,
+      765,
+      660
+     ],
+     "imageGroup": "hi-ball"
+    },
+    {
+     "sku": "AM-310",
+     "name": "Hi-Ball",
+     "specification": "H6\" X T2 1/2\" X B2 1/4\" X D2 1/2\" 10.5 OZ 2 DZ",
+     "crop": [
+      565,
+      180,
+      765,
+      660
+     ],
+     "imageGroup": "hi-ball"
+    },
+    {
+     "sku": "AM-316",
+     "name": "Mixing",
+     "specification": "H5 7/8\" X T3 1/2\" X B2 3/8\" X D3 1/2\" 16 OZ 2 DZ",
+     "crop": [
+      935,
+      210,
+      1150,
+      660
+     ]
+    },
+    {
+     "sku": "AM-509",
+     "name": "Beer",
+     "specification": "H6 1/8\" X T3\" X B2 3/8\" X D3 1/8\" 9.25 OZ 2 DZ",
+     "crop": [
+      1280,
+      195,
+      1490,
+      660
+     ]
+    },
+    {
+     "sku": "AM-406",
+     "name": "Rocks",
+     "specification": "H3\" X T2 7/8\" X B2 3/8\" X D3\" ROCKS 6.5 OZ 2 DZ",
+     "crop": [
+      155,
+      980,
+      385,
+      1300
+     ]
+    },
+    {
+     "sku": "AM-408",
+     "name": "Rocks",
+     "specification": "H3 3/8\" X T3\" X B3\" X D3 1/8\" 8 OZ 2 DZ",
+     "crop": [
+      540,
+      980,
+      750,
+      1300
+     ]
+    },
+    {
+     "sku": "AM-409",
+     "name": "Rocks",
+     "specification": "H3 3/8\" X T2 3/4\" X B3 1/8\" X D3 1/8\" 9 OZ 2 DZ",
+     "crop": [
+      880,
+      980,
+      1110,
+      1300
+     ]
+    },
+    {
+     "sku": "AM-410",
+     "name": "Rocks",
+     "specification": "H3 3/8\" X T3 1/8\" X B2 3/4\" X 3 5/8\" 10.5 OZ 2 DZ",
+     "crop": [
+      1230,
+      965,
+      1510,
+      1300
+     ],
+     "diameter": 3.625
+    },
+    {
+     "sku": "AM-512",
+     "name": "Beer",
+     "specification": "H7 1/4\" X T3 1/8\" X B2 3/8\" X D3 1/8\" 12 OZ 2 DZ",
+     "crop": [
+      185,
+      1530,
+      405,
+      1980
+     ]
+    },
+    {
+     "sku": "AM-515",
+     "name": "Pilsner",
+     "specification": "H8\" X T2 3/4\" X B2 1/2\" X D2 7/8\" 15 OZ 2 DZ",
+     "crop": [
+      525,
+      1530,
+      780,
+      1980
+     ]
+    },
+    {
+     "sku": "AM-713",
+     "name": "Beverage",
+     "specification": "H7 1/2\" X T3 1/4\" X B3 1/8\" X D3 1/4\" 13 OZ 2 DZ",
+     "crop": [
+      900,
+      1540,
+      1115,
+      1980
+     ]
+    },
+    {
+     "sku": "AM-715",
+     "name": "Beer Mug",
+     "specification": "H5 3/4\" X T3\" X B3 3/8\" X D3 3/8\" 15 OZ 2 DZ",
+     "crop": [
+      1235,
+      1555,
+      1530,
+      1980
+     ]
+    }
+   ]
+  }
+ ]
+}

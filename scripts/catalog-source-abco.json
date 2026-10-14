@@ -1,0 +1,34 @@
+{"pages":[
+ {"collection":"abco","page":62,"complete":true,"color":"super white","groups":[
+  {"name":"Prime Mug A.D.","type":"cup","shape":"round","crop":[510,270,755,445],"imageGroup":"ad","rows":[["AC-3-P","2 3/8\" 2.5 OZ 3 DZ"]]},
+  {"name":"Saucer for AC-3-P","type":"saucer","shape":"round","crop":[870,185,1145,465],"imageGroup":"ad-saucer","rows":[["AC-4-P","4\" 3 DZ"]]},
+  {"name":"Stackable Cup","type":"cup","shape":"round","crop":[1250,270,1500,455],"imageGroup":"stackable","rows":[["AC-23","3 1/4\" 7 OZ 3 DZ"]]},
+  {"name":"Sierra Mug","type":"cup","shape":"round","crop":[170,680,430,945],"imageGroup":"sierra","rows":[["AC-8-S","3 3/8\" 8 OZ 3 DZ"]]},
+  {"name":"Hartford Mug White","type":"cup","shape":"round","crop":[540,685,805,945],"imageGroup":"hartford","rows":[["AC-75-H","3 1/4\" 8 OZ 3 DZ"]]},
+  {"name":"Dinner Mug","type":"cup","shape":"round","crop":[895,685,1125,945],"imageGroup":"dinner","rows":[["AC-12-D","3\" X 4 1/2\" 12 OZ 3 DZ"]]},
+  {"name":"Prime Mug","type":"cup","shape":"round","crop":[1225,685,1500,945],"imageGroup":"prime","rows":[["AC-10-P","3 1/2\" 10 OZ 3 DZ"]]},
+  {"name":"Prime Mug Stackable","type":"cup","shape":"round","crop":[155,1200,425,1450],"imageGroup":"prime-stackable","rows":[["AC-12-P","3 1/2\" 12 OZ 3 DZ"],["AC-16-P","4\" 16 OZ 3 DZ"]]},
+  {"name":"Bouillon Cup","type":"cup","shape":"round","crop":[525,1220,775,1430],"imageGroup":"bouillon","rows":[["AC-4","3 3/4\" 7 OZ 3 DZ"]]},
+  {"name":"Chinese Tea Cup","type":"cup","shape":"round","crop":[915,1220,1115,1420],"imageGroup":"tea","rows":[["AC-45","3\" 4.5 OZ 3 DZ"]]},
+  {"name":"Jung Bowl","type":"bowl","shape":"round","crop":[1210,1220,1480,1430],"imageGroup":"jung","rows":[["AC-95-J","4 1/4\" 9.5 OZ 3 DZ"]]},
+  {"name":"Fruit Bowl","type":"bowl","shape":"round","crop":[140,1760,410,1900],"imageGroup":"fruit","rows":[["AC-32","4 1/4\" 3.5 OZ 3 DZ"],["AC-11","4 3/4\" 5 OZ 3 DZ"]]},
+  {"name":"Grapefruit Bowl","type":"bowl","shape":"round","crop":[470,1740,785,1915],"imageGroup":"grapefruit","rows":[["AC-10","6 1/2\" 13 OZ 3 DZ"]]},
+  {"name":"Small Dish","type":"sauce dish","shape":"round","crop":[860,1740,1125,1930],"imageGroup":"small-dish","rows":[["AC-002","2 3/4\" 1.5 OZ 6 DZ"],["AC-003","3 1/2\" 2.5 OZ 6 DZ"],["AC-004","4\" 4 OZ 6 DZ"]]},
+  {"name":"Soup Spoon","type":"spoon","shape":"other","crop":[1210,1730,1515,1925],"imageGroup":"spoon","rows":[["AC-005","5 1/2\" 6 DZ"]]}
+ ]},
+ {"collection":"abco","page":63,"complete":true,"color":"super white","groups":[
+  {"name":"Jelly Dish","type":"sauce dish","shape":"round","crop":[160,300,430,460],"imageGroup":"jelly","rows":[["AC-006","3\" 2 OZ 6 DZ"]]},
+  {"name":"Rice Bowl","type":"bowl","shape":"round","crop":[490,235,780,460],"imageGroup":"rice","rows":[["AC-007","4 1/2\" 8.5 OZ 4 DZ"]]},
+  {"name":"Nappie Bowl","type":"bowl","shape":"round","crop":[845,255,1150,455],"imageGroup":"nappie","rows":[["AC-24","5\" 10 OZ 3 DZ"],["AC-15","5\" 12 OZ 3 DZ"],["AC-18","5 3/4\" 15 OZ 3 DZ"]]},
+  {"name":"Menudo Bowl","type":"bowl","shape":"round","crop":[1180,245,1525,455],"imageGroup":"menudo","rows":[["AC-6-M","6\" 18 OZ 3 DZ"],["AC-7-M","7 1/2\" 32 OZ 2 DZ"],["AC-8-M","8 1/2\" 48 OZ 2 DZ"],["AC-9-M","9 1/2\" 60 OZ 1 DZ"]]},
+  {"name":"Oval Deep Platter","type":"platter","shape":"oval","crop":[95,730,585,935],"imageGroup":"oval-deep","rows":[["AC-215","15 1/2\" X 11\" X 2\" 1 DZ"],["AC-219","19\" X 13 3/4\" X 2 1/4\" 4 PC"]]},
+  {"name":"Mediterranean Bowl","type":"bowl","shape":"round","crop":[680,735,1060,935],"imageGroup":"mediterranean","rows":[["AC-309","9 1/4\" X 1 3/4\" 10 OZ 2 DZ"]]},
+  {"name":"Mediterranean Pasta Bowl","type":"bowl","shape":"round","crop":[1130,690,1530,965],"imageGroup":"mediterranean-pasta","rows":[["AC-310","10 1/2\" X 2\" 18 OZ 1 DZ"],["AC-312","12\" X 2 1/2\" 22 OZ 1 DZ"]]},
+  {"name":"Salad Plate","type":"plate","shape":"round","crop":[120,1180,535,1480],"imageGroup":"salad-plate","rows":[["AC-410","10 1/2\" X 1 7/8\" 1 DZ"],["AC-411","11 1/2\" X 2\" 1 DZ"],["AC-413","13\" X 2\" 1 DZ"]]},
+  {"name":"Salad Bowl","type":"bowl","shape":"round","crop":[650,1230,1075,1445],"imageGroup":"salad-bowl","rows":[["AC-411-S","11\" X 2\" 32 OZ 1 DZ"]]},
+  {"name":"Triangle Pasta Bowl","type":"bowl","shape":"triangular","crop":[1155,1180,1555,1455],"imageGroup":"triangle","rows":[["AC-510","10 1/2\" 22 OZ 1 DZ"]]},
+  {"name":"Square Pasta Bowl","type":"bowl","shape":"square","crop":[110,1670,490,1950],"imageGroup":"square","rows":[["AC-511","11 1/2\" 26 OZ 1 DZ"]]},
+  {"name":"Dessert Plate","type":"plate","shape":"round","crop":[575,1740,1035,1935],"imageGroup":"dessert","rows":[["AC-609","9 1/4\" X 2\" 10 OZ 1 DZ"],["AC-611","11 1/2\" X 2 1/4\" 14 OZ 1 DZ"],["AC-613","13 1/2\" X 2 1/2\" 22 OZ 6 PC"]]},
+  {"name":"Deep Mediterranean Bowl","type":"bowl","shape":"round","crop":[1090,1690,1565,1955],"imageGroup":"deep-mediterranean","rows":[["AC-711","10 3/4\" X 3\" 32 OZ 1 DZ"],["AC-714","14 1/2\" X 4 1/2\" 96 OZ 6 PC"]]}
+ ]}
+]}

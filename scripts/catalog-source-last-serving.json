@@ -1,0 +1,955 @@
+{
+  "pages": [
+    {
+      "collection": "stemware",
+      "page": 186,
+      "complete": true,
+      "color": "clear",
+      "groups": [
+        {
+          "name": "Short Glass",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            220,
+            1770,
+            375,
+            1960
+          ],
+          "imageGroup": "short-glass-0",
+          "rows": [
+            [
+              "SM-01-S",
+              "2\" X 2 3/4\" 1 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Champagne",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            550,
+            1520,
+            710,
+            1960
+          ],
+          "imageGroup": "champagne-1",
+          "rows": [
+            [
+              "SM-06-C",
+              "2 3/4\" X 7 1/2\" 6 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Wine",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            895,
+            1515,
+            1090,
+            1960
+          ],
+          "imageGroup": "wine-2",
+          "rows": [
+            [
+              "SM-08-WI",
+              "2 3/4\" X 7\" 8 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Wine",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            1235,
+            1580,
+            1455,
+            1960
+          ],
+          "imageGroup": "wine-3",
+          "rows": [
+            [
+              "SM-08-W",
+              "3\" X 5 1/2\" 8 OZ 2 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "clear"
+        ],
+        "material": "SAN plastic"
+      }
+    },
+    {
+      "collection": "stemware",
+      "page": 187,
+      "complete": true,
+      "color": "clear",
+      "groups": [
+        {
+          "name": "Martini",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            160,
+            250,
+            410,
+            655
+          ],
+          "imageGroup": "martini-0",
+          "rows": [
+            [
+              "SM-06-MT",
+              "4 1/4\" X 5 3/4\" 6 OZ 2 DZ"
+            ],
+            [
+              "SM-10-MT",
+              "14 3/4\" X 7 1/2\" 10 OZ 2 DZ",
+              {
+                "dimensions": {
+                  "length": null,
+                  "width": null,
+                  "height": 7.5
+                },
+                "reviewNeeded": true,
+                "sourceNote": "The catalog prints a 14 3/4-inch diameter for this 10-ounce martini glass. Confirm diameter with Yanco; it is left unknown rather than silently corrected."
+              }
+            ]
+          ]
+        },
+        {
+          "name": "Beverage",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            545,
+            285,
+            745,
+            650
+          ],
+          "imageGroup": "beverage-1",
+          "rows": [
+            [
+              "SM-12",
+              "3\" X 5 3/8\" 12 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Beer Mug",
+          "type": "cup",
+          "shape": "round",
+          "crop": [
+            880,
+            300,
+            1150,
+            650
+          ],
+          "imageGroup": "beer-mug-2",
+          "rows": [
+            [
+              "SM-10-B",
+              "2 3/4\" X 5\" 10 OZ 2 DZ"
+            ],
+            [
+              "SM-12-B",
+              "3\" X 5 1/2\" 12 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Pilsner",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            1300,
+            270,
+            1460,
+            650
+          ],
+          "imageGroup": "pilsner-3",
+          "rows": [
+            [
+              "SM-12-P",
+              "2 3/4\" X 6 1/2\" 12 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Goblet",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            185,
+            920,
+            370,
+            1320
+          ],
+          "imageGroup": "goblet-4",
+          "rows": [
+            [
+              "SM-08-G",
+              "3\" X 5 1/2\" 8 OZ 2 DZ"
+            ],
+            [
+              "SM-12-G",
+              "3\" X 7\" 12 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Beverage",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            545,
+            925,
+            745,
+            1320
+          ],
+          "imageGroup": "beverage-5",
+          "rows": [
+            [
+              "SM-14",
+              "3\" X 7 1/2\" 14 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Collins",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            915,
+            900,
+            1070,
+            1320
+          ],
+          "imageGroup": "collins-6",
+          "rows": [
+            [
+              "SM-14-C",
+              "2 1/2\" X 7\" 14 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Highball",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            1275,
+            915,
+            1455,
+            1320
+          ],
+          "imageGroup": "highball-7",
+          "rows": [
+            [
+              "SM-16-H",
+              "2 3/4\" X 6 1/4\" 16 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Hurricane Glass",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            175,
+            1570,
+            345,
+            1955
+          ],
+          "imageGroup": "hurricane-glass-8",
+          "rows": [
+            [
+              "SM-16-R",
+              "3 1/3\" X 8\" 16 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Mixing Cup",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            520,
+            1590,
+            730,
+            1955
+          ],
+          "imageGroup": "mixing-cup-9",
+          "rows": [
+            [
+              "SM-16-MX",
+              "3 1/2\" X 5 3/4\" 16 OZ 2 DZ"
+            ],
+            [
+              "SM-20-MX",
+              "3 1/2\" X 6 1/4\" 20 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Margarita",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            855,
+            1580,
+            1125,
+            1960
+          ],
+          "imageGroup": "margarita-10",
+          "rows": [
+            [
+              "SM-16-MG",
+              "4 3/4\" X 6 1/2\" 16 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Margarita",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            1220,
+            1550,
+            1500,
+            1960
+          ],
+          "imageGroup": "margarita-11",
+          "rows": [
+            [
+              "SM-10-MG",
+              "5\" X 6 1/2\" 10 OZ 2 DZ"
+            ],
+            [
+              "SM-36-MG",
+              "6 1/4\" X 8 1/2\" 36 OZ 1 DZ"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "collection": "hawaii",
+      "page": 188,
+      "complete": true,
+      "color": "clear",
+      "groups": [
+        {
+          "name": "Rocks",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            855,
+            1090,
+            1065,
+            1345
+          ],
+          "imageGroup": "rocks-0",
+          "rows": [
+            [
+              "HA-209",
+              "3 1/4\" X 3 3/4\" 9 OZ 2 DZ"
+            ],
+            [
+              "HA-212",
+              "3 1/2\" X 4\" 12 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Beverage",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            1230,
+            1030,
+            1405,
+            1345
+          ],
+          "imageGroup": "beverage-1",
+          "rows": [
+            [
+              "HA-312",
+              "3\" X 4 3/4\" 12 OZ 2 DZ"
+            ],
+            [
+              "HA-314",
+              "3\" X 5 1/2\" 14 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rocks",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            195,
+            1715,
+            395,
+            1955
+          ],
+          "imageGroup": "rocks-2",
+          "rows": [
+            [
+              "HA-005",
+              "2 3/4\" X 3\" 5.5 OZ 6 DZ"
+            ],
+            [
+              "HA-007",
+              "3\" X 3 1/4\" 7 OZ 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Double Rocks",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            520,
+            1690,
+            735,
+            1955
+          ],
+          "imageGroup": "double-rocks-3",
+          "rows": [
+            [
+              "HA-009",
+              "3 1/4\" X 3 1/2\" 9 OZ 6 DZ"
+            ],
+            [
+              "HA-012",
+              "3 1/2\" X 4\" 12 OZ 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Double Rocks",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            870,
+            1640,
+            1075,
+            1955
+          ],
+          "imageGroup": "double-rocks-4",
+          "rows": [
+            [
+              "HA-010",
+              "3\" X 4 3/4\" 10 OZ 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Beverage",
+          "type": "glass",
+          "shape": "round",
+          "crop": [
+            1215,
+            1605,
+            1435,
+            1955
+          ],
+          "imageGroup": "beverage-5",
+          "rows": [
+            [
+              "HA-014",
+              "3 1/4\" X 5\" 14 OZ 6 DZ"
+            ],
+            [
+              "HA-016",
+              "3 1/4\" X 6\" 16 OZ 6 DZ"
+            ],
+            [
+              "HA-020",
+              "3 3/4\" X 6 3/4\" 20 OZ 6 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "clear"
+        ],
+        "material": "SAN plastic"
+      }
+    },
+    {
+      "collection": "trays",
+      "page": 190,
+      "complete": true,
+      "color": "brown",
+      "groups": [
+        {
+          "name": "Round Fiberglass Tray Brown",
+          "type": "tray",
+          "shape": "round",
+          "crop": [
+            720,
+            1080,
+            1190,
+            1535
+          ],
+          "imageGroup": "round-fiberglass-tray-brown-0",
+          "rows": [
+            [
+              "FT-1100",
+              "11\" 2 DZ"
+            ],
+            [
+              "FT-1400",
+              "14\" 2 DZ"
+            ],
+            [
+              "FT-1600",
+              "16\" 1 DZ"
+            ]
+          ],
+          "material": "fiberglass"
+        },
+        {
+          "name": "Serving Fiberglass Tray Brown",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            980,
+            1590,
+            1500,
+            1955
+          ],
+          "imageGroup": "serving-fiberglass-tray-brown-1",
+          "rows": [
+            [
+              "FT-1014",
+              "14\" X 10\" 2 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ],
+            [
+              "FT-1216",
+              "16\" X 12\" 2 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ],
+            [
+              "FT-1418",
+              "18\" X 14\" 1 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ]
+          ],
+          "material": "fiberglass"
+        },
+        {
+          "name": "Serving Tray with Color Handle",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            160,
+            1610,
+            650,
+            1935
+          ],
+          "imageGroup": "serving-tray-with-color-handle-2",
+          "rows": [
+            [
+              "FT-08",
+              "15\" X 10\" 2 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ],
+            [
+              "FT-18",
+              "17\" X 12\" 1 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ],
+            [
+              "FT-28",
+              "19\" X 14\" 1 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ],
+            [
+              "FT-48",
+              "21\" X 16\" 1 DZ",
+              {
+                "reviewNeeded": true,
+                "sourceNote": "The two lower photographs and captions on page 190 appear interchanged. The crop matches the printed design description; confirm the photograph and material with Yanco before ordering."
+              }
+            ]
+          ],
+          "color": "black red",
+          "material": "plastic"
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "brown",
+          "black",
+          "red",
+          "orange"
+        ],
+        "material": "plastic / fiberglass"
+      }
+    },
+    {
+      "collection": "trays",
+      "page": 191,
+      "complete": true,
+      "color": "black",
+      "groups": [
+        {
+          "name": "Fast Food Tray with Handle Black",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            210,
+            190,
+            705,
+            530
+          ],
+          "imageGroup": "fast-food-tray-with-handle-black-0",
+          "rows": [
+            [
+              "FT-803BL",
+              "17\" X 12\" 2 DZ"
+            ]
+          ],
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray Black",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1000,
+            190,
+            1440,
+            530
+          ],
+          "imageGroup": "fast-food-tray-black-1",
+          "rows": [
+            [
+              "FT-14BL",
+              "14\" X 10\" 2 DZ"
+            ]
+          ],
+          "color": "black",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray with Handle Brown",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            210,
+            695,
+            705,
+            1035
+          ],
+          "imageGroup": "fast-food-tray-with-handle-brown-2",
+          "rows": [
+            [
+              "FT-803BR",
+              "17\" X 12\" 2 DZ"
+            ]
+          ],
+          "color": "brown",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray Brown",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1000,
+            695,
+            1440,
+            1035
+          ],
+          "imageGroup": "fast-food-tray-brown-3",
+          "rows": [
+            [
+              "FT-14BR",
+              "14\" X 10\" 2 DZ"
+            ]
+          ],
+          "color": "brown",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray with Handle Orange",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            210,
+            1170,
+            705,
+            1510
+          ],
+          "imageGroup": "fast-food-tray-with-handle-orange-4",
+          "rows": [
+            [
+              "FT-803OR",
+              "17\" X 12\" 2 DZ"
+            ]
+          ],
+          "color": "orange",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray Orange",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1000,
+            1170,
+            1440,
+            1510
+          ],
+          "imageGroup": "fast-food-tray-orange-5",
+          "rows": [
+            [
+              "FT-14OR",
+              "14\" X 10\" 2 DZ"
+            ]
+          ],
+          "color": "orange",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray with Handle Red",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            210,
+            1665,
+            705,
+            2005
+          ],
+          "imageGroup": "fast-food-tray-with-handle-red-6",
+          "rows": [
+            [
+              "FT-803RD",
+              "17\" X 12\" 2 DZ"
+            ]
+          ],
+          "color": "red",
+          "material": "plastic"
+        },
+        {
+          "name": "Fast Food Tray Red",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1000,
+            1665,
+            1440,
+            2005
+          ],
+          "imageGroup": "fast-food-tray-red-7",
+          "rows": [
+            [
+              "FT-14RD",
+              "14\" X 10\" 2 DZ"
+            ]
+          ],
+          "color": "red",
+          "material": "plastic"
+        }
+      ]
+    },
+    {
+      "collection": "wood-and-bamboo",
+      "page": 193,
+      "complete": true,
+      "color": "tan brown",
+      "groups": [
+        {
+          "name": "Bamboo Rectangular Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            135,
+            1070,
+            550,
+            1425
+          ],
+          "imageGroup": "bamboo-rectangular-tray-0",
+          "rows": [
+            [
+              "BB-108",
+              "8 1/4\" X 5 1/2\" X 3/4\" 24 PC"
+            ],
+            [
+              "BB-111",
+              "11\" X 7 1/2\" X 3/4\" 24 PC"
+            ],
+            [
+              "BB-112",
+              "12\" X 9 1/2\" X 7/8\" 12 PC"
+            ],
+            [
+              "BB-114",
+              "14\" X 10\" X 7/8\" 12 PC"
+            ],
+            [
+              "BB-116",
+              "16\" X 12\" X 7/8\" 12 PC"
+            ]
+          ],
+          "color": "tan",
+          "material": "bamboo"
+        },
+        {
+          "name": "Wooden Sushi Boat",
+          "type": "tray",
+          "shape": "oval",
+          "crop": [
+            640,
+            1150,
+            1100,
+            1370
+          ],
+          "imageGroup": "wooden-sushi-boat-1",
+          "rows": [
+            [
+              "WS-113",
+              "13 1/4\" X 5 3/4\" X 2 1/4\" 12 PC"
+            ]
+          ],
+          "color": "tan",
+          "material": "wood"
+        },
+        {
+          "name": "Small Bamboo Salad Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            1200,
+            1150,
+            1495,
+            1405
+          ],
+          "imageGroup": "small-bamboo-salad-bowl-2",
+          "rows": [
+            [
+              "BB-205",
+              "5 3/4\" X 2 1/2\" 15 OZ 12 PC"
+            ],
+            [
+              "BB-206",
+              "6 1/2\" X 3\" 30 OZ 24 PC"
+            ]
+          ],
+          "color": "tan brown",
+          "material": "bamboo"
+        },
+        {
+          "name": "Bamboo Salad Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            125,
+            1660,
+            495,
+            1955
+          ],
+          "imageGroup": "bamboo-salad-bowl-3",
+          "rows": [
+            [
+              "BB-307",
+              "7 1/2\" X 3 1/2\" 45 OZ 12 PC"
+            ],
+            [
+              "BB-310",
+              "9 3/4\" X 4\" 3 QT 6 PC"
+            ],
+            [
+              "BB-312",
+              "12\" X 4 1/4\" 4.5 QT 6 PC"
+            ]
+          ],
+          "color": "tan brown",
+          "material": "bamboo"
+        },
+        {
+          "name": "Bamboo Paddle Board",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            575,
+            1660,
+            1050,
+            1935
+          ],
+          "imageGroup": "bamboo-paddle-board-4",
+          "rows": [
+            [
+              "BB-315",
+              "15\" X 8 1/4\" X 3/4\" 12 PC"
+            ]
+          ],
+          "color": "tan",
+          "material": "bamboo"
+        },
+        {
+          "name": "Oval Acacia Tray",
+          "type": "tray",
+          "shape": "oval",
+          "crop": [
+            1130,
+            1690,
+            1520,
+            1930
+          ],
+          "imageGroup": "oval-acacia-tray-5",
+          "rows": [
+            [
+              "WS-408",
+              "8 1/4\" X 5 3/4\" X 3/4\" 24 PC"
+            ],
+            [
+              "WS-412",
+              "12\" X 7\" X 1\" 12 PC"
+            ]
+          ],
+          "color": "brown",
+          "material": "acacia wood"
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "tan",
+          "brown"
+        ],
+        "material": "wood / bamboo"
+      }
+    }
+  ]
+}

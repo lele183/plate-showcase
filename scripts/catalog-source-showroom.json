@@ -1,0 +1,890 @@
+{
+ "pages": [
+  {
+   "collection": "legna",
+   "page": 4,
+   "complete": true,
+   "color": "ivory, brown",
+   "groups": [
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      205,
+      1620,
+      440,
+      1850
+     ],
+     "imageGroup": "mug",
+     "rows": [
+      [
+       "LE-012",
+       "3 5/8\" X 4\" 12 OZ 3 DZ"
+      ]
+     ],
+     "color": "white, brown"
+    },
+    {
+     "name": "Bread/Dinner Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      580,
+      1500,
+      990,
+      1910
+     ],
+     "imageGroup": "dinner",
+     "rows": [
+      [
+       "LE-106",
+       "6 1/8\" X 1/2\" 3 DZ"
+      ],
+      [
+       "LE-107",
+       "7 1/8\" X 3/4\" 3 DZ"
+      ],
+      [
+       "LE-109",
+       "9 1/4\" X 7/8\" 2 DZ"
+      ],
+      [
+       "LE-110",
+       "10 1/4\" X 1\" 1 DZ"
+      ],
+      [
+       "LE-111",
+       "11 1/4\" X 7/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1105,
+      1500,
+      1505,
+      1900
+     ],
+     "imageGroup": "coupe",
+     "rows": [
+      [
+       "LE-706",
+       "6 1/4\" X 3/4\" 3 DZ"
+      ],
+      [
+       "LE-707",
+       "7 1/4\" X 3/4\" 3 DZ"
+      ],
+      [
+       "LE-710",
+       "10 1/4\" X 1\" 1 DZ"
+      ],
+      [
+       "LE-711",
+       "11 1/4\" X 1 1/8\" 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "brown"
+    ]
+   }
+  },
+  {
+   "collection": "legna",
+   "page": 5,
+   "complete": true,
+   "color": "ivory, brown",
+   "groups": [
+    {
+     "name": "Coupe Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      120,
+      255,
+      575,
+      500
+     ],
+     "imageGroup": "oval-small",
+     "rows": [
+      [
+       "LE-213",
+       "12 7/8\" X 7\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      670,
+      235,
+      1135,
+      505
+     ],
+     "imageGroup": "oval-large",
+     "rows": [
+      [
+       "LE-214",
+       "13 5/8\" X 7 7/8\" X 7/8\" 1 DZ"
+      ],
+      [
+       "LE-215",
+       "15 1/2\" X 9\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Bowl",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      1200,
+      305,
+      1525,
+      460
+     ],
+     "imageGroup": "rectangular-bowl",
+     "rows": [
+      [
+       "LE-405",
+       "5\" X 3 1/2\" X 1\" 4 OZ 3 DZ"
+      ],
+      [
+       "LE-406",
+       "6\" X 4 3/8\" X 1 1/4\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      155,
+      825,
+      350,
+      990
+     ],
+     "imageGroup": "sauce",
+     "rows": [
+      [
+       "LE-303",
+       "3 1/8\" X 1 1/2\" 3 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      410,
+      830,
+      715,
+      1010
+     ],
+     "imageGroup": "salad",
+     "rows": [
+      [
+       "LE-306",
+       "6 3/8\" X 2 1/8\" 18 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      755,
+      815,
+      1115,
+      1010
+     ],
+     "imageGroup": "bowl",
+     "rows": [
+      [
+       "LE-308",
+       "8 3/8\" X 2\" 30 OZ 2 DZ"
+      ],
+      [
+       "LE-309",
+       "9 1/4\" X 2 1/4\" 45 OZ 1 DZ"
+      ],
+      [
+       "LE-310",
+       "10 1/4\" X 2 1/2\" 60 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1155,
+      820,
+      1565,
+      965
+     ],
+     "imageGroup": "deep-oval",
+     "rows": [
+      [
+       "LE-311",
+       "11 3/4\" X 7\" X 1 7/8\" 1 DZ"
+      ],
+      [
+       "LE-313",
+       "13 3/4\" X 8 1/4\" X 2 1/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      1290,
+      490,
+      1465
+     ],
+     "imageGroup": "soup",
+     "rows": [
+      [
+       "LE-408",
+       "8 5/8\" X 2\" 10 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup/Pasta Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      610,
+      1280,
+      1000,
+      1470
+     ],
+     "imageGroup": "soup-pasta",
+     "rows": [
+      [
+       "LE-410",
+       "10 1/4\" X 2 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1135,
+      1265,
+      1550,
+      1470
+     ],
+     "imageGroup": "pasta",
+     "rows": [
+      [
+       "LE-411",
+       "11 1/8\" X 2 1/2\" 25 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fish Deep Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      135,
+      1765,
+      495,
+      1890
+     ],
+     "imageGroup": "fish",
+     "rows": [
+      [
+       "LE-409",
+       "9 1/8\" X 4 7/8\" X 1 1/4\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      550,
+      1760,
+      780,
+      1935
+     ],
+     "imageGroup": "rice",
+     "rows": [
+      [
+       "LE-504",
+       "4 1/2\" X 2 1/2\" 10 OZ 3 DZ"
+      ]
+     ],
+     "color": "white, brown"
+    },
+    {
+     "name": "Cereal Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      850,
+      1735,
+      1135,
+      1940
+     ],
+     "imageGroup": "cereal",
+     "rows": [
+      [
+       "LE-506",
+       "6 1/4\" X 2 1/2\" 22 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Shallow Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1195,
+      1730,
+      1540,
+      1945
+     ],
+     "imageGroup": "shallow",
+     "rows": [
+      [
+       "LE-507",
+       "7 1/4\" X 2\" 25 OZ 2 DZ"
+      ],
+      [
+       "LE-508",
+       "8 1/2\" X 2 1/8\" 35 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "brown"
+    ]
+   }
+  },
+  {
+   "collection": "abco",
+   "page": 60,
+   "complete": true,
+   "color": "super white",
+   "groups": [
+    {
+     "name": "Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      85,
+      1195,
+      520,
+      1630
+     ],
+     "imageGroup": "plate",
+     "rows": [
+      [
+       "AC-5",
+       "5 1/2\" 3 DZ"
+      ],
+      [
+       "AC-6",
+       "6 1/4\" 3 DZ"
+      ],
+      [
+       "AC-7",
+       "7 1/2\" 3 DZ"
+      ],
+      [
+       "AC-22",
+       "8 1/4\" 3 DZ"
+      ],
+      [
+       "AC-8",
+       "9\" 2 DZ"
+      ],
+      [
+       "AC-9",
+       "9 1/2\" 2 DZ"
+      ],
+      [
+       "AC-16",
+       "10 1/2\" 1 DZ"
+      ],
+      [
+       "AC-20",
+       "11 1/4\" 1 DZ"
+      ],
+      [
+       "AC-21",
+       "12\" 1 DZ"
+      ],
+      [
+       "AC-25",
+       "14\" 6 PC"
+      ],
+      [
+       "AC-26",
+       "16\" 4 PC"
+      ],
+      [
+       "AC-27",
+       "18\" 2 PC"
+      ],
+      [
+       "AC-28",
+       "20\" 2 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      830,
+      1210,
+      1240,
+      1620
+     ],
+     "imageGroup": "coupe-plate",
+     "rows": [
+      [
+       "AC-7-C",
+       "7\" 3 DZ"
+      ],
+      [
+       "AC-8-C",
+       "8\" 3 DZ"
+      ],
+      [
+       "AC-9-C",
+       "9\" 2 DZ"
+      ],
+      [
+       "AC-10-C",
+       "10\" 1 DZ"
+      ],
+      [
+       "AC-12-C",
+       "12\" 1 DZ"
+      ],
+      [
+       "AC-14-C",
+       "14\" 4 PC"
+      ],
+      [
+       "AC-16-C",
+       "16\" 3 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      100,
+      1725,
+      535,
+      1955
+     ],
+     "imageGroup": "coupe-platter",
+     "rows": [
+      [
+       "AC-8-CP",
+       "8\" X 5 3/4\" 2 DZ"
+      ],
+      [
+       "AC-10-CP",
+       "10\" X 7\" 2 DZ"
+      ],
+      [
+       "AC-12-CP",
+       "12\" X 8\" 1 DZ"
+      ],
+      [
+       "AC-14-CP",
+       "14\" X 9 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      580,
+      1725,
+      1025,
+      1950
+     ],
+     "imageGroup": "oval-plate",
+     "rows": [
+      [
+       "AC-34",
+       "9 1/2\" X 6 1/2\" 2 DZ"
+      ],
+      [
+       "AC-12",
+       "10 5/8\" X 7\" 2 DZ"
+      ],
+      [
+       "AC-13",
+       "11 3/4\" X 8\" 1 DZ"
+      ],
+      [
+       "AC-14",
+       "13\" X 8 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      1065,
+      1720,
+      1545,
+      1955
+     ],
+     "imageGroup": "platter",
+     "rows": [
+      [
+       "AC-41",
+       "13 3/4\" X 10\" 1 DZ"
+      ],
+      [
+       "AC-51",
+       "15\" X 10 1/2\" 1 DZ"
+      ],
+      [
+       "AC-61",
+       "16\" X 11 1/4\" 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "abco",
+   "page": 61,
+   "complete": true,
+   "color": "super white",
+   "groups": [
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      120,
+      180,
+      585,
+      495
+     ],
+     "imageGroup": "platter-large",
+     "rows": [
+      [
+       "AC-81",
+       "18\" X 13\" 6 PC"
+      ],
+      [
+       "AC-91",
+       "20\" X 13\" 4 PC"
+      ],
+      [
+       "AC-92",
+       "22\" X 15\" 4 PC"
+      ],
+      [
+       "AC-95",
+       "25\" X 17\" 2 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Coupe Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      640,
+      225,
+      1040,
+      505
+     ],
+     "imageGroup": "deep-coupe",
+     "rows": [
+      [
+       "AC-810",
+       "10\" X 7\" X 1 1/8\" 11 OZ 2 DZ"
+      ],
+      [
+       "AC-812",
+       "12\" X 8 1/4\" X 1 3/8\" 20 OZ 1 DZ"
+      ],
+      [
+       "AC-814",
+       "14\" X 10\" X 1 1/2\" 48 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fishia Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      1085,
+      270,
+      1555,
+      430
+     ],
+     "imageGroup": "fishia",
+     "rows": [
+      [
+       "AC-96",
+       "16\" X 7 3/4\" X 1 1/4\" 12 PC"
+      ],
+      [
+       "AC-98",
+       "18\" X 8 1/4\" X 1 1/4\" 6 PC"
+      ],
+      [
+       "AC-99",
+       "23\" X 10 1/4\" X 2\" 4 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      120,
+      775,
+      495,
+      1020
+     ],
+     "imageGroup": "pasta-small",
+     "rows": [
+      [
+       "AC-105",
+       "10 1/2\" 18 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      645,
+      775,
+      1025,
+      1035
+     ],
+     "imageGroup": "pasta-medium",
+     "rows": [
+      [
+       "AC-115",
+       "11 1/2\" 25 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1110,
+      775,
+      1510,
+      1025
+     ],
+     "imageGroup": "pasta-large",
+     "rows": [
+      [
+       "AC-120",
+       "12\" 30 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      110,
+      1290,
+      475,
+      1520
+     ],
+     "imageGroup": "soup",
+     "rows": [
+      [
+       "AC-3",
+       "9\" 10 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      510,
+      1290,
+      905,
+      1510
+     ],
+     "imageGroup": "salad",
+     "rows": [
+      [
+       "AC-9-S",
+       "9\" 25 OZ 2 DZ"
+      ],
+      [
+       "AC-11-S",
+       "10 1/2\" 32 OZ 1 DZ"
+      ],
+      [
+       "AC-12-S",
+       "12\" 62 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tall Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      960,
+      1350,
+      1190,
+      1560
+     ],
+     "imageGroup": "tall-cup",
+     "rows": [
+      [
+       "AC-1",
+       "3 1/4\" X 3\"H 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for AC-1",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      1255,
+      1330,
+      1510,
+      1560
+     ],
+     "imageGroup": "saucer-tall",
+     "rows": [
+      [
+       "AC-2",
+       "5 5/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Espresso Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      170,
+      1800,
+      385,
+      1980
+     ],
+     "imageGroup": "espresso",
+     "rows": [
+      [
+       "AC-35",
+       "2 1/2\" 3.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for AC-35",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      515,
+      1750,
+      760,
+      1990
+     ],
+     "imageGroup": "saucer-espresso",
+     "rows": [
+      [
+       "AC-36",
+       "4 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cappuccino Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      875,
+      1810,
+      1160,
+      1985
+     ],
+     "imageGroup": "cappuccino",
+     "rows": [
+      [
+       "AC-56",
+       "4 5/8\" 14 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for AC-56",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      1215,
+      1740,
+      1510,
+      1990
+     ],
+     "imageGroup": "saucer-cappuccino",
+     "rows": [
+      [
+       "AC-57",
+       "6 7/8\" 3 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

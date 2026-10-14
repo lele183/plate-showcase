@@ -1,0 +1,714 @@
+{
+ "pages": [
+  {
+   "collection": "honda",
+   "page": 169,
+   "complete": true,
+   "color": "ivory green black",
+   "groups": [
+    {
+     "name": "Round Coupe Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      155,
+      175,
+      605,
+      615
+     ],
+     "imageGroup": "round-coupe-plate-0",
+     "rows": [
+      [
+       "HO-1309",
+       "9\" 2 DZ"
+      ],
+      [
+       "HO-1312",
+       "12\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       530,
+       580,
+       605,
+       615
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      905,
+      165,
+      1355,
+      615
+     ],
+     "imageGroup": "round-plate-1",
+     "rows": [
+      [
+       "HO-1707",
+       "7 1/2\" 4 DZ"
+      ],
+      [
+       "HO-1708",
+       "8 1/4\" 2 DZ"
+      ],
+      [
+       "HO-1710",
+       "9 3/4\" 2 DZ"
+      ],
+      [
+       "HO-1712",
+       "12\" 2 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       1280,
+       590,
+       1355,
+       615
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      175,
+      875,
+      460,
+      1040
+     ],
+     "imageGroup": "square-sauce-dish-2",
+     "rows": [
+      [
+       "HO-2404",
+       "4\" X 1 1/4\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      615,
+      885,
+      1010,
+      1035
+     ],
+     "imageGroup": "rectangular-plate-3",
+     "rows": [
+      [
+       "HO-2406",
+       "6\" X 4 1/2\" 6 DZ"
+      ],
+      [
+       "HO-2408",
+       "8\" X 5 1/2\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1160,
+      845,
+      1530,
+      1060
+     ],
+     "imageGroup": "bowl-4",
+     "rows": [
+      [
+       "HO-5707",
+       "7 1/2\" X 3\" 24 OZ 2 DZ"
+      ],
+      [
+       "HO-5708",
+       "8 1/2\" X 3 1/4\" 42 OZ 2 DZ"
+      ],
+      [
+       "HO-5709",
+       "9 1/2\" X 3 1/2\" 62 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      170,
+      1365,
+      420,
+      1495
+     ],
+     "imageGroup": "sauce-dish-5",
+     "rows": [
+      [
+       "HO-4046",
+       "3 3/4\" X 2 1/2\" 2.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      500,
+      1330,
+      765,
+      1530
+     ],
+     "imageGroup": "square-bowl-6",
+     "rows": [
+      [
+       "HO-5450",
+       "4 3/4\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      845,
+      1320,
+      1125,
+      1540
+     ],
+     "imageGroup": "rice-bowl-7",
+     "rows": [
+      [
+       "HO-3703",
+       "3\" X 1 1/2\" 3 OZ 6 DZ"
+      ],
+      [
+       "HO-3704",
+       "4 1/4\" X 2 1/2\" 8 OZ 6 DZ"
+      ],
+      [
+       "HO-3706",
+       "5 1/2\" X 2 1/2\" 14 OZ 5 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1190,
+      1320,
+      1500,
+      1530
+     ],
+     "imageGroup": "rice-bowl-8",
+     "rows": [
+      [
+       "HO-5705",
+       "4 3/4\" X 2 1/2\" 10 OZ 5 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Divided Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      175,
+      1800,
+      455,
+      1950
+     ],
+     "imageGroup": "double-divided-sauce-dish-9",
+     "rows": [
+      [
+       "HO-4031",
+       "5\" X 3 1/2\" 2 OZ EACH 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "other",
+     "crop": [
+      540,
+      1800,
+      805,
+      1960
+     ],
+     "imageGroup": "sauce-dish-10",
+     "rows": [
+      [
+       "HO-3001",
+       "4 1/8\" 3.5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      870,
+      1775,
+      1185,
+      1945
+     ],
+     "imageGroup": "soup-spoon-11",
+     "rows": [
+      [
+       "HO-7001",
+       "5 1/2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1275,
+      1710,
+      1455,
+      1960
+     ],
+     "imageGroup": "tea-cup-12",
+     "rows": [
+      [
+       "HO-9305",
+       "3\" X 3 3/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "green",
+     "black"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "orchis",
+   "page": 170,
+   "complete": true,
+   "color": "ivory orange gold",
+   "groups": [
+    {
+     "name": "Lotus Shape Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      115,
+      175,
+      550,
+      600
+     ],
+     "imageGroup": "lotus-shape-plate-0",
+     "rows": [
+      [
+       "OR-1806",
+       "6\" 6 DZ"
+      ],
+      [
+       "OR-1807",
+       "7 1/4\" 4 DZ"
+      ],
+      [
+       "OR-1810",
+       "10 1/2\" 2 DZ"
+      ],
+      [
+       "OR-1812",
+       "12\" 2 DZ"
+      ],
+      [
+       "OR-1816",
+       "16\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate Gold Orchis",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      595,
+      200,
+      1000,
+      605
+     ],
+     "imageGroup": "round-plate-gold-orchis-1",
+     "rows": [
+      [
+       "OR-1704",
+       "4\" 8 DZ"
+      ],
+      [
+       "OR-1707",
+       "7 1/2\" 4 DZ"
+      ],
+      [
+       "OR-1708",
+       "8 1/4\" 2 DZ"
+      ],
+      [
+       "OR-1710",
+       "9 3/4\" 2 DZ"
+      ],
+      [
+       "OR-1712",
+       "12\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Ripple Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1055,
+      240,
+      1530,
+      565
+     ],
+     "imageGroup": "rectangular-ripple-plate-2",
+     "rows": [
+      [
+       "OR-2412",
+       "11\" X 8\" 3 DZ"
+      ],
+      [
+       "OR-2414",
+       "13\" X 9\" 3 DZ"
+      ],
+      [
+       "OR-2416",
+       "16\" X 10 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate Gold Orchis",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      145,
+      795,
+      515,
+      985
+     ],
+     "imageGroup": "rectangular-plate-gold-orchis-3",
+     "rows": [
+      [
+       "OR-2406",
+       "6\" X 4 1/2\" 6 DZ"
+      ],
+      [
+       "OR-2408",
+       "8\" X 5 1/2\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Two Divided Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      680,
+      800,
+      965,
+      985
+     ],
+     "imageGroup": "two-divided-sauce-dish-4",
+     "rows": [
+      [
+       "OR-4031",
+       "5 3/4\" X 2 3/4\" 2 OZ EACH 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Triple Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1150,
+      825,
+      1505,
+      970
+     ],
+     "imageGroup": "triple-sauce-dish-5",
+     "rows": [
+      [
+       "OR-4030",
+       "7 1/2\" X 3\" 2.5 OZ EACH 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      170,
+      1135,
+      435,
+      1295
+     ],
+     "imageGroup": "square-sauce-dish-6",
+     "rows": [
+      [
+       "OR-2404",
+       "4\" 3.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      540,
+      1145,
+      775,
+      1275
+     ],
+     "imageGroup": "sauce-dish-7",
+     "rows": [
+      [
+       "OR-4046",
+       "3 3/4\" X 2 1/2\" 2.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "other",
+     "crop": [
+      865,
+      1115,
+      1115,
+      1305
+     ],
+     "imageGroup": "sauce-dish-8",
+     "rows": [
+      [
+       "OR-3001",
+       "4 1/8\" 3.5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      1205,
+      1100,
+      1485,
+      1305
+     ],
+     "imageGroup": "soup-spoon-9",
+     "rows": [
+      [
+       "OR-7001",
+       "5 1/2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup Orchis",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      195,
+      1460,
+      380,
+      1635
+     ],
+     "imageGroup": "tea-cup-orchis-10",
+     "rows": [
+      [
+       "OR-9302",
+       "3 1/2\" X 2 1/2\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      550,
+      1405,
+      715,
+      1645
+     ],
+     "imageGroup": "tea-cup-11",
+     "rows": [
+      [
+       "OR-9305",
+       "3\" X 4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl with Ear",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      855,
+      1415,
+      1105,
+      1630
+     ],
+     "imageGroup": "soup-bowl-with-ear-12",
+     "rows": [
+      [
+       "OR-3601",
+       "4 1/2\" X 2 1/4\" 8 OZ 8 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      1215,
+      1420,
+      1475,
+      1625
+     ],
+     "imageGroup": "square-bowl-13",
+     "rows": [
+      [
+       "OR-5450",
+       "4 3/4\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      145,
+      1775,
+      415,
+      1975
+     ],
+     "imageGroup": "rice-bowl-14",
+     "rows": [
+      [
+       "OR-3703",
+       "3\" X 1 1/2\" 3 OZ 6 DZ"
+      ],
+      [
+       "OR-3704",
+       "4 1/4\" X 2 1/2\" 8 OZ 6 DZ"
+      ],
+      [
+       "OR-3705",
+       "5\" X 2 1/4\" 12 OZ 6 DZ"
+      ],
+      [
+       "OR-3706",
+       "5 1/2\" X 2 1/2\" 14 OZ 5 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Side Dish",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      455,
+      1785,
+      735,
+      1965
+     ],
+     "imageGroup": "side-dish-15",
+     "rows": [
+      [
+       "OR-5704",
+       "4\" 7 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      795,
+      1745,
+      1120,
+      1975
+     ],
+     "imageGroup": "soup-bowl-16",
+     "rows": [
+      [
+       "OR-5705",
+       "4 3/4\" X 2 1/2\" 10 OZ 5 DZ"
+      ],
+      [
+       "OR-5706",
+       "5\" X 2 1/2\" 16 OZ 4 DZ"
+      ],
+      [
+       "OR-5707",
+       "7\" X 3\" 24 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1145,
+      1745,
+      1525,
+      1975
+     ],
+     "imageGroup": "bowl-17",
+     "rows": [
+      [
+       "OR-5708",
+       "8 1/2\" X 3 1/4\" 42 OZ 2 DZ"
+      ],
+      [
+       "OR-5709",
+       "9 1/2\" X 3 1/2\" 62 OZ 2 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "orange",
+     "gold"
+    ],
+    "material": "melamine"
+   }
+  }
+ ]
+}

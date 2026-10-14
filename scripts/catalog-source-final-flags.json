@@ -1,0 +1,37 @@
+{"pages":[
+ {"collection":"catering","page":162,"type":"plate","shape":"round","color":"white","collectionAttributes":{"colors":["white","black","gold","ivory"]},"rows":[
+  {"sku":"CAT-1020W","name":"Round Plate White","specification":"20\" 6 DZ","crop":[125,165,565,595]}
+ ]},
+ {"collection":"honda","page":168,"complete":true,"type":"plate","shape":"rectangular","color":"green, white, black","groups":[
+  {"name":"Rectangular Ripple Plate","crop":[95,1785,640,1945],"imageGroup":"small-ripple","rows":[["HO-2412","11\" X 8\" 3 DZ"]]},
+  {"name":"Rectangular Ripple Plate","crop":[890,1775,1510,1965],"imageGroup":"large-ripple","rows":[["HO-2414","13\" X 9\" 3 DZ"],["HO-2416","16\" X 10 1/2\" 1 DZ"]]}
+ ]},
+ {"collection":"honda","page":169,"type":"plate","shape":"round","color":"green, white, black","rows":[
+  {"sku":"HO-1312","name":"Round Coupe Plate","specification":"12\" 1 DZ","crop":[155,170,605,620]}
+ ]},
+ {"collection":"longevity","page":175,"color":"white, red, blue, yellow","rows":[
+  {"sku":"LG-7005","name":"Scoop","type":"spoon","shape":"other","specification":"9\" 6 DZ","crop":[125,740,465,1005]},
+  {"sku":"LG-1016","name":"Round Plate","type":"plate","shape":"round","specification":"16\" 1 DZ","crop":[135,165,640,670]}
+ ]},
+ {"collection":"peony","page":177,"color":"white, blue","rows":[
+  {"sku":"PO-1010","name":"Round Plate","type":"plate","shape":"round","specification":"10\" 2 DZ","crop":[140,160,640,665]},
+  {"sku":"PO-7005","name":"Scoop","type":"spoon","shape":"other","specification":"9\" 6 DZ","crop":[145,1240,480,1530]}
+ ]},
+ {"collection":"plastics","page":189,"complete":true,"collectionAttributes":{"colors":["clear","blue","purple","black","amber","red","green"]},"groups":[
+  {"name":"Dessert Dish Blue","type":"bowl","shape":"round","color":"blue","crop":[145,175,405,365],"imageGroup":"dessert-blue","rows":[["DS-005B","6 OZ 8 DZ"]]},
+  {"name":"Dessert Dish Clear","type":"bowl","shape":"round","color":"clear","crop":[495,165,755,365],"imageGroup":"dessert-clear","rows":[["DS-005C","6 OZ 8 DZ"]]},
+  {"name":"Dessert Dish Purple","type":"bowl","shape":"round","color":"purple","crop":[855,165,1120,365],"imageGroup":"dessert-purple","rows":[["DS-005P","6 OZ 8 DZ"]]},
+  {"name":"Dessert Dish Black","type":"bowl","shape":"round","color":"black","crop":[1225,165,1485,365],"imageGroup":"dessert-black","rows":[["DS-005BK","6 OZ 8 DZ"]]},
+  {"name":"Tumbler Amber","type":"glass","shape":"round","color":"amber","crop":[140,505,335,815],"imageGroup":"tumbler-amber","rows":[["PT-005A","5 OZ 6 DZ"],["PT-008A","8 OZ 6 DZ"],["PT-010A","9.5 OZ 6 DZ"],["PT-012A","12 OZ 6 DZ"],["PT-016A","16 OZ 6 DZ"],["PT-020A","20 OZ 6 DZ"],["PT-032A","32 OZ 6 DZ"]]},
+  {"name":"Tumbler Blue","type":"glass","shape":"round","color":"blue","crop":[430,505,630,815],"imageGroup":"tumbler-blue","rows":[["PT-005B","5 OZ 6 DZ"],["PT-008B","8 OZ 6 DZ"],["PT-010B","9.5 OZ 6 DZ"],["PT-012B","12 OZ 6 DZ"],["PT-016B","16 OZ 6 DZ"],["PT-020B","20 OZ 6 DZ"],["PT-032B","32 OZ 6 DZ"]]},
+  {"name":"Tumbler Clear","type":"glass","shape":"round","color":"clear","crop":[715,505,900,815],"imageGroup":"tumbler-clear","rows":[["PT-005C","5 OZ 6 DZ"],["PT-008C","8 OZ 6 DZ"],["PT-010C","9.5 OZ 6 DZ"],["PT-012C","12 OZ 6 DZ"],["PT-016C","16 OZ 6 DZ"],["PT-020C","20 OZ 6 DZ"],["PT-032C","32 OZ 6 DZ"]]},
+  {"name":"Tumbler Red","type":"glass","shape":"round","color":"red","crop":[995,505,1185,815],"imageGroup":"tumbler-red","rows":[["PT-005R","5 OZ 6 DZ"],["PT-008R","8 OZ 6 DZ"],["PT-010R","9.5 OZ 6 DZ"],["PT-012R","12 OZ 6 DZ"],["PT-016R","16 OZ 6 DZ"],["PT-020R","20 OZ 6 DZ"],["PT-032R","32 OZ 6 DZ"]]},
+  {"name":"Wine/Juice Decanter","type":"pitcher","shape":"round","color":"clear","crop":[1350,520,1505,935],"imageGroup":"decanter","rows":[["PC-046","46 OZ LID 3 3/4\" X 11\" 1 DZ"]]},
+  {"name":"Plate Cover for Round Plate (PP)","type":"accessory","shape":"round","color":"clear","crop":[670,1180,1080,1425],"imageGroup":"cover","rows":[["COV-109","6-1/2\"T X 9-1/2\"B X 2-1/2\"H 9\" 2 DZ",{"dimensions":{"length":9.5,"width":null,"height":2.5}}]]},
+  {"name":"3 Spout Plastic Pitcher Clear","type":"pitcher","shape":"round","color":"clear","crop":[1240,1100,1545,1460],"imageGroup":"pitcher-clear","rows":[["PC-060C","60 OZ 12 PC"]]},
+  {"name":"3 Spout Plastic Pitcher Green","type":"pitcher","shape":"round","color":"green","crop":[135,1640,440,2010],"imageGroup":"pitcher-green","rows":[["PC-060G","60 OZ 12 PC"]]},
+  {"name":"3 Spout Plastic Pitcher Blue","type":"pitcher","shape":"round","color":"blue","crop":[495,1640,810,2010],"imageGroup":"pitcher-blue","rows":[["PC-060B","60 OZ 12 PC"]]},
+  {"name":"3 Spout Plastic Pitcher Red","type":"pitcher","shape":"round","color":"red","crop":[865,1640,1180,2010],"imageGroup":"pitcher-red","rows":[["PC-060R","60 OZ 12 PC"]]},
+  {"name":"3 Spout Plastic Pitcher Amber","type":"pitcher","shape":"round","color":"amber","crop":[1230,1640,1545,2010],"imageGroup":"pitcher-amber","rows":[["PC-060A","60 OZ 12 PC"]]}
+ ]}
+]}

@@ -1,0 +1,824 @@
+{
+ "pages": [
+  {
+   "collection": "bamboo",
+   "page": 122,
+   "complete": true,
+   "color": "green white",
+   "groups": [
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      555,
+      1620,
+      1030,
+      1940
+     ],
+     "imageGroup": "square-plate-0",
+     "rows": [
+      [
+       "BA-108",
+       "8\" 4 DZ"
+      ],
+      [
+       "BA-110",
+       "10\" 2 DZ"
+      ],
+      [
+       "BA-112",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Display Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1060,
+      1670,
+      1560,
+      1905
+     ],
+     "imageGroup": "display-plate-1",
+     "rows": [
+      [
+       "BA-312",
+       "12\" X 6 3/4\" 1 DZ"
+      ],
+      [
+       "BA-314",
+       "14\" X 8\" 1 DZ"
+      ],
+      [
+       "BA-316",
+       "16\" X 9\" 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "green",
+     "white",
+     "tan"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "bamboo",
+   "page": 123,
+   "complete": true,
+   "color": "green white",
+   "groups": [
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      120,
+      255,
+      500,
+      440
+     ],
+     "imageGroup": "rectangular-plate-0",
+     "rows": [
+      [
+       "BA-308",
+       "8\" X 5\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Divided Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      610,
+      240,
+      1005,
+      475
+     ],
+     "imageGroup": "divided-plate-1",
+     "rows": [
+      [
+       "BA-3109",
+       "8 1/2\" X 5\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1115,
+      275,
+      1530,
+      435
+     ],
+     "imageGroup": "deep-plate-2",
+     "rows": [
+      [
+       "BA-3112",
+       "11 1/2\" X 4 3/4\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      695,
+      595,
+      945
+     ],
+     "imageGroup": "rectangular-plate-3",
+     "rows": [
+      [
+       "BA-212",
+       "12\" X 7 1/2\" 1 DZ"
+      ],
+      [
+       "BA-214",
+       "14\" X 8 1/2\" 1 DZ"
+      ],
+      [
+       "BA-216",
+       "16\" X 10\" 1 DZ"
+      ]
+     ],
+     "color": "green tan"
+    },
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      650,
+      680,
+      1010,
+      930
+     ],
+     "imageGroup": "square-plate-4",
+     "rows": [
+      [
+       "BA-1109",
+       "9\" 2 DZ"
+      ],
+      [
+       "BA-1111",
+       "11\" 1 DZ"
+      ]
+     ],
+     "color": "green tan white"
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1105,
+      710,
+      1525,
+      930
+     ],
+     "imageGroup": "rectangular-plate-5",
+     "rows": [
+      [
+       "BA-2112",
+       "12 1/2\" 1 DZ"
+      ]
+     ],
+     "color": "green tan"
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      165,
+      1275,
+      385,
+      1445
+     ],
+     "imageGroup": "sauce-dish-6",
+     "rows": [
+      [
+       "BA-403",
+       "3 1/2\" 5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      515,
+      1280,
+      770,
+      1460
+     ],
+     "imageGroup": "rice-bowl-7",
+     "rows": [
+      [
+       "BA-404",
+       "4 1/2\" X 2 1/2\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Miso Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      875,
+      1270,
+      1125,
+      1450
+     ],
+     "imageGroup": "miso-soup-bowl-8",
+     "rows": [
+      [
+       "BA-405",
+       "4 1/2\" X 2 1/2\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sheer Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1215,
+      1205,
+      1495,
+      1460
+     ],
+     "imageGroup": "sheer-bowl-9",
+     "rows": [
+      [
+       "BA-406",
+       "6 1/2\" X 3 3/4\" 32 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      155,
+      1760,
+      435,
+      1930
+     ],
+     "imageGroup": "soup-bowl-10",
+     "rows": [
+      [
+       "BA-505",
+       "5 1/2\" 16 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      490,
+      1745,
+      815,
+      1940
+     ],
+     "imageGroup": "salad-noodle-bowl-11",
+     "rows": [
+      [
+       "BA-507",
+       "7\" 32 OZ 2 DZ"
+      ],
+      [
+       "BA-508",
+       "8\" 42 OZ 2 DZ"
+      ],
+      [
+       "BA-509",
+       "8 3/4\" 58 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      865,
+      1730,
+      1155,
+      1915
+     ],
+     "imageGroup": "spoon-12",
+     "rows": [
+      [
+       "BA-7001",
+       "8\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1265,
+      1705,
+      1455,
+      1935
+     ],
+     "imageGroup": "tea-cup-13",
+     "rows": [
+      [
+       "BA-001",
+       "3\" X 3\" 7 OZ 4 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "rome",
+   "page": 124,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "other",
+     "crop": [
+      155,
+      1205,
+      375,
+      1470
+     ],
+     "imageGroup": "sauce-dish-0",
+     "rows": [
+      [
+       "RM-065",
+       "6\" 3 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Small Square Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      480,
+      1305,
+      730,
+      1460
+     ],
+     "imageGroup": "small-square-dish-1",
+     "rows": [
+      [
+       "RM-103",
+       "3\" 2.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Quatrefoil Salad Bowl",
+     "type": "bowl",
+     "shape": "other",
+     "crop": [
+      815,
+      1270,
+      1100,
+      1470
+     ],
+     "imageGroup": "quatrefoil-salad-bowl-2",
+     "rows": [
+      [
+       "RM-406",
+       "6\" X 2 3/4\" 16 OZ 4 DZ",
+       {
+        "dimensions": {
+         "length": 6,
+         "width": null,
+         "height": 2.75
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Deep Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      1190,
+      1310,
+      1530,
+      1475
+     ],
+     "imageGroup": "deep-square-plate-3",
+     "rows": [
+      [
+       "RM-306",
+       "6\" X 1 3/4\" 14 OZ 4 DZ"
+      ],
+      [
+       "RM-307",
+       "7\" X 2\" 22 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Boat Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      105,
+      1750,
+      565,
+      1915
+     ],
+     "imageGroup": "boat-plate-4",
+     "rows": [
+      [
+       "RM-312",
+       "12 1/2\" X 3 3/4\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "other",
+     "crop": [
+      700,
+      1730,
+      1035,
+      1940
+     ],
+     "imageGroup": "salad-bowl-5",
+     "rows": [
+      [
+       "RM-503",
+       "3 1/4\" 3.5 OZ 6 DZ"
+      ],
+      [
+       "RM-506",
+       "6 1/4\" 12 OZ 4 DZ"
+      ],
+      [
+       "RM-507",
+       "7 1/4\" 16 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Waterdrop Shape Dish",
+     "type": "bowl",
+     "shape": "other",
+     "crop": [
+      1150,
+      1735,
+      1490,
+      1935
+     ],
+     "imageGroup": "waterdrop-shape-dish-6",
+     "rows": [
+      [
+       "RM-704",
+       "4\" X 3 1/2\" X 1 1/2\" 4 OZ 6 DZ"
+      ],
+      [
+       "RM-706",
+       "5 3/4\" X 4 1/2\" X 2\" 10 OZ 4 DZ"
+      ],
+      [
+       "RM-708",
+       "8\" X 6\" X 2 3/4\" 26 OZ 4 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "rome",
+   "page": 126,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Cake Stand",
+     "type": "stand",
+     "shape": "round",
+     "crop": [
+      125,
+      205,
+      560,
+      460
+     ],
+     "imageGroup": "cake-stand-0",
+     "rows": [
+      [
+       "RM-0012",
+       "12\" X 4 1/8\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sushi Plate with Foot",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      620,
+      210,
+      990,
+      460
+     ],
+     "imageGroup": "square-sushi-plate-with-foot-1",
+     "rows": [
+      [
+       "RM-4209",
+       "8 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Four Compartment Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      1035,
+      195,
+      1525,
+      440
+     ],
+     "imageGroup": "deep-four-compartment-square-plate-2",
+     "rows": [
+      [
+       "RM-822",
+       "11 1/2\" X 1 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Four Compartment Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      660,
+      540,
+      900
+     ],
+     "imageGroup": "deep-four-compartment-round-plate-3",
+     "rows": [
+      [
+       "RM-821",
+       "12 1/4\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Sauce Dish for RM-821",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      265,
+      715,
+      385,
+      805
+     ],
+     "imageGroup": "round-sauce-dish-for-rm-821-4",
+     "rows": [
+      [
+       "RM-032",
+       "3 1/2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      630,
+      665,
+      995,
+      905
+     ],
+     "imageGroup": "square-bowl-5",
+     "rows": [
+      [
+       "RM-404",
+       "3 3/4\" X 2 1/2\" 10 OZ 6 DZ"
+      ],
+      [
+       "RM-405",
+       "5\" X 2 3/4\" 18 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      1110,
+      645,
+      1505,
+      905
+     ],
+     "imageGroup": "square-bowl-6",
+     "rows": [
+      [
+       "RM-4106",
+       "6\" X 3\" 26 OZ 2 DZ"
+      ],
+      [
+       "RM-4107",
+       "7 1/2\" X 3 1/2\" 2 QT 2 DZ"
+      ],
+      [
+       "RM-4109",
+       "10\" X 4\" 4 QT 1 DZ"
+      ],
+      [
+       "RM-4112",
+       "12\" X 5\" 8 QT 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Two Tier Metal Stand for RM-4109/4112",
+     "type": "stand",
+     "shape": "other",
+     "crop": [
+      125,
+      1115,
+      610,
+      1460
+     ],
+     "imageGroup": "two-tier-metal-stand-for-rm-4109-4112-7",
+     "rows": [
+      [
+       "ST-102BK",
+       "19 1/2\" X 9 1/2\" X 8 1/2\" 4 PC"
+      ]
+     ],
+     "color": "black",
+     "material": "metal"
+    },
+    {
+     "name": "Deep Turkey Platter",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      850,
+      1250,
+      1455,
+      1410
+     ],
+     "imageGroup": "deep-turkey-platter-8",
+     "rows": [
+      [
+       "RM-3022",
+       "22\" X 18\" X 1 1/4\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "One Tier Metal Stand for RM-3022",
+     "type": "stand",
+     "shape": "other",
+     "crop": [
+      850,
+      1250,
+      1455,
+      1410
+     ],
+     "imageGroup": "one-tier-metal-stand-for-rm-3022-9",
+     "rows": [
+      [
+       "ST-101BK",
+       "13 1/2\" X 17 3/4\" X 3\" 6 PC"
+      ]
+     ],
+     "color": "black",
+     "material": "metal"
+    },
+    {
+     "name": "Rectangular Tray",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      165,
+      1925,
+      535,
+      2055
+     ],
+     "imageGroup": "rectangular-tray-10",
+     "rows": [
+      [
+       "RM-210",
+       "10 X 6\" 2 DZ"
+      ],
+      [
+       "RM-212",
+       "12 X 7 1/2\" 2 DZ"
+      ],
+      [
+       "RM-214",
+       "14 X 8\" 1 DZ"
+      ],
+      [
+       "RM-216",
+       "16 X 9 1/2\" 1 DZ"
+      ],
+      [
+       "RM-218",
+       "18 X 10 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Three Tier Metal Stand for RM-212/214/218",
+     "type": "stand",
+     "shape": "other",
+     "crop": [
+      130,
+      1615,
+      535,
+      2125
+     ],
+     "imageGroup": "three-tier-metal-stand-for-rm-212-214-218-11",
+     "rows": [
+      [
+       "ST-103BK",
+       "22 1/2\" X 19\" X 9 1/2\" 4 PC"
+      ]
+     ],
+     "color": "black",
+     "material": "metal"
+    },
+    {
+     "name": "Rectangular Tray",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      1060,
+      1595,
+      1405,
+      1730
+     ],
+     "imageGroup": "rectangular-tray-12",
+     "rows": [
+      [
+       "RM-610",
+       "9 3/4\" X 5 7/8\" X 2 1/2\" 2 DZ"
+      ],
+      [
+       "RM-614",
+       "13 3/4\" X 10\" X 2 1/2\" 1 DZ"
+      ],
+      [
+       "RM-618",
+       "17 3/4\" X 11 3/4\" X 2 1/2\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Two Tier Metal Stand for RM-614/618",
+     "type": "stand",
+     "shape": "other",
+     "crop": [
+      890,
+      1595,
+      1405,
+      1900
+     ],
+     "imageGroup": "two-tier-metal-stand-for-rm-614-618-13",
+     "rows": [
+      [
+       "ST-112BK",
+       "19 1/2\" X 17\" 4 PC"
+      ]
+     ],
+     "color": "black",
+     "material": "metal"
+    }
+   ]
+  }
+ ]
+}

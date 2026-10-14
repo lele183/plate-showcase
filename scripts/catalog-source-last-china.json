@@ -1,0 +1,1210 @@
+{
+ "pages": [
+  {
+   "collection": "miami",
+   "page": 67,
+   "complete": true,
+   "color": "bone white",
+   "groups": [],
+   "collectionAttributes": {
+    "colors": [
+     "bone white"
+    ],
+    "material": "magnesia chinaware"
+   }
+  },
+  {
+   "collection": "miami",
+   "page": 69,
+   "complete": true,
+   "color": "bone white",
+   "groups": [
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      145,
+      170,
+      510,
+      535
+     ],
+     "imageGroup": "square-plate-0",
+     "rows": [
+      [
+       "MM-6-SQ",
+       "6\" 3 DZ"
+      ],
+      [
+       "MM-8-SQ",
+       "8\" 3 DZ"
+      ],
+      [
+       "MM-10-SQ",
+       "10\" 1 DZ"
+      ],
+      [
+       "MM-12-SQ",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Triangle Plate",
+     "type": "plate",
+     "shape": "triangular",
+     "crop": [
+      615,
+      150,
+      1005,
+      550
+     ],
+     "imageGroup": "triangle-plate-1",
+     "rows": [
+      [
+       "MM-10-TR",
+       "10\" 1 DZ"
+      ],
+      [
+       "MM-12-TR",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1095,
+      195,
+      1550,
+      505
+     ],
+     "imageGroup": "rectangular-plate-2",
+     "rows": [
+      [
+       "MM-10-RT",
+       "10\" X 7\" 2 DZ"
+      ],
+      [
+       "MM-12-RT",
+       "12\" X 8\" 1 DZ"
+      ],
+      [
+       "MM-14-RT",
+       "14\" X 9\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coffee/Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      155,
+      820,
+      445,
+      1040
+     ],
+     "imageGroup": "coffee-tea-cup-3",
+     "rows": [
+      [
+       "MM-1",
+       "3 1/2\" 7.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for MM-1",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      515,
+      765,
+      795,
+      1045
+     ],
+     "imageGroup": "saucer-for-mm-1-4",
+     "rows": [
+      [
+       "MM-2",
+       "5 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Stackable Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      875,
+      820,
+      1170,
+      1030
+     ],
+     "imageGroup": "stackable-cup-5",
+     "rows": [
+      [
+       "MM-1-S",
+       "3 1/2\" 7.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bouillon",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1260,
+      820,
+      1465,
+      1030
+     ],
+     "imageGroup": "bouillon-6",
+     "rows": [
+      [
+       "MM-4",
+       "3 1/2\" X 2 1/2\" 7.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Chinese Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      175,
+      1275,
+      400,
+      1500
+     ],
+     "imageGroup": "chinese-tea-cup-7",
+     "rows": [
+      [
+       "MM-45",
+       "3\" 4.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bouillon with Handle",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      485,
+      1295,
+      820,
+      1480
+     ],
+     "imageGroup": "bouillon-with-handle-8",
+     "rows": [
+      [
+       "MM-46",
+       "3 7/8\" 6 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Espresso Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      895,
+      1295,
+      1155,
+      1480
+     ],
+     "imageGroup": "espresso-cup-9",
+     "rows": [
+      [
+       "MM-54",
+       "2 3/4\" 3 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for MM-54",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      1250,
+      1230,
+      1515,
+      1500
+     ],
+     "imageGroup": "saucer-for-mm-54-10",
+     "rows": [
+      [
+       "MM-55",
+       "4 7/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      185,
+      1715,
+      450,
+      1955
+     ],
+     "imageGroup": "mug-11",
+     "rows": [
+      [
+       "MM-17",
+       "3\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Creamer",
+     "type": "creamer",
+     "shape": "round",
+     "crop": [
+      515,
+      1720,
+      805,
+      1955
+     ],
+     "imageGroup": "creamer-12",
+     "rows": [
+      [
+       "MM-PC",
+       "6 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pepper Shaker",
+     "type": "shaker",
+     "shape": "round",
+     "crop": [
+      925,
+      1690,
+      1080,
+      1955
+     ],
+     "imageGroup": "pepper-shaker-13",
+     "rows": [
+      [
+       "MM-PS",
+       "2 7/8\" 4 DZ",
+       {
+        "dimensions": {
+         "length": null,
+         "width": null,
+         "height": 2.875
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Salt Shaker",
+     "type": "shaker",
+     "shape": "round",
+     "crop": [
+      1285,
+      1685,
+      1440,
+      1955
+     ],
+     "imageGroup": "salt-shaker-14",
+     "rows": [
+      [
+       "MM-SS",
+       "2 7/8\" 4 DZ",
+       {
+        "dimensions": {
+         "length": null,
+         "width": null,
+         "height": 2.875
+        }
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "recovery",
+   "page": 74,
+   "complete": true,
+   "color": "american white",
+   "groups": [
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      185,
+      260,
+      395,
+      475
+     ],
+     "imageGroup": "tea-cup-0",
+     "rows": [
+      [
+       "RE-45",
+       "3\" 4.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bouillon Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      515,
+      265,
+      780,
+      480
+     ],
+     "imageGroup": "bouillon-cup-1",
+     "rows": [
+      [
+       "RE-46",
+       "3 3/4\" X 2\" 6 OZ 3 DZ"
+      ],
+      [
+       "RE-4",
+       "4\" X 2 1/2\" 7.25 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tall Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      880,
+      245,
+      1140,
+      480
+     ],
+     "imageGroup": "tall-cup-2",
+     "rows": [
+      [
+       "RE-1",
+       "3 3/8\" X 2 3/4\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for RE-1",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      1215,
+      195,
+      1520,
+      495
+     ],
+     "imageGroup": "saucer-for-re-1-3",
+     "rows": [
+      [
+       "RE-2",
+       "6 1/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Espresso Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      170,
+      775,
+      435,
+      970
+     ],
+     "imageGroup": "espresso-cup-4",
+     "rows": [
+      [
+       "RE-35",
+       "2 1/2\" 3.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for RE-35",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      510,
+      705,
+      790,
+      985
+     ],
+     "imageGroup": "saucer-for-re-35-5",
+     "rows": [
+      [
+       "RE-36",
+       "4 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cappuccino Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      865,
+      795,
+      1145,
+      955
+     ],
+     "imageGroup": "cappuccino-cup-6",
+     "rows": [
+      [
+       "RE-56",
+       "4 1/2\" 14 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for RE-56",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      1215,
+      690,
+      1510,
+      980
+     ],
+     "imageGroup": "saucer-for-re-56-7",
+     "rows": [
+      [
+       "RE-57",
+       "6 7/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Prime Mug Stackable",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      165,
+      1170,
+      450,
+      1435
+     ],
+     "imageGroup": "prime-mug-stackable-8",
+     "rows": [
+      [
+       "RE-12-P",
+       "3 7/8\" X 3 1/2\" 12 OZ 3 DZ"
+      ],
+      [
+       "RE-16-P",
+       "4 1/4\" X 3 3/4\" 16 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Joy Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      515,
+      1180,
+      780,
+      1440
+     ],
+     "imageGroup": "joy-mug-9",
+     "rows": [
+      [
+       "RE-15-J",
+       "3 1/2\" X 4 1/2\" 15 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Stackable Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      865,
+      1225,
+      1140,
+      1420
+     ],
+     "imageGroup": "stackable-cup-10",
+     "rows": [
+      [
+       "RE-23",
+       "3 1/4\" X 2 1/4\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1235,
+      1180,
+      1505,
+      1440
+     ],
+     "imageGroup": "mug-11",
+     "rows": [
+      [
+       "RE-38",
+       "3 1/8\" X 3 1/2\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tierra Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      150,
+      1670,
+      435,
+      1950
+     ],
+     "imageGroup": "tierra-mug-12",
+     "rows": [
+      [
+       "RE-8-T",
+       "3\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Provo Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      505,
+      1675,
+      785,
+      1955
+     ],
+     "imageGroup": "provo-mug-13",
+     "rows": [
+      [
+       "RE-7-P",
+       "3\" X 4\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Provo Mug Caramel",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      865,
+      1670,
+      1150,
+      1950
+     ],
+     "imageGroup": "provo-mug-caramel-14",
+     "rows": [
+      [
+       "RE-7-PC",
+       "3\" X 4\" 7 OZ 3 DZ"
+      ]
+     ],
+     "color": "caramel, brown"
+    },
+    {
+     "name": "Hartford Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1225,
+      1685,
+      1530,
+      1955
+     ],
+     "imageGroup": "hartford-mug-15",
+     "rows": [
+      [
+       "RE-75-H",
+       "3 1/2\" X 3 1/2\" 8 OZ 3 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "normandy",
+   "page": 75,
+   "complete": true,
+   "color": "american white",
+   "groups": [
+    {
+     "name": "Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      185,
+      1080,
+      625,
+      1515
+     ],
+     "imageGroup": "plate-0",
+     "rows": [
+      [
+       "NR-5",
+       "5 1/2\" 3 DZ"
+      ],
+      [
+       "NR-6",
+       "6 1/2\" 3 DZ"
+      ],
+      [
+       "NR-7",
+       "7 1/4\" 3 DZ"
+      ],
+      [
+       "NR-22",
+       "8 3/8\" 3 DZ"
+      ],
+      [
+       "NR-8",
+       "9\" 2 DZ"
+      ],
+      [
+       "NR-9",
+       "9 1/2\" 2 DZ"
+      ],
+      [
+       "NR-16",
+       "10 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      965,
+      1090,
+      1485,
+      1505
+     ],
+     "imageGroup": "platter-1",
+     "rows": [
+      [
+       "NR-40",
+       "7 1/8\" X 5 3/4\" 3 DZ"
+      ],
+      [
+       "NR-41",
+       "8 5/8\" X 6 1/4\" 2 DZ"
+      ],
+      [
+       "NR-12",
+       "9 1/2\" X 7 1/2\" 2 DZ"
+      ],
+      [
+       "NR-13",
+       "11 1/2\" X 9 1/4\" 1 DZ"
+      ],
+      [
+       "NR-19",
+       "12 1/2\" X 10 1/4\" 1 DZ"
+      ],
+      [
+       "NR-14",
+       "13 1/4\" X 10\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Short Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      185,
+      1800,
+      485,
+      2005
+     ],
+     "imageGroup": "short-cup-2",
+     "rows": [
+      [
+       "NR-1",
+       "3 3/4\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for NR-1",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      685,
+      1730,
+      990,
+      2040
+     ],
+     "imageGroup": "saucer-for-nr-1-3",
+     "rows": [
+      [
+       "NR-2",
+       "5 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fruit Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1160,
+      1785,
+      1505,
+      1995
+     ],
+     "imageGroup": "fruit-bowl-4",
+     "rows": [
+      [
+       "NR-11",
+       "4 5/8\" 4.75 OZ 3 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "american white"
+    ]
+   }
+  },
+  {
+   "collection": "prideland",
+   "page": 79,
+   "complete": true,
+   "color": "bone white",
+   "groups": [
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      150,
+      1080,
+      665,
+      1425
+     ],
+     "imageGroup": "square-plate-0",
+     "rows": [
+      [
+       "PL-106",
+       "6\" 3 DZ"
+      ],
+      [
+       "PL-108",
+       "8\" 3 DZ"
+      ],
+      [
+       "PL-110",
+       "10\" 2 DZ"
+      ],
+      [
+       "PL-112",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      970,
+      1080,
+      1545,
+      1365
+     ],
+     "imageGroup": "rectangular-plate-1",
+     "rows": [
+      [
+       "PL-208",
+       "8\" X 5\" 3 DZ"
+      ],
+      [
+       "PL-210",
+       "10\" X 6\" 2 DZ"
+      ],
+      [
+       "PL-212",
+       "12\" X 7 1/4\" 1 DZ"
+      ],
+      [
+       "PL-214",
+       "14\" X 9\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Cup",
+     "type": "cup",
+     "shape": "square",
+     "crop": [
+      250,
+      1700,
+      505,
+      1945
+     ],
+     "imageGroup": "cup-2",
+     "rows": [
+      [
+       "PL-001",
+       "6 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for PL-001",
+     "type": "saucer",
+     "shape": "square",
+     "crop": [
+      670,
+      1735,
+      945,
+      1940
+     ],
+     "imageGroup": "saucer-for-pl-001-3",
+     "rows": [
+      [
+       "PL-002",
+       "5 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1115,
+      1690,
+      1495,
+      1955
+     ],
+     "imageGroup": "salad-bowl-4",
+     "rows": [
+      [
+       "PL-407",
+       "7 1/2\" 26 OZ 3 DZ"
+      ],
+      [
+       "PL-408",
+       "8 1/2\" 48 OZ 3 DZ"
+      ],
+      [
+       "PL-410",
+       "9 1/2\" 64 OZ 2 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "bone white"
+    ],
+    "material": "magnesia chinaware"
+   }
+  },
+  {
+   "collection": "chinaware-accessories",
+   "page": 80,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Pizza Plate Coupe",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      115,
+      165,
+      555,
+      615
+     ],
+     "imageGroup": "pizza-plate-coupe-0",
+     "rows": [
+      [
+       "PP-112",
+       "12\" 1 DZ"
+      ],
+      [
+       "PP-114",
+       "14\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       530,
+       505,
+       555,
+       615
+      ]
+     ]
+    },
+    {
+     "name": "Pizza Plate Flat",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      815,
+      160,
+      1275,
+      620
+     ],
+     "imageGroup": "pizza-plate-flat-1",
+     "rows": [
+      [
+       "PP-210",
+       "10 1/2\" 1 DZ"
+      ],
+      [
+       "PP-212",
+       "12\" 1 DZ"
+      ],
+      [
+       "PP-214",
+       "14\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       1240,
+       505,
+       1275,
+       620
+      ]
+     ]
+    },
+    {
+     "name": "Oval Baking Dish",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      115,
+      775,
+      465,
+      915
+     ],
+     "imageGroup": "oval-baking-dish-2",
+     "rows": [
+      [
+       "BK-002",
+       "7\" X 4\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Baking Dish Bone White",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      495,
+      755,
+      805,
+      920
+     ],
+     "imageGroup": "oval-baking-dish-bone-white-3",
+     "rows": [
+      [
+       "BK-005",
+       "5 1/2\" X 3 7/8\" X 1 1/2\" 7 OZ 3 DZ"
+      ],
+      [
+       "BK-006",
+       "6 1/4\" X 4 1/2\" X 1 1/4\" 10 OZ 3 DZ"
+      ]
+     ],
+     "color": "bone white"
+    },
+    {
+     "name": "Oval Baking Dish",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      825,
+      760,
+      1200,
+      920
+     ],
+     "imageGroup": "oval-baking-dish-4",
+     "rows": [
+      [
+       "BK-010",
+       "10 1/4\" X 7 1/2\" X 2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl/Onion Soup Crock Bone White",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1270,
+      690,
+      1515,
+      920
+     ],
+     "imageGroup": "soup-bowl-onion-soup-crock-bone-white-5",
+     "rows": [
+      [
+       "BK-104",
+       "4\" X 2 7/8\" 8 OZ 4 DZ"
+      ],
+      [
+       "BK-105",
+       "4 1/2\" X 4 1/2\" 16 OZ 3 DZ"
+      ]
+     ],
+     "color": "bone white"
+    },
+    {
+     "name": "Oval Deep Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      120,
+      1250,
+      495,
+      1430
+     ],
+     "imageGroup": "oval-deep-plate-6",
+     "rows": [
+      [
+       "BK-106",
+       "6\" X 9\" X 2\" 2 DZ",
+       {
+        "dimensions": {
+         "length": 9,
+         "width": 6,
+         "height": 2
+        }
+       }
+      ],
+      [
+       "BK-108",
+       "8\" X 11\" X 2\" 2 DZ",
+       {
+        "dimensions": {
+         "length": 11,
+         "width": 8,
+         "height": 2
+        }
+       }
+      ],
+      [
+       "BK-110",
+       "9\" X 13\" X 2\" 1 DZ",
+       {
+        "dimensions": {
+         "length": 13,
+         "width": 9,
+         "height": 2
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Round Deep Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      600,
+      1185,
+      1010,
+      1460
+     ],
+     "imageGroup": "round-deep-plate-7",
+     "rows": [
+      [
+       "BK-207",
+       "7\" 2 DZ"
+      ],
+      [
+       "BK-209",
+       "9\" 2 DZ"
+      ],
+      [
+       "BK-211",
+       "11\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Quiche Dish",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1135,
+      1185,
+      1540,
+      1460
+     ],
+     "imageGroup": "quiche-dish-8",
+     "rows": [
+      [
+       "BK-605",
+       "5\" 5.5 OZ 2 DZ"
+      ],
+      [
+       "BK-607",
+       "7 1/2\" 18 OZ 2 DZ"
+      ],
+      [
+       "BK-610",
+       "10 1/2\" 42 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Escargot Dish",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      620,
+      1720,
+      1015,
+      1955
+     ],
+     "imageGroup": "escargot-dish-9",
+     "rows": [
+      [
+       "ESC-8",
+       "8 1/2\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oyster Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1150,
+      1695,
+      1525,
+      1950
+     ],
+     "imageGroup": "oyster-plate-10",
+     "rows": [
+      [
+       "OYS-9",
+       "9\" 2 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

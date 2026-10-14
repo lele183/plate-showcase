@@ -1,0 +1,696 @@
+{
+ "pages": [
+  {
+   "collection": "japanese",
+   "page": 171,
+   "complete": true,
+   "color": "ivory green blue",
+   "groups": [
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      145,
+      1660,
+      565,
+      2080
+     ],
+     "imageGroup": "round-plate-0",
+     "rows": [
+      [
+       "JP-1006",
+       "6\" 4 DZ"
+      ],
+      [
+       "JP-1007",
+       "7\" 4 DZ"
+      ],
+      [
+       "JP-1008",
+       "8\" 4 DZ"
+      ],
+      [
+       "JP-1009",
+       "9\" 2 DZ"
+      ],
+      [
+       "JP-1010",
+       "10 1/2\" 2 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       548,
+       1960,
+       565,
+       2080
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      865,
+      1640,
+      1315,
+      2085
+     ],
+     "imageGroup": "coupe-plate-1",
+     "rows": [
+      [
+       "JP-1309",
+       "9\" 2 DZ"
+      ],
+      [
+       "JP-1312",
+       "12\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       1230,
+       2040,
+       1315,
+       2085
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "green",
+     "blue"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "japanese",
+   "page": 172,
+   "complete": true,
+   "color": "ivory green blue",
+   "groups": [
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      125,
+      165,
+      660,
+      545
+     ],
+     "imageGroup": "oval-plate-0",
+     "rows": [
+      [
+       "JP-2008",
+       "8\" X 5 3/4\" 4 DZ"
+      ],
+      [
+       "JP-2009",
+       "9\" X 3 1/4\" 2 DZ"
+      ],
+      [
+       "JP-2010",
+       "10\" X 7 1/4\" 2 DZ"
+      ],
+      [
+       "JP-2012",
+       "12\" X 9\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Sushi Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      810,
+      165,
+      1080,
+      825
+     ],
+     "imageGroup": "rectangular-sushi-plate-1",
+     "rows": [
+      [
+       "JP-1504",
+       "10 1/4\" X 4 1/4\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Sushi Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1175,
+      165,
+      1495,
+      635
+     ],
+     "imageGroup": "rectangular-sushi-plate-2",
+     "rows": [
+      [
+       "JP-1502",
+       "6 3/4\" X 4 1/2\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sushi Boat",
+     "type": "tray",
+     "shape": "oval",
+     "crop": [
+      125,
+      750,
+      705,
+      1005
+     ],
+     "imageGroup": "sushi-boat-3",
+     "rows": [
+      [
+       "JP-8005",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Wave Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1135,
+      545,
+      1290
+     ],
+     "imageGroup": "rectangular-wave-plate-4",
+     "rows": [
+      [
+       "JP-1609",
+       "8 1/2\" X 5 1/2\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Sushi Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      640,
+      1090,
+      1055,
+      1290
+     ],
+     "imageGroup": "rectangular-sushi-plate-5",
+     "rows": [
+      [
+       "JP-1513",
+       "6 3/4\" X 4 1/2\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Triangle Sushi Plate",
+     "type": "plate",
+     "shape": "triangular",
+     "crop": [
+      1120,
+      930,
+      1505,
+      1295
+     ],
+     "imageGroup": "triangle-sushi-plate-6",
+     "rows": [
+      [
+       "JP-1508",
+       "8\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Divided Square Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      150,
+      1455,
+      410,
+      1625
+     ],
+     "imageGroup": "divided-square-sauce-dish-7",
+     "rows": [
+      [
+       "JP-0001",
+       "3 1/2\" 2 OZ EACH 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Wave Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      500,
+      1485,
+      790,
+      1625
+     ],
+     "imageGroup": "wave-sauce-dish-8",
+     "rows": [
+      [
+       "JP-0002",
+       "4 1/8\" X 3\" 3 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      865,
+      1445,
+      1135,
+      1630
+     ],
+     "imageGroup": "sauce-dish-9",
+     "rows": [
+      [
+       "JP-1023",
+       "3 1/4\" 3 OZ 6 DZ"
+      ],
+      [
+       "JP-1028",
+       "3 3/4\" 4 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dish",
+     "type": "sauce dish",
+     "shape": "other",
+     "crop": [
+      1215,
+      1420,
+      1495,
+      1635
+     ],
+     "imageGroup": "dish-10",
+     "rows": [
+      [
+       "JP-3001",
+       "4 1/8\" 3.5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      145,
+      1880,
+      400,
+      2010
+     ],
+     "imageGroup": "sauce-dish-11",
+     "rows": [
+      [
+       "JP-4046",
+       "3 3/4\" X 2 1/2\" 2.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Divided Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      475,
+      1855,
+      775,
+      2010
+     ],
+     "imageGroup": "double-divided-sauce-dish-12",
+     "rows": [
+      [
+       "JP-4031",
+       "5\" X 3 1/2\" 2.5 OZ EACH 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Side Dish",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      845,
+      1815,
+      1135,
+      2030
+     ],
+     "imageGroup": "square-side-dish-13",
+     "rows": [
+      [
+       "JP-5149",
+       "5 1/4\" X 2\" 14 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      1195,
+      1780,
+      1525,
+      2030
+     ],
+     "imageGroup": "soup-spoon-14",
+     "rows": [
+      [
+       "JP-7001",
+       "5 1/2\" 6 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "japanese",
+   "page": 173,
+   "complete": true,
+   "color": "ivory green blue",
+   "groups": [
+    {
+     "name": "Saucer",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      140,
+      215,
+      465,
+      535
+     ],
+     "imageGroup": "saucer-0",
+     "rows": [
+      [
+       "JP-1338",
+       "6\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      535,
+      315,
+      775,
+      515
+     ],
+     "imageGroup": "tea-cup-1",
+     "rows": [
+      [
+       "JP-9152",
+       "3\" X 2 1/2\" 6 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      870,
+      280,
+      1095,
+      525
+     ],
+     "imageGroup": "tea-cup-2",
+     "rows": [
+      [
+       "JP-9302",
+       "3 1/2\" X 2 1/2\" 8 OZ 4 DZ"
+      ],
+      [
+       "JP-9304",
+       "3 1/2\" X 3 1/4\" 12 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Bowl",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      1175,
+      275,
+      1525,
+      525
+     ],
+     "imageGroup": "sauce-bowl-3",
+     "rows": [
+      [
+       "JP-3545",
+       "5\" X 1 3/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      140,
+      795,
+      455,
+      990
+     ],
+     "imageGroup": "square-bowl-4",
+     "rows": [
+      [
+       "JP-1035",
+       "4 3/8\" X 1 3/4\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      500,
+      820,
+      820,
+      990
+     ],
+     "imageGroup": "bowl-5",
+     "rows": [
+      [
+       "JP-3002",
+       "5 1/2\" X 1 3/4\" 12 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      850,
+      795,
+      1160,
+      990
+     ],
+     "imageGroup": "soup-bowl-6",
+     "rows": [
+      [
+       "JP-3003",
+       "5 1/2\" X 2 1/4\" 12 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Nanjing Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1215,
+      790,
+      1510,
+      990
+     ],
+     "imageGroup": "nanjing-bowl-7",
+     "rows": [
+      [
+       "JP-3004",
+       "4 1/2\" X 2\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Jingdu Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      140,
+      1220,
+      465,
+      1435
+     ],
+     "imageGroup": "jingdu-bowl-8",
+     "rows": [
+      [
+       "JP-3005",
+       "5\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      515,
+      1225,
+      825,
+      1435
+     ],
+     "imageGroup": "soup-bowl-9",
+     "rows": [
+      [
+       "JP-3008",
+       "4 1/2\" X 2\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Small Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      855,
+      1225,
+      1140,
+      1435
+     ],
+     "imageGroup": "small-bowl-10",
+     "rows": [
+      [
+       "JP-3009",
+       "3 3/4\" X 1 3/4\" 5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1195,
+      1205,
+      1520,
+      1435
+     ],
+     "imageGroup": "soup-bowl-11",
+     "rows": [
+      [
+       "JP-5050",
+       "5\" X 2 3/4\" 14 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      140,
+      1675,
+      550,
+      1900
+     ],
+     "imageGroup": "soup-bowl-12",
+     "rows": [
+      [
+       "JP-5060",
+       "6\" X 2\" 18 OZ 4 DZ"
+      ],
+      [
+       "JP-5065",
+       "7\" X 2 1/4\" 22 OZ 4 DZ"
+      ],
+      [
+       "JP-5070",
+       "8\" X 2 1/4\" 36 OZ 4 DZ"
+      ],
+      [
+       "JP-5075",
+       "9\" X 2 3/4\" 48 OZ 2 DZ"
+      ],
+      [
+       "JP-5085",
+       "10\" X 3\" 68 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      630,
+      1660,
+      1020,
+      1900
+     ],
+     "imageGroup": "rice-bowl-13",
+     "rows": [
+      [
+       "JP-5205",
+       "5 1/2\" X 2 1/4\" 14 OZ 4 DZ"
+      ],
+      [
+       "JP-5207",
+       "7\" X 2 3/4\" 22 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Curved Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1095,
+      1640,
+      1515,
+      1900
+     ],
+     "imageGroup": "curved-noodle-bowl-14",
+     "rows": [
+      [
+       "JP-5265",
+       "6 1/2\" X 2 1/2\" 20 OZ 4 DZ"
+      ],
+      [
+       "JP-5275",
+       "7\" X 3\" 22 OZ 4 DZ"
+      ],
+      [
+       "JP-5285",
+       "8\" X 3 1/4\" 42 OZ 2 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

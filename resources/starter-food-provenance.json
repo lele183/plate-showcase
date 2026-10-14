@@ -1,0 +1,21 @@
+{
+  "mode": "Built-in imagegen tool",
+  "purpose": "Illustrative starter food layers; dinnerware photography is preserved independently.",
+  "assets": [
+    {
+      "path": "public/food/salmon-v2.webp",
+      "source": "public/food/salmon.webp",
+      "prompt": "Use case: background-extraction. Asset: isolated starter food layer for the Yanco plating website. Edit target: the supplied photograph of salmon with golden yellow sauce, bread and herbs. Keep the actual food and its photographic identity. Remove ALL dinnerware, the ceramic plate, its patterned rim, tabletop, shadows of the plate, and background. Return ONLY the salmon, bread, vegetables, herbs, and sauce as a realistic coherent food arrangement on genuine transparent alpha, with clean cutout edges and generous transparent padding. Absolutely no plate or bowl, no rectangle of background, no text. View directly from overhead for placing this food on a separate plate."
+    },
+    {
+      "path": "public/food/vegetables-v2.webp",
+      "source": "public/food/vegetables.webp",
+      "prompt": "Use case: background-extraction. Asset: starter vegetables layer for a dinnerware plating website. Edit target: supplied photograph of broccoli, lemon wedge, asparagus, sauce. Preserve the food identity, realistic textures and colors, arrange naturally from directly overhead. Remove every pixel of ceramic plate, tabletop, backdrop and plate shadows. Return ONLY a coherent arrangement of broccoli, lemon, asparagus and sauce on genuine transparent alpha, crisp natural edges and transparent padding. No plate, bowl, background rectangle, text or cutlery."
+    },
+    {
+      "path": "public/food/toast-v2.webp",
+      "source": "public/food/toast.webp",
+      "prompt": "Use case: background-extraction. Asset: starter small-plates food layer for a dinnerware plating website. Edit target: supplied photograph of toasted bread and frisee/herb garnish. Preserve food identity, warm toasted texture, golden brown bread and fresh green garnish, viewed directly from overhead. Remove the black and white ceramic plate, backdrop, table, border, plate shadow, and ALL background. Return ONLY the bread pieces and garnish on genuine transparent alpha, clean natural edges and transparent padding. No dinnerware, no plate, no background rectangle, no text."
+    }
+  ]
+}

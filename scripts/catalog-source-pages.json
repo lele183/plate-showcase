@@ -1,0 +1,81 @@
+{"pages":[
+  {"collection":"lyon","page":27,"complete":true,"color":"turquoise","groups":[
+    {"name":"Coffee/Tea Cup Turquoise","type":"cup","shape":"round","crop":[165,850,455,1050],"imageGroup":"cup","rows":[["LY-001TQ","4\" X 2 5/8\" 7 OZ 3 DZ"]]},
+    {"name":"Saucer Turquoise for LY-001TQ","type":"saucer","shape":"round","crop":[540,785,790,1035],"imageGroup":"saucer","rows":[["LY-002TQ","6 1/2\" X 3/4\" 3 DZ"]]},
+    {"name":"Triangle Sauce Bowl Turquoise","type":"bowl","shape":"triangular","crop":[890,865,1150,1035],"imageGroup":"sauce","rows":[["LY-404TQ","4 3/4\" X 4 3/8\" X 1 5/8\" 5 OZ 3 DZ"]]},
+    {"name":"Mug Turquoise","type":"cup","shape":"round","crop":[1250,805,1510,1045],"imageGroup":"mug","rows":[["LY-503TQ","3 1/4\" X 4\" 10 OZ 3 DZ"]]},
+    {"name":"Plate Turquoise","type":"plate","shape":"irregular","crop":[120,1220,500,1455],"imageGroup":"plate","rows":[["LY-106TQ","5 3/4\" X 5\" X 3/4\" 3 DZ"],["LY-107TQ","7 1/4\" X 6 3/8\" X 1 1/8\" 3 DZ"],["LY-109TQ","8 3/4\" X 7 5/8\" X 1 3/8\" 2 DZ"],["LY-110TQ","10 1/2\" X 9 1/4\" X 1 5/8\" 1 DZ"]]},
+    {"name":"Rectangular Plate Turquoise","type":"plate","shape":"rectangular","crop":[600,1225,1080,1420],"imageGroup":"rectangular","rows":[["LY-213TQ","13\" X 7 3/8\" X 1 1/2\" 1 DZ"],["LY-215TQ","15\" X 8 1/2\" X 1 5/8\" 1 DZ"]]},
+    {"name":"Soup/Salad Plate Turquoise","type":"plate","shape":"irregular","crop":[1170,1255,1525,1455],"imageGroup":"soup","rows":[["LY-307TQ","7\" X 6 1/2\" X 2 1/4\" 15 OZ 3 DZ"],["LY-309TQ","9\" X 7 7/8\" X 2 3/8\" 20 OZ 2 DZ"]]},
+    {"name":"Oval Bowl Turquoise","type":"bowl","shape":"oval","crop":[135,1735,470,1905],"imageGroup":"oval-bowl","rows":[["LY-405TQ","5 1/2\" X 3 3/4\" X 1 3/8\" 5 OZ 3 DZ"],["LY-407TQ","7\" X 4 3/4\" X 1 3/4\" 10 OZ 2 DZ"],["LY-409TQ","9\" X 6 1/4\" X 2 3/8\" 20 OZ 1 DZ"]]},
+    {"name":"Coupe Plate Turquoise","type":"plate","shape":"round","crop":[635,1620,980,1945],"imageGroup":"coupe","rows":[["LY-1107TQ","7 1/4\" X 3/4\" 3 DZ"],["LY-1110TQ","10 1/4\" X 1\" 1 DZ"],["LY-1112TQ","12 1/4\" X 1 1/4\" 1 DZ"]]},
+    {"name":"Coupe Platter Turquoise","type":"platter","shape":"oval","crop":[1090,1680,1530,1915],"imageGroup":"coupe-platter","rows":[["LY-2108TQ","8\" X 5 1/2\" X 3/4\" 3 DZ"],["LY-2110TQ","10\" X 7\" X 1\" 2 DZ"],["LY-2112TQ","12\" X 8 1/4\" X 1 1/4\" 1 DZ"],["LY-2114TQ","14\" X 10\" X 1 1/4\" 1 DZ"]]}
+  ]},
+  {"collection":"ocean","page":36,"complete":true,"color":"blue, white","groups":[
+    {"name":"Coupe Plate","type":"plate","shape":"round","crop":[130,1090,510,1460],"imageGroup":"coupe","rows":[["OC-107","7\" X 3/4\" 3 DZ"],["OC-109","9\" X 7/8\" 2 DZ"],["OC-110","10 1/2\" X 1\" 1 DZ"],["OC-112","12\" X 1 1/4\" 1 DZ"]]},
+    {"name":"Coupe Shape Oval Plate","type":"plate","shape":"oval","crop":[605,1180,1065,1430],"imageGroup":"oval","rows":[["OC-208","8\" X 5 5/8\" X 3/4\" 3 DZ"],["OC-210","10\" X 7\" X 1\" 2 DZ"],["OC-212","12\" X 8 3/8\" X 1 1/8\" 1 DZ"],["OC-214","14\" X 10\" X 1 1/4\" 1 DZ"],["OC-216","16\" X 11\" X 1 1/2\" 1 DZ"]]},
+    {"name":"Rectangular Plate","type":"plate","shape":"rectangular","crop":[1150,1150,1525,1435],"imageGroup":"rectangular","rows":[["OC-308","8\" X 5 1/2\" X 7/8\" 3 DZ"],["OC-310","10\" X 7\" X 1 1/8\" 2 DZ"],["OC-312","12\" X 8 1/4\" X 1 1/2\" 1 DZ"]]},
+    {"name":"Rectangular Sushi Plate","type":"plate","shape":"rectangular","crop":[125,1675,515,1950],"imageGroup":"sushi-small","rows":[["OC-3110","10\" X 4 1/4\" 2 DZ"]]},
+    {"name":"Rectangular Sushi Plate","type":"plate","shape":"rectangular","crop":[595,1660,1015,1950],"imageGroup":"sushi-large","rows":[["OC-3112","11 1/2\" X 5 1/2\" 1 DZ"]]},
+    {"name":"Deep Soup/Salad Plate","type":"plate","shape":"round","crop":[1160,1680,1520,1930],"imageGroup":"soup","rows":[["OC-407","7\" X 1 1/2\" 10 OZ 3 DZ"],["OC-408","8\" X 1 1/2\" 14 OZ 3 DZ"],["OC-409","9\" X 1 1/2\"H 18 OZ 2 DZ"]]}
+  ]},
+  {"collection":"piscataway","page":49,"complete":true,"color":"bone white","groups":[
+    {"name":"Coupe Plate","type":"plate","shape":"round","crop":[120,170,475,510],"imageGroup":"coupe","rows":[["PS-7-C","7\" 3 DZ"],["PS-8-C","8\" 3 DZ"],["PS-9-C","9\" 2 DZ"],["PS-10-C","10\" 1 DZ"],["PS-12-C","12\" 1 DZ"],["PS-14-C","14\" 6 PC"]]},
+    {"name":"Coupe Platter","type":"platter","shape":"oval","crop":[565,260,1070,475],"imageGroup":"platter","rows":[["PS-8-CP","8\" X 5 1/2\" 2 DZ"],["PS-10-CP","10\" X 7\" 2 DZ"],["PS-12-CP","12\" X 8 1/4\" 1 DZ"],["PS-14-CP","14\" X 10\" 1 DZ"]]},
+    {"name":"Salad Bowl","type":"bowl","shape":"round","crop":[1140,275,1540,490],"imageGroup":"salad","rows":[["PS-1108","8\" 16 OZ 2 DZ"],["PS-1120","10\" 32 OZ 1 DZ"],["PS-1122","12\" 48 OZ 1 DZ"],["PS-1130","13\" 60 OZ 1 DZ"]]},
+    {"name":"Sheer Bowl","type":"bowl","shape":"round","crop":[155,820,420,1040],"imageGroup":"sheer","rows":[["PS-2006","6\" 18 OZ 2 DZ"],["PS-2007","7\" 26 OZ 2 DZ"]]},
+    {"name":"Square Bowl","type":"bowl","shape":"square","crop":[485,830,835,1035],"imageGroup":"square","rows":[["PS-2105","5 1/2\" 6 OZ 3 DZ"],["PS-2106","6 1/2\" 10 OZ 3 DZ"],["PS-2107","7 1/2\" 14 OZ 2 DZ"],["PS-2109","9\" 24 OZ 1 DZ"]]},
+    {"name":"Bowl","type":"bowl","shape":"round","crop":[845,810,1120,1035],"imageGroup":"bowl","rows":[["PS-2204","4 1/2\" 9 OZ 3 DZ"],["PS-2205","5 1/2\" 16 OZ 3 DZ"],["PS-2206","6 1/2\" 26 OZ 2 DZ"]]},
+    {"name":"4-Compartment","type":"plate","shape":"rectangular","crop":[1165,835,1540,1030],"imageGroup":"four-compartment","rows":[["PS-2010","10 1/4\" X 8 3/4\" 1 DZ"]]},
+    {"name":"Oval Compartment","type":"plate","shape":"oval","crop":[100,1390,505,1500],"imageGroup":"oval-compartment","rows":[["PS-2011","11\" X 5 3/4\" 1 DZ"],["PS-2013","13\" X 7\" 1 DZ"]]},
+    {"name":"3-Compartment","type":"plate","shape":"rectangular","crop":[625,1350,1060,1500],"imageGroup":"three-compartment","rows":[["PS-2012","12\" X 8 1/2\" 1 DZ"],["PS-2014","14 1/2\" X 9 1/2\" 1 DZ"]]},
+    {"name":"3-Compartment","type":"sauce dish","shape":"irregular","crop":[1155,1350,1540,1510],"imageGroup":"three-sauce","rows":[["PS-2111","11\" X 5\" 3 OZ EACH 3 DZ"]]},
+    {"name":"Three 3 Inch Square Bowl with Tray","type":"tray","shape":"rectangular","crop":[115,1810,520,1950],"imageGroup":"square-tray","rows":[["PS-724","11\" X 4 1/4\" 3 OZ EACH 12 SET"]]},
+    {"name":"Three 3 Inch Cup with Tray","type":"tray","shape":"rectangular","crop":[645,1780,1025,1950],"imageGroup":"cup-tray","rows":[["PS-722","10 1/2\" X 3 1/2\" 4 OZ EACH 12 SET"]]},
+    {"name":"Three Spoon with Tray","type":"tray","shape":"rectangular","crop":[1110,1730,1535,1955],"imageGroup":"spoon-tray","rows":[["PS-721","2\" 2 OZ SPOON 10 1/2\" X 3 1/2\" 12 SET",{"dimensions":{"length":10.5,"width":3.5,"height":null}}],["PS-723","3 1/4\" 4 OZ SPOON 13 1/2\" X 4 1/2\" 12 SET",{"dimensions":{"length":13.5,"width":4.5,"height":null}}]]}
+  ]},
+  {"collection":"piscataway","page":51,"complete":true,"color":"bone white","groups":[
+    {"name":"Tall Cup","type":"cup","shape":"round","crop":[210,260,455,480],"imageGroup":"tall","rows":[["PS-1","3\" 7 OZ 3 DZ"]]},
+    {"name":"Saucer for PS-1","type":"saucer","shape":"round","crop":[525,235,785,485],"imageGroup":"saucer","rows":[["PS-2","5 5/8\" 3 DZ"]]},
+    {"name":"Espresso Cup","type":"cup","shape":"round","crop":[875,270,1135,475],"imageGroup":"espresso","rows":[["PS-35","2 1/2\" 3.5 OZ 3 DZ"]]},
+    {"name":"Saucer for PS-35","type":"saucer","shape":"round","crop":[1195,235,1470,485],"imageGroup":"espresso-saucer","rows":[["PS-36","4 1/2\" 3 DZ"]]},
+    {"name":"Small Dish","type":"sauce dish","shape":"round","crop":[170,820,410,970],"imageGroup":"small-dish","rows":[["PS-003","3 1/2\" 2 OZ 6 DZ"]]},
+    {"name":"Fruit Bowl","type":"bowl","shape":"round","crop":[485,805,765,980],"imageGroup":"fruit","rows":[["PS-32","4 1/4\" 3.5 OZ 3 DZ"],["PS-11","4 3/4\" 5 OZ 3 DZ"]]},
+    {"name":"Grapefruit Bowl","type":"bowl","shape":"round","crop":[835,790,1170,970],"imageGroup":"grapefruit","rows":[["PS-10","6 1/2\" 13 OZ 3 DZ"]]},
+    {"name":"Sierra Mug","type":"cup","shape":"round","crop":[1250,740,1530,995],"imageGroup":"mug","rows":[["PS-8-S","3\" 8 OZ 3 DZ"]]},
+    {"name":"Soup Spoon","type":"spoon","shape":"other","crop":[150,1230,455,1425],"imageGroup":"spoon","rows":[["PS-005","5 1/2\" 6 DZ"]]},
+    {"name":"Chinese Tea Cup","type":"cup","shape":"round","crop":[515,1250,720,1450],"imageGroup":"tea","rows":[["PS-45","3\" 4.5 OZ 3 DZ"]]},
+    {"name":"Bouillon Cup","type":"cup","shape":"round","crop":[810,1245,1050,1450],"imageGroup":"bouillon","rows":[["PS-4","3 3/4\" 7 OZ 3 DZ"]]},
+    {"name":"Soup Plate","type":"plate","shape":"round","crop":[1130,1185,1520,1445],"imageGroup":"soup-plate","rows":[["PS-3","9\" 10 OZ 2 DZ"]]},
+    {"name":"Rice Bowl","type":"bowl","shape":"round","crop":[175,1700,445,1905],"imageGroup":"rice","rows":[["PS-007","4 1/2\" 8.5 OZ 4 DZ"]]},
+    {"name":"Nappie Bowl","type":"bowl","shape":"round","crop":[505,1700,785,1905],"imageGroup":"nappie-small","rows":[["PS-15","5\" 12 OZ 3 DZ"]]},
+    {"name":"Nappie Bowl","type":"bowl","shape":"round","crop":[840,1700,1130,1905],"imageGroup":"nappie-large","rows":[["PS-18","5 1/2\" 15 OZ 3 DZ"]]},
+    {"name":"Menudo Bowl","type":"bowl","shape":"round","crop":[1180,1695,1520,1915],"imageGroup":"menudo","rows":[["PS-7-M","7 1/2\" 25 OZ 2 DZ"],["PS-8-M","8 1/2\" 48 OZ 2 DZ"]]}
+  ]},
+  {"collection":"mainland","page":66,"complete":true,"color":"super white","groups":[
+    {"name":"Two Divided Tray","type":"tray","shape":"rectangular","crop":[120,230,525,410],"imageGroup":"two","rows":[["ML-727","7 7/8\" X 4\" X 1 3/8\" 6 OZ EACH 3 DZ"],["ML-728","10\" X 4\" X 1 5/8\" 10 OZ EACH 2 DZ"],["ML-729","10\" X 5 1/2\" X 2 5/8\" 16 OZ EACH 2 DZ"]]},
+    {"name":"Three Divided Tray","type":"tray","shape":"rectangular","crop":[645,250,1020,415],"imageGroup":"three","rows":[["ML-737","7\" X 2 1/2\" X 1 1/4\" 1.5 OZ EACH 2 DZ"]]},
+    {"name":"Four Divided Square Bowl","type":"bowl","shape":"square","crop":[1150,195,1530,415],"imageGroup":"four","rows":[["ML-814","7\" 6 OZ EACH 2 DZ"]]},
+    {"name":"Leaf Shape Plate","type":"plate","shape":"irregular","crop":[130,735,480,940],"imageGroup":"leaf","rows":[["ML-806","5 3/4\" 3 DZ"]]},
+    {"name":"Square Compartment with Three Round Dish","type":"plate","shape":"square","crop":[585,665,1070,945],"imageGroup":"square-compartment","rows":[["ML-810","10\" X 2 3/4\" 3 OZ EACH 12 SET"]]},
+    {"name":"Three Divided Bowl","type":"bowl","shape":"irregular","crop":[1150,695,1530,945],"imageGroup":"three-bowl-small","rows":[["ML-813","8\" X 6\" 4 OZ EACH 2 DZ"]]},
+    {"name":"Three Divided Bowl","type":"bowl","shape":"irregular","crop":[115,1150,490,1395],"imageGroup":"three-bowl-large","rows":[["ML-823","11\" X 8 1/2\" 6 OZ EACH 1 DZ"]]},
+    {"name":"Four Divided Bowl","type":"bowl","shape":"irregular","crop":[550,1180,1010,1395],"imageGroup":"four-bowl","rows":[["ML-824","13 1/2\" X 8 3/4\" 5 OZ EACH 1 DZ"]]},
+    {"name":"Three Divided Bowl","type":"bowl","shape":"irregular","crop":[1045,1195,1540,1400],"imageGroup":"three-bowl-long","rows":[["ML-833","13\" X 4\" 5 OZ EACH 2 DZ"]]},
+    {"name":"Square Plate with Rounded Corner","type":"plate","shape":"square","crop":[125,1530,480,1890],"imageGroup":"square-plate","rows":[["ML-2107","6 3/4\" X 1/2\" 3 DZ"],["ML-2108","8\" X 3/4\" 3 DZ"],["ML-2109","9\" X 1\" 2 DZ"],["ML-2110","10 1/2\" X 1 1/4\" 1 DZ"],["ML-2112","12\" X 1 1/2\" 1 DZ"]]},
+    {"name":"Rectangular Plate with Rounded Corner","type":"plate","shape":"rectangular","crop":[605,1580,1025,1860],"imageGroup":"rectangle-plate","rows":[["ML-2210","9 3/4\" X 6 1/4 X 1\" 2 DZ",{"dimensions":{"length":9.75,"width":6.25,"height":1}}],["ML-2212","12 1/2\" X 8 1/4\" X 1 1/8\" 1 DZ"],["ML-2214","14 1/4\" X 9 1/2\" X 1 1/4\" 1 DZ"]]},
+    {"name":"Square Bowl with Rounded Corner","type":"bowl","shape":"square","crop":[1150,1645,1525,1860],"imageGroup":"square-bowl","rows":[["ML-2405","5 1/2\" X 1 1/2\" 8 OZ 3 DZ"],["ML-2406","6 1/2\" X 1 3/4\" 12 OZ 3 DZ"],["ML-2407","7 1/4\" X 2\" 18 OZ 2 DZ"],["ML-2409","9\" X 2 1/2\" 36 OZ 1 DZ"]]}
+  ]},
+  {"collection":"miami","page":68,"complete":true,"color":"bone white","groups":[
+    {"name":"Plate","type":"plate","shape":"round","crop":[125,145,540,565],"imageGroup":"plate","rows":[["MM-6","1/4\" 3 DZ",{"dimensions":null,"reviewNeeded":true,"sourceNote":"The printed catalog omits the leading diameter before 1/4 inch. Confirm with Yanco."}],["MM-7","7 1/4\" 3 DZ"],["MM-8","9 1/8\" 2 DZ"],["MM-9","9 3/4\" 2 DZ"],["MM-16","10 1/2\" 1 DZ"],["MM-20","11 1/4\" 1 DZ"],["MM-21","12\" 1 DZ"]]},
+    {"name":"Oval Platter","type":"platter","shape":"oval","crop":[985,155,1470,525],"imageGroup":"oval","rows":[["MM-34","9 1/4\" X 7\" 2 DZ"],["MM-12","10 1/4\" X 7 3/4\" 2 DZ"],["MM-13","11 3/4\" X 8 3/4\" 1 DZ"],["MM-14","14\" X 10\" 1 DZ"]]},
+    {"name":"Rectangular Platter","type":"platter","shape":"rectangular","crop":[125,705,640,1070],"imageGroup":"rectangular","rows":[["MM-93","11 3/4\" X 8 1/2\" 1 DZ"],["MM-94","14\" X 10\" 1 DZ"]]},
+    {"name":"Pasta Bowl","type":"bowl","shape":"round","crop":[1010,755,1445,1055],"imageGroup":"pasta","rows":[["MM-115","11 1/2\" 22 OZ 1 DZ"],["MM-120","12\" 24 OZ 1 DZ"]]},
+    {"name":"Rim Soup Plate","type":"plate","shape":"round","crop":[125,1260,515,1495],"imageGroup":"soup","rows":[["MM-3","9\" 10 OZ 2 DZ"]]},
+    {"name":"Grapefruit Bowl","type":"bowl","shape":"round","crop":[675,1285,1035,1485],"imageGroup":"grapefruit","rows":[["MM-10","6 3/8\" 6 OZ 3 DZ"]]},
+    {"name":"Fruit Bowl","type":"bowl","shape":"round","crop":[1160,1285,1510,1485],"imageGroup":"fruit","rows":[["MM-11","5 1/4\" 5.5 OZ 3 DZ"],["MM-32","4 3/4\" 3.5 OZ 3 DZ"]]},
+    {"name":"Nappie Bowl","type":"bowl","shape":"round","crop":[140,1730,490,1945],"imageGroup":"nappie","rows":[["MM-15","6\" 12.5 OZ 3 DZ"]]},
+    {"name":"Bowl","type":"bowl","shape":"round","crop":[590,1720,975,1945],"imageGroup":"bowl","rows":[["MM-80","7\" 25 OZ 2 DZ"],["MM-81","8\" 48 OZ 1 DZ"],["MM-82","9\" 64 OZ 1 DZ"]]},
+    {"name":"Square Soup Plate","type":"plate","shape":"square","crop":[1105,1670,1535,1945],"imageGroup":"square-soup","rows":[["MM-309","9\" 12 OZ 2 DZ"],["MM-311","11\" 24 OZ 1 DZ"]]}
+  ]}
+]}

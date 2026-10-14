@@ -1,0 +1,964 @@
+{
+ "pages": [
+  {
+   "collection": "glory",
+   "page": 12,
+   "complete": true,
+   "color": "ivory, brown",
+   "groups": [
+    {
+     "name": "Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      505,
+      1825,
+      765,
+      1990
+     ],
+     "imageGroup": "cup",
+     "rows": [
+      [
+       "GL-001",
+       "4\" X 2 1/4\" CUP 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for GL-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      880,
+      1745,
+      1160,
+      2025
+     ],
+     "imageGroup": "saucer",
+     "rows": [
+      [
+       "GL-002",
+       "6 1/2\" X 1/2\" SAUCER 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1275,
+      1800,
+      1525,
+      2025
+     ],
+     "imageGroup": "mug",
+     "rows": [
+      [
+       "GL-012",
+       "3 1/2\" X 4\" 12 OZ 3 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "brown"
+    ]
+   }
+  },
+  {
+   "collection": "glory",
+   "page": 13,
+   "complete": true,
+   "color": "ivory, brown",
+   "groups": [
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      235,
+      540,
+      410
+     ],
+     "imageGroup": "rectangle",
+     "rows": [
+      [
+       "GL-208",
+       "8 1/2\" X 5\" X 3/4\" 3 DZ"
+      ],
+      [
+       "GL-213",
+       "13 3/8\" X 7 3/8\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      595,
+      265,
+      1060,
+      410
+     ],
+     "imageGroup": "oval-narrow",
+     "rows": [
+      [
+       "GL-209",
+       "9\" X 4 1/4\" X 7/8\" 3 DZ"
+      ],
+      [
+       "GL-215",
+       "14 1/8\" X 5 3/8\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1135,
+      225,
+      1500,
+      415
+     ],
+     "imageGroup": "oval",
+     "rows": [
+      [
+       "GL-210",
+       "10\" X 6\" X 5/8\" 2 DZ"
+      ],
+      [
+       "GL-212",
+       "11 7/8\" X 7 3/4\" X 3/4\" 1 DZ"
+      ],
+      [
+       "GL-214",
+       "13 7/8\" X 9 3/4\" X 7/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate with Up-Right Rim",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      725,
+      550,
+      1025
+     ],
+     "imageGroup": "round",
+     "rows": [
+      [
+       "GL-106",
+       "6 1/2\" X 3/4\" 3 DZ"
+      ],
+      [
+       "GL-107",
+       "7 7/8\" X 7/8\" 3 DZ"
+      ],
+      [
+       "GL-109",
+       "9\" X 1\" 2 DZ"
+      ],
+      [
+       "GL-110",
+       "10\" X 1\" 1 DZ"
+      ],
+      [
+       "GL-112",
+       "12\" X 1 1/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      655,
+      805,
+      1045,
+      990
+     ],
+     "imageGroup": "salad",
+     "rows": [
+      [
+       "GL-509",
+       "9\" X 1 3/8\" 25 OZ 1 DZ"
+      ],
+      [
+       "GL-510",
+       "9 3/4\" X 2\" 35 OZ 1 DZ"
+      ],
+      [
+       "GL-511",
+       "11\" X 2\" 45 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1160,
+      795,
+      1525,
+      1020
+     ],
+     "imageGroup": "dessert",
+     "rows": [
+      [
+       "GL-310",
+       "10 3/8\" X 1 3/4\" 8 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      90,
+      1360,
+      410,
+      1510
+     ],
+     "imageGroup": "soup-oval",
+     "rows": [
+      [
+       "GL-309",
+       "9 1/2\" X 8 1/4\" X 2 3/4\" 10 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      445,
+      1330,
+      840,
+      1535
+     ],
+     "imageGroup": "soup",
+     "rows": [
+      [
+       "GL-410",
+       "10 1/2\" X 2 3/8\" 12 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      855,
+      1350,
+      1245,
+      1535
+     ],
+     "imageGroup": "pasta",
+     "rows": [
+      [
+       "GL-412",
+       "12\" X 2 5/8\" 14.5 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ramen Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1285,
+      1355,
+      1560,
+      1515
+     ],
+     "imageGroup": "ramen",
+     "rows": [
+      [
+       "GL-307",
+       "6 5/8\" X 2 3/4\" 28 OZ 1 DZ"
+      ],
+      [
+       "GL-308",
+       "8 1/8\" X 3 1/8\" 52 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      170,
+      1830,
+      390,
+      1975
+     ],
+     "imageGroup": "sauce",
+     "rows": [
+      [
+       "GL-302",
+       "2 3/4\" X 2 3/8\" X 1 3/4\" 2 OZ 4 DZ"
+      ],
+      [
+       "GL-304",
+       "4\" X 3 1/4\" X 2 1/4\" 4 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      515,
+      1835,
+      740,
+      1975
+     ],
+     "imageGroup": "rice",
+     "rows": [
+      [
+       "GL-3104",
+       "4 3/8\" X 2\" 9 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      875,
+      1810,
+      1145,
+      1990
+     ],
+     "imageGroup": "bowl",
+     "rows": [
+      [
+       "GL-305",
+       "5\" X 2 3/8\" 12.5 OZ 3 DZ"
+      ],
+      [
+       "GL-306",
+       "6\" X 2 7/8\" 20 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Shallow Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1265,
+      1825,
+      1545,
+      1985
+     ],
+     "imageGroup": "shallow",
+     "rows": [
+      [
+       "GL-507",
+       "7 1/4\" X 1 3/4\" 20 OZ 2 DZ"
+      ],
+      [
+       "GL-508",
+       "8 1/2\" X 2 1/8\" 35 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "ivory",
+     "brown"
+    ]
+   }
+  },
+  {
+   "collection": "diamond-black",
+   "page": 14,
+   "complete": true,
+   "color": "black, bronze",
+   "groups": [
+    {
+     "name": "Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      160,
+      855,
+      440,
+      1060
+     ],
+     "imageGroup": "cup",
+     "rows": [
+      [
+       "DB-001",
+       "3 1/2\" X 2 1/2\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for DB-001",
+     "type": "saucer",
+     "shape": "oval",
+     "crop": [
+      510,
+      870,
+      795,
+      1050
+     ],
+     "imageGroup": "saucer",
+     "rows": [
+      [
+       "DB-002",
+       "6\" X 4 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      860,
+      850,
+      1125,
+      1085
+     ],
+     "imageGroup": "mug",
+     "rows": [
+      [
+       "DB-012",
+       "3 5/8\" X 4\" 12 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Shape Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1155,
+      710,
+      1545,
+      1095
+     ],
+     "imageGroup": "round",
+     "rows": [
+      [
+       "DB-107",
+       "7\" X 3/4\" 3 DZ"
+      ],
+      [
+       "DB-109",
+       "9\" X 7/8\" 2 DZ"
+      ],
+      [
+       "DB-110",
+       "10 1/2\" X 1 1/8\" 1 DZ"
+      ],
+      [
+       "DB-112",
+       "12\" X 1 3/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Triangle Plate",
+     "type": "plate",
+     "shape": "triangular",
+     "crop": [
+      120,
+      1285,
+      505,
+      1530
+     ],
+     "imageGroup": "triangle",
+     "rows": [
+      [
+       "DB-207",
+       "7\" X 1\" 3 DZ"
+      ],
+      [
+       "DB-210",
+       "10 1/2\" X 1 1/2\" 1 DZ"
+      ],
+      [
+       "DB-212",
+       "12\" X 1 3/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Leaf Shape Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      605,
+      1330,
+      1030,
+      1535
+     ],
+     "imageGroup": "leaf",
+     "rows": [
+      [
+       "DB-310",
+       "10\" X 4 3/4\" X 3/4\" 2 DZ"
+      ],
+      [
+       "DB-314",
+       "14\" X 6 1/2\" X 7/8\" 1 DZ"
+      ],
+      [
+       "DB-316",
+       "16\" X 7 1/2\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      1085,
+      1285,
+      1535,
+      1535
+     ],
+     "imageGroup": "rectangle",
+     "rows": [
+      [
+       "DB-408",
+       "8\" X 5 1/2\" X 7/8\" 3 DZ"
+      ],
+      [
+       "DB-410",
+       "10\" X 7\" X 1 1/8\" 2 DZ"
+      ],
+      [
+       "DB-412",
+       "12\" X 8 1/2\" X 1 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      1765,
+      590,
+      1975
+     ],
+     "imageGroup": "rectangle-long",
+     "rows": [
+      [
+       "DB-411",
+       "10 1/2\" X 4 3/8\" X 1\" 2 DZ"
+      ],
+      [
+       "DB-413",
+       "12\" X 5 1/4\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      650,
+      1750,
+      1045,
+      1990
+     ],
+     "imageGroup": "square",
+     "rows": [
+      [
+       "DB-508",
+       "8\" X 8\" X 7/8\" 3 DZ"
+      ],
+      [
+       "DB-510",
+       "10\" X 10\" X 1 1/8\" 2 DZ"
+      ],
+      [
+       "DB-512",
+       "12\" X 12\" X 1 3/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1190,
+      1760,
+      1525,
+      1975
+     ],
+     "imageGroup": "salad",
+     "rows": [
+      [
+       "DB-608",
+       "8\" X 1 1/2\" 20 OZ 2 DZ"
+      ],
+      [
+       "DB-609",
+       "9\" X 1 3/4\" 30 OZ 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "diamond-black",
+   "page": 15,
+   "complete": true,
+   "color": "black, bronze",
+   "groups": [
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      90,
+      255,
+      545,
+      475
+     ],
+     "imageGroup": "dessert",
+     "rows": [
+      [
+       "DB-610",
+       "9 1/4\" X 5\" X 1 7/8\" 10 OZ 1 DZ"
+      ],
+      [
+       "DB-611",
+       "11 1/2\" X 6\" X 2 3/8\" 16 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      630,
+      335,
+      840,
+      495
+     ],
+     "imageGroup": "square",
+     "rows": [
+      [
+       "DB-3003",
+       "4\" X 4\" X 1 3/4\" 6 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      935,
+      345,
+      1175,
+      515
+     ],
+     "imageGroup": "rice",
+     "rows": [
+      [
+       "DB-3005",
+       "4 1/2\" X 2 1/4\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1245,
+      325,
+      1530,
+      505
+     ],
+     "imageGroup": "salad",
+     "rows": [
+      [
+       "DB-3006",
+       "5\" X 1 3/4\" 9 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      1295,
+      640,
+      1465,
+      740
+     ],
+     "imageGroup": "sauce",
+     "rows": [
+      [
+       "DB-4030",
+       "3\" X 2 1/4\" X 3/4\" 2 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      170,
+      760,
+      465,
+      945
+     ],
+     "imageGroup": "soup",
+     "rows": [
+      [
+       "DB-3007",
+       "6 3/4\" X 2 3/4\" 24 OZ 2 DZ"
+      ],
+      [
+       "DB-3008",
+       "8\" X 3\" 36 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Miso Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      545,
+      770,
+      780,
+      935
+     ],
+     "imageGroup": "miso",
+     "rows": [
+      [
+       "DB-3105",
+       "4 1/2\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ramen Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      865,
+      760,
+      1175,
+      950
+     ],
+     "imageGroup": "ramen",
+     "rows": [
+      [
+       "DB-3107",
+       "7 1/2\" X 3 1/4\" 30 OZ 2 DZ"
+      ],
+      [
+       "DB-3108",
+       "8 1/2\" X 3 1/2\" 45 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      1300,
+      845,
+      1460,
+      990
+     ],
+     "imageGroup": "square-sauce",
+     "rows": [
+      [
+       "DB-4031",
+       "3\" X 3\" X 1 3/4\" 4 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Sauce Dish",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      165,
+      1305,
+      430,
+      1440
+     ],
+     "imageGroup": "double",
+     "rows": [
+      [
+       "DB-4032",
+       "5 1/2\" 2 OZ EACH 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Skillet",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      495,
+      1245,
+      800,
+      1450
+     ],
+     "imageGroup": "skillet-deep",
+     "rows": [
+      [
+       "DB-4105",
+       "4 3/4\" X 3\" 22 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Compartment Plate Matching with DB-4105",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      825,
+      1240,
+      1145,
+      1415
+     ],
+     "imageGroup": "compartment",
+     "rows": [
+      [
+       "DB-4112",
+       "12\" X 6\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Skillet",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1210,
+      1250,
+      1510,
+      1440
+     ],
+     "imageGroup": "skillet",
+     "rows": [
+      [
+       "DB-4106",
+       "5 7/8\" X 2\" 18 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl with Lid",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      140,
+      1730,
+      450,
+      1950
+     ],
+     "imageGroup": "lid-bowl",
+     "rows": [
+      [
+       "DB-4107",
+       "6 1/2\" X 2 1/2\" 20 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      495,
+      1725,
+      835,
+      1965
+     ],
+     "imageGroup": "round-bowl",
+     "rows": [
+      [
+       "DB-4206",
+       "6\" X 1 3/4\" 13 OZ 3 DZ"
+      ],
+      [
+       "DB-4208",
+       "8\" X 2\" 35 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      905,
+      1730,
+      1130,
+      1915
+     ],
+     "imageGroup": "spoon",
+     "rows": [
+      [
+       "DB-7002",
+       "5\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1260,
+      1715,
+      1415,
+      1915
+     ],
+     "imageGroup": "tea",
+     "rows": [
+      [
+       "DB-9303",
+       "3 1/8\" X 3 3/4\" 10 OZ 3 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

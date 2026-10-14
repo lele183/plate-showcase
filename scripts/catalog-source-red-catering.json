@@ -1,0 +1,945 @@
+{
+ "pages": [
+  {
+   "collection": "black-and-red",
+   "page": 160,
+   "complete": true,
+   "color": "black red",
+   "groups": [
+    {
+     "name": "Round Coupe Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      100,
+      800,
+      575,
+      1270
+     ],
+     "imageGroup": "round-coupe-plate-0",
+     "rows": [
+      [
+       "CR-1307",
+       "7\" 4 DZ"
+      ],
+      [
+       "CR-1309",
+       "9\" 2 DZ"
+      ],
+      [
+       "CR-1312",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Divided Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      165,
+      1450,
+      440,
+      1610
+     ],
+     "imageGroup": "divided-sauce-dish-1",
+     "rows": [
+      [
+       "CR-0001",
+       "3 1/2\" X 2 1/2\" 2 OZ EACH 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      515,
+      1490,
+      790,
+      1610
+     ],
+     "imageGroup": "sauce-dish-2",
+     "rows": [
+      [
+       "CR-0002",
+       "4 1/8\" X 2 1/2\" 3 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      850,
+      1470,
+      1145,
+      1610
+     ],
+     "imageGroup": "sauce-dish-3",
+     "rows": [
+      [
+       "CR-1028",
+       "3 3/4\" 3 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1200,
+      1455,
+      1505,
+      1610
+     ],
+     "imageGroup": "sauce-dish-4",
+     "rows": [
+      [
+       "CR-4046",
+       "3 3/4\" X 2 1/2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Two Tone Soup Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      180,
+      1780,
+      460,
+      2005
+     ],
+     "imageGroup": "two-tone-soup-spoon-5",
+     "rows": [
+      [
+       "CR-7001",
+       "5 1/2\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      585,
+      1840,
+      1005,
+      2010
+     ],
+     "imageGroup": "spoon-6",
+     "rows": [
+      [
+       "CR-7002",
+       "6 1/2\" X 2 1/4\" SPOON 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      1100,
+      1745,
+      1565,
+      2010
+     ],
+     "imageGroup": "noodle-spoon-7",
+     "rows": [
+      [
+       "CR-7003",
+       "8 1/4\" X 2 3/4\" 6 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "black",
+     "red"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "black-and-red",
+   "page": 161,
+   "complete": true,
+   "color": "black red",
+   "groups": [
+    {
+     "name": "Nanjing Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      150,
+      305,
+      445,
+      525
+     ],
+     "imageGroup": "nanjing-bowl-0",
+     "rows": [
+      [
+       "CR-3004",
+       "4.5\" X 2\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Bowl",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      490,
+      320,
+      825,
+      525
+     ],
+     "imageGroup": "sauce-bowl-1",
+     "rows": [
+      [
+       "CR-3545",
+       "5\" X 1 3/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      865,
+      315,
+      1160,
+      525
+     ],
+     "imageGroup": "square-bowl-2",
+     "rows": [
+      [
+       "CR-5450",
+       "4 3/4\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1275,
+      300,
+      1475,
+      545
+     ],
+     "imageGroup": "tea-cup-3",
+     "rows": [
+      [
+       "CR-9305",
+       "3\" X 3\" 7 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      145,
+      745,
+      440,
+      965
+     ],
+     "imageGroup": "rice-bowl-4",
+     "rows": [
+      [
+       "CR-130",
+       "4 1/2\" X 2\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      505,
+      760,
+      780,
+      960
+     ],
+     "imageGroup": "rice-bowl-5",
+     "rows": [
+      [
+       "CR-131",
+       "4 3/4\" X 2\" 8 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      845,
+      750,
+      1125,
+      965
+     ],
+     "imageGroup": "bowl-6",
+     "rows": [
+      [
+       "CR-3006",
+       "4 5/8\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1200,
+      745,
+      1515,
+      975
+     ],
+     "imageGroup": "bowl-7",
+     "rows": [
+      [
+       "CR-5006",
+       "6 1/4\" X 2 3/4\" 16 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      135,
+      1215,
+      480,
+      1445
+     ],
+     "imageGroup": "soup-bowl-8",
+     "rows": [
+      [
+       "CR-528",
+       "6 7/8\" X 3\" 22 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      630,
+      1215,
+      1025,
+      1445
+     ],
+     "imageGroup": "noodle-bowl-9",
+     "rows": [
+      [
+       "CR-538",
+       "8\" X 3\" 46 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1185,
+      1210,
+      1520,
+      1445
+     ],
+     "imageGroup": "bowl-10",
+     "rows": [
+      [
+       "CR-560",
+       "6 7/8\" 36 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      130,
+      1700,
+      475,
+      1950
+     ],
+     "imageGroup": "noodle-bowl-11",
+     "rows": [
+      [
+       "CR-566",
+       "7\" X 2 1/2\" 24 OZ 4 DZ"
+      ],
+      [
+       "CR-576",
+       "8\" X 2 3/4\" 36 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      600,
+      1700,
+      1005,
+      1950
+     ],
+     "imageGroup": "noodle-bowl-12",
+     "rows": [
+      [
+       "CR-586",
+       "9\" X 3 1/4\" 48 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Five Compartment Sushi/Bento Box",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      1105,
+      1655,
+      1535,
+      1950
+     ],
+     "imageGroup": "five-compartment-sushi-bento-box-13",
+     "rows": [
+      [
+       "CR-610",
+       "10 1/4\" X 8\" X 2\" 6 PC"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "catering",
+   "page": 162,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Round Plate White",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      165,
+      565,
+      595
+     ],
+     "imageGroup": "round-plate-white-0",
+     "rows": [
+      [
+       "CAT-1016W",
+       "16\" 6 DZ"
+      ],
+      [
+       "CAT-1018W",
+       "18\" 6 DZ"
+      ],
+      [
+       "CAT-1020W",
+       "20\" 6 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       510,
+       540,
+       565,
+       595
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate White",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      870,
+      165,
+      1285,
+      575
+     ],
+     "imageGroup": "round-plate-white-1",
+     "rows": [
+      [
+       "CAT-1015W",
+       "15 1/2\" 6 PC"
+      ]
+     ],
+     "cropMasks": [
+      [
+       1230,
+       535,
+       1285,
+       575
+      ]
+     ]
+    },
+    {
+     "name": "Party Plate Black",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      155,
+      675,
+      405,
+      925
+     ],
+     "imageGroup": "party-plate-black-2",
+     "rows": [
+      [
+       "CAT-7010B",
+       "9.5\" 24 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Party Plate Ivory",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      160,
+      928,
+      410,
+      1020
+     ],
+     "imageGroup": "party-plate-ivory-3",
+     "rows": [
+      [
+       "CAT-7010IV",
+       "9.5\" 24 DZ"
+      ]
+     ],
+     "color": "ivory"
+    },
+    {
+     "name": "Oval Plate White",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      900,
+      670,
+      1485,
+      895
+     ],
+     "imageGroup": "oval-plate-white-4",
+     "rows": [
+      [
+       "CAT-2016",
+       "16\" X 12\" 6 PC"
+      ],
+      [
+       "CAT-2020",
+       "20 1/2\" X 14\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Platter White",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      840,
+      1040,
+      1490,
+      1270
+     ],
+     "imageGroup": "oval-platter-white-5",
+     "rows": [
+      [
+       "CAT-2024W",
+       "24\" X 10\" 6 DZ"
+      ],
+      [
+       "CAT-2030W",
+       "30\" X 12\" 6 DZ"
+      ]
+     ],
+     "color": "white"
+    },
+    {
+     "name": "Round Plate Black",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      1125,
+      545,
+      1550
+     ],
+     "imageGroup": "round-plate-black-6",
+     "rows": [
+      [
+       "CAT-1016B",
+       "16\" 6 DZ"
+      ],
+      [
+       "CAT-1018B",
+       "18\" 6 DZ"
+      ],
+      [
+       "CAT-1020B",
+       "20\" 6 DZ"
+      ]
+     ],
+     "color": "black",
+     "cropMasks": [
+      [
+       510,
+       1470,
+       545,
+       1550
+      ]
+     ]
+    },
+    {
+     "name": "Oval Platter Black",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      860,
+      1380,
+      1505,
+      1625
+     ],
+     "imageGroup": "oval-platter-black-7",
+     "rows": [
+      [
+       "CAT-2024B",
+       "24\" X 10\" 6 DZ"
+      ],
+      [
+       "CAT-2030B",
+       "30\" X 12\" 6 DZ"
+      ]
+     ],
+     "color": "black"
+    },
+    {
+     "name": "Round Plate Gold",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      1630,
+      550,
+      2050
+     ],
+     "imageGroup": "round-plate-gold-8",
+     "rows": [
+      [
+       "CAT-1016G",
+       "16\" 6 DZ"
+      ],
+      [
+       "CAT-1018G",
+       "18\" 6 DZ"
+      ],
+      [
+       "CAT-1020G",
+       "20\" 6 DZ"
+      ]
+     ],
+     "color": "gold",
+     "cropMasks": [
+      [
+       510,
+       1980,
+       550,
+       2050
+      ],
+      [
+       500,
+       1630,
+       550,
+       1650
+      ]
+     ]
+    },
+    {
+     "name": "Oval Platter Gold",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      865,
+      1750,
+      1500,
+      2005
+     ],
+     "imageGroup": "oval-platter-gold-9",
+     "rows": [
+      [
+       "CAT-2024G",
+       "24\" X 10\" 6 DZ"
+      ],
+      [
+       "CAT-2030G",
+       "30\" X 12\" 6 DZ"
+      ]
+     ],
+     "color": "gold"
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "white",
+     "black",
+     "gold",
+     "ivory"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "catering",
+   "page": 163,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      605,
+      215,
+      1055,
+      495
+     ],
+     "imageGroup": "square-bowl-0",
+     "rows": [
+      [
+       "CAT-1280",
+       "13\" X 13\" X 5\" 4.25 QT 6 DZ"
+      ],
+      [
+       "CAT-1281",
+       "14\" X 14\" X 5 1/4\" 5.5 QT 6 DZ"
+      ],
+      [
+       "CAT-1282",
+       "16\" X 16\" X 5 1/2\" 7 QT 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "other",
+     "crop": [
+      1130,
+      235,
+      1550,
+      525
+     ],
+     "imageGroup": "bowl-1",
+     "rows": [
+      [
+       "CAT-3613",
+       "12 1/2\" X 12 1/2\" X 5 1/2\" 5.5 QT 6 DZ"
+      ],
+      [
+       "CAT-3614",
+       "14\" X 14\" X 6\" 6.5 QT 6 DZ"
+      ],
+      [
+       "CAT-3616",
+       "16\" X 16\" X 6 1/2\" 9.5 QT 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "other",
+     "crop": [
+      130,
+      730,
+      560,
+      990
+     ],
+     "imageGroup": "bowl-2",
+     "rows": [
+      [
+       "CAT-1272",
+       "14 1/2\" X 14 1/2\" X 4 1/2\" 4.25 QT 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      630,
+      770,
+      1065,
+      975
+     ],
+     "imageGroup": "round-bowl-3",
+     "rows": [
+      [
+       "CAT-3012",
+       "12\" X 2\"D 60 OZ 12 DZ"
+      ],
+      [
+       "CAT-3014",
+       "14\" X 2 1/4\"D 90 OZ 12 DZ"
+      ],
+      [
+       "CAT-3016",
+       "16\" X 2 1/2\"D 120 OZ 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Rim Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1135,
+      795,
+      1535,
+      975
+     ],
+     "imageGroup": "deep-rim-bowl-4",
+     "rows": [
+      [
+       "CAT-4012",
+       "12\" X 2 1/4\" 68 OZ 12 DZ"
+      ],
+      [
+       "CAT-4014",
+       "14\" X 2 1/4\" 108 OZ 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sheer Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      165,
+      1160,
+      640,
+      1450
+     ],
+     "imageGroup": "sheer-bowl-5",
+     "rows": [
+      [
+       "CAT-1273",
+       "15\" X 12.5\" X 5\" 4.5 QT 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cake Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      900,
+      1140,
+      1450,
+      1495
+     ],
+     "imageGroup": "cake-plate-6",
+     "rows": [
+      [
+       "CAT-9024",
+       "13\" X 10\" 24 DZ"
+      ],
+      [
+       "CAT-9026",
+       "15\" X 10 1/2\" 24 DZ"
+      ],
+      [
+       "CAT-9032",
+       "17 1/2\" X 12 1/2\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Platter",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      175,
+      1585,
+      720,
+      1750
+     ],
+     "imageGroup": "deep-platter-7",
+     "rows": [
+      [
+       "CAT-5016",
+       "16\" X 7 1/2\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Platter",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      205,
+      1875,
+      785,
+      2020
+     ],
+     "imageGroup": "deep-platter-8",
+     "rows": [
+      [
+       "CAT-5019",
+       "19\" X 8\" 12 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      925,
+      1730,
+      1530,
+      1890
+     ],
+     "imageGroup": "platter-9",
+     "rows": [
+      [
+       "CAT-5017",
+       "16 1/2\" X 7\" 12 DZ"
+      ],
+      [
+       "CAT-5022",
+       "22\" X 9\" 12 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

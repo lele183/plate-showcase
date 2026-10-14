@@ -1,0 +1,472 @@
+{
+  "pages": [
+    {
+      "collection": "yofo",
+      "page": 118,
+      "complete": true,
+      "color": "gray brown",
+      "groups": [
+        {
+          "name": "Round Coupe Plate",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            150,
+            1560,
+            490,
+            1900
+          ],
+          "imageGroup": "round-coupe-plate-0",
+          "rows": [
+            [
+              "YO-1007",
+              "7\" X 3/4\" 4 DZ"
+            ],
+            [
+              "YO-1009",
+              "9\" X 1\" 2 DZ"
+            ],
+            [
+              "YO-1011",
+              "11\" X 1 1/4\" 1 DZ"
+            ],
+            [
+              "YO-1012",
+              "12 1/2\" X 1 1/2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Oval Plate",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            620,
+            1585,
+            1040,
+            1900
+          ],
+          "imageGroup": "oval-plate-1",
+          "rows": [
+            [
+              "YO-2009",
+              "9\" X 6 3/4\" X 3/4\" 2 DZ"
+            ],
+            [
+              "YO-2011",
+              "11\" X 8\" X 1\" 2 DZ"
+            ],
+            [
+              "YO-2013",
+              "13\" X 9 1/2\" X 1 1/4\" 1 DZ"
+            ],
+            [
+              "YO-2015",
+              "15\" X 11 1/8\" X 1 1/2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Oval Display Plate with Foot",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            1100,
+            1655,
+            1570,
+            1850
+          ],
+          "imageGroup": "oval-display-plate-with-foot-2",
+          "rows": [
+            [
+              "YO-2112",
+              "12\" X 5 1/8\" X 1 1/2\" 1 DZ"
+            ],
+            [
+              "YO-2114",
+              "14 1/2\" X 6\" X 1 3/4\" 1 DZ"
+            ],
+            [
+              "YO-2116",
+              "16 1/2\" X 7\" X 1 7/8\" 1 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "gray",
+          "brown"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "moderne",
+      "page": 120,
+      "complete": true,
+      "color": "black",
+      "groups": [
+        {
+          "name": "Triangle Plate Black",
+          "type": "plate",
+          "shape": "triangular",
+          "crop": [
+            120,
+            1185,
+            500,
+            1435
+          ],
+          "imageGroup": "triangle-plate-0",
+          "rows": [
+            [
+              "MO-106BK",
+              "6\" X 4 1/2\" 4 DZ",
+              {
+                "dimensions": {
+                  "length": 6,
+                  "width": 4.5,
+                  "height": null
+                }
+              }
+            ],
+            [
+              "MO-108BK",
+              "8\" X 6 1/2\" 4 DZ",
+              {
+                "dimensions": {
+                  "length": 8,
+                  "width": 6.5,
+                  "height": null
+                }
+              }
+            ],
+            [
+              "MO-110BK",
+              "10 1/2\" X 8 1/2\" 2 DZ",
+              {
+                "dimensions": {
+                  "length": 10.5,
+                  "width": 8.5,
+                  "height": null
+                }
+              }
+            ],
+            [
+              "MO-112BK",
+              "12\" X 9 1/2\" 1 DZ",
+              {
+                "dimensions": {
+                  "length": 12,
+                  "width": 9.5,
+                  "height": null
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "name": "Deep Triangle/Soup Plate Black",
+          "type": "plate",
+          "shape": "triangular",
+          "crop": [
+            595,
+            1185,
+            1000,
+            1435
+          ],
+          "imageGroup": "deep-triangle-soup-plate-1",
+          "rows": [
+            [
+              "MO-206BK",
+              "6\" X 4 1/2\" X 2\" 12 OZ 4 DZ"
+            ],
+            [
+              "MO-209BK",
+              "9\" X 7\" X 2 1/2\" 36 OZ 2 DZ"
+            ],
+            [
+              "MO-211BK",
+              "11\" X 9\" X 3\" 60 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Triangle Bowl Black",
+          "type": "bowl",
+          "shape": "triangular",
+          "crop": [
+            1165,
+            1185,
+            1460,
+            1435
+          ],
+          "imageGroup": "triangle-bowl-2",
+          "rows": [
+            [
+              "MO-304BK",
+              "4\" X 3\" X 2 1/4\" 8 OZ 4 DZ"
+            ],
+            [
+              "MO-306BK",
+              "5 1/2\" X 4\" X 3\" 16 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Dessert Plate Black",
+          "type": "plate",
+          "shape": "triangular",
+          "crop": [
+            125,
+            1700,
+            535,
+            1915
+          ],
+          "imageGroup": "dessert-plate-3",
+          "rows": [
+            [
+              "MO-410BK",
+              "10 1/2\" X 9\" X 2\" 10 OZ 2 DZ"
+            ],
+            [
+              "MO-412BK",
+              "12\" X 10 1/2\" X 2 1/2\" 14 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Pan Plate with Handle Black",
+          "type": "pan",
+          "shape": "oval",
+          "crop": [
+            625,
+            1740,
+            1085,
+            1915
+          ],
+          "imageGroup": "pan-plate-with-handle-4",
+          "rows": [
+            [
+              "MO-808BK",
+              "14 1/2\" X 6 1/2\" X 1\" 1 DZ"
+            ],
+            [
+              "MO-809BK",
+              "15 1/2\" X 7 1/2\" X 1 1/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Pan Plate with Handle Black",
+          "type": "pan",
+          "shape": "triangular",
+          "crop": [
+            1150,
+            1685,
+            1520,
+            1900
+          ],
+          "imageGroup": "pan-plate-with-handle-5",
+          "rows": [
+            [
+              "MO-810BK",
+              "12\" X 8\" X 1\" 1 DZ"
+            ],
+            [
+              "MO-811BK",
+              "14\" X 10\" X 1 1/4\" 1 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "black",
+          "white"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "moderne",
+      "page": 121,
+      "complete": true,
+      "color": "white",
+      "groups": [
+        {
+          "name": "Triangle Plate White",
+          "type": "plate",
+          "shape": "triangular",
+          "crop": [
+            120,
+            1195,
+            510,
+            1440
+          ],
+          "imageGroup": "triangle-plate-0",
+          "rows": [
+            [
+              "MO-106",
+              "6\" X 4 1/2\" 4 DZ",
+              {
+                "dimensions": {
+                  "length": 6,
+                  "width": 4.5,
+                  "height": null
+                }
+              }
+            ],
+            [
+              "MO-108",
+              "8\" X 6 1/2\" 4 DZ",
+              {
+                "dimensions": {
+                  "length": 8,
+                  "width": 6.5,
+                  "height": null
+                }
+              }
+            ],
+            [
+              "MO-110",
+              "10 1/2\" X 8 1/2\" 2 DZ",
+              {
+                "dimensions": {
+                  "length": 10.5,
+                  "width": 8.5,
+                  "height": null
+                }
+              }
+            ],
+            [
+              "MO-112",
+              "12\" X 9 1/2\" 1 DZ",
+              {
+                "dimensions": {
+                  "length": 12,
+                  "width": 9.5,
+                  "height": null
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "name": "Deep Triangle/Soup Plate White",
+          "type": "plate",
+          "shape": "triangular",
+          "crop": [
+            640,
+            1180,
+            1060,
+            1440
+          ],
+          "imageGroup": "deep-triangle-soup-plate-1",
+          "rows": [
+            [
+              "MO-206",
+              "6\" X 4 1/2\" X 2\" 12 OZ 4 DZ"
+            ],
+            [
+              "MO-209",
+              "9\" X 7\" X 2 1/2\" 36 OZ 2 DZ"
+            ],
+            [
+              "MO-211",
+              "11\" X 9\" X 3\" 60 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Triangle Bowl White",
+          "type": "bowl",
+          "shape": "triangular",
+          "crop": [
+            1210,
+            1200,
+            1505,
+            1450
+          ],
+          "imageGroup": "triangle-bowl-2",
+          "rows": [
+            [
+              "MO-304",
+              "4\" X 3\" X 2 1/4\" 8 OZ 4 DZ"
+            ],
+            [
+              "MO-306",
+              "5 1/2\" X 4\" X 3\" 16 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Dessert Plate White",
+          "type": "plate",
+          "shape": "triangular",
+          "crop": [
+            125,
+            1695,
+            550,
+            1935
+          ],
+          "imageGroup": "dessert-plate-3",
+          "rows": [
+            [
+              "MO-410",
+              "10 1/2\" X 9\" X 2\" 10 OZ 2 DZ"
+            ],
+            [
+              "MO-412",
+              "12\" X 10 1/2\" X 2 1/2\" 14 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Pan Plate with Handle White",
+          "type": "pan",
+          "shape": "oval",
+          "crop": [
+            645,
+            1740,
+            1100,
+            1900
+          ],
+          "imageGroup": "pan-plate-with-handle-4",
+          "rows": [
+            [
+              "MO-808",
+              "14 1/2\" X 6 1/2\" X 1\" 1 DZ"
+            ],
+            [
+              "MO-809",
+              "15 1/2\" X 7 1/2\" X 1 1/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Pan Plate with Handle White",
+          "type": "pan",
+          "shape": "triangular",
+          "crop": [
+            1125,
+            1675,
+            1505,
+            1885
+          ],
+          "imageGroup": "pan-plate-with-handle-5",
+          "rows": [
+            [
+              "MO-810",
+              "12\" X 8\" X 1\" 1 DZ"
+            ],
+            [
+              "MO-811",
+              "14\" X 10\" X 1 1/4\" 1 DZ"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

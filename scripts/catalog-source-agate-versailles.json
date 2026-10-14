@@ -1,0 +1,871 @@
+{
+ "pages": [
+  {
+   "collection": "agate",
+   "page": 44,
+   "complete": true,
+   "color": "tan, brown",
+   "groups": []
+  },
+  {
+   "collection": "agate",
+   "page": 45,
+   "complete": true,
+   "color": "tan, brown",
+   "groups": [
+    {
+     "name": "Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      230,
+      255,
+      465,
+      415
+     ],
+     "imageGroup": "cup-0",
+     "rows": [
+      [
+       "AG-001",
+       "3 1/2\" X 2 1/2\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for AG-001",
+     "type": "saucer",
+     "shape": "oval",
+     "crop": [
+      195,
+      485,
+      450,
+      660
+     ],
+     "imageGroup": "saucer-for-ag-001-1",
+     "rows": [
+      [
+       "AG-002",
+       "6\" X 4 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Shape Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      630,
+      230,
+      1020,
+      555
+     ],
+     "imageGroup": "coupe-shape-round-plate-2",
+     "rows": [
+      [
+       "AG-107",
+       "7\" X 3/4\" 3 DZ"
+      ],
+      [
+       "AG-109",
+       "9\" X 7/8\" 2 DZ"
+      ],
+      [
+       "AG-110",
+       "10 1/2\" X 1\" 1 DZ"
+      ],
+      [
+       "AG-112",
+       "12\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      1070,
+      275,
+      1535,
+      495
+     ],
+     "imageGroup": "coupe-platter-3",
+     "rows": [
+      [
+       "AG-208",
+       "8\" X 5 1/2\" 2 DZ"
+      ],
+      [
+       "AG-210",
+       "10\" X 7\" 2 DZ"
+      ],
+      [
+       "AG-212",
+       "12\" X 8 1/4\" 1 DZ"
+      ],
+      [
+       "AG-214",
+       "14\" X 10\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fruit",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      170,
+      870,
+      425,
+      1020
+     ],
+     "imageGroup": "fruit-4",
+     "rows": [
+      [
+       "AG-305",
+       "4 3/4\" 5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Nappie Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      475,
+      880,
+      725,
+      1040
+     ],
+     "imageGroup": "nappie-bowl-5",
+     "rows": [
+      [
+       "AG-306",
+       "5 1/2\" X 2 1/4\" 14 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Leaf Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      795,
+      870,
+      1185,
+      1015
+     ],
+     "imageGroup": "leaf-plate-6",
+     "rows": [
+      [
+       "AG-412",
+       "12\" X 4 1/2\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bouillon Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1255,
+      865,
+      1465,
+      1040
+     ],
+     "imageGroup": "bouillon-cup-7",
+     "rows": [
+      [
+       "AG-503",
+       "4 1/4\" X 2 1/2\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      160,
+      1310,
+      405,
+      1465
+     ],
+     "imageGroup": "rice-bowl-8",
+     "rows": [
+      [
+       "AG-504",
+       "4 3/4\" X 1 3/4\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      465,
+      1310,
+      740,
+      1465
+     ],
+     "imageGroup": "bowl-9",
+     "rows": [
+      [
+       "AG-505",
+       "5\" X 1 1/2\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      825,
+      1245,
+      1150,
+      1465
+     ],
+     "imageGroup": "salad-pasta-bowl-10",
+     "rows": [
+      [
+       "AG-509",
+       "9\" 25 OZ 2 DZ"
+      ],
+      [
+       "AG-510",
+       "10 1/2\" 32 OZ 1 DZ"
+      ],
+      [
+       "AG-511",
+       "12\" 62 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1195,
+      1290,
+      1495,
+      1465
+     ],
+     "imageGroup": "salad-pasta-bowl-11",
+     "rows": [
+      [
+       "AG-608",
+       "8\" X 1 1/2\" 20 OZ 2 DZ"
+      ],
+      [
+       "AG-609",
+       "9\" X 1 3/4\" 30 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      125,
+      1715,
+      555,
+      1910
+     ],
+     "imageGroup": "dessert-plate-12",
+     "rows": [
+      [
+       "AG-610",
+       "9 1/4\" X 5\" X 2\" 10 OZ 1 DZ"
+      ],
+      [
+       "AG-611",
+       "11 1/2\" X 6\" X 2 1/2\" 14 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      705,
+      1730,
+      1015,
+      1920
+     ],
+     "imageGroup": "soup-bowl-13",
+     "rows": [
+      [
+       "AG-3007",
+       "6 3/4\" X 2 3/4\" 24 OZ 2 DZ"
+      ],
+      [
+       "AG-3008",
+       "8\" X 3\" 36 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1180,
+      1715,
+      1510,
+      1935
+     ],
+     "imageGroup": "noodle-bowl-14",
+     "rows": [
+      [
+       "AG-3107",
+       "7 1/2\" X 3 1/4\" 30 OZ 2 DZ"
+      ],
+      [
+       "AG-3108",
+       "8 1/2\" X 3 1/2\" 45 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "tan",
+     "brown"
+    ],
+    "material": "porcelain"
+   }
+  },
+  {
+   "collection": "versailles",
+   "page": 46,
+   "complete": true,
+   "color": "bone white",
+   "groups": [
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      125,
+      1540,
+      480,
+      1915
+     ],
+     "imageGroup": "round-plate-0",
+     "rows": [
+      [
+       "VS-106",
+       "6 1/2\" X 1/2\" 3 DZ"
+      ],
+      [
+       "VS-107",
+       "7 1/2\" X 1/2\" 3 DZ"
+      ],
+      [
+       "VS-109",
+       "9\" X 5/8\" 2 DZ"
+      ],
+      [
+       "VS-110",
+       "10 1/2\" X 3/4\" 1 DZ"
+      ],
+      [
+       "VS-111",
+       "11 1/4\" X 7/8\" 1 DZ"
+      ],
+      [
+       "VS-112",
+       "12\" X 7/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      620,
+      1590,
+      1040,
+      1915
+     ],
+     "imageGroup": "platter-1",
+     "rows": [
+      [
+       "VS-210",
+       "10\" X 7 1/2\" 2 DZ"
+      ],
+      [
+       "VS-212",
+       "12\" X 9\" 1 DZ"
+      ],
+      [
+       "VS-214",
+       "14 1/4\" X 10\" 1 DZ"
+      ],
+      [
+       "VS-215",
+       "15 1/2\" X 10 3/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1120,
+      1640,
+      1535,
+      1875
+     ],
+     "imageGroup": "dessert-plate-2",
+     "rows": [
+      [
+       "VS-612",
+       "12 1/4\" X 5 7/8\" X 2\" 10 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "bone white"
+    ],
+    "material": "magnesia porcelain"
+   }
+  },
+  {
+   "collection": "versailles",
+   "page": 47,
+   "complete": true,
+   "color": "bone white",
+   "groups": [
+    {
+     "name": "Cup Stackable",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      200,
+      250,
+      450,
+      425
+     ],
+     "imageGroup": "cup-stackable-0",
+     "rows": [
+      [
+       "VS-001",
+       "3 1/2\" X 2 1/4\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for VS-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      535,
+      195,
+      775,
+      440
+     ],
+     "imageGroup": "saucer-for-vs-001-1",
+     "rows": [
+      [
+       "VS-002",
+       "6\" X 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "AD Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      905,
+      265,
+      1125,
+      425
+     ],
+     "imageGroup": "ad-cup-2",
+     "rows": [
+      [
+       "VS-003",
+       "2 5/8\" X 2\" 4 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "AD Cup Saucer for VS-003",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      1250,
+      200,
+      1475,
+      435
+     ],
+     "imageGroup": "ad-cup-saucer-for-vs-003-3",
+     "rows": [
+      [
+       "VS-004",
+       "4 1/2\" X 5/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      475,
+      605,
+      620,
+      695
+     ],
+     "imageGroup": "sauce-dish-4",
+     "rows": [
+      [
+       "VS-503",
+       "2 5/8\" X 3/4\" 1.4 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fruit Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1040,
+      590,
+      1285,
+      710
+     ],
+     "imageGroup": "fruit-bowl-5",
+     "rows": [
+      [
+       "VS-504",
+       "4 3/4\" X 1\" 2 OZ 3 DZ"
+      ],
+      [
+       "VS-505",
+       "5 1/4\" X 1 1/8\" 5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      170,
+      825,
+      390,
+      1035
+     ],
+     "imageGroup": "mug-6",
+     "rows": [
+      [
+       "VS-007",
+       "3 1/8\" X 3 5/8\" 11 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bouillon Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      505,
+      870,
+      795,
+      1035
+     ],
+     "imageGroup": "bouillon-cup-7",
+     "rows": [
+      [
+       "VS-404",
+       "4\" X 2\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Grapefruit",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      865,
+      855,
+      1155,
+      1050
+     ],
+     "imageGroup": "grapefruit-8",
+     "rows": [
+      [
+       "VS-506",
+       "6 1/2\" X 1 1/2\" 6 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Nappie",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1230,
+      845,
+      1515,
+      1035
+     ],
+     "imageGroup": "nappie-9",
+     "rows": [
+      [
+       "VS-406",
+       "6\" X 2\" 16.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ramen/Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      155,
+      1250,
+      490,
+      1445
+     ],
+     "imageGroup": "ramen-noodle-bowl-10",
+     "rows": [
+      [
+       "VS-508",
+       "8 3/4\" X 3\" 48 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ramen Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      645,
+      1260,
+      970,
+      1455
+     ],
+     "imageGroup": "ramen-bowl-11",
+     "rows": [
+      [
+       "VS-509",
+       "8 1/2\" X 3 1/2\" 50 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1135,
+      1260,
+      1520,
+      1450
+     ],
+     "imageGroup": "dessert-plate-12",
+     "rows": [
+      [
+       "VS-609",
+       "9 1/2\" X 8 1/4\" X 3\" 10 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      150,
+      1700,
+      495,
+      1890
+     ],
+     "imageGroup": "salad-pasta-bowl-13",
+     "rows": [
+      [
+       "VS-708",
+       "8\" X 1 1/2\" 22 OZ 2 DZ"
+      ],
+      [
+       "VS-709",
+       "9\" X 1 7/8\" 30 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      645,
+      1715,
+      985,
+      1895
+     ],
+     "imageGroup": "soup-plate-14",
+     "rows": [
+      [
+       "VS-808",
+       "9 1/2\" X 2\" 10 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mediterranean Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1165,
+      1665,
+      1530,
+      1905
+     ],
+     "imageGroup": "mediterranean-pasta-bowl-15",
+     "rows": [
+      [
+       "VS-810",
+       "10 1/2\" X 2 1/8\" 15 OZ 1 DZ"
+      ],
+      [
+       "VS-812",
+       "12\" X 2 1/2\" 20 OZ 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "piscataway",
+   "page": 48,
+   "complete": true,
+   "color": "bone white",
+   "groups": []
+  },
+  {
+   "collection": "piscataway",
+   "page": 50,
+   "complete": true,
+   "color": "bone white",
+   "groups": [
+    {
+     "name": "Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      125,
+      1580,
+      480,
+      1935
+     ],
+     "imageGroup": "plate-0",
+     "rows": [
+      [
+       "PS-6",
+       "6 1/4\" 3 DZ"
+      ],
+      [
+       "PS-7",
+       "7 1/2\" 3 DZ"
+      ],
+      [
+       "PS-22",
+       "8 1/4\" 3 DZ"
+      ],
+      [
+       "PS-8",
+       "9\" 2 DZ"
+      ],
+      [
+       "PS-9",
+       "9 1/2\" 2 DZ"
+      ],
+      [
+       "PS-16",
+       "10 1/2\" 1 DZ"
+      ],
+      [
+       "PS-21",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      565,
+      1660,
+      1055,
+      1890
+     ],
+     "imageGroup": "oval-platter-1",
+     "rows": [
+      [
+       "PS-34",
+       "9 1/2\" X 6 3/8\" 2 DZ"
+      ],
+      [
+       "PS-12",
+       "10 5/8\" X 7 1/4\" 2 DZ"
+      ],
+      [
+       "PS-13",
+       "11 3/4\" X 7 3/4\" 1 DZ"
+      ],
+      [
+       "PS-14",
+       "13\" X 8 1/2\" 1 DZ"
+      ],
+      [
+       "PS-41",
+       "14\" X 9 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1135,
+      1640,
+      1535,
+      1925
+     ],
+     "imageGroup": "pasta-bowl-2",
+     "rows": [
+      [
+       "PS-115",
+       "11 1/2\" 25 OZ 1 DZ"
+      ],
+      [
+       "PS-120",
+       "12\" 30 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "bone white"
+    ],
+    "material": "magnesia chinaware"
+   }
+  }
+ ]
+}

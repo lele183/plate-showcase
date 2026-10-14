@@ -1,0 +1,802 @@
+{
+ "pages": [
+  {
+   "collection": "cambria",
+   "page": 52,
+   "complete": true,
+   "color": "bright white",
+   "groups": [
+    {
+     "name": "Cup Stackable",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      175,
+      1255,
+      425,
+      1415
+     ],
+     "imageGroup": "cup-stackable-0",
+     "rows": [
+      [
+       "CA-001",
+       "3 3/8\" X 2 3/8\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for CA-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      500,
+      1200,
+      755,
+      1450
+     ],
+     "imageGroup": "saucer-for-ca-001-1",
+     "rows": [
+      [
+       "CA-002",
+       "6\" X 3/4\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      845,
+      1140,
+      1245,
+      1540
+     ],
+     "imageGroup": "round-plate-2",
+     "rows": [
+      [
+       "CA-106",
+       "6 1/2\" X 1/2\" 3 DZ"
+      ],
+      [
+       "CA-107",
+       "7 1/2\" X 3/4\" 3 DZ"
+      ],
+      [
+       "CA-109",
+       "9\" X 7/8\" 2 DZ"
+      ],
+      [
+       "CA-110",
+       "10 1/2\" X 1\" 1 DZ"
+      ],
+      [
+       "CA-112",
+       "12\" X 1 1/8\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       1218,
+       1430,
+       1245,
+       1540
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate with Upright Rim",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      125,
+      1650,
+      510,
+      1935
+     ],
+     "imageGroup": "round-plate-with-upright-rim-3",
+     "rows": [
+      [
+       "CA-207",
+       "7 1/4\" X 7/8\" 3 DZ"
+      ],
+      [
+       "CA-208",
+       "8\" X 1\" 2 DZ"
+      ],
+      [
+       "CA-210",
+       "10\" X 1 1/8\" 1 DZ"
+      ],
+      [
+       "CA-212",
+       "12\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      615,
+      1720,
+      1040,
+      1920
+     ],
+     "imageGroup": "platter-4",
+     "rows": [
+      [
+       "CA-310",
+       "10\" X 6 3/4\" X 1\" 2 DZ"
+      ],
+      [
+       "CA-312",
+       "12\" X 8 1/4\" X 1 1/4\" 1 DZ"
+      ],
+      [
+       "CA-314",
+       "14\" X 9 1/4\" X 1 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1155,
+      1720,
+      1530,
+      1920
+     ],
+     "imageGroup": "salad-pasta-bowl-5",
+     "rows": [
+      [
+       "CA-609",
+       "9\" X 1 7/8\" 30 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "bright white"
+    ],
+    "material": "alumina chinaware"
+   }
+  },
+  {
+   "collection": "cambria",
+   "page": 53,
+   "complete": true,
+   "color": "bright white",
+   "groups": [
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      170,
+      310,
+      405,
+      460
+     ],
+     "imageGroup": "sauce-dish-0",
+     "rows": [
+      [
+       "CA-403",
+       "3 7/8\" X 1 1/2\" 5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      510,
+      305,
+      760,
+      475
+     ],
+     "imageGroup": "rice-bowl-1",
+     "rows": [
+      [
+       "CA-405",
+       "4 5/8\" X 2 3/8\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cereal Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      845,
+      310,
+      1110,
+      475
+     ],
+     "imageGroup": "cereal-bowl-2",
+     "rows": [
+      [
+       "CA-406",
+       "5 7/8\" X 2 3/4\" 20 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ramen Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1170,
+      290,
+      1525,
+      495
+     ],
+     "imageGroup": "ramen-bowl-3",
+     "rows": [
+      [
+       "CA-407",
+       "7 1/2\" X 3 1/4\" 30 OZ 2 DZ"
+      ],
+      [
+       "CA-409",
+       "8 1/2\" X 3 1/2\" 45 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      160,
+      780,
+      480,
+      985
+     ],
+     "imageGroup": "bowl-4",
+     "rows": [
+      [
+       "CA-408",
+       "8 1/4\" X 2 7/8\" 45 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      565,
+      865,
+      755,
+      980
+     ],
+     "imageGroup": "sauce-dish-5",
+     "rows": [
+      [
+       "CA-4030",
+       "3\" X 2 1/4\" X 3/4\" 1 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      865,
+      835,
+      1065,
+      990
+     ],
+     "imageGroup": "square-sauce-dish-6",
+     "rows": [
+      [
+       "CA-4031",
+       "3 1/4\" X 3\" X 1 3/4\" 4 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1190,
+      815,
+      1520,
+      1000
+     ],
+     "imageGroup": "double-sauce-dish-7",
+     "rows": [
+      [
+       "CA-4032",
+       "5 1/2\" X 3\" X 1 3/8\" 2 OZ EACH 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      155,
+      1255,
+      725,
+      1430
+     ],
+     "imageGroup": "rectangular-plate-8",
+     "rows": [
+      [
+       "CA-513",
+       "13 3/4\" X 5\" X 5/8\" 2 DZ"
+      ],
+      [
+       "CA-515",
+       "15 7/8\" X 5 1/2\" X 5/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Leaf Shape Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      950,
+      1240,
+      1515,
+      1415
+     ],
+     "imageGroup": "leaf-shape-plate-9",
+     "rows": [
+      [
+       "CA-510",
+       "10 1/4\" X 5\" X 3/4\" 3 DZ"
+      ],
+      [
+       "CA-514",
+       "14 1/4\" X 6 1/2\" X 1\" 1 DZ"
+      ],
+      [
+       "CA-516",
+       "16 1/2\" X 7 5/8\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      145,
+      1730,
+      480,
+      1920
+     ],
+     "imageGroup": "salad-pasta-bowl-10",
+     "rows": [
+      [
+       "CA-608",
+       "8\" X 1 5/8\" 20 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      675,
+      1715,
+      1025,
+      1920
+     ],
+     "imageGroup": "dessert-plate-11",
+     "rows": [
+      [
+       "CA-610",
+       "9 1/2\" X 5 1/8\" X 2 1/8\" 10 OZ 1 DZ"
+      ],
+      [
+       "CA-612",
+       "12 1/2\" X 6 3/4\" X 2 1/8\" 14 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mediterranean Pasta Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      1140,
+      1710,
+      1525,
+      1930
+     ],
+     "imageGroup": "mediterranean-pasta-bowl-12",
+     "rows": [
+      [
+       "CA-709",
+       "9 1/2\" X 8 1/4\" X 3\" 10 OZ 1 DZ"
+      ],
+      [
+       "CA-710",
+       "10 3/4\" X 7\" X 2 1/4\" 14 OZ 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "paris",
+   "page": 54,
+   "complete": true,
+   "color": "super white",
+   "groups": [],
+   "collectionAttributes": {
+    "colors": [
+     "super white"
+    ]
+   }
+  },
+  {
+   "collection": "paris",
+   "page": 55,
+   "complete": true,
+   "color": "super white",
+   "groups": [
+    {
+     "name": "Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      120,
+      170,
+      490,
+      535
+     ],
+     "imageGroup": "plate-0",
+     "rows": [
+      [
+       "PA-106",
+       "6 1/4\" 3 DZ"
+      ],
+      [
+       "PA-107",
+       "7 1/2\" 3 DZ"
+      ],
+      [
+       "PA-109",
+       "9\" 2 DZ"
+      ],
+      [
+       "PA-110",
+       "10 1/2\" 1 DZ"
+      ],
+      [
+       "PA-112",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      600,
+      250,
+      1055,
+      505
+     ],
+     "imageGroup": "platter-1",
+     "rows": [
+      [
+       "PA-209",
+       "9 1/2\" X 6 3/4\" 2 DZ"
+      ],
+      [
+       "PA-210",
+       "10 5/8\" X 7 1/2\" 1 DZ"
+      ],
+      [
+       "PA-211",
+       "11 3/4\" X 8 1/2\" 1 DZ"
+      ],
+      [
+       "PA-214",
+       "14\" X 10 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rim Soup",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1160,
+      245,
+      1525,
+      505
+     ],
+     "imageGroup": "rim-soup-2",
+     "rows": [
+      [
+       "PA-309",
+       "9\" 10 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cup Stackable",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      170,
+      825,
+      435,
+      1005
+     ],
+     "imageGroup": "cup-stackable-3",
+     "rows": [
+      [
+       "PA-001",
+       "3 1/2\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for PA-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      530,
+      780,
+      780,
+      1025
+     ],
+     "imageGroup": "saucer-for-pa-001-4",
+     "rows": [
+      [
+       "PA-002",
+       "5 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bouillon Cup with Handle",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      835,
+      845,
+      1165,
+      990
+     ],
+     "imageGroup": "bouillon-cup-with-handle-5",
+     "rows": [
+      [
+       "PA-404",
+       "4\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      1265,
+      765,
+      1495,
+      1005
+     ],
+     "imageGroup": "mug-6",
+     "rows": [
+      [
+       "PA-007",
+       "3\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      120,
+      1180,
+      465,
+      1435
+     ],
+     "imageGroup": "pasta-bowl-7",
+     "rows": [
+      [
+       "PA-310",
+       "10 1/2\" X 2\" 18 OZ 1 DZ"
+      ],
+      [
+       "PA-312",
+       "12\" X 2 1/2\" 22 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ear Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      535,
+      1250,
+      785,
+      1395
+     ],
+     "imageGroup": "ear-bowl-8",
+     "rows": [
+      [
+       "PA-405",
+       "3 1/2\" 3.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Nappie",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      865,
+      1260,
+      1150,
+      1435
+     ],
+     "imageGroup": "nappie-9",
+     "rows": [
+      [
+       "PA-406",
+       "6\" 12.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fruit Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1205,
+      1245,
+      1530,
+      1415
+     ],
+     "imageGroup": "fruit-bowl-10",
+     "rows": [
+      [
+       "PA-505",
+       "5 1/4\" 5.5 OZ 3 DZ"
+      ],
+      [
+       "PA-506",
+       "6 3/8\" 11.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      120,
+      1680,
+      475,
+      1955
+     ],
+     "imageGroup": "dessert-plate-11",
+     "rows": [
+      [
+       "PA-612",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      515,
+      1670,
+      815,
+      1970
+     ],
+     "imageGroup": "coupe-plate-12",
+     "rows": [
+      [
+       "PA-707",
+       "7 1/2\" 3 DZ"
+      ],
+      [
+       "PA-709",
+       "8 3/4\" 2 DZ"
+      ],
+      [
+       "PA-711",
+       "11\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salt Shaker",
+     "type": "shaker",
+     "shape": "round",
+     "crop": [
+      875,
+      1765,
+      995,
+      1960
+     ],
+     "imageGroup": "salt-shaker-13",
+     "rows": [
+      [
+       "PA-SS",
+       "4\" 4 DZ",
+       {
+        "dimensions": {
+         "length": null,
+         "width": null,
+         "height": 4
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Pepper Shaker",
+     "type": "shaker",
+     "shape": "round",
+     "crop": [
+      1060,
+      1765,
+      1190,
+      1960
+     ],
+     "imageGroup": "pepper-shaker-14",
+     "rows": [
+      [
+       "PA-PS",
+       "4\" 4 DZ",
+       {
+        "dimensions": {
+         "length": null,
+         "width": null,
+         "height": 4
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Creamer",
+     "type": "creamer",
+     "shape": "round",
+     "crop": [
+      1270,
+      1755,
+      1525,
+      1955
+     ],
+     "imageGroup": "creamer-15",
+     "rows": [
+      [
+       "PA-PC",
+       "3 1/8\" X 3 1/2\" 6.5 OZ 3 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,866 @@
+{
+ "templates": {
+  "round": {
+   "name": "Round Plate {color}",
+   "type": "plate",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-107",
+     "7 1/2\" X 7/8\" 4 DZ"
+    ],
+    [
+     "BM-109",
+     "8 1/2\" X 1\" 3 DZ"
+    ],
+    [
+     "BM-110",
+     "10 1/4\" X 1 1/4\" 2 DZ"
+    ],
+    [
+     "BM-111",
+     "11 1/2\" X 1 1/4\" 1 DZ"
+    ]
+   ]
+  },
+  "oval": {
+   "name": "Deep Oval Plate {color}",
+   "type": "plate",
+   "shape": "oval",
+   "rows": [
+    [
+     "BM-209",
+     "9 5/8\" X 6\" X 1\" 2 DZ"
+    ],
+    [
+     "BM-211",
+     "11 1/2\" X 7 1/4\" X 1 1/8\" 1 DZ"
+    ],
+    [
+     "BM-213",
+     "13 1/2\" X 8 5/8\" X 1 1/4\" 1 DZ"
+    ]
+   ]
+  },
+  "pasta": {
+   "name": "Salad/Pasta Bowl {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-307",
+     "7 1/2\" X 1 1/2\" 12 OZ 4 DZ"
+    ],
+    [
+     "BM-309",
+     "9 1/2\" X 2 1/2\" 30 OZ 2 DZ"
+    ]
+   ]
+  },
+  "sauce": {
+   "name": "Sauce Dish {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-4003",
+     "3\" X 1\" 2 OZ 6 DZ"
+    ],
+    [
+     "BM-4004",
+     "4\" X 1 1/4\" 4 OZ 6 DZ"
+    ]
+   ]
+  },
+  "rice": {
+   "name": "Rice/Soup Bowl {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-404",
+     "4 1/2\" X 2 3/4\" 10 OZ 4 DZ"
+    ]
+   ]
+  },
+  "cereal": {
+   "name": "Cereal/Salad Bowl {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-405",
+     "5 3/4\" X 2 1/4\" 15 OZ 4 DZ"
+    ],
+    [
+     "BM-407",
+     "7 1/4\" X 2 3/4\" 30 OZ 2 DZ"
+    ]
+   ]
+  },
+  "dish": {
+   "name": "Deep Dish {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-505",
+     "5 1/2\" X 1\" 8 OZ 4 DZ"
+    ],
+    [
+     "BM-506",
+     "6 1/2\" X 1 1/4\" 12 OZ 4 DZ"
+    ],
+    [
+     "BM-507",
+     "7 1/2\" X 1 1/2\" 16 OZ 4 DZ"
+    ],
+    [
+     "BM-508",
+     "8 1/2\" X 1 3/4\" 24 OZ 2 DZ"
+    ]
+   ]
+  },
+  "handle": {
+   "name": "Deep Dish with Handle {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-606",
+     "6\" X 1 1/4\" 12 OZ 4 DZ"
+    ],
+    [
+     "BM-607",
+     "7\" X 1 1/2\" 16 OZ 2 DZ"
+    ]
+   ]
+  },
+  "rarebit": {
+   "name": "Rarebit Dish {color}",
+   "type": "bowl",
+   "shape": "oval",
+   "rows": [
+    [
+     "BM-608",
+     "8 3/4\" X 5\" X 1 1/4\" 10 OZ 4 DZ"
+    ]
+   ]
+  },
+  "sheer": {
+   "name": "Serving Sheer Bowl {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-705",
+     "7\" X 5\" 35 OZ 4 DZ"
+    ]
+   ]
+  },
+  "salad": {
+   "name": "Salad/Soup Bowl {color}",
+   "type": "bowl",
+   "shape": "round",
+   "rows": [
+    [
+     "BM-708",
+     "8\" X 1 1/2\" 20 OZ 3 DZ"
+    ],
+    [
+     "BM-709",
+     "9\" X 1 3/4\" 30 OZ 2 DZ"
+    ]
+   ]
+  },
+  "dessert": {
+   "name": "Dessert Plate {color}",
+   "type": "plate",
+   "shape": "oval",
+   "rows": [
+    [
+     "BM-710",
+     "9 1/4\" X 5\" X 1 7/8\" 10 OZ 2 DZ"
+    ],
+    [
+     "BM-711",
+     "11 1/2\" X 6\" X 2 3/8\" 16 OZ 1 DZ"
+    ]
+   ]
+  },
+  "mediterranean": {
+   "name": "Mediterranean Pasta Bowl {color}",
+   "type": "bowl",
+   "shape": "oval",
+   "rows": [
+    [
+     "BM-810",
+     "10 3/4\" X 7\" X 2 1/4\" 12 OZ 2 DZ"
+    ]
+   ]
+  },
+  "deep": {
+   "name": "Deep Mediterranean Bowl {color}",
+   "type": "bowl",
+   "shape": "oval",
+   "rows": [
+    [
+     "BM-811",
+     "11 1/8\" X 7\" X 3 1/4\" 20 OZ 1 DZ"
+    ]
+   ]
+  }
+ },
+ "pages": [
+  {
+   "collection": "birmingham",
+   "page": 99,
+   "complete": true,
+   "color": "black, green",
+   "suffix": "GR",
+   "groups": [
+    {
+     "template": "round",
+     "crop": [
+      130,
+      170,
+      515,
+      560
+     ],
+     "imageGroup": "round"
+    },
+    {
+     "template": "oval",
+     "crop": [
+      570,
+      265,
+      1065,
+      540
+     ],
+     "imageGroup": "oval"
+    },
+    {
+     "template": "pasta",
+     "crop": [
+      1140,
+      300,
+      1510,
+      540
+     ],
+     "imageGroup": "pasta"
+    },
+    {
+     "template": "sauce",
+     "crop": [
+      175,
+      820,
+      410,
+      990
+     ],
+     "imageGroup": "sauce"
+    },
+    {
+     "template": "rice",
+     "crop": [
+      495,
+      785,
+      780,
+      995
+     ],
+     "imageGroup": "rice"
+    },
+    {
+     "template": "cereal",
+     "crop": [
+      830,
+      780,
+      1170,
+      995
+     ],
+     "imageGroup": "cereal"
+    },
+    {
+     "template": "dish",
+     "crop": [
+      1195,
+      765,
+      1520,
+      1000
+     ],
+     "imageGroup": "dish"
+    },
+    {
+     "template": "handle",
+     "crop": [
+      145,
+      1280,
+      480,
+      1475
+     ],
+     "imageGroup": "handle"
+    },
+    {
+     "template": "rarebit",
+     "crop": [
+      495,
+      1275,
+      875,
+      1475
+     ],
+     "imageGroup": "rarebit"
+    },
+    {
+     "template": "sheer",
+     "crop": [
+      880,
+      1260,
+      1140,
+      1490
+     ],
+     "imageGroup": "sheer"
+    },
+    {
+     "template": "salad",
+     "crop": [
+      1180,
+      1210,
+      1520,
+      1475
+     ],
+     "imageGroup": "salad"
+    },
+    {
+     "template": "dessert",
+     "crop": [
+      125,
+      1670,
+      505,
+      1950
+     ],
+     "imageGroup": "dessert"
+    },
+    {
+     "template": "mediterranean",
+     "crop": [
+      610,
+      1665,
+      1040,
+      1950
+     ],
+     "imageGroup": "mediterranean"
+    },
+    {
+     "template": "deep",
+     "crop": [
+      1120,
+      1680,
+      1530,
+      1950
+     ],
+     "imageGroup": "deep"
+    }
+   ]
+  },
+  {
+   "collection": "birmingham",
+   "page": 101,
+   "complete": true,
+   "color": "black, teal",
+   "suffix": "TL",
+   "groups": [
+    {
+     "template": "round",
+     "crop": [
+      130,
+      170,
+      515,
+      560
+     ],
+     "imageGroup": "round"
+    },
+    {
+     "template": "oval",
+     "crop": [
+      570,
+      265,
+      1065,
+      540
+     ],
+     "imageGroup": "oval"
+    },
+    {
+     "template": "pasta",
+     "crop": [
+      1140,
+      300,
+      1510,
+      540
+     ],
+     "imageGroup": "pasta"
+    },
+    {
+     "template": "sauce",
+     "crop": [
+      175,
+      820,
+      410,
+      990
+     ],
+     "imageGroup": "sauce"
+    },
+    {
+     "template": "rice",
+     "crop": [
+      495,
+      785,
+      780,
+      995
+     ],
+     "imageGroup": "rice"
+    },
+    {
+     "template": "cereal",
+     "crop": [
+      830,
+      780,
+      1170,
+      995
+     ],
+     "imageGroup": "cereal"
+    },
+    {
+     "template": "dish",
+     "crop": [
+      1195,
+      765,
+      1520,
+      1000
+     ],
+     "imageGroup": "dish"
+    },
+    {
+     "template": "handle",
+     "crop": [
+      130,
+      1240,
+      490,
+      1475
+     ],
+     "imageGroup": "handle"
+    },
+    {
+     "template": "rarebit",
+     "crop": [
+      495,
+      1270,
+      875,
+      1475
+     ],
+     "imageGroup": "rarebit"
+    },
+    {
+     "template": "sheer",
+     "crop": [
+      880,
+      1260,
+      1140,
+      1490
+     ],
+     "imageGroup": "sheer"
+    },
+    {
+     "template": "salad",
+     "crop": [
+      1180,
+      1210,
+      1520,
+      1475
+     ],
+     "imageGroup": "salad"
+    },
+    {
+     "template": "dessert",
+     "crop": [
+      125,
+      1670,
+      505,
+      1950
+     ],
+     "imageGroup": "dessert"
+    },
+    {
+     "template": "mediterranean",
+     "crop": [
+      610,
+      1665,
+      1040,
+      1950
+     ],
+     "imageGroup": "mediterranean"
+    },
+    {
+     "template": "deep",
+     "crop": [
+      1120,
+      1680,
+      1530,
+      1950
+     ],
+     "imageGroup": "deep"
+    }
+   ]
+  },
+  {
+   "collection": "birmingham",
+   "page": 103,
+   "complete": true,
+   "color": "black, gray",
+   "groups": [
+    {
+     "template": "round",
+     "crop": [
+      130,
+      170,
+      515,
+      560
+     ],
+     "imageGroup": "round"
+    },
+    {
+     "template": "oval",
+     "crop": [
+      570,
+      265,
+      1065,
+      540
+     ],
+     "imageGroup": "oval"
+    },
+    {
+     "template": "pasta",
+     "crop": [
+      1140,
+      300,
+      1510,
+      540
+     ],
+     "imageGroup": "pasta"
+    },
+    {
+     "template": "sauce",
+     "crop": [
+      175,
+      820,
+      410,
+      990
+     ],
+     "imageGroup": "sauce"
+    },
+    {
+     "template": "rice",
+     "crop": [
+      495,
+      785,
+      780,
+      995
+     ],
+     "imageGroup": "rice"
+    },
+    {
+     "template": "cereal",
+     "crop": [
+      830,
+      780,
+      1170,
+      995
+     ],
+     "imageGroup": "cereal"
+    },
+    {
+     "template": "dish",
+     "crop": [
+      1195,
+      765,
+      1520,
+      1000
+     ],
+     "imageGroup": "dish"
+    },
+    {
+     "template": "handle",
+     "crop": [
+      145,
+      1280,
+      480,
+      1475
+     ],
+     "imageGroup": "handle"
+    },
+    {
+     "template": "rarebit",
+     "crop": [
+      495,
+      1310,
+      840,
+      1475
+     ],
+     "imageGroup": "rarebit"
+    },
+    {
+     "template": "sheer",
+     "crop": [
+      880,
+      1260,
+      1140,
+      1490
+     ],
+     "imageGroup": "sheer"
+    },
+    {
+     "template": "salad",
+     "crop": [
+      1180,
+      1210,
+      1520,
+      1475
+     ],
+     "imageGroup": "salad"
+    },
+    {
+     "template": "dessert",
+     "crop": [
+      125,
+      1670,
+      505,
+      1950
+     ],
+     "imageGroup": "dessert"
+    },
+    {
+     "template": "mediterranean",
+     "crop": [
+      610,
+      1665,
+      1040,
+      1950
+     ],
+     "imageGroup": "mediterranean"
+    },
+    {
+     "template": "deep",
+     "crop": [
+      1120,
+      1680,
+      1530,
+      1950
+     ],
+     "imageGroup": "deep"
+    }
+   ]
+  },
+  {
+   "collection": "birmingham",
+   "page": 104,
+   "complete": true,
+   "color": "black, clay",
+   "suffix": "CL",
+   "groups": [
+    {
+     "template": "round",
+     "crop": [
+      605,
+      1535,
+      995,
+      1940
+     ],
+     "imageGroup": "round"
+    },
+    {
+     "template": "oval",
+     "crop": [
+      1070,
+      1670,
+      1570,
+      1900
+     ],
+     "imageGroup": "oval"
+    }
+   ]
+  },
+  {
+   "collection": "birmingham",
+   "page": 105,
+   "complete": true,
+   "color": "black, clay",
+   "suffix": "CL",
+   "groups": [
+    {
+     "template": "pasta",
+     "name": "Soup Bowl {color}",
+     "crop": [
+      110,
+      345,
+      480,
+      550
+     ],
+     "imageGroup": "soup",
+     "rows": [
+      [
+       "BM-307",
+       "7 1/2\" X 1 1/2\" 12 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "template": "pasta",
+     "crop": [
+      535,
+      345,
+      865,
+      535
+     ],
+     "imageGroup": "pasta",
+     "rows": [
+      [
+       "BM-309",
+       "9 1/2\" X 2 1/2\" 30 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "template": "sauce",
+     "crop": [
+      975,
+      395,
+      1165,
+      545
+     ],
+     "imageGroup": "sauce"
+    },
+    {
+     "template": "rice",
+     "crop": [
+      1265,
+      390,
+      1485,
+      550
+     ],
+     "imageGroup": "rice"
+    },
+    {
+     "template": "cereal",
+     "name": "Soup/Cereal Bowl {color}",
+     "crop": [
+      160,
+      805,
+      420,
+      975
+     ],
+     "imageGroup": "cereal"
+    },
+    {
+     "template": "dish",
+     "crop": [
+      495,
+      805,
+      795,
+      980
+     ],
+     "imageGroup": "dish"
+    },
+    {
+     "template": "handle",
+     "crop": [
+      850,
+      815,
+      1150,
+      975
+     ],
+     "imageGroup": "handle"
+    },
+    {
+     "template": "rarebit",
+     "crop": [
+      1210,
+      815,
+      1535,
+      975
+     ],
+     "imageGroup": "rarebit"
+    },
+    {
+     "template": "sheer",
+     "crop": [
+      210,
+      1260,
+      430,
+      1480
+     ],
+     "imageGroup": "sheer"
+    },
+    {
+     "template": "salad",
+     "crop": [
+      600,
+      1260,
+      985,
+      1460
+     ],
+     "imageGroup": "salad"
+    },
+    {
+     "template": "dessert",
+     "crop": [
+      1130,
+      1280,
+      1540,
+      1460
+     ],
+     "imageGroup": "dessert-small",
+     "rows": [
+      [
+       "BM-710",
+       "9 1/4\" X 5\" X 1 7/8\" 10 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "template": "dessert",
+     "crop": [
+      125,
+      1700,
+      515,
+      1950
+     ],
+     "imageGroup": "dessert-large",
+     "rows": [
+      [
+       "BM-711",
+       "11 1/2\" X 6\" X 2 3/8\" 16 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "template": "mediterranean",
+     "crop": [
+      595,
+      1725,
+      1050,
+      1940
+     ],
+     "imageGroup": "mediterranean"
+    },
+    {
+     "template": "deep",
+     "crop": [
+      1135,
+      1725,
+      1530,
+      1940
+     ],
+     "imageGroup": "deep"
+    }
+   ]
+  }
+ ]
+}

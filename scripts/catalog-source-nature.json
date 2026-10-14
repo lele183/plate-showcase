@@ -1,0 +1,796 @@
+{
+ "pages": [
+  {
+   "collection": "nature-art",
+   "page": 94,
+   "complete": true,
+   "color": "white brown",
+   "groups": [
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      155,
+      1655,
+      505,
+      1925
+     ],
+     "imageGroup": "round-plate-0",
+     "rows": [
+      [
+       "NA-107",
+       "7 1/2\" X 3/4\" 4 DZ"
+      ],
+      [
+       "NA-109",
+       "9\" X 3/4\" 2 DZ"
+      ],
+      [
+       "NA-110",
+       "10 1/2\" X 1\" 2 DZ"
+      ],
+      [
+       "NA-112",
+       "12\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      615,
+      1700,
+      1040,
+      1920
+     ],
+     "imageGroup": "oval-plate-1",
+     "rows": [
+      [
+       "NA-210",
+       "10\" X 6\" X 3/4\" 3 DZ"
+      ],
+      [
+       "NA-212",
+       "12\" X 7 3/4\" X 3/4\" 2 DZ"
+      ],
+      [
+       "NA-214",
+       "14\" X 9 3/4\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1115,
+      1735,
+      1530,
+      1880
+     ],
+     "imageGroup": "deep-oval-plate-2",
+     "rows": [
+      [
+       "NA-310",
+       "10 1/2\" X 5 1/4\" X 1 1/2\" 2 DZ"
+      ],
+      [
+       "NA-312",
+       "12 1/2\" X 6 1/4\" X 2\" 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "white",
+     "black",
+     "brown"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "nature-art",
+   "page": 95,
+   "complete": true,
+   "color": "white brown",
+   "groups": [
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      110,
+      270,
+      450,
+      420
+     ],
+     "imageGroup": "rectangular-plate-0",
+     "rows": [
+      [
+       "NA-408",
+       "8 1/2\" X 3 3/4\" X 1/2\" 4 DZ"
+      ],
+      [
+       "NA-411",
+       "10 7/8\" X 4 7/8\" X 3/4\" 3 DZ"
+      ],
+      [
+       "NA-413",
+       "12 7/8\" X 5 3/4\" X 1\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Long Tray",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      505,
+      290,
+      900,
+      420
+     ],
+     "imageGroup": "long-tray-1",
+     "rows": [
+      [
+       "NA-414",
+       "12 7/8\" X 3 1/2\" X 3 1/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      970,
+      285,
+      1125,
+      425
+     ],
+     "imageGroup": "sauce-dish-2",
+     "rows": [
+      [
+       "NA-5002",
+       "2 1/2\" X 1 1/4\" 1.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      1230,
+      270,
+      1440,
+      425
+     ],
+     "imageGroup": "sauce-dish-3",
+     "rows": [
+      [
+       "NA-5003",
+       "3 1/2\" X 1 5/8\" 4 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      185,
+      775,
+      400,
+      925
+     ],
+     "imageGroup": "square-sauce-dish-4",
+     "rows": [
+      [
+       "NA-5004",
+       "3 1/2\" X 1 1/2\" 5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      525,
+      780,
+      735,
+      925
+     ],
+     "imageGroup": "rice-bowl-5",
+     "rows": [
+      [
+       "NA-504",
+       "4 1/2\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Miso Soup Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      880,
+      775,
+      1110,
+      930
+     ],
+     "imageGroup": "square-miso-soup-bowl-6",
+     "rows": [
+      [
+       "NA-505",
+       "4 1/2\" X 2\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Two Divided Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1220,
+      775,
+      1490,
+      945
+     ],
+     "imageGroup": "two-divided-sauce-dish-7",
+     "rows": [
+      [
+       "NA-506",
+       "5 3/4\" X 3\" 2 OZ EACH 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl with Handle",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      135,
+      1240,
+      455,
+      1410
+     ],
+     "imageGroup": "bowl-with-handle-8",
+     "rows": [
+      [
+       "NA-509",
+       "9\" X 7 1/2\" X 1 3/4\" 24 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cereal Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      525,
+      1240,
+      760,
+      1410
+     ],
+     "imageGroup": "cereal-bowl-9",
+     "rows": [
+      [
+       "NA-605",
+       "5 1/2\" X 2 1/2\" 16 OZ 4 DZ"
+      ],
+      [
+       "NA-606",
+       "6 1/2\" X 3\" 28 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Ramen Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      850,
+      1225,
+      1140,
+      1415
+     ],
+     "imageGroup": "ramen-bowl-10",
+     "rows": [
+      [
+       "NA-607",
+       "7\" X 2 3/4\" 26 OZ 3 DZ"
+      ],
+      [
+       "NA-608",
+       "8\" X 3 1/8\" 38 OZ 2 DZ"
+      ],
+      [
+       "NA-609",
+       "9\" X 3 1/2\" 55 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1195,
+      1225,
+      1505,
+      1425
+     ],
+     "imageGroup": "salad-soup-bowl-11",
+     "rows": [
+      [
+       "NA-708",
+       "8\" X 1 1/2\" 20 OZ 3 DZ"
+      ],
+      [
+       "NA-709",
+       "9\" X 1 3/4\" 28 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      125,
+      1665,
+      510,
+      1940
+     ],
+     "imageGroup": "dessert-plate-12",
+     "rows": [
+      [
+       "NA-710",
+       "9 1/4\" X 5\" X 1 7/8\" 10 OZ 2 DZ"
+      ],
+      [
+       "NA-711",
+       "11 1/2\" X 6\" X 2 3/4\" 16 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mediterranean Pasta Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      625,
+      1665,
+      1010,
+      1940
+     ],
+     "imageGroup": "mediterranean-pasta-bowl-13",
+     "rows": [
+      [
+       "NA-810",
+       "10 3/4\" X 7\" X 2 1/4\" 12 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Mediterranean Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      1145,
+      1735,
+      1530,
+      1940
+     ],
+     "imageGroup": "deep-mediterranean-bowl-14",
+     "rows": [
+      [
+       "NA-811",
+       "11 1/8\" X 7\" X 3 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "nature-art",
+   "page": 96,
+   "complete": true,
+   "color": "black brown",
+   "groups": [
+    {
+     "name": "Black Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      155,
+      1655,
+      505,
+      1950
+     ],
+     "imageGroup": "round-plate-0",
+     "rows": [
+      [
+       "NA-107BK",
+       "7 1/2\" X 3/4\" 4 DZ"
+      ],
+      [
+       "NA-109BK",
+       "9\" X 3/4\" 2 DZ"
+      ],
+      [
+       "NA-110BK",
+       "10 1/2\" X 1\" 2 DZ"
+      ],
+      [
+       "NA-112BK",
+       "12\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      615,
+      1700,
+      1040,
+      1920
+     ],
+     "imageGroup": "oval-plate-1",
+     "rows": [
+      [
+       "NA-210BK",
+       "10\" X 6\" X 3/4\" 3 DZ"
+      ],
+      [
+       "NA-212BK",
+       "12\" X 7 3/4\" X 3/4\" 2 DZ"
+      ],
+      [
+       "NA-214BK",
+       "14\" X 9 3/4\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Deep Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1115,
+      1735,
+      1530,
+      1880
+     ],
+     "imageGroup": "deep-oval-plate-2",
+     "rows": [
+      [
+       "NA-310BK",
+       "10 1/2\" X 5 1/4\" X 1 1/2\" 2 DZ"
+      ],
+      [
+       "NA-312BK",
+       "12 1/2\" X 6 1/4\" X 2\" 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "nature-art",
+   "page": 97,
+   "complete": true,
+   "color": "black brown",
+   "groups": [
+    {
+     "name": "Black Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      110,
+      270,
+      450,
+      420
+     ],
+     "imageGroup": "rectangular-plate-0",
+     "rows": [
+      [
+       "NA-408BK",
+       "8 1/2\" X 3 3/4\" X 1/2\" 4 DZ"
+      ],
+      [
+       "NA-411BK",
+       "10 7/8\" X 4 7/8\" X 3/4\" 3 DZ"
+      ],
+      [
+       "NA-413BK",
+       "12 7/8\" X 5 3/4\" X 1\" 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Long Tray",
+     "type": "tray",
+     "shape": "rectangular",
+     "crop": [
+      505,
+      290,
+      900,
+      420
+     ],
+     "imageGroup": "long-tray-1",
+     "rows": [
+      [
+       "NA-414BK",
+       "12 7/8\" X 3 1/2\" X 3 1/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      970,
+      285,
+      1125,
+      425
+     ],
+     "imageGroup": "sauce-dish-2",
+     "rows": [
+      [
+       "NA-5002BK",
+       "2 1/2\" X 1 1/4\" 1.5 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      1230,
+      270,
+      1440,
+      425
+     ],
+     "imageGroup": "sauce-dish-3",
+     "rows": [
+      [
+       "NA-5003BK",
+       "3 1/2\" X 1 5/8\" 4 OZ 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Square Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      185,
+      775,
+      400,
+      925
+     ],
+     "imageGroup": "square-sauce-dish-4",
+     "rows": [
+      [
+       "NA-5004BK",
+       "3 1/2\" X 1 1/2\" 5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      525,
+      780,
+      735,
+      925
+     ],
+     "imageGroup": "rice-bowl-5",
+     "rows": [
+      [
+       "NA-504BK",
+       "4 1/2\" X 2 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Square Miso Soup Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      880,
+      775,
+      1110,
+      930
+     ],
+     "imageGroup": "square-miso-soup-bowl-6",
+     "rows": [
+      [
+       "NA-505BK",
+       "4 1/2\" X 2\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Two Divided Sauce Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1220,
+      775,
+      1490,
+      945
+     ],
+     "imageGroup": "two-divided-sauce-dish-7",
+     "rows": [
+      [
+       "NA-506BK",
+       "5 3/4\" X 3\" 2 OZ EACH 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Bowl with Handle",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      135,
+      1240,
+      455,
+      1410
+     ],
+     "imageGroup": "bowl-with-handle-8",
+     "rows": [
+      [
+       "NA-509BK",
+       "9\" X 7 1/2\" X 1 3/4\" 24 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Cereal Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      525,
+      1240,
+      760,
+      1410
+     ],
+     "imageGroup": "cereal-bowl-9",
+     "rows": [
+      [
+       "NA-605BK",
+       "5 1/2\" X 2 1/2\" 16 OZ 4 DZ"
+      ],
+      [
+       "NA-606BK",
+       "6 1/2\" X 3\" 28 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Ramen Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      850,
+      1225,
+      1140,
+      1415
+     ],
+     "imageGroup": "ramen-bowl-10",
+     "rows": [
+      [
+       "NA-607BK",
+       "7\" X 2 3/4\" 26 OZ 3 DZ"
+      ],
+      [
+       "NA-608BK",
+       "8\" X 3 1/8\" 38 OZ 2 DZ"
+      ],
+      [
+       "NA-609BK",
+       "9\" X 3 1/2\" 55 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Salad/Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1195,
+      1225,
+      1505,
+      1425
+     ],
+     "imageGroup": "salad-soup-bowl-11",
+     "rows": [
+      [
+       "NA-708BK",
+       "8\" X 1 1/2\" 20 OZ 3 DZ"
+      ],
+      [
+       "NA-709BK",
+       "9\" X 1 3/4\" 28 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      125,
+      1665,
+      510,
+      1940
+     ],
+     "imageGroup": "dessert-plate-12",
+     "rows": [
+      [
+       "NA-710BK",
+       "9 1/4\" X 5\" X 1 7/8\" 10 OZ 2 DZ"
+      ],
+      [
+       "NA-711BK",
+       "11 1/2\" X 6\" X 2 3/4\" 16 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Mediterranean Pasta Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      625,
+      1665,
+      1010,
+      1940
+     ],
+     "imageGroup": "mediterranean-pasta-bowl-13",
+     "rows": [
+      [
+       "NA-810BK",
+       "10 3/4\" X 7\" X 2 1/4\" 12 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Black Deep Mediterranean Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      1145,
+      1735,
+      1530,
+      1940
+     ],
+     "imageGroup": "deep-mediterranean-bowl-14",
+     "rows": [
+      [
+       "NA-811BK",
+       "11 1/8\" X 7\" X 3 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

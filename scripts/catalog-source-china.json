@@ -1,0 +1,53 @@
+{"pages":[
+ {"collection":"fuji","page":70,"complete":true,"color":"bone white","collectionAttributes":{"colors":["bone white"]},"groups":[
+  {"name":"Sauce Dish","type":"sauce dish","shape":"rectangular","crop":[265,1130,475,1235],"imageGroup":"sauce","rows":[["FU-903","3 1/2\" X 2\" 1.5 OZ 4 DZ"]]},
+  {"name":"Rectangular Plate","type":"plate","shape":"rectangular","crop":[135,1350,505,1470],"imageGroup":"rectangular","rows":[["FU-2108","8\" X 3 1/8\" 3 DZ"],["FU-2110","10 1/2\" X 4 3/8\" 2 DZ"]]},
+  {"name":"Square Plate","type":"plate","shape":"square","crop":[655,1230,1035,1435],"imageGroup":"square","rows":[["FU-1106","6 1/4\" 3 DZ"],["FU-1107","7 1/2\" 3 DZ"],["FU-1110","10 1/2\" 1 DZ"]]},
+  {"name":"Round Plate","type":"plate","shape":"round","crop":[1155,1220,1525,1425],"imageGroup":"round","rows":[["FU-1208","8\" 3 DZ"],["FU-1210","10 1/4\" 2 DZ"],["FU-1212","12\" 1 DZ"]]},
+  {"name":"Rectangular Display Plate","type":"plate","shape":"rectangular","crop":[95,1705,540,1920],"imageGroup":"display-wide","rows":[["FU-1310","10 1/4\" X 7\" 2 DZ"],["FU-1313","13\" X 9\" 6 PC"],["FU-1315","15 3/4\" X 11\" 6 PC"]]},
+  {"name":"Rectangular Display Plate","type":"plate","shape":"rectangular","crop":[580,1735,1010,1910],"imageGroup":"display-medium","rows":[["FU-1311","11 1/4\" X 7\" 1 DZ"],["FU-1314","13\" X 6 1/2\" 6 PC"]]},
+  {"name":"Rectangular Display Plate","type":"plate","shape":"rectangular","crop":[1065,1715,1555,1945],"imageGroup":"display-long","rows":[["FU-1414","14\" X 6 1/2\" 1 DZ"],["FU-1416","16\" X 7 1/2\" 1 DZ"],["FU-1418","18\" X 8 1/2\" 6 PC"]]}
+ ]},
+ {"collection":"fuji","page":71,"complete":true,"color":"bone white","groups":[
+  {"name":"Rectangular Sushi Plate","type":"plate","shape":"rectangular","crop":[100,225,615,430],"imageGroup":"sushi","rows":[["FU-210","10\" X 4 1/2\" 2 DZ"],["FU-212","11 1/2\" X 5 1/2\" 1 DZ"],["FU-214","13 1/2\" X 6 1/2\" 1 DZ"]]},
+  {"name":"Oval Plate","type":"plate","shape":"oval","crop":[645,300,1135,460],"imageGroup":"oval","rows":[["FU-211","11\" X 5 1/2\" 1 DZ"],["FU-213","13\" X 7\" 1 DZ"]]},
+  {"name":"Platter","type":"platter","shape":"rectangular","crop":[1130,215,1565,390],"imageGroup":"platter","rows":[["FU-807","6\" X 3\" 3 DZ"],["FU-808","8\" X 4\" 2 DZ"],["FU-810","10\" X 5\" 2 DZ"],["FU-812","12\" X 6\" 1 DZ"],["FU-814","14 1/4\" X 7\" 1 DZ"]]},
+  {"name":"Square Sushi Plate","type":"plate","shape":"square","crop":[100,665,475,935],"imageGroup":"square-sushi","rows":[["FU-105","4 1/2\" 3 DZ"],["FU-108","7 1/2\" 3 DZ"],["FU-109","9\" 2 DZ"],["FU-110","10 1/2\" 1 DZ"],["FU-112","12\" 1 DZ"]]},
+  {"name":"Square Flat Plate","type":"plate","shape":"square","crop":[510,655,810,955],"imageGroup":"square-flat","rows":[["FU-308","8\" 3 DZ"],["FU-310","10\" 2 DZ"],["FU-312","12\" 1 DZ"]]},
+  {"name":"Triangle Plate","type":"plate","shape":"triangular","crop":[870,690,1240,935],"imageGroup":"triangle","rows":[["FU-408","8\" 3 DZ"],["FU-410","10\" 2 DZ"],["FU-412","12\" 1 DZ"]]},
+  {"name":"Sauce Dish","type":"sauce dish","shape":"rectangular","crop":[1280,780,1510,910],"imageGroup":"sauce","rows":[["FU-4046","3 3/4\" X 2 1/2\" X 1 1/8\" 1.5 OZ 4 DZ"]]},
+  {"name":"Fortune Bowl","type":"bowl","shape":"irregular","crop":[85,1270,450,1460],"imageGroup":"fortune","rows":[["FU-504","4\" 2 OZ 4 DZ"],["FU-506","5 1/2\" 4 OZ 3 DZ"],["FU-508","8 1/4\" 18 OZ 3 DZ"],["FU-510","10\" 28 OZ 1 DZ"]]},
+  {"name":"Sheer Bowl","type":"bowl","shape":"oval","crop":[485,1250,815,1465],"imageGroup":"sheer","rows":[["FU-606","6\" 9 OZ 3 DZ"],["FU-608","8\" 16 OZ 2 DZ"],["FU-609","9\" 20 OZ 1 DZ"]]},
+  {"name":"Salad Bowl","type":"bowl","shape":"irregular","crop":[870,1290,1200,1450],"imageGroup":"salad","rows":[["FU-708","8\" 6 OZ 2 DZ"]]},
+  {"name":"Bowl","type":"bowl","shape":"round","crop":[1250,1270,1530,1480],"imageGroup":"bowl","rows":[["FU-804","4\" X 2\" 5 OZ 3 DZ"],["FU-805","5\" X 2 1/2\" 10 OZ 3 DZ"],["FU-806","6\" X 3\" 18 OZ 3 DZ"]]},
+  {"name":"Square Bowl","type":"bowl","shape":"square","crop":[130,1715,465,1935],"imageGroup":"square-bowl","rows":[["FU-004","4\" X 1 3/4\"H 8 OZ 3 DZ"],["FU-005","5 1/2\" X 2\"H 14 OZ 3 DZ"],["FU-007","7\" X 2 3/4\"H 36 OZ 2 DZ"],["FU-009","9\" X 3 5/8\"H 72 OZ 1 DZ"]]},
+  {"name":"Soup Bowl","type":"bowl","shape":"irregular","crop":[575,1780,795,1935],"imageGroup":"soup","rows":[["FU-0104","5\" 5 OZ 3 DZ"]]},
+  {"name":"Wine Cup","type":"cup","shape":"round","crop":[980,1805,1095,1935],"imageGroup":"wine-cup","rows":[["FU-902","1 1/2\" X 1 1/2\" 1.5 OZ 6 DZ"]]},
+  {"name":"Wine Pot","type":"pitcher","shape":"round","crop":[1350,1660,1475,1930],"imageGroup":"wine-pot","rows":[["FU-907","1 3/4\" X 5 3/4\" 7.5 OZ 3 DZ"],["FU-910","1 3/4\" X 6 3/8\" 10 OZ 3 DZ"]]}
+ ]},
+ {"collection":"recovery","page":72,"complete":true,"color":"american white","groups":[
+  {"name":"Plate","type":"plate","shape":"round","crop":[105,825,510,1215],"imageGroup":"plate","rows":[["RE-5","5 1/2\" 3 DZ"],["RE-6","6 5/8\" 3 DZ"],["RE-7","7 1/8\" 3 DZ"],["RE-22","8 1/4\" 3 DZ"],["RE-8","9\" 2 DZ"],["RE-9","9 3/4\" 2 DZ"],["RE-16","10 1/2\" 1 DZ"],["RE-20","11 1/4\" 1 DZ"],["RE-21","12\" 1 DZ"]]},
+  {"name":"Platter","type":"platter","shape":"oval","crop":[575,865,1075,1215],"imageGroup":"platter","rows":[["RE-33","7\" X 4 1/2\" 3 DZ"],["RE-34","9 3/8\" X 6 1/2\" 2 DZ"],["RE-12","10 3/8\" X 7 1/4\" 2 DZ"],["RE-13","11 1/2\" X 8\" 1 DZ"],["RE-14","12 1/2\" X 9\" 1 DZ"],["RE-19","13 1/2\" X 9 1/2\" 1 DZ"],["RE-51","15 1/2\" X 10 1/2\" 1 DZ"],["RE-281","18\" X 12\" 6 PC"]]},
+  {"name":"Salad Plate","type":"plate","shape":"round","crop":[1155,835,1545,1220],"imageGroup":"salad","rows":[["RE-210","10 1/2\" X 1 7/8\" 1 DZ"],["RE-211","11 1/2\" X 2\" 1 DZ"],["RE-213","13\" X 2\" 1 DZ"]]},
+  {"name":"Compartment Plate","type":"plate","shape":"round","crop":[125,1590,465,1950],"imageGroup":"compartment","rows":[["RE-309","9 1/2\" 2 DZ"]]},
+  {"name":"Triangle Pasta Bowl","type":"bowl","shape":"triangular","crop":[620,1595,1005,1965],"imageGroup":"triangle","rows":[["RE-410","10 1/2\" 22 OZ 1 DZ"]]},
+  {"name":"Square Pasta Bowl","type":"bowl","shape":"square","crop":[1130,1615,1490,1960],"imageGroup":"square","rows":[["RE-511","11 1/2\" 22 OZ 1 DZ"]]}
+ ]},
+ {"collection":"recovery","page":73,"complete":true,"color":"american white","groups":[
+  {"name":"Fry Pan Server American White","type":"pan","shape":"oval","crop":[130,195,570,515],"imageGroup":"pan","rows":[["FP-12","10 1/2\" X 7 1/4\" 12 OZ 1 DZ"],["FP-18","11 1/2\" X 8 1/4\" 18 OZ 1 DZ"],["FP-24","13\" X 9 3/4\" 24 OZ 1 DZ"]]},
+  {"name":"Rim Soup Plate","type":"plate","shape":"round","crop":[605,250,1015,495],"imageGroup":"soup","rows":[["RE-3","9\" 10 OZ 2 DZ"]]},
+  {"name":"Pasta Bowl","type":"bowl","shape":"round","crop":[1090,245,1530,520],"imageGroup":"pasta","rows":[["RE-105","10 1/2\" 16 OZ 1 DZ"],["RE-115","11 1/2\" 24 OZ 1 DZ"],["RE-120","12\" 20 OZ 1 DZ"],["RE-125","12 3/4\" 30 OZ 1 DZ"]]},
+  {"name":"Bowl American White","type":"bowl","shape":"round","crop":[95,830,415,1040],"imageGroup":"bowl","rows":[["MB-6","6 3/4\" X 2 1/2\" 25 OZ 2 DZ"]]},
+  {"name":"Grapefruit Bowl","type":"bowl","shape":"round","crop":[450,840,785,1040],"imageGroup":"grapefruit","rows":[["RE-10","6 3/8\" X 1 3/4\" 13 OZ 3 DZ"]]},
+  {"name":"Nappie Bowl","type":"bowl","shape":"round","crop":[830,835,1155,1040],"imageGroup":"nappie","rows":[["RE-24","5 1/4\" X 1 3/4\" 10 OZ 3 DZ"],["RE-15","5 5/8\" X 2\" 12.5 OZ 3 DZ"],["RE-18","5 7/8\" X 2 1/4\" 15 OZ 3 DZ"]]},
+  {"name":"Salad/Soup/Pasta Bowl","type":"bowl","shape":"round","crop":[1200,835,1545,1030],"imageGroup":"salad","rows":[["RE-80","7 1/2\" X 2 1/2\" 25 OZ 2 DZ"],["RE-81","8 1/2\" X 2 3/4\" 48 OZ 1 DZ"],["RE-82","9 1/2\" X 3 1/4\" 60 OZ 1 DZ"]]},
+  {"name":"Fruit Bowl","type":"bowl","shape":"round","crop":[125,1300,435,1495],"imageGroup":"fruit","rows":[["RE-32","4 1/4\" 3.5 OZ 3 DZ"],["RE-11","4 3/4\" 5 OZ 3 DZ"]]},
+  {"name":"Jung Bowl","type":"bowl","shape":"round","crop":[510,1310,770,1495],"imageGroup":"jung","rows":[["RE-95","4 1/4\" X 2\" 9.5 OZ 3 DZ"],["RE-135","4 3/4\" X 2 1/2\" 13.5 OZ 3 DZ"]]},
+  {"name":"Pipkin American White","type":"bowl","shape":"round","crop":[915,1320,1110,1475],"imageGroup":"pipkin","rows":[["PIP-2","2 1/2\" X 1 1/2\" 2 OZ 4 DZ"]]},
+  {"name":"Ramekin Smooth American White","type":"bowl","shape":"round","crop":[1270,1310,1455,1475],"imageGroup":"ramekin","rows":[["RAMS-15","2 3/8\" X 1 1/2\" 1.5 OZ 4 DZ"]]},
+  {"name":"Deep Bowl","type":"bowl","shape":"oval","crop":[80,1765,470,1945],"imageGroup":"deep","rows":[["RE-010","10 1/4\" X 7 1/2\" X 2\" 22 OZ 1 DZ"]]},
+  {"name":"Crème Brulee American White","type":"bowl","shape":"oval","crop":[505,1770,800,1950],"imageGroup":"brulee","rows":[["CB-6","6\" X 4\" X 1 1/4\" 6 OZ 3 DZ"]]},
+  {"name":"Handled Casserole American White","type":"bowl","shape":"round","crop":[855,1760,1175,1935],"imageGroup":"casserole","rows":[["DFHC-10","4 3/4\" X 1 1/2\" 10 OZ 3 DZ"]]},
+  {"name":"Creamer","type":"pitcher","shape":"round","crop":[1235,1745,1485,1950],"imageGroup":"creamer","rows":[["RE-4-CM","2 3/8\" X 3 1/4\" 4 OZ 3 DZ"]]}
+ ]}
+]}

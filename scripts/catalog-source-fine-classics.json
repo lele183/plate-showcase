@@ -1,0 +1,1146 @@
+{
+ "pages": [
+  {
+   "collection": "siena",
+   "page": 56,
+   "complete": true,
+   "color": "white",
+   "groups": [
+    {
+     "name": "Coffee/Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      190,
+      1110,
+      430,
+      1295
+     ],
+     "imageGroup": "coffee-tea-cup-0",
+     "rows": [
+      [
+       "SI-001",
+       "3 3/8\" X 2 1/2\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for SI-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      165,
+      1395,
+      435,
+      1605
+     ],
+     "imageGroup": "saucer-for-si-001-1",
+     "rows": [
+      [
+       "SI-002",
+       "6\" X 3/4\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      625,
+      1160,
+      990,
+      1515
+     ],
+     "imageGroup": "round-plate-2",
+     "rows": [
+      [
+       "SI-107",
+       "7\" X 3/4\" 3 DZ"
+      ],
+      [
+       "SI-108",
+       "8\" X 7/8\" 3 DZ"
+      ],
+      [
+       "SI-110",
+       "10 1/2\" X 1\" 1 DZ"
+      ],
+      [
+       "SI-112",
+       "12\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      1120,
+      1200,
+      1535,
+      1485
+     ],
+     "imageGroup": "platter-3",
+     "rows": [
+      [
+       "SI-210",
+       "10\" X 7\" X 3/4\" 2 DZ"
+      ],
+      [
+       "SI-212",
+       "12\" X 8 3/4\" X 1\" 1 DZ"
+      ],
+      [
+       "SI-214",
+       "14\" X 9 3/4\" X 1 1/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup/Salad Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      125,
+      1740,
+      490,
+      1945
+     ],
+     "imageGroup": "soup-salad-plate-4",
+     "rows": [
+      [
+       "SI-309",
+       "9\" X 1 1/2\" 8 OZ 2 DZ"
+      ],
+      [
+       "SI-310",
+       "10 1/2\" X 1 3/4\" 12 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      540,
+      1765,
+      865,
+      1960
+     ],
+     "imageGroup": "square-bowl-5",
+     "rows": [
+      [
+       "SI-407",
+       "7\" X 1 5/8\" 16 OZ 2 DZ"
+      ],
+      [
+       "SI-408",
+       "8\" X 1 3/4\" 24 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      930,
+      1795,
+      1150,
+      1960
+     ],
+     "imageGroup": "soup-cup-6",
+     "rows": [
+      [
+       "SI-504",
+       "4\" X 2\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      1260,
+      1780,
+      1505,
+      1940
+     ],
+     "imageGroup": "sauce-dish-7",
+     "rows": [
+      [
+       "SI-505",
+       "4 1/2\" X 1 1/2\" 6 OZ 3 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "material": "porcelain"
+   }
+  },
+  {
+   "collection": "urban-line",
+   "page": 57,
+   "complete": true,
+   "color": "bone white, gray",
+   "groups": [
+    {
+     "name": "Coffee/Tea Cup Stackable",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      165,
+      800,
+      435,
+      975
+     ],
+     "imageGroup": "coffee-tea-cup-stackable-0",
+     "rows": [
+      [
+       "UR-001",
+       "3 1/2\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for UR-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      525,
+      755,
+      785,
+      1000
+     ],
+     "imageGroup": "saucer-for-ur-001-1",
+     "rows": [
+      [
+       "UR-002",
+       "5 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      830,
+      735,
+      1205,
+      1085
+     ],
+     "imageGroup": "plate-2",
+     "rows": [
+      [
+       "UR-106",
+       "6 1/4\" 3 DZ"
+      ],
+      [
+       "UR-107",
+       "7 1/2\" 3 DZ"
+      ],
+      [
+       "UR-109",
+       "9\" 2 DZ"
+      ],
+      [
+       "UR-110",
+       "10 1/2\" 1 DZ"
+      ],
+      [
+       "UR-112",
+       "12\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      105,
+      1220,
+      480,
+      1475
+     ],
+     "imageGroup": "platter-3",
+     "rows": [
+      [
+       "UR-210",
+       "9 1/2\" X 6 3/4\" 2 DZ"
+      ],
+      [
+       "UR-212",
+       "11 3/4\" X 8 1/2\" 1 DZ"
+      ],
+      [
+       "UR-214",
+       "14\" X 10 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      520,
+      1310,
+      860,
+      1455
+     ],
+     "imageGroup": "pasta-bowl-4",
+     "rows": [
+      [
+       "UR-309",
+       "9\" 10 OZ 2 DZ"
+      ],
+      [
+       "UR-311",
+       "10 1/2\" 22 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Nappie",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      900,
+      1325,
+      1160,
+      1460
+     ],
+     "imageGroup": "nappie-5",
+     "rows": [
+      [
+       "UR-406",
+       "6\" 12.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fruit Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1235,
+      1325,
+      1520,
+      1455
+     ],
+     "imageGroup": "fruit-bowl-6",
+     "rows": [
+      [
+       "UR-504",
+       "4 3/4\" 3.5 OZ 3 DZ"
+      ],
+      [
+       "UR-506",
+       "6 3/8\" 11.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Creamer",
+     "type": "creamer",
+     "shape": "round",
+     "crop": [
+      185,
+      1740,
+      440,
+      1955
+     ],
+     "imageGroup": "creamer-7",
+     "rows": [
+      [
+       "UR-PC",
+       "3 1/8\" X 3 1/2\" 6.5 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pepper Shaker",
+     "type": "shaker",
+     "shape": "round",
+     "crop": [
+      565,
+      1740,
+      695,
+      1955
+     ],
+     "imageGroup": "pepper-shaker-8",
+     "rows": [
+      [
+       "UR-PS",
+       "4\" 4 DZ",
+       {
+        "dimensions": {
+         "length": null,
+         "width": null,
+         "height": 4
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Salt Shaker",
+     "type": "shaker",
+     "shape": "round",
+     "crop": [
+      860,
+      1740,
+      990,
+      1955
+     ],
+     "imageGroup": "salt-shaker-9",
+     "rows": [
+      [
+       "UR-SS",
+       "4\" 4 DZ",
+       {
+        "dimensions": {
+         "length": null,
+         "width": null,
+         "height": 4
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1120,
+      1740,
+      1530,
+      1940
+     ],
+     "imageGroup": "dessert-plate-10",
+     "rows": [
+      [
+       "UR-612",
+       "12\" 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "bone white",
+     "gray"
+    ]
+   }
+  },
+  {
+   "collection": "lion-king",
+   "page": 58,
+   "complete": true,
+   "color": "bright white",
+   "groups": [
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      140,
+      795,
+      625,
+      985
+     ],
+     "imageGroup": "rectangular-plate-0",
+     "rows": [
+      [
+       "LK-208",
+       "8\" X 6\" 3 DZ"
+      ],
+      [
+       "LK-210",
+       "10\" X 6\" 2 DZ"
+      ],
+      [
+       "LK-212",
+       "12\" X 7\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      970,
+      770,
+      1505,
+      970
+     ],
+     "imageGroup": "rectangular-plate-1",
+     "rows": [
+      [
+       "LK-214",
+       "14 1/4\" X 7\" 1 DZ"
+      ],
+      [
+       "LK-216",
+       "16\" X 9\" 6 PC"
+      ],
+      [
+       "LK-218",
+       "17 3/4\" X 11\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      135,
+      1175,
+      620,
+      1455
+     ],
+     "imageGroup": "square-plate-2",
+     "rows": [
+      [
+       "LK-105",
+       "5 1/4\" 3 DZ"
+      ],
+      [
+       "LK-107",
+       "7 1/4\" 3 DZ"
+      ],
+      [
+       "LK-108",
+       "8\" 3 DZ"
+      ],
+      [
+       "LK-109",
+       "9 1/4\" 2 DZ"
+      ],
+      [
+       "LK-110",
+       "10 1/4\" 2 DZ"
+      ],
+      [
+       "LK-112",
+       "11 3/4\" 1 DZ"
+      ],
+      [
+       "LK-114",
+       "14\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Soup Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      705,
+      1235,
+      1050,
+      1445
+     ],
+     "imageGroup": "salad-soup-bowl-3",
+     "rows": [
+      [
+       "LK-303",
+       "3\" 3 OZ 4 DZ"
+      ],
+      [
+       "LK-306",
+       "6\" 8 OZ 3 DZ"
+      ],
+      [
+       "LK-308",
+       "8 1/4\" 25 OZ 2 DZ"
+      ],
+      [
+       "LK-310",
+       "10\" 48 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1215,
+      1195,
+      1445,
+      1300
+     ],
+     "imageGroup": "double-dish-4",
+     "rows": [
+      [
+       "LK-505",
+       "5 1/2\" X 2 3/4\" 2 OZ EACH 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Triple Dish",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1215,
+      1420,
+      1455,
+      1510
+     ],
+     "imageGroup": "triple-dish-5",
+     "rows": [
+      [
+       "LK-506",
+       "6\" X 2 1/2\" 1.5 OZ EACH 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl with Foot",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      165,
+      1740,
+      495,
+      1935
+     ],
+     "imageGroup": "square-bowl-with-foot-6",
+     "rows": [
+      [
+       "LK-404",
+       "4 1/2\" 4 OZ 3 DZ"
+      ],
+      [
+       "LK-407",
+       "7 1/4\" 12 OZ 2 DZ"
+      ],
+      [
+       "LK-408",
+       "8 1/2\" 28 OZ 2 DZ"
+      ],
+      [
+       "LK-410",
+       "10 3/4\" 64 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Waterdrop Shape Bowl",
+     "type": "bowl",
+     "shape": "irregular",
+     "crop": [
+      645,
+      1740,
+      990,
+      1935
+     ],
+     "imageGroup": "waterdrop-shape-bowl-7",
+     "rows": [
+      [
+       "LK-605",
+       "5 1/2\" 4 OZ 3 DZ"
+      ],
+      [
+       "LK-608",
+       "8 1/2\" 24 OZ 2 DZ"
+      ],
+      [
+       "LK-611",
+       "11 1/4\" 56 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Bowl",
+     "type": "bowl",
+     "shape": "irregular",
+     "crop": [
+      1115,
+      1740,
+      1505,
+      1925
+     ],
+     "imageGroup": "double-bowl-8",
+     "rows": [
+      [
+       "LK-710",
+       "10 1/4\" 4 OZ EACH 2 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "bright white"
+    ],
+    "material": "alumina chinaware"
+   }
+  },
+  {
+   "collection": "mayor",
+   "page": 59,
+   "complete": true,
+   "color": "super white",
+   "groups": [
+    {
+     "name": "Low Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      480,
+      1230,
+      770,
+      1415
+     ],
+     "imageGroup": "low-cup-0",
+     "rows": [
+      [
+       "MA-001",
+       "3 3/4\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for MA-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      875,
+      1165,
+      1145,
+      1445
+     ],
+     "imageGroup": "saucer-for-ma-001-1",
+     "rows": [
+      [
+       "MA-002",
+       "6\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Fruit",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1210,
+      1225,
+      1555,
+      1420
+     ],
+     "imageGroup": "fruit-2",
+     "rows": [
+      [
+       "MA-11",
+       "4 3/4\" 4.25 OZ N.R. 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Plate N.R.",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      130,
+      1600,
+      530,
+      1990
+     ],
+     "imageGroup": "plate-n.r.-3",
+     "rows": [
+      [
+       "MA-5",
+       "5 1/2\" 3 DZ"
+      ],
+      [
+       "MA-6",
+       "6 1/2\" 3 DZ"
+      ],
+      [
+       "MA-7",
+       "7 1/2\" 3 DZ"
+      ],
+      [
+       "MA-22",
+       "8 3/8\" 3 DZ"
+      ],
+      [
+       "MA-8",
+       "9\" 2 DZ"
+      ],
+      [
+       "MA-9",
+       "9 1/2\" 2 DZ"
+      ],
+      [
+       "MA-16",
+       "10 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Platter N.R.",
+     "type": "platter",
+     "shape": "oval",
+     "crop": [
+      900,
+      1600,
+      1350,
+      1955
+     ],
+     "imageGroup": "platter-n.r.-4",
+     "rows": [
+      [
+       "MA-12",
+       "10\" X 8\" 2 DZ"
+      ],
+      [
+       "MA-13",
+       "11 1/2\" X 9 1/2\" 1 DZ"
+      ],
+      [
+       "MA-14",
+       "13\" X 10\" 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "super white"
+    ],
+    "material": "porcelain"
+   }
+  },
+  {
+   "collection": "mainland",
+   "page": 64,
+   "complete": true,
+   "color": "super white",
+   "groups": [],
+   "collectionAttributes": {
+    "colors": [
+     "super white"
+    ],
+    "material": "porcelain"
+   }
+  },
+  {
+   "collection": "mainland",
+   "page": 65,
+   "complete": true,
+   "color": "super white",
+   "groups": [
+    {
+     "name": "Square Plate",
+     "type": "plate",
+     "shape": "square",
+     "crop": [
+      155,
+      165,
+      745,
+      540
+     ],
+     "imageGroup": "square-plate-0",
+     "rows": [
+      [
+       "ML-106",
+       "6\" 3 DZ"
+      ],
+      [
+       "ML-107",
+       "7\" 3 DZ"
+      ],
+      [
+       "ML-108",
+       "8\" 3 DZ"
+      ],
+      [
+       "ML-109",
+       "9\" 2 DZ"
+      ],
+      [
+       "ML-110",
+       "10\" 1 DZ"
+      ],
+      [
+       "ML-112",
+       "12\" 1 DZ"
+      ],
+      [
+       "ML-114",
+       "14\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      910,
+      185,
+      1545,
+      495
+     ],
+     "imageGroup": "rectangular-plate-1",
+     "rows": [
+      [
+       "ML-208",
+       "8 X 5\" 2 DZ"
+      ],
+      [
+       "ML-210",
+       "10 X 7\" 2 DZ"
+      ],
+      [
+       "ML-212",
+       "12 X 8\" 1 DZ"
+      ],
+      [
+       "ML-214",
+       "14 X 8\" 1 DZ"
+      ],
+      [
+       "ML-216",
+       "16 X 9 1/2\" 6 PC"
+      ],
+      [
+       "ML-218",
+       "18 X 10 1/2\" 6 PC"
+      ],
+      [
+       "ML-220",
+       "20 X 11 1/2\" 6 PC"
+      ]
+     ]
+    },
+    {
+     "name": "Square Coffee/Tea Cup",
+     "type": "cup",
+     "shape": "square",
+     "crop": [
+      165,
+      825,
+      435,
+      1035
+     ],
+     "imageGroup": "square-coffee-tea-cup-2",
+     "rows": [
+      [
+       "ML-001",
+       "3\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Saucer for ML-001",
+     "type": "saucer",
+     "shape": "square",
+     "crop": [
+      555,
+      795,
+      800,
+      1035
+     ],
+     "imageGroup": "square-saucer-for-ml-001-3",
+     "rows": [
+      [
+       "ML-002",
+       "5 1/2\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      950,
+      740,
+      1465,
+      1085
+     ],
+     "imageGroup": "pasta-bowl-4",
+     "rows": [
+      [
+       "ML-309",
+       "8 1/2\" 12 OZ 1 DZ"
+      ],
+      [
+       "ML-310",
+       "10\" 18 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Salad Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      125,
+      1235,
+      495,
+      1510
+     ],
+     "imageGroup": "square-salad-bowl-5",
+     "rows": [
+      [
+       "ML-405",
+       "5 1/4\" 12 OZ 3 DZ"
+      ],
+      [
+       "ML-407",
+       "7 1/2\" 32 OZ 2 DZ"
+      ],
+      [
+       "ML-409",
+       "9 1/2\" 64 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Triangle Bowl",
+     "type": "bowl",
+     "shape": "triangular",
+     "crop": [
+      645,
+      1260,
+      1020,
+      1510
+     ],
+     "imageGroup": "triangle-bowl-6",
+     "rows": [
+      [
+       "ML-505",
+       "5\" 10 OZ 3 DZ"
+      ],
+      [
+       "ML-507",
+       "7\" 24 OZ 2 DZ"
+      ],
+      [
+       "ML-509",
+       "9\" 48 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Bowl",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      1140,
+      1280,
+      1530,
+      1500
+     ],
+     "imageGroup": "rectangular-bowl-7",
+     "rows": [
+      [
+       "ML-608",
+       "8\" X 6\" 21 OZ 2 DZ"
+      ],
+      [
+       "ML-609",
+       "9\" X 6 3/4\" 32 OZ 1 DZ"
+      ],
+      [
+       "ML-610",
+       "10\" X 7 1/2\" 42 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Dessert Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      120,
+      1800,
+      395,
+      1970
+     ],
+     "imageGroup": "deep-dessert-bowl-8",
+     "rows": [
+      [
+       "ML-703",
+       "3\" 4 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Bowl",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      430,
+      1795,
+      790,
+      1975
+     ],
+     "imageGroup": "square-bowl-9",
+     "rows": [
+      [
+       "ML-707",
+       "7\" X 2\" 18 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Fruit Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      835,
+      1795,
+      1190,
+      1970
+     ],
+     "imageGroup": "oval-fruit-bowl-10",
+     "rows": [
+      [
+       "ML-705",
+       "5 1/2\" X 3 1/4\" X 2\" 6.5 OZ 3 DZ"
+      ],
+      [
+       "ML-709",
+       "9\" X 7 1/4\" X 2 1/2\" 22 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Fruit Bowl",
+     "type": "sauce dish",
+     "shape": "rectangular",
+     "crop": [
+      1240,
+      1800,
+      1545,
+      1955
+     ],
+     "imageGroup": "oval-fruit-bowl-11",
+     "rows": [
+      [
+       "ML-725",
+       "5 1/2\" X 2 3/4\" X 1 3/8\" 2 OZ EACH 3 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

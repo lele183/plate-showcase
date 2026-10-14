@@ -1,0 +1,1187 @@
+{
+ "pages": [
+  {
+   "collection": "golden-coast",
+   "page": 21,
+   "complete": true,
+   "color": "green, gold",
+   "groups": [
+    {
+     "name": "Stackable Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      200,
+      275,
+      410,
+      445
+     ],
+     "imageGroup": "stackable-cup-0",
+     "rows": [
+      [
+       "GO-001",
+       "3 1/8\" X 2 7/8\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for GO-001",
+     "type": "saucer",
+     "shape": "round",
+     "crop": [
+      495,
+      230,
+      735,
+      465
+     ],
+     "imageGroup": "saucer-for-go-001-1",
+     "rows": [
+      [
+       "GO-002",
+       "5 7/8\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate with Upright Rim",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      840,
+      205,
+      1155,
+      445
+     ],
+     "imageGroup": "round-plate-with-upright-rim-2",
+     "rows": [
+      [
+       "GO-107",
+       "7 1/4\" X 3/4\" 3 DZ"
+      ],
+      [
+       "GO-109",
+       "9\" X 3/4\" 2 DZ"
+      ],
+      [
+       "GO-110",
+       "10 1/2\" X 7/8\" 1 DZ"
+      ],
+      [
+       "GO-112",
+       "12\" X 1\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      1195,
+      195,
+      1505,
+      465
+     ],
+     "imageGroup": "coupe-plate-3",
+     "rows": [
+      [
+       "GO-207",
+       "7\" X 3/4\" 3 DZ"
+      ],
+      [
+       "GO-209",
+       "9\" X 7/8\" 2 DZ"
+      ],
+      [
+       "GO-210",
+       "10\" X 1\" 1 DZ"
+      ],
+      [
+       "GO-212",
+       "12\" X 1 1/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      105,
+      765,
+      500,
+      935
+     ],
+     "imageGroup": "oval-plate-4",
+     "rows": [
+      [
+       "GO-310",
+       "10\" X 6 1/4\" X 7/8\" 2 DZ"
+      ],
+      [
+       "GO-312",
+       "12\" X 7 1/2\" X 1\" 1 DZ"
+      ],
+      [
+       "GO-314",
+       "14 1/4\" X 9\" X 1 1/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      510,
+      770,
+      815,
+      935
+     ],
+     "imageGroup": "soup-plate-5",
+     "rows": [
+      [
+       "GO-408",
+       "8\" X 5 1/2\" X 1 5/8\" 8.5 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Pasta/Salad Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      840,
+      725,
+      1185,
+      965
+     ],
+     "imageGroup": "pasta-salad-bowl-6",
+     "rows": [
+      [
+       "GO-410",
+       "10 1/2\" X 5 3/4\" X 2\" 10 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1260,
+      790,
+      1480,
+      940
+     ],
+     "imageGroup": "sauce-dish-7",
+     "rows": [
+      [
+       "GO-503",
+       "3 1/2\" X 3/4\" 1.5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Small Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      165,
+      1280,
+      410,
+      1435
+     ],
+     "imageGroup": "small-bowl-8",
+     "rows": [
+      [
+       "GO-504",
+       "4 1/4\" X 1 3/4\" 7 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Cereal Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      500,
+      1250,
+      790,
+      1435
+     ],
+     "imageGroup": "cereal-bowl-9",
+     "rows": [
+      [
+       "GO-505",
+       "5 3/4\" X 2 3/4\" 15 OZ 3 DZ"
+      ],
+      [
+       "GO-507",
+       "7 1/4\" X 2 3/4\" 28 OZ 2 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      845,
+      1255,
+      1160,
+      1435
+     ],
+     "imageGroup": "bowl-10",
+     "rows": [
+      [
+       "GO-508",
+       "8\" X 3 1/4\" 36 OZ 1 DZ"
+      ],
+      [
+       "GO-509",
+       "9 1/2\" X 3 3/4\" 67 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1245,
+      1260,
+      1490,
+      1425
+     ],
+     "imageGroup": "bowl-11",
+     "rows": [
+      [
+       "GO-606",
+       "6\" X 1 3/4\" 13 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      175,
+      1685,
+      505,
+      1920
+     ],
+     "imageGroup": "salad-bowl-12",
+     "rows": [
+      [
+       "GO-608",
+       "8\" X 1 1/2\" 12 OZ 2 DZ"
+      ],
+      [
+       "GO-610",
+       "10 1/4\" X 2\" 30 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      635,
+      1730,
+      945,
+      1925
+     ],
+     "imageGroup": "dessert-plate-13",
+     "rows": [
+      [
+       "GO-709",
+       "9 1/2\" X 8 1/4\" X 3\" 10 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1100,
+      1645,
+      1495,
+      1940
+     ],
+     "imageGroup": "dessert-plate-14",
+     "rows": [
+      [
+       "GO-712",
+       "12\" X 5 7/8\" X 2\" 12 OZ 1 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "green",
+     "gold"
+    ],
+    "material": "porcelain"
+   }
+  },
+  {
+   "collection": "noble-black",
+   "page": 23,
+   "complete": true,
+   "color": "black",
+   "groups": [
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      115,
+      260,
+      535,
+      440
+     ],
+     "imageGroup": "rectangular-plate-0",
+     "rows": [
+      [
+       "NB-510",
+       "10\" X 6\" X 1 1/4\" 2 DZ"
+      ],
+      [
+       "NB-512",
+       "12 1/4\" X 6 5/8\" X 1 1/2\" 1 DZ"
+      ],
+      [
+       "NB-514",
+       "14 1/4\" X 7 1/2\" X 1 3/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      600,
+      255,
+      1070,
+      440
+     ],
+     "imageGroup": "rectangular-plate-1",
+     "rows": [
+      [
+       "NB-513",
+       "13 3/8\" X 4 3/4\" X 3/4\" 2 DZ"
+      ],
+      [
+       "NB-515",
+       "15 7/8\" X 5 1/2\" X 5/8\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1175,
+      255,
+      1510,
+      440
+     ],
+     "imageGroup": "salad-soup-bowl-2",
+     "rows": [
+      [
+       "NB-608",
+       "8\" X 1 3/4\" 20 OZ 2 DZ"
+      ],
+      [
+       "NB-609",
+       "9\" X 2\" 28 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Olive Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      125,
+      760,
+      305,
+      875
+     ],
+     "imageGroup": "olive-bowl-3",
+     "rows": [
+      [
+       "NB-803",
+       "4\" X 3\" 2 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      370,
+      695,
+      725,
+      870
+     ],
+     "imageGroup": "dessert-plate-4",
+     "rows": [
+      [
+       "NB-610",
+       "9 1/2\" X 5\" X 2 1/8\" 10 OZ 1 DZ"
+      ],
+      [
+       "NB-611",
+       "11 1/2\" X 6\" X 2 1/2\" 16 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mediterranean Pasta Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      785,
+      680,
+      1145,
+      870
+     ],
+     "imageGroup": "mediterranean-pasta-bowl-5",
+     "rows": [
+      [
+       "NB-710",
+       "10 7/8\" X 7\" X 2 1/4\" 10 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Mediterranean Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      1195,
+      685,
+      1540,
+      875
+     ],
+     "imageGroup": "deep-mediterranean-bowl-6",
+     "rows": [
+      [
+       "NB-711",
+       "11 1/8\" X 7\" X 3 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      175,
+      1085,
+      400,
+      1260
+     ],
+     "imageGroup": "soup-cup-7",
+     "rows": [
+      [
+       "NB-504",
+       "4 1/8\" X 2 1/4\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      505,
+      1110,
+      715,
+      1260
+     ],
+     "imageGroup": "soup-bowl-8",
+     "rows": [
+      [
+       "NB-804",
+       "4 1/2\" X 2 1/4\" 9 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      855,
+      1110,
+      1105,
+      1280
+     ],
+     "imageGroup": "rice-bowl-9",
+     "rows": [
+      [
+       "NB-805",
+       "4 5/8\" X 2 1/4\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1210,
+      1100,
+      1520,
+      1280
+     ],
+     "imageGroup": "noodle-bowl-10",
+     "rows": [
+      [
+       "NB-806",
+       "6 1/8\" X 2 1/4\" 14 OZ 3 DZ"
+      ],
+      [
+       "NB-807",
+       "7 1/8\" X 2 5/8\" 24 OZ 2 DZ"
+      ],
+      [
+       "NB-808",
+       "8 1/4\" X 2 3/4\" 32 OZ 1 DZ"
+      ],
+      [
+       "NB-810",
+       "10 1/4\" X 3 1/4\" 64 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      170,
+      1460,
+      360,
+      1585
+     ],
+     "imageGroup": "sauce-dish-11",
+     "rows": [
+      [
+       "NB-4030",
+       "3\" X 2 1/4\" X 1\" 1 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      530,
+      1450,
+      690,
+      1585
+     ],
+     "imageGroup": "square-sauce-dish-12",
+     "rows": [
+      [
+       "NB-4031",
+       "3 1/8\" X 1 3/4\" 3 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Sauce Dish",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      825,
+      1450,
+      1105,
+      1585
+     ],
+     "imageGroup": "double-sauce-dish-13",
+     "rows": [
+      [
+       "NB-4032",
+       "5 5/8\" X 3\" X 1 1/4\" 1.5 OZ EACH 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mug",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      150,
+      1760,
+      405,
+      1985
+     ],
+     "imageGroup": "mug-14",
+     "rows": [
+      [
+       "NB-012",
+       "3 5/8\" X 4\" 12 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      440,
+      1750,
+      765,
+      1980
+     ],
+     "imageGroup": "round-bowl-15",
+     "rows": [
+      [
+       "NB-506",
+       "6 1/8\" X 1 3/4\" 16 OZ 3 DZ"
+      ],
+      [
+       "NB-508",
+       "8 1/8\" X 2\" 35 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Bake Dish with Handle",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      815,
+      1780,
+      1150,
+      1965
+     ],
+     "imageGroup": "round-bake-dish-with-handle-16",
+     "rows": [
+      [
+       "NB-907",
+       "7 1/2\" X 5 3/4\" X 2 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bake Dish with Handle",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      1165,
+      1760,
+      1555,
+      1975
+     ],
+     "imageGroup": "bake-dish-with-handle-17",
+     "rows": [
+      [
+       "NB-910",
+       "9 5/8\" X 7 1/2\" X 5 1/2\" X 2 1/4\" 25 OZ 6 PC",
+       {
+        "dimensions": {
+         "length": 9.625,
+         "width": 5.5,
+         "height": 2.25
+        }
+       }
+      ],
+      [
+       "NB-912",
+       "13 1/2\" X 11\" X 7 1/2\" X 2 1/2\" 70 OZ 6 PC",
+       {
+        "dimensions": {
+         "length": 13.5,
+         "width": 7.5,
+         "height": 2.5
+        }
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "blue-star",
+   "page": 24,
+   "complete": true,
+   "color": "navy blue",
+   "groups": [
+    {
+     "name": "Coffee Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      150,
+      1275,
+      365,
+      1415
+     ],
+     "imageGroup": "coffee-cup-0",
+     "rows": [
+      [
+       "BL-001",
+       "3 1/2\" X 2 1/2\" 8 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Saucer for BL-001",
+     "type": "saucer",
+     "shape": "oval",
+     "crop": [
+      490,
+      1245,
+      705,
+      1415
+     ],
+     "imageGroup": "saucer-for-bl-001-1",
+     "rows": [
+      [
+       "BL-002",
+       "6\" X 4 3/4\" X 3/4\" 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Bake Dish with Handle",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      815,
+      1245,
+      1105,
+      1410
+     ],
+     "imageGroup": "round-bake-dish-with-handle-2",
+     "rows": [
+      [
+       "BL-907",
+       "7 1/2\" X 5 3/4\" X 2 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bake Dish with Handle",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      1160,
+      1240,
+      1535,
+      1435
+     ],
+     "imageGroup": "bake-dish-with-handle-3",
+     "rows": [
+      [
+       "BL-910",
+       "9 5/8\" X 7 1/2\" X 5 1/2\" X 2 1/4\" 25 OZ 6 PC",
+       {
+        "dimensions": {
+         "length": 9.625,
+         "width": 5.5,
+         "height": 2.25
+        }
+       }
+      ],
+      [
+       "BL-912",
+       "13 1/2\" X 11\" X 7 1/2\" X 2 1/2\" 70 OZ 6 PC",
+       {
+        "dimensions": {
+         "length": 13.5,
+         "width": 7.5,
+         "height": 2.5
+        }
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Coupe Shape Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      120,
+      1575,
+      490,
+      1950
+     ],
+     "imageGroup": "coupe-shape-round-plate-4",
+     "rows": [
+      [
+       "BL-107",
+       "7 1/8\" X 7/8\" 3 DZ"
+      ],
+      [
+       "BL-109",
+       "9 1/8\" X 1\" 2 DZ"
+      ],
+      [
+       "BL-110",
+       "10 1/2\" X 1 3/8\" 1 DZ"
+      ],
+      [
+       "BL-112",
+       "12 1/8\" X 1 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Round Plate with Upright Rim",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      635,
+      1625,
+      1030,
+      1925
+     ],
+     "imageGroup": "round-plate-with-upright-rim-5",
+     "rows": [
+      [
+       "BL-207",
+       "7 1/2\" X 1\" 3 DZ"
+      ],
+      [
+       "BL-208",
+       "8 1/4\" X 1\" 2 DZ"
+      ],
+      [
+       "BL-210",
+       "10 1/4\" X 1 1/8\" 1 DZ"
+      ],
+      [
+       "BL-212",
+       "12 1/2\" X 1 1/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Leaf Shape Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      1090,
+      1700,
+      1545,
+      1845
+     ],
+     "imageGroup": "leaf-shape-plate-6",
+     "rows": [
+      [
+       "BL-310",
+       "10 1/4\" X 5\" X 3/4\" 2 DZ"
+      ],
+      [
+       "BL-314",
+       "14 1/4\" X 8 1/2\" X 1\" 1 DZ"
+      ],
+      [
+       "BL-316",
+       "16 1/2\" X 7 5/8\" X 1\" 1 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "blue-star",
+   "page": 25,
+   "complete": true,
+   "color": "navy blue",
+   "groups": [
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      125,
+      275,
+      540,
+      420
+     ],
+     "imageGroup": "rectangular-plate-0",
+     "rows": [
+      [
+       "BL-512",
+       "12\" X 6 1/2\" X 1 1/2\" 2 DZ"
+      ],
+      [
+       "BL-514",
+       "14\" X 7\" X 1 1/2\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rectangular Plate",
+     "type": "plate",
+     "shape": "rectangular",
+     "crop": [
+      610,
+      250,
+      1055,
+      430
+     ],
+     "imageGroup": "rectangular-plate-1",
+     "rows": [
+      [
+       "BL-513",
+       "13 3/4\" X 5\" X 5/8\" 2 DZ"
+      ],
+      [
+       "BL-515",
+       "15 1/2\" X 5 1/2\" X 3/4\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad/Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1175,
+      265,
+      1505,
+      430
+     ],
+     "imageGroup": "salad-soup-bowl-2",
+     "rows": [
+      [
+       "BL-608",
+       "8 1/8\" X 1 5/8\" 20 OZ 2 DZ"
+      ],
+      [
+       "BL-609",
+       "9\" X 1 7/8\" 28 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Dessert Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      135,
+      745,
+      515,
+      950
+     ],
+     "imageGroup": "dessert-plate-3",
+     "rows": [
+      [
+       "BL-610",
+       "9 1/2\" X 5 1/8\" X 2 1/8\" 10 OZ 1 DZ"
+      ],
+      [
+       "BL-611",
+       "11 5/8\" X 6\" X 2 1/2\" 16 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Mediterranean Pasta Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      610,
+      740,
+      1020,
+      960
+     ],
+     "imageGroup": "mediterranean-pasta-bowl-4",
+     "rows": [
+      [
+       "BL-710",
+       "10 3/4\" X 7\" X 2 1/4\" 12 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Deep Mediterranean Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      1125,
+      735,
+      1535,
+      985
+     ],
+     "imageGroup": "deep-mediterranean-bowl-5",
+     "rows": [
+      [
+       "BL-711",
+       "11 1/8\" X 7\" X 3 1/4\" 20 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Olive Bowl",
+     "type": "bowl",
+     "shape": "oval",
+     "crop": [
+      200,
+      1320,
+      405,
+      1445
+     ],
+     "imageGroup": "olive-bowl-6",
+     "rows": [
+      [
+       "BL-703",
+       "4\" X 3 1/8\" X 1 5/8\" 2 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      550,
+      1320,
+      750,
+      1460
+     ],
+     "imageGroup": "soup-bowl-7",
+     "rows": [
+      [
+       "BL-804",
+       "4 1/2\" X 2 3/8\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      885,
+      1285,
+      1110,
+      1445
+     ],
+     "imageGroup": "rice-bowl-8",
+     "rows": [
+      [
+       "BL-805",
+       "4 5/8\" X 2 3/8\" 10 OZ 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Salad Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1215,
+      1265,
+      1505,
+      1435
+     ],
+     "imageGroup": "salad-bowl-9",
+     "rows": [
+      [
+       "BL-806",
+       "6\" X 2 1/4\" 14 OZ 3 DZ"
+      ],
+      [
+       "BL-807",
+       "7\" X 2 1/2\" 28 OZ 2 DZ"
+      ],
+      [
+       "BL-808",
+       "8\" X 2 1/2\" 30 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      230,
+      1810,
+      385,
+      1905
+     ],
+     "imageGroup": "sauce-dish-10",
+     "rows": [
+      [
+       "BL-4030",
+       "3\" X 2 1/4\" X 1\" 1 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Sauce Dish",
+     "type": "bowl",
+     "shape": "rectangular",
+     "crop": [
+      530,
+      1800,
+      775,
+      1920
+     ],
+     "imageGroup": "double-sauce-dish-11",
+     "rows": [
+      [
+       "BL-4032",
+       "5 1/2\" X 3\" X 1 3/8\" 1.5 OZ EACH 3 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Square Sauce Dish",
+     "type": "bowl",
+     "shape": "square",
+     "crop": [
+      925,
+      1790,
+      1100,
+      1920
+     ],
+     "imageGroup": "square-sauce-dish-12",
+     "rows": [
+      [
+       "BL-4031",
+       "3 1/8\" X 1 3/4\" 3 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Skillet Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1215,
+      1755,
+      1505,
+      1925
+     ],
+     "imageGroup": "skillet-bowl-13",
+     "rows": [
+      [
+       "BL-4105",
+       "7 1/2\" X 5\" X 3\" 18 OZ 2 DZ"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -2,25 +2,59 @@
   "name": "plate-showcase",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --port 4173",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs",
+    "db:seed": "node --env-file-if-exists=.env.local scripts/seed.mjs",
+    "catalog:check": "node scripts/check-catalog.mjs",
+    "catalog:ocr": "node --import tsx scripts/ocr-source-catalog.mts",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"tests/**/*.ts\" \"scripts/*.{mjs,mts}\" *.ts *.mts *.mjs"
   },
   "dependencies": {
-    "next": "16.2.6",
+    "@napi-rs/canvas": "^1.0.11",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.3",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "lucide-react": "^1.55.0",
+    "mammoth": "^1.13.0",
+    "next": "^16.4.0",
+    "pdfjs-dist": "^6.4.299",
+    "postgres": "^3.4.9",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "sharp": "^0.35.5",
+    "tesseract.js": "^7.0.0",
+    "three": "^0.186.1",
+    "tus-js-client": "^4.3.1",
+    "workflow": "^5.2.1",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.0",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^24.19.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "^16.4.0",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.4"
+  },
+  "overrides": {
+    "devalue": "5.9.4",
+    "nanoid": "5.1.16"
   }
 }

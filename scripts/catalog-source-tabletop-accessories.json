@@ -1,0 +1,954 @@
+{
+  "pages": [
+    {
+      "collection": "melamine-accessories",
+      "page": 152,
+      "complete": true,
+      "color": "chocolate brown",
+      "groups": [
+        {
+          "name": "Tulip/Salsa Bowl Chocolate",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            495,
+            325,
+            810,
+            505
+          ],
+          "imageGroup": "tulip-salsa-bowl-chocolate-0",
+          "rows": [
+            [
+              "NC-351C",
+              "4 1/8\" X 1 1/4\" 4 OZ 4 DZ"
+            ],
+            [
+              "NC-352C",
+              "4 3/4\" 1 1/2\" 5 OZ 4 DZ",
+              {
+                "dimensions": {
+                  "length": 4.75,
+                  "width": null,
+                  "height": 1.5
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "name": "Soup Mug Chocolate",
+          "type": "cup",
+          "shape": "round",
+          "crop": [
+            870,
+            280,
+            1160,
+            505
+          ],
+          "imageGroup": "soup-mug-chocolate-1",
+          "rows": [
+            [
+              "NC-9014C",
+              "4\" X 2 3/4\" 12 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Fluted Ramekin White",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            1200,
+            300,
+            1475,
+            505
+          ],
+          "imageGroup": "fluted-ramekin-white-2",
+          "rows": [
+            [
+              "NC-509WT",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ]
+          ],
+          "color": "white"
+        },
+        {
+          "name": "Fluted Ramekin Bone White",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            140,
+            745,
+            440,
+            975
+          ],
+          "imageGroup": "fluted-ramekin-bone-white-3",
+          "rows": [
+            [
+              "NC-507B",
+              "2 1/2\" X 1 1/4\" 1.5 OZ 6 DZ"
+            ],
+            [
+              "NC-509B",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-531B",
+              "3 1/4\" X 1 1/2\" 3 OZ 6 DZ"
+            ],
+            [
+              "NC-532B",
+              "3 3/8\" X 1 3/4\" 4 OZ 6 DZ"
+            ],
+            [
+              "NC-533B",
+              "3 3/8\" X 1 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "bone white"
+        },
+        {
+          "name": "Fluted Ramekin Chocolate Brown",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            500,
+            745,
+            800,
+            975
+          ],
+          "imageGroup": "fluted-ramekin-chocolate-brown-4",
+          "rows": [
+            [
+              "NC-507C",
+              "2 1/2\" X 1 1/4\" 1.5 OZ 6 DZ"
+            ],
+            [
+              "NC-509C",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-531C",
+              "3 1/4\" X 1 1/2\" 3 OZ 6 DZ"
+            ],
+            [
+              "NC-532C",
+              "3 3/8\" X 1 3/4\" 4 OZ 6 DZ"
+            ],
+            [
+              "NC-533C",
+              "3 3/8\" X 1 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "chocolate brown"
+        },
+        {
+          "name": "Fluted Ramekin Black",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            845,
+            745,
+            1145,
+            975
+          ],
+          "imageGroup": "fluted-ramekin-black-5",
+          "rows": [
+            [
+              "NC-507BK",
+              "2 1/2\" X 1 1/4\" 1.5 OZ 6 DZ"
+            ],
+            [
+              "NC-509BK",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-531BK",
+              "3 1/4\" X 1 1/2\" 3 OZ 6 DZ"
+            ],
+            [
+              "NC-532BK",
+              "3 3/8\" X 1 3/4\" 4 OZ 6 DZ"
+            ],
+            [
+              "NC-533BK",
+              "3 3/8\" X 1 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "black"
+        },
+        {
+          "name": "Fluted Ramekin Red",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            1195,
+            745,
+            1490,
+            975
+          ],
+          "imageGroup": "fluted-ramekin-red-6",
+          "rows": [
+            [
+              "NC-509RD",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-532RD",
+              "3 3/8\" X 1 3/4\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "red"
+        },
+        {
+          "name": "Smooth Ramekin Bone White",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            140,
+            1255,
+            440,
+            1480
+          ],
+          "imageGroup": "smooth-ramekin-bone-white-7",
+          "rows": [
+            [
+              "NC-535B",
+              "2 1/2\" X 1 1/2\" 1.5 OZ 6 DZ"
+            ],
+            [
+              "NC-536B",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-537B",
+              "3 1/4\" X 1 1/2\" 3 OZ 6 DZ"
+            ],
+            [
+              "NC-538B",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "bone white"
+        },
+        {
+          "name": "Smooth Ramekin Chocolate Brown",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            500,
+            1255,
+            800,
+            1480
+          ],
+          "imageGroup": "smooth-ramekin-chocolate-brown-8",
+          "rows": [
+            [
+              "NC-535C",
+              "2 1/2\" X 1 1/2\" 1.5 OZ 6 DZ"
+            ],
+            [
+              "NC-536C",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-537C",
+              "3 1/4\" X 1 1/2\" 3 OZ 6 DZ"
+            ],
+            [
+              "NC-538C",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "chocolate brown"
+        },
+        {
+          "name": "Smooth Ramekin Black",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            845,
+            1255,
+            1145,
+            1480
+          ],
+          "imageGroup": "smooth-ramekin-black-9",
+          "rows": [
+            [
+              "NC-535BK",
+              "2 1/2\" X 1 1/2\" 1.5 OZ 6 DZ"
+            ],
+            [
+              "NC-536BK",
+              "2 7/8\" X 1 1/4\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-537BK",
+              "3 1/4\" X 1 1/2\" 3 OZ 6 DZ"
+            ],
+            [
+              "NC-538BK",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "black"
+        },
+        {
+          "name": "Smooth Ramekin White",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            1195,
+            1255,
+            1495,
+            1480
+          ],
+          "imageGroup": "smooth-ramekin-white-10",
+          "rows": [
+            [
+              "NC-539",
+              "3 3/4\" X 1 3/4\" 6 OZ 6 DZ"
+            ]
+          ],
+          "color": "white"
+        },
+        {
+          "name": "Smooth Ramekin Yellow",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            140,
+            1735,
+            440,
+            1950
+          ],
+          "imageGroup": "smooth-ramekin-yellow-11",
+          "rows": [
+            [
+              "NC-536YW",
+              "2 7/8\" X 1 1/2\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-538YW",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "yellow"
+        },
+        {
+          "name": "Smooth Ramekin Blue",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            500,
+            1735,
+            800,
+            1950
+          ],
+          "imageGroup": "smooth-ramekin-blue-12",
+          "rows": [
+            [
+              "NC-536BU",
+              "2 7/8\" X 1 1/2\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-538BU",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Smooth Ramekin Green",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            845,
+            1735,
+            1145,
+            1950
+          ],
+          "imageGroup": "smooth-ramekin-green-13",
+          "rows": [
+            [
+              "NC-536GR",
+              "2 7/8\" X 1 1/2\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-538GR",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "green"
+        },
+        {
+          "name": "Smooth Ramekin Orange Red",
+          "type": "ramekin",
+          "shape": "round",
+          "crop": [
+            1195,
+            1735,
+            1495,
+            1950
+          ],
+          "imageGroup": "smooth-ramekin-orange-red-14",
+          "rows": [
+            [
+              "NC-536RD",
+              "2 7/8\" X 1 1/2\" 2 OZ 6 DZ"
+            ],
+            [
+              "NC-538RD",
+              "3 3/8\" X 2 1/2\" 4 OZ 6 DZ"
+            ]
+          ],
+          "color": "orange red"
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "chocolate brown",
+          "bone white",
+          "black",
+          "red",
+          "white",
+          "yellow",
+          "blue",
+          "green"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "compartment",
+      "page": 153,
+      "complete": true,
+      "color": "white",
+      "groups": [
+        {
+          "name": "Egg Holder Red",
+          "type": "tray",
+          "shape": "round",
+          "crop": [
+            640,
+            200,
+            1070,
+            615
+          ],
+          "imageGroup": "egg-holder-red-0",
+          "rows": [
+            [
+              "NC-1014RD",
+              "12 1/2\" X 3/5\" 1 DZ"
+            ]
+          ],
+          "color": "red"
+        },
+        {
+          "name": "Egg Holder White",
+          "type": "tray",
+          "shape": "round",
+          "crop": [
+            1115,
+            205,
+            1540,
+            615
+          ],
+          "imageGroup": "egg-holder-white-1",
+          "rows": [
+            [
+              "NC-1014",
+              "12 1/2\" X 3/5\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Stackable Taco Plate Red",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            125,
+            810,
+            565,
+            1085
+          ],
+          "imageGroup": "stackable-taco-plate-red-2",
+          "rows": [
+            [
+              "ME-1765",
+              "14 3/4\" X 8 3/4\" X 1 3/4\" 1 DZ"
+            ]
+          ],
+          "color": "red"
+        },
+        {
+          "name": "Stackable Taco Plate White",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            605,
+            800,
+            1035,
+            1080
+          ],
+          "imageGroup": "stackable-taco-plate-white-3",
+          "rows": [
+            [
+              "NC-1765",
+              "14 3/4\" X 8 3/4\" X 1 3/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Six Compartment Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1060,
+            855,
+            1560,
+            1065
+          ],
+          "imageGroup": "six-compartment-tray-4",
+          "rows": [
+            [
+              "NC-2162",
+              "14\" X 10\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Four Divided Compartment Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            125,
+            1295,
+            570,
+            1520
+          ],
+          "imageGroup": "four-divided-compartment-tray-5",
+          "rows": [
+            [
+              "NC-2520",
+              "12 1/4\" X 10 1/2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Oval Compartment Plate",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            640,
+            1335,
+            1060,
+            1500
+          ],
+          "imageGroup": "oval-compartment-plate-6",
+          "rows": [
+            [
+              "NC-4520",
+              "10\" X 6 3/4\" 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Four Divided Deep Compartment Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1120,
+            1320,
+            1535,
+            1520
+          ],
+          "imageGroup": "four-divided-deep-compartment-tray-7",
+          "rows": [
+            [
+              "NC-4420",
+              "9 1/2\" X 7\" X 1 1/4\" 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Compartment Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            130,
+            1745,
+            550,
+            1965
+          ],
+          "imageGroup": "compartment-tray-8",
+          "rows": [
+            [
+              "NC-4600",
+              "9\" X 8\" 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Four Divided Compartment Tray",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            610,
+            1745,
+            1030,
+            1965
+          ],
+          "imageGroup": "four-divided-compartment-tray-9",
+          "rows": [
+            [
+              "NC-7510",
+              "9 1/4\" X 6 3/4\" 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Round Divided Compartment Plate",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            1120,
+            1745,
+            1535,
+            1950
+          ],
+          "imageGroup": "round-divided-compartment-plate-10",
+          "rows": [
+            [
+              "NC-7521",
+              "10\" 2 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "white",
+          "tan",
+          "ivory",
+          "sand",
+          "red",
+          "blue",
+          "green",
+          "yellow"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "compartment",
+      "page": 154,
+      "complete": true,
+      "color": "sand",
+      "groups": [
+        {
+          "name": "Left Hand Six Compartment Plate Sand",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            105,
+            230,
+            450,
+            470
+          ],
+          "imageGroup": "left-hand-six-compartment-plate-sand-0",
+          "rows": [
+            [
+              "NC-801S",
+              "14\" X 10\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Right Hand Six Compartment Plate Sand",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            480,
+            240,
+            825,
+            480
+          ],
+          "imageGroup": "right-hand-six-compartment-plate-sand-1",
+          "rows": [
+            [
+              "NC-802S",
+              "14\" X 10\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Six Compartment Plate Tan",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            840,
+            235,
+            1180,
+            480
+          ],
+          "imageGroup": "six-compartment-plate-tan-2",
+          "rows": [
+            [
+              "NS-803T",
+              "13\" X 9 1/2\" 1 DZ"
+            ]
+          ],
+          "color": "tan"
+        },
+        {
+          "name": "Six Compartment Plate White",
+          "type": "tray",
+          "shape": "rectangular",
+          "crop": [
+            1200,
+            230,
+            1545,
+            480
+          ],
+          "imageGroup": "six-compartment-plate-white-3",
+          "rows": [
+            [
+              "NS-803W",
+              "13\" X 9 1/2\" 1 DZ"
+            ]
+          ],
+          "color": "white"
+        },
+        {
+          "name": "Deep Compartment Plate Tan",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            110,
+            680,
+            455,
+            1005
+          ],
+          "imageGroup": "deep-compartment-plate-tan-4",
+          "rows": [
+            [
+              "NS-701T",
+              "9\" 2 DZ"
+            ]
+          ],
+          "color": "tan"
+        },
+        {
+          "name": "Three Compartment Plate Tan",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            110,
+            1165,
+            455,
+            1500
+          ],
+          "imageGroup": "three-compartment-plate-tan-5",
+          "rows": [
+            [
+              "NS-702T",
+              "10\" 2 DZ"
+            ]
+          ],
+          "color": "tan"
+        },
+        {
+          "name": "Three Compartment Plate Tan",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            110,
+            1680,
+            455,
+            2005
+          ],
+          "imageGroup": "three-compartment-plate-tan-6",
+          "rows": [
+            [
+              "NS-703T",
+              "10 1/8\" 2 DZ"
+            ]
+          ],
+          "color": "tan"
+        },
+        {
+          "name": "Deep Compartment Plate Green",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            475,
+            680,
+            820,
+            1005
+          ],
+          "imageGroup": "deep-compartment-plate-green-7",
+          "rows": [
+            [
+              "NS-701G",
+              "9\" 2 DZ"
+            ]
+          ],
+          "color": "green"
+        },
+        {
+          "name": "Three Compartment Plate Green",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            475,
+            1165,
+            820,
+            1500
+          ],
+          "imageGroup": "three-compartment-plate-green-8",
+          "rows": [
+            [
+              "NS-702G",
+              "10\" 2 DZ"
+            ]
+          ],
+          "color": "green"
+        },
+        {
+          "name": "Three Compartment Plate Green",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            475,
+            1680,
+            820,
+            2005
+          ],
+          "imageGroup": "three-compartment-plate-green-9",
+          "rows": [
+            [
+              "NS-703G",
+              "10 1/8\" 2 DZ"
+            ]
+          ],
+          "color": "green"
+        },
+        {
+          "name": "Deep Compartment Plate White",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            835,
+            680,
+            1180,
+            1005
+          ],
+          "imageGroup": "deep-compartment-plate-white-10",
+          "rows": [
+            [
+              "NS-701W",
+              "9\" 2 DZ"
+            ]
+          ],
+          "color": "white"
+        },
+        {
+          "name": "Three Compartment Plate White",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            835,
+            1165,
+            1180,
+            1500
+          ],
+          "imageGroup": "three-compartment-plate-white-11",
+          "rows": [
+            [
+              "NS-702W",
+              "10\" 2 DZ"
+            ]
+          ],
+          "color": "white"
+        },
+        {
+          "name": "Three Compartment Plate White",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            835,
+            1680,
+            1180,
+            2005
+          ],
+          "imageGroup": "three-compartment-plate-white-12",
+          "rows": [
+            [
+              "NS-703W",
+              "10 1/8\" 2 DZ"
+            ]
+          ],
+          "color": "white"
+        },
+        {
+          "name": "Deep Compartment Plate Yellow",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            1200,
+            680,
+            1545,
+            1005
+          ],
+          "imageGroup": "deep-compartment-plate-yellow-13",
+          "rows": [
+            [
+              "NS-701Y",
+              "9\" 2 DZ"
+            ]
+          ],
+          "color": "yellow"
+        },
+        {
+          "name": "Three Compartment Plate Yellow",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            1200,
+            1165,
+            1545,
+            1500
+          ],
+          "imageGroup": "three-compartment-plate-yellow-14",
+          "rows": [
+            [
+              "NS-702Y",
+              "10\" 2 DZ"
+            ]
+          ],
+          "color": "yellow"
+        },
+        {
+          "name": "Three Compartment Plate Yellow",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            1200,
+            1680,
+            1545,
+            2005
+          ],
+          "imageGroup": "three-compartment-plate-yellow-15",
+          "rows": [
+            [
+              "NS-703Y",
+              "10 1/8\" 2 DZ"
+            ]
+          ],
+          "color": "yellow"
+        }
+      ]
+    }
+  ]
+}

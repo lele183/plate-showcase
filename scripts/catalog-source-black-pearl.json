@@ -1,0 +1,770 @@
+{
+  "pages": [
+    {
+      "collection": "black-pearl",
+      "page": 106,
+      "complete": true,
+      "color": "black",
+      "groups": [
+        {
+          "name": "Square Dish",
+          "type": "sauce dish",
+          "shape": "square",
+          "crop": [
+            125,
+            1150,
+            485,
+            1400
+          ],
+          "imageGroup": "square-dish-0",
+          "rows": [
+            [
+              "BP-0103",
+              "3 1/2\" 4 OZ 6 DZ"
+            ],
+            [
+              "BP-0104",
+              "4 1/2\" 5 OZ 6 DZ"
+            ],
+            [
+              "BP-0105",
+              "5 1/2\" 6 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Round Plate",
+          "type": "plate",
+          "shape": "round",
+          "crop": [
+            610,
+            1055,
+            1000,
+            1445
+          ],
+          "imageGroup": "round-plate-1",
+          "rows": [
+            [
+              "BP-1006",
+              "6\" 4 DZ"
+            ],
+            [
+              "BP-1007",
+              "7\" 4 DZ"
+            ],
+            [
+              "BP-1009",
+              "9\" 2 DZ"
+            ],
+            [
+              "BP-1011",
+              "10 1/2\" 2 DZ"
+            ],
+            [
+              "BP-1012",
+              "12\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Square Plate",
+          "type": "plate",
+          "shape": "square",
+          "crop": [
+            1105,
+            1095,
+            1530,
+            1420
+          ],
+          "imageGroup": "square-plate-2",
+          "rows": [
+            [
+              "BP-1109",
+              "9\" 2 DZ"
+            ],
+            [
+              "BP-1110",
+              "10\" 2 DZ"
+            ],
+            [
+              "BP-1111",
+              "11\" 2 DZ"
+            ],
+            [
+              "BP-1112",
+              "12\" 1 DZ"
+            ],
+            [
+              "BP-1113",
+              "13 1/4\" 1 DZ"
+            ],
+            [
+              "BP-1114",
+              "14 1/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Sauce Dish",
+          "type": "sauce dish",
+          "shape": "round",
+          "crop": [
+            160,
+            1730,
+            390,
+            1905
+          ],
+          "imageGroup": "sauce-dish-3",
+          "rows": [
+            [
+              "BP-0003",
+              "3 3/4\" X 2 1/4\" 2.5 OZ 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            475,
+            1660,
+            960,
+            1915
+          ],
+          "imageGroup": "rectangular-plate-4",
+          "rows": [
+            [
+              "BP-2008",
+              "8\" X 5 1/2\" 4 DZ"
+            ],
+            [
+              "BP-2010",
+              "10\" X 7\" 4 DZ"
+            ],
+            [
+              "BP-2012",
+              "12\" X 8 1/4\" 1 DZ"
+            ],
+            [
+              "BP-2014",
+              "14\" X 9\" 1 DZ"
+            ],
+            [
+              "BP-2016",
+              "16\" X 10 1/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Display Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            1030,
+            1730,
+            1530,
+            1905
+          ],
+          "imageGroup": "rectangular-display-plate-5",
+          "rows": [
+            [
+              "BP-2013",
+              "13\" X 4 1/4\" 1 DZ"
+            ]
+          ]
+        }
+      ],
+      "collectionAttributes": {
+        "colors": [
+          "black"
+        ],
+        "material": "melamine"
+      }
+    },
+    {
+      "collection": "black-pearl",
+      "page": 107,
+      "complete": true,
+      "color": "black",
+      "groups": [
+        {
+          "name": "Oval Deep Plate",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            125,
+            270,
+            500,
+            420
+          ],
+          "imageGroup": "oval-deep-plate-0",
+          "rows": [
+            [
+              "BP-2108",
+              "8 1/2\" X 5\" 4 DZ"
+            ],
+            [
+              "BP-2109",
+              "9 1/2\" X 5 1/2\" 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Deep Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            595,
+            265,
+            985,
+            435
+          ],
+          "imageGroup": "rectangular-deep-plate-1",
+          "rows": [
+            [
+              "BP-2207",
+              "7\" X 4 1/2\" 4 DZ"
+            ],
+            [
+              "BP-2208",
+              "8 3/4\" X 5 1/2\" 4 DZ"
+            ],
+            [
+              "BP-2210",
+              "10\" X 6 1/4\" 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rectangular Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            1070,
+            265,
+            1535,
+            435
+          ],
+          "imageGroup": "rectangular-plate-2",
+          "rows": [
+            [
+              "BP-2209",
+              "8 1/2\" X 4\" 4 DZ"
+            ],
+            [
+              "BP-2212",
+              "12\" X 5 1/2\" 2 DZ"
+            ],
+            [
+              "BP-2213",
+              "14 1/4\" X 6 1/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Rice Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            165,
+            785,
+            385,
+            940
+          ],
+          "imageGroup": "rice-bowl-3",
+          "rows": [
+            [
+              "BP-3004",
+              "4 1/2\" X 2 1/8\" 7 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Salad Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            495,
+            775,
+            755,
+            940
+          ],
+          "imageGroup": "salad-bowl-4",
+          "rows": [
+            [
+              "BP-3005",
+              "5\" X 1 1/2\" 8 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Woodong Noodle Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            845,
+            765,
+            1120,
+            955
+          ],
+          "imageGroup": "woodong-noodle-bowl-5",
+          "rows": [
+            [
+              "BP-3006",
+              "6\" X 3\" 26 OZ 4 DZ"
+            ],
+            [
+              "BP-3007",
+              "7\" X 3 1/4\" 38 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Noodle Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            1190,
+            755,
+            1530,
+            960
+          ],
+          "imageGroup": "noodle-bowl-6",
+          "rows": [
+            [
+              "BP-3009",
+              "9\" X 3 1/4\" 48 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Miso Soup Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            150,
+            1215,
+            420,
+            1410
+          ],
+          "imageGroup": "miso-soup-bowl-7",
+          "rows": [
+            [
+              "BP-3104",
+              "4 1/2\" X 2 1/2\" 10 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Sheer Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            490,
+            1190,
+            745,
+            1415
+          ],
+          "imageGroup": "sheer-bowl-8",
+          "rows": [
+            [
+              "BP-3105",
+              "5\" 5 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Yuanbao Bowl",
+          "type": "bowl",
+          "shape": "other",
+          "crop": [
+            830,
+            1230,
+            1095,
+            1405
+          ],
+          "imageGroup": "yuanbao-bowl-9",
+          "rows": [
+            [
+              "BP-3204",
+              "4 3/4\" X 3 3/4\" 5 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            1160,
+            1210,
+            1525,
+            1435
+          ],
+          "imageGroup": "bowl-10",
+          "rows": [
+            [
+              "BP-3017",
+              "7\" X 2 3/4\" 16 OZ 2 DZ"
+            ],
+            [
+              "BP-3018",
+              "8\" X 3\" 32 OZ 2 DZ"
+            ],
+            [
+              "BP-3019",
+              "9\" X 3 1/2\" 48 OZ 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Bowl",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            165,
+            1720,
+            440,
+            1900
+          ],
+          "imageGroup": "bowl-11",
+          "rows": [
+            [
+              "BP-4005",
+              "5 1/2\" 15 OZ 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Two Compartment Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            485,
+            1700,
+            835,
+            1870
+          ],
+          "imageGroup": "two-compartment-plate-12",
+          "rows": [
+            [
+              "BP-4008",
+              "8\" X 4 1/2\" 4 DZ"
+            ],
+            [
+              "BP-4010",
+              "10\" X 5 1/2\" 2 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Triple Sauce Dish",
+          "type": "sauce dish",
+          "shape": "rectangular",
+          "crop": [
+            860,
+            1720,
+            1185,
+            1870
+          ],
+          "imageGroup": "triple-sauce-dish-13",
+          "rows": [
+            [
+              "BP-4030",
+              "7 1/2\" X 3 1/2\" 2.5 OZ EACH 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Double Sauce Dish",
+          "type": "sauce dish",
+          "shape": "rectangular",
+          "crop": [
+            1225,
+            1700,
+            1495,
+            1860
+          ],
+          "imageGroup": "double-sauce-dish-14",
+          "rows": [
+            [
+              "BP-4031",
+              "4 3/4\" X 3\" 2 OZ EACH 6 DZ"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "collection": "black-pearl",
+      "page": 108,
+      "complete": true,
+      "color": "black",
+      "groups": [
+        {
+          "name": "Triple Sauce Dish",
+          "type": "sauce dish",
+          "shape": "rectangular",
+          "crop": [
+            145,
+            280,
+            480,
+            440
+          ],
+          "imageGroup": "triple-sauce-dish-0",
+          "rows": [
+            [
+              "BP-4033",
+              "7\" X 2 1/2\" 2 OZ EACH 4 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Bowl with Handle and Lid",
+          "type": "bowl",
+          "shape": "round",
+          "crop": [
+            625,
+            230,
+            960,
+            455
+          ],
+          "imageGroup": "bowl-with-handle-and-lid-1",
+          "rows": [
+            [
+              "BP-4104",
+              "3 1/2\" X 2 3/4\" 7 OZ 2 DZ"
+            ],
+            [
+              "BP-4105",
+              "5 1/2\" X 3 1/2\" 28 OZ 2 DZ"
+            ],
+            [
+              "BP-4107",
+              "7\" X 5 1/2\" 70 OZ 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Deep Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            1090,
+            240,
+            1530,
+            435
+          ],
+          "imageGroup": "deep-plate-2",
+          "rows": [
+            [
+              "BP-4110",
+              "10\" X 6 1/4\" X 2 1/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Sauce Dish",
+          "type": "sauce dish",
+          "shape": "rectangular",
+          "crop": [
+            165,
+            765,
+            425,
+            905
+          ],
+          "imageGroup": "sauce-dish-3",
+          "rows": [
+            [
+              "BP-4046",
+              "3 3/4\" X 2 1/2\" 2.5 OZ 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Deep Boat Plate",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            510,
+            755,
+            1000,
+            910
+          ],
+          "imageGroup": "deep-boat-plate-4",
+          "rows": [
+            [
+              "BP-4112",
+              "12\" X 4 1/2\" X 2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Deep Plate",
+          "type": "plate",
+          "shape": "oval",
+          "crop": [
+            1080,
+            755,
+            1530,
+            910
+          ],
+          "imageGroup": "deep-plate-5",
+          "rows": [
+            [
+              "BP-4113",
+              "12 3/4\" X 5 1/2\" X 1 1/2\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Display Plate",
+          "type": "plate",
+          "shape": "rectangular",
+          "crop": [
+            125,
+            1225,
+            580,
+            1430
+          ],
+          "imageGroup": "display-plate-6",
+          "rows": [
+            [
+              "BP-5008",
+              "8\" X 4 3/4\" X 1\" 2 DZ"
+            ],
+            [
+              "BP-5009",
+              "9\" X 5 1/2\" X 1\" 1 DZ"
+            ],
+            [
+              "BP-5011",
+              "11\" X 7 1/4\" X 1\" 1 DZ"
+            ],
+            [
+              "BP-5013",
+              "13\" X 7 1/2\" X 1\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Square Display Plate",
+          "type": "plate",
+          "shape": "square",
+          "crop": [
+            650,
+            1170,
+            1100,
+            1435
+          ],
+          "imageGroup": "square-display-plate-7",
+          "rows": [
+            [
+              "BP-5109",
+              "9\" 2 DZ"
+            ],
+            [
+              "BP-5111",
+              "11\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Pan",
+          "type": "pan",
+          "shape": "oval",
+          "crop": [
+            1170,
+            1180,
+            1525,
+            1440
+          ],
+          "imageGroup": "pan-8",
+          "rows": [
+            [
+              "BP-7007",
+              "12 1/2\" X 7\" X 2 3/4\" 1 DZ"
+            ],
+            [
+              "BP-7009",
+              "14 1/2\" X 8 3/4\" X 2 3/4\" 1 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Spoon",
+          "type": "spoon",
+          "shape": "other",
+          "crop": [
+            125,
+            1745,
+            440,
+            1925
+          ],
+          "imageGroup": "spoon-9",
+          "rows": [
+            [
+              "BP-7002",
+              "6 3/4\" 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Spoon",
+          "type": "spoon",
+          "shape": "other",
+          "crop": [
+            465,
+            1695,
+            845,
+            1945
+          ],
+          "imageGroup": "spoon-10",
+          "rows": [
+            [
+              "BP-7003",
+              "8 3/4\" 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Spoon",
+          "type": "spoon",
+          "shape": "other",
+          "crop": [
+            855,
+            1750,
+            1145,
+            1920
+          ],
+          "imageGroup": "spoon-11",
+          "rows": [
+            [
+              "BP-8206",
+              "5 1/2\" 6 DZ"
+            ]
+          ]
+        },
+        {
+          "name": "Tea Cup",
+          "type": "cup",
+          "shape": "round",
+          "crop": [
+            1270,
+            1720,
+            1455,
+            1935
+          ],
+          "imageGroup": "tea-cup-12",
+          "rows": [
+            [
+              "BP-9305",
+              "3 1/2\" X 3\" 7 OZ 4 DZ"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

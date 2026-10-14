@@ -1,0 +1,39 @@
+{"pages":[
+ {"collection":"nessico","page":133,"shape":"round","groups":[
+  {"name":"Deep Divided Server with Lid White","type":"tray","color":"white","crop":[145,160,690,425],"imageGroup":"divided-white","rows":[["NS-608-1W","8 1/8\" 1 DZ"]]},
+  {"name":"Deep Divided Server with Lid Red","type":"tray","color":"red","crop":[145,560,710,795],"imageGroup":"divided-red","rows":[["NS-608-1R","8 1/8\" 1 DZ"]]},
+  {"name":"Lid Only White","type":"accessory","color":"white","crop":[400,160,690,400],"imageGroup":"lid-white","rows":[["NS-608CW","7 3/4\" LID ONLY 1 DZ"]]},
+  {"name":"Lid Only Red","type":"accessory","color":"red","crop":[405,585,710,795],"imageGroup":"lid-red","rows":[["NS-608CR","7 3/4\" LID ONLY 1 DZ"]]},
+  {"name":"Tortilla Server with Lid White","type":"tray","color":"white","crop":[945,195,1520,390],"imageGroup":"tortilla-white","rows":[["NS-608W","8 1/8\" 1 DZ"]]},
+  {"name":"Tortilla Server with Lid Red","type":"tray","color":"red","crop":[910,555,1455,800],"imageGroup":"tortilla-red","rows":[["NS-608R","8 1/8\" 1 DZ"]]}
+ ]},
+ {"collection":"nessico","page":135,"color":"tan","type":"plate","shape":"round","rows":[
+  {"name":"3-Compartment Plate Tan","sku":"NS-702T","specification":"10\" 2 DZ","crop":[610,145,1010,515]}
+ ]},
+ {"collection":"nessico","page":137,"color":"green","type":"platter","shape":"rectangular","rows":[
+  {"name":"Rectangular Platter Green","sku":"NS-212G","specification":"12 1/2\" X 9\" 1 DZ","crop":[1060,145,1535,460]}
+ ]},
+ {"collection":"nessico","page":139,"color":"yellow","type":"platter","shape":"rectangular","rows":[
+  {"name":"Rectangular Platter Yellow","sku":"NS-215Y","specification":"15\" X 10 1/2\" 1 DZ","crop":[130,150,605,500]}
+ ]},
+ {"collection":"milestone","page":145,"type":"plate","shape":"round","color":"ivory","rows":[
+  {"name":"Wide Rim Round Plate Ivory","sku":"MS-012IV","specification":"12\" 1 DZ","crop":[135,170,555,590]}
+ ]},
+ {"collection":"compartment","page":155,"complete":true,"type":"plate","shape":"round","collectionAttributes":{"colors":["white","black","ivory","sand","red","blue","green","yellow"]},"rows":[
+  {"name":"3-Compartment Plate Ivory","color":"ivory","sku":"NC-510I","originalSku":"NC-5101","specification":"9 1/2\" 2 DZ","crop":[105,680,425,1005]},
+  {"name":"3-Compartment Plate Sand","color":"sand","sku":"NC-510S","specification":"9 1/2\" 2 DZ","crop":[490,680,810,1005]},
+  {"name":"3-Compartment Plate with Cup Holder Ivory","color":"ivory","sku":"NC-511I","originalSku":"NC-5111","specification":"9 1/2\" 2 DZ","crop":[845,675,1165,1005]},
+  {"name":"3-Compartment Plate with Cup Holder Sand","color":"sand","sku":"NC-511S","specification":"9 1/2\" 2 DZ","crop":[1210,675,1535,1005]},
+  {"name":"3-Compartment Plate with Deep Beveled Foot Ivory","color":"ivory","sku":"NC-512I","originalSku":"NC-5121","specification":"9\" 2 DZ","crop":[105,1180,440,1500]},
+  {"name":"3-Compartment Plate with Deep Beveled Foot Sand","color":"sand","sku":"NC-512S","specification":"9\" 2 DZ","crop":[490,1180,820,1500]},
+  {"name":"3-Compartment Plate Red","color":"red","sku":"MS-710RD","specification":"10\" 2 DZ","crop":[845,1170,1180,1500]},
+  {"name":"3-Compartment Plate Blue","color":"blue","sku":"MS-710BU","specification":"10\" 2 DZ","crop":[1210,1170,1545,1500]},
+  {"name":"3-Compartment Plate Ivory","color":"ivory","sku":"MS-710IV","originalSku":"MS-7101V","specification":"10\" 2 DZ","crop":[105,1690,440,2020]},
+  {"name":"3-Compartment Plate Green","color":"green","sku":"MS-710GR","specification":"10\" 2 DZ","crop":[490,1690,820,2020]},
+  {"name":"3-Compartment Plate White","color":"white","sku":"MS-710WT","specification":"10\" 2 DZ","crop":[845,1690,1180,2020]},
+  {"name":"3-Compartment Plate Yellow","color":"yellow","sku":"MS-710YL","specification":"10\" 2 DZ","crop":[1210,1690,1545,2020]}
+ ]},
+ {"collection":"pine-tree","page":158,"color":"white, green","type":"platter","shape":"oval","rows":[
+  {"name":"Oval Platter","sku":"PT-212","specification":"12\" X 9\" 1 DZ","crop":[575,775,1065,1135]}
+ ]}
+]}

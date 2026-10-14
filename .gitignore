@@ -12,6 +12,10 @@
 
 # testing
 /coverage
+/.cache/
+/test-results/
+/playwright-report/
+/.vercel/
 
 # next.js
 /.next/
@@ -32,6 +36,8 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+/src/app/.well-known/workflow/
 
 # vercel
 .vercel
@@ -39,3 +45,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/.swc
+
+__pycache__/
+*.pyc

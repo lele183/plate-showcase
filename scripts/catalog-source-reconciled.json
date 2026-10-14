@@ -1,0 +1,37 @@
+{"pages":[
+ {"collection":"milando","page":109,"complete":true,"color":"white","groups":[
+  {"name":"Round Plate","type":"plate","shape":"round","crop":[125,710,450,1040],"imageGroup":"plate","rows":[["MD-107","7\" 4 DZ"],["MD-110","9 1/2\" 2 DZ"],["MD-111","10 1/2\" 2 DZ"],["MD-112","11 1/2\" 1 DZ"],["MD-114","13 1/2\" 1 DZ"]]},
+  {"name":"Oval Plate","type":"plate","shape":"oval","crop":[495,790,855,1040],"imageGroup":"oval","rows":[["MD-210","10 1/2\" X 7 1/2\" 2 DZ"],["MD-212","12 1/2\" X 9 1/2\" 2 DZ"],["MD-214","14\" X 10 1/2\" 1 DZ"],["MD-216","16\" X 12\" 1 DZ"],["MD-218","18\" X 13\" 1 DZ"]]},
+  {"name":"Sheer Bowl","type":"bowl","shape":"round","crop":[925,855,1160,1010],"imageGroup":"sheer-small","rows":[["MD-304","4\" 3.5 OZ 6 DZ"]]},
+  {"name":"Serving Bowl","type":"bowl","shape":"round","crop":[1240,790,1505,1025],"imageGroup":"serving","rows":[["MD-306","6 1/2\" 26 OZ 2 DZ"]]},
+  {"name":"Serving Bowl with Handle","type":"bowl","shape":"irregular","crop":[125,1285,460,1505],"imageGroup":"handled","rows":[["MD-307","6 3/4\" 40 OZ 1 DZ"]]},
+  {"name":"Sheer Bowl","type":"bowl","shape":"round","crop":[515,1280,825,1505],"imageGroup":"sheer-large","rows":[["MD-308","8\" 16 OZ 4 DZ"],["MD-309","9 1/4\" 24 OZ 2 DZ"],["MD-310","10\" 36 OZ 2 DZ"]]},
+  {"name":"Square Bowl","type":"bowl","shape":"square","crop":[880,1280,1170,1500],"imageGroup":"square-small","rows":[["MD-337","7\" 30 OZ 3.5\"H 2 DZ"],["MD-338","8\" 45 OZ 4\"H 1 DZ"]]},
+  {"name":"Square Plate","type":"plate","shape":"square","crop":[1215,1225,1520,1505],"imageGroup":"square-plate","rows":[["MD-408","7 1/2\" 4 DZ"],["MD-410","9 1/2\" 2 DZ"],["MD-412","11 1/2\" 1 DZ"]]},
+  {"name":"Round in Triangle Plate","type":"plate","shape":"triangular","crop":[125,1640,415,1910],"imageGroup":"triangle","rows":[["MD-608","8\" 4 DZ"],["MD-610","10\" 2 DZ"],["MD-612","12\" 1 DZ"]]},
+  {"name":"Square Bowl","type":"bowl","shape":"square","crop":[475,1735,695,1905],"imageGroup":"square-medium","rows":[["MD-705","5\" 16 OZ 3\"H 4 DZ"],["MD-707","7 1/2\" 32 OZ 3 1/4\"H 2 DZ"],["MD-708","8\" 42 OZ 3 1/2\"H 2 DZ"],["MD-709","9\" 60 OZ 3 1/2\"H 2 DZ"]]},
+  {"name":"Square Bowl","type":"bowl","shape":"square","crop":[765,1700,1100,1905],"imageGroup":"square-large","rows":[["MD-813","13\" 110 OZ 3 1/4\"H 1 DZ"],["MD-816","16\" 160 OZ 3 3/4\"H 1 DZ"]]},
+  {"name":"Bowl","type":"bowl","shape":"irregular","crop":[1130,1720,1550,1920],"imageGroup":"large-bowl","rows":[["MD-912","12\" X 10\" X 3 3/4\" 68 OZ 1 DZ"],["MD-914","14\" X 11 3/4\" X 4\" 120 OZ 1 DZ"],["MD-916","16\" X 13\" X 4 1/2\" 2.5 QT 1 DZ"],["MD-918","18\" X 14 1/2\" X 5\" 3.5 QT 6 PC"]]}
+ ]},
+ {"collection":"osaka","page":110,"complete":true,"color":"white","collectionColor":"white","collectionAttributes":{"colors":["white"]},"groups":[
+  {"name":"Square Plate","type":"plate","shape":"square","crop":[120,725,550,975],"imageGroup":"square-plate","rows":[["OK-107","7 1/4\" 4 DZ"],["OK-108","8 1/4\" 2 DZ"],["OK-110","10 1/2\" 2 DZ"],["OK-114","14 1/2\" 6 PC"]]},
+  {"name":"Divided Rectangular Plate","type":"plate","shape":"rectangular","crop":[635,810,1015,940],"imageGroup":"divided","rows":[["OK-208","7 3/4\" X 4 1/2\" 4 DZ"],["OK-209","8 3/4\" X 5 1/2\" 2 DZ"],["OK-210","9 3/4\" X 6 1/4\" 2 DZ"]]},
+  {"name":"Rectangular Plate","type":"plate","shape":"rectangular","crop":[1140,780,1545,950],"imageGroup":"rectangle","rows":[["OK-2412","11\" X 8\" 3 DZ"],["OK-2414","13\" X 9\" 3 DZ"],["OK-2416","16\" X 10 1/2\" 1 DZ"]]},
+  {"name":"Rectangular Bowl","type":"bowl","shape":"rectangular","crop":[135,1250,480,1410],"imageGroup":"rectangular-bowl","rows":[["OK-807","6 3/4\" X 5 1/8\" X 2\" 12 OZ 4 DZ"],["OK-808","7 3/4\" X 6\" X 2 1/2\" 20 OZ 4 DZ"],["OK-809","8 3/4\" X 6 3/4\" X 2 3/4\" 30 OZ 2 DZ"],["OK-810","9 3/4\" X 7 1/2\" X 3\" 42 OZ 2 DZ"]]},
+  {"name":"Rectangular Display Plate","type":"plate","shape":"rectangular","crop":[565,1235,1045,1395],"imageGroup":"display","rows":[["OK-1313","13\" X 6 3/4\" 1 DZ"]]},
+  {"name":"Square Seafood Bowl","type":"bowl","shape":"square","crop":[1075,1180,1550,1440],"imageGroup":"seafood","rows":[["OK-2541","11\" X 3\"H 12 SET"],["OK-2550","16\" X 7 3/4\" X 3 1/4\" 6 SET"]]},
+  {"name":"Round Plate","type":"plate","shape":"round","crop":[135,1695,460,1900],"imageGroup":"round","rows":[["OK-1710","9 3/4\" 2 DZ"],["OK-1712","12\" 2 DZ"]]},
+  {"name":"Deep Rectangular Plate","type":"plate","shape":"rectangular","crop":[485,1735,825,1850],"imageGroup":"deep","rows":[["OK-2406","6\" X 4 1/2\" 6 DZ"],["OK-2408","8\" X 5 1/2\" 4 DZ"]]},
+  {"name":"Food Container","type":"tray","shape":"rectangular","crop":[850,1735,1170,1845],"imageGroup":"container","rows":[["OK-608","8\" X 3 3/4\" X 3/4\" 4 DZ"],["OK-609","8 3/4\" X 5\" 4 DZ"]]},
+  {"name":"Three Divided Bowl","type":"bowl","shape":"irregular","crop":[1225,1695,1515,1890],"imageGroup":"three-bowl","rows":[["OK-817","7\" X 6\" X 1 1/2\" 2 OZ EACH 4 DZ"]]}
+ ]},
+ {"collection":"discover","page":113,"complete":true,"color":"gray, white","collectionColor":"gray, white","collectionAttributes":{"colors":["gray","white"]},"groups":[
+  {"name":"Square Plate","type":"plate","shape":"square","crop":[165,1110,465,1410],"imageGroup":"square","rows":[["DI-106","6\" X 1\"H 4 DZ"],["DI-108","8\" X 1 1/4\"H 4 DZ"],["DI-110","10\" X 1 1/4\"H 2 DZ"]]},
+  {"name":"Rectangular Plate","type":"plate","shape":"rectangular","crop":[640,1120,1005,1395],"imageGroup":"rectangle","rows":[["DI-206","6\" X 1 1/8\"H 4 DZ"],["DI-208","8\" X 5 3/4\" X 1 1/2\"H 4 DZ"],["DI-210","10\" X 1 7/8\"H 2 DZ"]]},
+  {"name":"Oval Plate","type":"plate","shape":"oval","crop":[1120,1095,1525,1395],"imageGroup":"oval","rows":[["DI-409","9\" X 1 1/4\"H 2 DZ"],["DI-411","11\" X 1 1/4\"H 1 DZ"]]},
+  {"name":"Round Plate","type":"plate","shape":"round","crop":[140,1590,485,1945],"imageGroup":"round","rows":[["DI-308","8\" X 3/4\"H 3 DZ"],["DI-310","10\" X 1\"H 2 DZ"],["DI-312","12\" X 1 1/8\"H 1 DZ"]]},
+  {"name":"Bowl","type":"bowl","shape":"round","crop":[615,1685,1055,1915],"imageGroup":"bowl","rows":[["DI-612","12 1/2\" X 3 1/4\" 98 OZ 1 DZ"]]},
+  {"name":"Oval Bowl","type":"bowl","shape":"oval","crop":[1220,1585,1470,1695],"imageGroup":"oval-bowl","rows":[["DI-6108","8\" X 6 1/2\" X 2\" 16 OZ 2 DZ"]]},
+  {"name":"Triangle Bowl","type":"bowl","shape":"triangular","crop":[1200,1780,1480,1940],"imageGroup":"triangle-bowl","rows":[["DI-6207","7\" X 2\"H 14 OZ 2 DZ"],["DI-6208","9\" X 2 1/4\"H 18 OZ 1 DZ"]]}
+ ]}
+]}

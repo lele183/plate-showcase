@@ -1,0 +1,717 @@
+{
+ "pages": [
+  {
+   "collection": "longevity",
+   "page": 174,
+   "complete": true,
+   "color": "white red yellow blue",
+   "groups": [],
+   "collectionAttributes": {
+    "colors": [
+     "white",
+     "red",
+     "yellow",
+     "blue"
+    ],
+    "material": "melamine"
+   }
+  },
+  {
+   "collection": "longevity",
+   "page": 175,
+   "complete": true,
+   "color": "white red yellow blue",
+   "groups": [
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      140,
+      170,
+      640,
+      665
+     ],
+     "imageGroup": "round-plate-0",
+     "rows": [
+      [
+       "LG-1006",
+       "6\" 4 DZ"
+      ],
+      [
+       "LG-1007",
+       "7\" 4 DZ"
+      ],
+      [
+       "LG-1008",
+       "8\" 4 DZ"
+      ],
+      [
+       "LG-1009",
+       "9\" 2 DZ"
+      ],
+      [
+       "LG-1010",
+       "10\" 2 DZ"
+      ],
+      [
+       "LG-1012",
+       "12\" 2 DZ"
+      ],
+      [
+       "LG-1014",
+       "14\" 1 DZ"
+      ],
+      [
+       "LG-1016",
+       "16\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       570,
+       590,
+       640,
+       665
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      940,
+      170,
+      1530,
+      585
+     ],
+     "imageGroup": "oval-plate-1",
+     "rows": [
+      [
+       "LG-2008",
+       "8\" 4 DZ"
+      ],
+      [
+       "LG-2009",
+       "9\" 2 DZ"
+      ],
+      [
+       "LG-2010",
+       "10\" 2 DZ"
+      ],
+      [
+       "LG-2012",
+       "12\" 1 DZ"
+      ],
+      [
+       "LG-2014",
+       "14\" 1 DZ"
+      ],
+      [
+       "LG-2016",
+       "16\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scoop",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      125,
+      750,
+      460,
+      1005
+     ],
+     "imageGroup": "scoop-2",
+     "rows": [
+      [
+       "LG-7005",
+       "9\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      530,
+      820,
+      745,
+      995
+     ],
+     "imageGroup": "tea-cup-3",
+     "rows": [
+      [
+       "LG-9152",
+       "3 1/8\" X 2\" 4.5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      860,
+      835,
+      1120,
+      995
+     ],
+     "imageGroup": "double-sauce-dish-4",
+     "rows": [
+      [
+       "LG-1102",
+       "3 3/8\" X 3/4\" 2 OZ EACH 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      1230,
+      815,
+      1520,
+      1005
+     ],
+     "imageGroup": "sauce-dish-5",
+     "rows": [
+      [
+       "LG-1101",
+       "2 1/2\" 6 DZ"
+      ],
+      [
+       "LG-1028",
+       "2 3/4\" 4 DZ"
+      ],
+      [
+       "LG-1003",
+       "4\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Soup Spoon White",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      125,
+      1115,
+      415,
+      1290
+     ],
+     "imageGroup": "soup-spoon-white-6",
+     "rows": [
+      [
+       "NS-7003W",
+       "5 1/2\" 10 DZ"
+      ]
+     ],
+     "color": "white"
+    },
+    {
+     "name": "Small Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      205,
+      1320,
+      485,
+      1530
+     ],
+     "imageGroup": "small-spoon-7",
+     "rows": [
+      [
+       "NS-7003",
+       "5 1/2\" 10 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       205,
+       1320,
+       370,
+       1375
+      ]
+     ]
+    },
+    {
+     "name": "Rice Scoop",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      490,
+      1220,
+      825,
+      1515
+     ],
+     "imageGroup": "rice-scoop-8",
+     "rows": [
+      [
+       "NS-7008",
+       "9\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      840,
+      1325,
+      1145,
+      1530
+     ],
+     "imageGroup": "bowl-9",
+     "rows": [
+      [
+       "LG-3004",
+       "5\" 14 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1225,
+      1340,
+      1515,
+      1535
+     ],
+     "imageGroup": "rice-bowl-10",
+     "rows": [
+      [
+       "LG-3006",
+       "4 1/4\" 10 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      155,
+      1755,
+      450,
+      1950
+     ],
+     "imageGroup": "rice-bowl-11",
+     "rows": [
+      [
+       "LG-3008A",
+       "3 5/8\" 7 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      575,
+      1730,
+      1060,
+      1960
+     ],
+     "imageGroup": "bowl-12",
+     "rows": [
+      [
+       "LG-5060",
+       "7\" 34 OZ 4 DZ"
+      ],
+      [
+       "LG-5070",
+       "8\" 42 OZ 2 DZ"
+      ],
+      [
+       "LG-5075",
+       "9\" 60 OZ 2 DZ"
+      ],
+      [
+       "LG-5085",
+       "9 3/4\" 82 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1140,
+      1730,
+      1525,
+      1950
+     ],
+     "imageGroup": "noodle-bowl-13",
+     "rows": [
+      [
+       "LG-5206",
+       "6\" 26 OZ 4 DZ"
+      ],
+      [
+       "LG-5207",
+       "7\" 42 OZ 4 DZ"
+      ],
+      [
+       "LG-5208",
+       "8\" 60 OZ 2 DZ"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "collection": "peony",
+   "page": 176,
+   "complete": true,
+   "color": "white blue",
+   "groups": []
+  },
+  {
+   "collection": "peony",
+   "page": 177,
+   "complete": true,
+   "color": "white blue",
+   "groups": [
+    {
+     "name": "Round Plate",
+     "type": "plate",
+     "shape": "round",
+     "crop": [
+      140,
+      155,
+      650,
+      665
+     ],
+     "imageGroup": "round-plate-0",
+     "rows": [
+      [
+       "PO-1006",
+       "6\" 4 DZ"
+      ],
+      [
+       "PO-1007",
+       "7\" 4 DZ"
+      ],
+      [
+       "PO-1008",
+       "8\" 4 DZ"
+      ],
+      [
+       "PO-1009",
+       "9\" 2 DZ"
+      ],
+      [
+       "PO-1010",
+       "10\" 2 DZ"
+      ],
+      [
+       "PO-1012",
+       "12\" 2 DZ"
+      ],
+      [
+       "PO-1014",
+       "14\" 1 DZ"
+      ],
+      [
+       "PO-1016",
+       "16\" 1 DZ"
+      ]
+     ],
+     "cropMasks": [
+      [
+       595,
+       605,
+       650,
+       665
+      ]
+     ]
+    },
+    {
+     "name": "Oval Plate",
+     "type": "plate",
+     "shape": "oval",
+     "crop": [
+      960,
+      170,
+      1535,
+      595
+     ],
+     "imageGroup": "oval-plate-1",
+     "rows": [
+      [
+       "PO-2008",
+       "8\" 4 DZ"
+      ],
+      [
+       "PO-2009",
+       "9\" 2 DZ"
+      ],
+      [
+       "PO-2010",
+       "10\" 2 DZ"
+      ],
+      [
+       "PO-2012",
+       "12\" 1 DZ"
+      ],
+      [
+       "PO-2014",
+       "14\" 1 DZ"
+      ],
+      [
+       "PO-2016",
+       "16\" 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Small Spoon",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      165,
+      760,
+      440,
+      1025
+     ],
+     "imageGroup": "small-spoon",
+     "rows": [
+      [
+       "PO-7003",
+       "5 1/2\" 10 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Tea Cup",
+     "type": "cup",
+     "shape": "round",
+     "crop": [
+      540,
+      845,
+      755,
+      1030
+     ],
+     "imageGroup": "tea-cup-3",
+     "rows": [
+      [
+       "PO-9152",
+       "3 1/8\" X 2\" 4.5 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Double Sauce Dish",
+     "type": "sauce dish",
+     "shape": "square",
+     "crop": [
+      870,
+      860,
+      1140,
+      1020
+     ],
+     "imageGroup": "double-sauce-dish-4",
+     "rows": [
+      [
+       "PO-1102",
+       "3 3/8\" X 3/4\" 2 OZ EACH 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Sauce Dish",
+     "type": "sauce dish",
+     "shape": "round",
+     "crop": [
+      1230,
+      840,
+      1500,
+      1020
+     ],
+     "imageGroup": "sauce-dish-5",
+     "rows": [
+      [
+       "PO-1101",
+       "2 1/2\" 6 DZ"
+      ],
+      [
+       "PO-1028",
+       "2 3/4\" 4 DZ"
+      ],
+      [
+       "PO-1003",
+       "4\" 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Scoop",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      155,
+      1230,
+      480,
+      1535
+     ],
+     "imageGroup": "scoop-2",
+     "rows": [
+      [
+       "PO-7005",
+       "9\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Scoop",
+     "type": "spoon",
+     "shape": "other",
+     "crop": [
+      475,
+      1220,
+      810,
+      1535
+     ],
+     "imageGroup": "rice-scoop-8",
+     "rows": [
+      [
+       "PO-7008",
+       "9\" 6 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      835,
+      1335,
+      1140,
+      1540
+     ],
+     "imageGroup": "bowl-9",
+     "rows": [
+      [
+       "PO-3004",
+       "5\" 14 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1230,
+      1340,
+      1515,
+      1535
+     ],
+     "imageGroup": "rice-bowl-10",
+     "rows": [
+      [
+       "PO-3006",
+       "4 1/4\" 10 OZ",
+       {
+        "reviewNeeded": true,
+        "sourceNote": "No case pack is printed for PO-3006 on page 177. Confirm the order pack with Yanco."
+       }
+      ]
+     ]
+    },
+    {
+     "name": "Rice Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      175,
+      1755,
+      460,
+      1950
+     ],
+     "imageGroup": "rice-bowl-11",
+     "rows": [
+      [
+       "PO-3008A",
+       "3 5/8\" 7 OZ 4 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      620,
+      1750,
+      1035,
+      1960
+     ],
+     "imageGroup": "bowl-12",
+     "rows": [
+      [
+       "PO-5060",
+       "7\" 34 OZ 4 DZ"
+      ],
+      [
+       "PO-5070",
+       "8\" 42 OZ 2 DZ"
+      ],
+      [
+       "PO-5075",
+       "9\" 60 OZ 2 DZ"
+      ],
+      [
+       "PO-5085",
+       "9 3/4\" 82 OZ 1 DZ"
+      ]
+     ]
+    },
+    {
+     "name": "Noodle Bowl",
+     "type": "bowl",
+     "shape": "round",
+     "crop": [
+      1145,
+      1730,
+      1515,
+      1960
+     ],
+     "imageGroup": "noodle-bowl-13",
+     "rows": [
+      [
+       "PO-5206",
+       "6\" 26 OZ 4 DZ"
+      ],
+      [
+       "PO-5207",
+       "7\" 42 OZ 4 DZ"
+      ],
+      [
+       "PO-5208",
+       "8\" 60 OZ 2 DZ"
+      ]
+     ]
+    }
+   ],
+   "collectionAttributes": {
+    "colors": [
+     "white",
+     "blue"
+    ],
+    "material": "melamine"
+   }
+  }
+ ]
+}

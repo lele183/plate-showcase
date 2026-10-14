@@ -1,0 +1,428 @@
+{
+  "pages": [
+    {
+      "collection": "ardis",
+      "page": 156,
+      "rows": [
+        {
+          "sku": "AD-9014",
+          "name": "Soup Mug",
+          "type": "cup",
+          "shape": "round",
+          "color": "ivory",
+          "specification": "4 1/8\" X 2 3/4\" 12 OZ 4 DZ",
+          "dimensions": {
+            "length": null,
+            "width": null,
+            "height": 2.75
+          },
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 156,
+              "pdfPage": 158,
+              "specification": "AD-9014 4 1/8\" X 2 3/4\" 12 OZ 4 DZ"
+            },
+            {
+              "sourcePage": 157,
+              "pdfPage": 159,
+              "specification": "AD-9014 4\" X 2 3/4\" 12 OZ 4 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU has a 4 1/8-inch diameter on page 156 and a 4-inch diameter on page 157. Height, capacity, and pack agree; confirm diameter with Yanco."
+        }
+      ]
+    },
+    {
+      "collection": "sesame",
+      "page": 157,
+      "rows": [
+        {
+          "sku": "AD-9014",
+          "name": "Soup Mug",
+          "type": "cup",
+          "shape": "round",
+          "color": "ivory",
+          "specification": "4\" X 2 3/4\" 12 OZ 4 DZ",
+          "dimensions": {
+            "length": null,
+            "width": null,
+            "height": 2.75
+          },
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 156,
+              "pdfPage": 158,
+              "specification": "AD-9014 4 1/8\" X 2 3/4\" 12 OZ 4 DZ"
+            },
+            {
+              "sourcePage": 157,
+              "pdfPage": 159,
+              "specification": "AD-9014 4\" X 2 3/4\" 12 OZ 4 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU has a 4 1/8-inch diameter on page 156 and a 4-inch diameter on page 157. Height, capacity, and pack agree; confirm diameter with Yanco."
+        }
+      ]
+    },
+    {
+      "collection": "compartment",
+      "page": 155,
+      "rows": [
+        {
+          "sku": "MS-710RD",
+          "name": "3-Compartment Plate Red",
+          "type": "plate",
+          "shape": "round",
+          "color": "red",
+          "specification": "10\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 147,
+              "pdfPage": 149,
+              "specification": "MS-710RD 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710RD 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 147 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "compartment",
+      "page": 155,
+      "rows": [
+        {
+          "sku": "MS-710BU",
+          "name": "3-Compartment Plate Blue",
+          "type": "plate",
+          "shape": "round",
+          "color": "blue",
+          "specification": "10\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 141,
+              "pdfPage": 143,
+              "specification": "MS-710BU 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710BU 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 141 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "compartment",
+      "page": 155,
+      "rows": [
+        {
+          "sku": "MS-710IV",
+          "name": "3-Compartment Plate Ivory",
+          "type": "plate",
+          "shape": "round",
+          "color": "ivory",
+          "specification": "10\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 145,
+              "pdfPage": 147,
+              "specification": "MS-710IV 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710IV 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 145 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "compartment",
+      "page": 155,
+      "rows": [
+        {
+          "sku": "MS-710GR",
+          "name": "3-Compartment Plate Green",
+          "type": "plate",
+          "shape": "round",
+          "color": "green",
+          "specification": "10\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 143,
+              "pdfPage": 145,
+              "specification": "MS-710GR 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710GR 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 143 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "compartment",
+      "page": 155,
+      "rows": [
+        {
+          "sku": "MS-710WT",
+          "name": "3-Compartment Plate White",
+          "type": "plate",
+          "shape": "round",
+          "color": "white",
+          "specification": "10\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 149,
+              "pdfPage": 151,
+              "specification": "MS-710WT 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710WT 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 149 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "compartment",
+      "page": 155,
+      "rows": [
+        {
+          "sku": "MS-710YL",
+          "name": "3-Compartment Plate Yellow",
+          "type": "plate",
+          "shape": "round",
+          "color": "yellow",
+          "specification": "10\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 151,
+              "pdfPage": 153,
+              "specification": "MS-710YL 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710YL 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 151 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "milestone",
+      "page": 141,
+      "rows": [
+        {
+          "sku": "MS-710BU",
+          "name": "Three Compartment Plate Blue",
+          "type": "plate",
+          "shape": "round",
+          "color": "blue",
+          "specification": "10 1/4\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 141,
+              "pdfPage": 143,
+              "specification": "MS-710BU 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710BU 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 141 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "milestone",
+      "page": 143,
+      "rows": [
+        {
+          "sku": "MS-710GR",
+          "name": "Three Compartment Plate Green",
+          "type": "plate",
+          "shape": "round",
+          "color": "green",
+          "specification": "10 1/4\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 143,
+              "pdfPage": 145,
+              "specification": "MS-710GR 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710GR 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 143 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "milestone",
+      "page": 145,
+      "rows": [
+        {
+          "sku": "MS-710IV",
+          "name": "Three Compartment Plate Ivory",
+          "type": "plate",
+          "shape": "round",
+          "color": "ivory",
+          "specification": "10 1/4\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 145,
+              "pdfPage": 147,
+              "specification": "MS-710IV 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710IV 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 145 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "milestone",
+      "page": 147,
+      "rows": [
+        {
+          "sku": "MS-710RD",
+          "name": "Three Compartment Plate Red",
+          "type": "plate",
+          "shape": "round",
+          "color": "red",
+          "specification": "10 1/4\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 147,
+              "pdfPage": 149,
+              "specification": "MS-710RD 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710RD 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 147 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "milestone",
+      "page": 149,
+      "rows": [
+        {
+          "sku": "MS-710WT",
+          "name": "Three Compartment Plate White",
+          "type": "plate",
+          "shape": "round",
+          "color": "white",
+          "specification": "10 1/4\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 149,
+              "pdfPage": 151,
+              "specification": "MS-710WT 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710WT 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 149 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "milestone",
+      "page": 151,
+      "rows": [
+        {
+          "sku": "MS-710YL",
+          "name": "Three Compartment Plate Yellow",
+          "type": "plate",
+          "shape": "round",
+          "color": "yellow",
+          "specification": "10 1/4\" 2 DZ",
+          "dimensions": null,
+          "reviewNeeded": true,
+          "sourceReferences": [
+            {
+              "sourcePage": 151,
+              "pdfPage": 153,
+              "specification": "MS-710YL 10 1/4\" 2 DZ"
+            },
+            {
+              "sourcePage": 155,
+              "pdfPage": 157,
+              "specification": "MS-710YL 10\" 2 DZ"
+            }
+          ],
+          "sourceNote": "The same SKU is printed as 10 1/4 inches on page 151 and 10 inches on page 155. Confirm diameter with Yanco; no dimension is assumed."
+        }
+      ]
+    },
+    {
+      "collection": "recovery",
+      "page": 74,
+      "collectionAttributes": {
+        "colors": [
+          "american white",
+          "caramel brown"
+        ]
+      }
+    }
+  ]
+}
