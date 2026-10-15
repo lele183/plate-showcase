@@ -221,9 +221,9 @@ describe("concept and dish relevance", () => {
       new Set(r.recommendations.map((value) => value.collection.id)).size,
     ).toBe(6);
     for (const value of r.recommendations) {
-      if (value.group === "Signature")
+      if (value.group === "Unique")
         expect(value.collection.section).toBe("signature");
-      if (value.group === "Value") expect(value.collection.budget).toBe(1);
+      if (value.group === "Budget") expect(value.collection.budget).toBe(1);
     }
   });
 });

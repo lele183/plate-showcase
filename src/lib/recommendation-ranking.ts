@@ -171,11 +171,11 @@ export function rankRecommendations(
       b.score - a.score || a.collection.name.localeCompare(b.collection.name),
   );
   const selected: Recommendation[] = [];
-  for (const group of ["Concept", "Signature", "Value"] as const) {
+  for (const group of ["Popular", "Unique", "Budget"] as const) {
     const groupPool = pool.filter(
       (candidate) =>
-        group === "Concept" ||
-        (group === "Signature"
+        group === "Popular" ||
+        (group === "Unique"
           ? candidate.collection.section === "signature"
           : candidate.collection.budget === 1 ||
             (parsed.durabilityRequested &&

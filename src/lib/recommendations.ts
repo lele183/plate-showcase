@@ -495,10 +495,10 @@ export function recommend(
       reasons: scored.reasons,
       group:
         collection.section === "signature"
-          ? "Signature"
+          ? "Unique"
           : collection.budget === 1
-            ? "Value"
-            : "Concept",
+            ? "Budget"
+            : "Popular",
       missing: [],
     });
   }

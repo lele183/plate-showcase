@@ -24,6 +24,9 @@ test("Italian preset features the actual pasta plate with honest groups and coun
   expect(data.parsed.dishes).toContain("pasta");
   expect(data.recommendations[0].collection.id).toBe("legna");
   expect(
+    [...new Set(data.recommendations.map((value) => value.group))].sort(),
+  ).toEqual(["Budget", "Popular", "Unique"]);
+  expect(
     data.recommendations.some((value) => value.collection.id === "honda"),
   ).toBe(false);
   await expect(
@@ -31,14 +34,12 @@ test("Italian preset features the actual pasta plate with honest groups and coun
       `${data.meaningfulMatchCount} collections align with your brief (from ${data.totalFilteredCount} passing your filters). Here are our starting picks.`,
     ),
   ).toBeVisible();
-  const group = page
-    .locator(".recommendation-group")
-    .filter({
-      has: page.getByRole("heading", {
-        name: "Top concept matches",
-        exact: true,
-      }),
-    });
+  const group = page.locator(".recommendation-group").filter({
+    has: page.getByRole("heading", {
+      name: "Top concept matches",
+      exact: true,
+    }),
+  });
   const card = group.locator(".collection-card").first();
   await expect(
     card.getByRole("heading", { name: "Legna", exact: true }),

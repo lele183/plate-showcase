@@ -483,7 +483,7 @@ export default function Selector({
         <div className="recommendation-groups">
           {[
             {
-              id: "Concept",
+              id: "Popular",
               eyebrow: "STRONGEST OVERALL ALIGNMENT",
               title:
                 submitted && result.parsed.hasContext
@@ -495,13 +495,13 @@ export default function Selector({
                   : "Catalog starting points; add details to compare style alignment",
             },
             {
-              id: "Signature",
+              id: "Unique",
               eyebrow: "DISTINCTIVE SILHOUETTES & GLAZES",
               title: "Signature options",
               subtitle: "Yanco Signature Selections ranked against your brief",
             },
             {
-              id: "Value",
+              id: "Budget",
               eyebrow: "EVERYDAY COMMERCIAL VALUE",
               title: "Value & high-durability options",
               subtitle:
