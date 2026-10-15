@@ -811,6 +811,12 @@ svg {
   font-size: 9px;
   color: #6d8265;
 }
+.card-body > .featured-piece {
+  min-height: 0;
+  margin-top: 10px;
+  color: var(--blue);
+  font-size: 10px;
+}
 .card-actions {
   display: flex;
   gap: 10px;

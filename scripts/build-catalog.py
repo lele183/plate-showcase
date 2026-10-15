@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from product_regions import regions
 from catalog_variant_corrections import apply_variant_corrections
 from catalog_source_review import apply_source_review
+from catalog_style_profiles import apply_style_profiles
 REGIONS={}
 CROPPED=set()
 sys.stdout.reconfigure(encoding='utf-8')
@@ -188,12 +189,7 @@ for row in MANIFEST.strip().splitlines():
         elif re.search(r'stoneware',combined,re.I):collection['material']='stoneware'
     descriptions={'legna':'Sunburst-style reactive glaze with an artisanal finish.','mars':'Modern porcelain with a midnight blue rim pattern.','green-band':'American White chinaware with a traditional green band.','abco':'Rolled-edge porcelain in Super White.','rockeye':'Warm rim detailing and a broad range of serving shapes.','moderne':'Matte black melamine with distinctive triangular shapes.','nessico':'Heavy-weight melamine with versatile shapes and color choices.','birmingham':'Two-tone melamine with a distinctive textured surface.'}
     collection['description']=descriptions.get(cid,f"{name} {collection['material']} from Yanco’s {('Fine Dining' if tier=='fine' else 'Signature Selections' if tier=='signature' else 'Classics' if tier=='classic' else 'Accessories')} collection.")
-    collection['tags']=['distinctive','artisan'] if tier=='signature' else ['refined','fine dining'] if tier=='fine' else ['versatile','classic','casual']
-    if any(c in source_colors for c in ['brown','ivory','green']):collection['tags']+=['rustic','natural','warm','italian']
-    if 'blue' in source_colors:collection['tags']+=['coastal','mediterranean','greek','seafood']
-    if 'black' in source_colors:collection['tags']+=['modern','contemporary','contrast','asian']
-    if category=='melamine':collection['tags']+=['outdoor','durable','casual','family']
-    if any('white' in c for c in source_colors):collection['tags']+=['neutral','minimal','versatile']
+    # Style profiles are applied after source corrections reconcile actual colors.
     found={}
     for printed,lines in page_lines.items():
         page=printed+2
@@ -332,6 +328,7 @@ with (ROOT/'scripts/catalog-corrections.tsv').open(encoding='utf-8',newline='') 
             entry['image']='/catalog/'+path.name
 items=apply_variant_corrections(collections,items)
 items=apply_source_review(collections,items)
+apply_style_profiles(collections)
 for c in collections:c['itemCount']=sum(i['collectionId']==c['id'] for i in items)
 for a in audit:a['recognizedRows']=sum(i['collectionId']==a['collectionId'] and i['pdfPage']==a['pdfPage'] for i in items)
 seed=dict(version='2026',catalogId='yanco-2026',collections=collections,items=items)

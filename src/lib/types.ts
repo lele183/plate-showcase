@@ -1,3 +1,4 @@
+import type { DishIntent, RecommendationGroup } from "@/types/catalog";
 export type Category =
   "chinaware" | "melamine" | "glassware" | "plasticware" | "wood";
 export interface Collection {
@@ -15,6 +16,10 @@ export interface Collection {
   sourcePages: number[];
   pdfPages: number[];
   tags: string[];
+  /** Color-derived visual descriptors are separate from editorial cuisine pairings. */
+  visualTags?: string[];
+  conceptTags?: string[];
+  styleNotes?: string;
   itemCount: number;
   sourceUrl?: string;
 }
@@ -87,6 +92,13 @@ export interface ParsedBrief {
   diameter: number | null;
   minCapacity: boolean;
   keywords: string[];
+  concepts: string[];
+  excludedConcepts: string[];
+  dishes: DishIntent[];
+  visualPreferences: string[];
+  themeColors: string[];
+  durabilityRequested: boolean;
+  hasContext: boolean;
   warnings: string[];
   measurements: {
     type: string | null;
@@ -101,7 +113,9 @@ export interface Recommendation {
   collection: Collection;
   items: CatalogItem[];
   score: number;
-  group: "Popular" | "Unique" | "Budget";
+  relevanceScore: number;
+  featuredItem?: CatalogItem;
+  group: RecommendationGroup;
   reasons: string[];
   missing: string[];
 }
@@ -109,6 +123,8 @@ export interface RecommendationResult {
   parsed: ParsedBrief;
   recommendations: Recommendation[];
   totalMatches: number;
+  totalFilteredCount: number;
+  meaningfulMatchCount: number;
   warnings: string[];
 }
 export interface Scene {

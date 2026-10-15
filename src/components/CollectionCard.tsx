@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, ArrowUpRight } from "lucide-react";
 import type { Collection, Recommendation } from "@/lib/types";
+import { primarySize } from "@/lib/piece-groups";
 const palette: Record<string, string> = {
   white: "#f6f5ef",
   "super white": "#fff",
@@ -54,6 +55,7 @@ export default function CollectionCard({
   onSelect?: (c: Collection) => void;
 }) {
   const piece =
+    recommendation?.featuredItem ||
     recommendation?.items.find((i) => i.type === "plate") ||
     recommendation?.items[0];
   const photo = piece?.image || collection.heroImage;
@@ -99,14 +101,28 @@ export default function CollectionCard({
           <span>{collection.itemCount} pieces in collection</span>
           <ColorDots colors={collection.colors} />
         </div>
-        <p>{recommendation?.reasons[0] || collection.description}</p>
+        <p>
+          {recommendation
+            ? recommendation.reasons.join(" • ")
+            : collection.description}
+        </p>
+        {piece && (
+          <p className="small-note featured-piece">
+            Shown: {primarySize(piece)}{" "}
+            {piece.shape !== "other" &&
+            !piece.name.toLowerCase().includes(piece.shape.toLowerCase())
+              ? `${piece.shape} `
+              : ""}
+            {piece.name} · {piece.sku}
+          </p>
+        )}
         {recommendation && (
           <>
             <div className="match-reason">
               <Check size={14} />
               {recommendation.missing.length
                 ? `${recommendation.missing.join(", ")} not covered`
-                : "Fits your table brief"}
+                : "Passes your product filters"}
             </div>
             <p className="small-note matched-pieces">
               Matching pieces:{" "}

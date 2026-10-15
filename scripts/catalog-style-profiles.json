@@ -1,0 +1,22 @@
+{
+  "legna": {
+    "conceptTags": ["italian", "trattoria", "bistro"],
+    "visualTags": ["rustic", "radial rim", "artisan"],
+    "note": "Editorial pairing based on the photographed radial rim, reactive finish, and named pasta pieces on printed pages 4–5. This is a style suggestion, not an exclusive cuisine classification."
+  },
+  "honda": {
+    "conceptTags": ["japanese", "asian", "sushi"],
+    "visualTags": ["painted blossom", "ripple rim"],
+    "note": "Editorial pairing based on the painted blossom motif and rectangular ripple serving forms on printed pages 168–169. This is a style suggestion, not an exclusive cuisine classification."
+  },
+  "japanese": {
+    "conceptTags": ["japanese", "asian", "sushi"],
+    "visualTags": ["patterned"],
+    "note": "Editorial pairing based on the catalog's Japanese series and named serving forms on printed pages 171–173. This is a style suggestion, not an exclusive cuisine classification."
+  },
+  "osaka": {
+    "conceptTags": ["japanese", "asian", "sushi"],
+    "visualTags": ["textured"],
+    "note": "Editorial pairing based on the Osaka series' sushi serving forms on printed pages 110–111. This is a style suggestion, not an exclusive cuisine classification."
+  }
+}

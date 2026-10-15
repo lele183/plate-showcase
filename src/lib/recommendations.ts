@@ -4,13 +4,17 @@ import type {
   ParsedBrief,
   RecommendationResult,
   RestaurantBrief,
+  Recommendation,
 } from "./types";
 import { parseMeasurement } from "./import-parser";
+import type { DishIntent } from "@/types/catalog";
+import { rankRecommendations, scoreCollection } from "./recommendation-ranking";
+import { selectRepresentativeItem } from "./recommendation-items";
 
 const colors: Record<string, string[]> = {
   blue: ["blue", "navy", "cobalt", "azure"],
   black: ["black", "charcoal"],
-  green: ["green", "sage", "olive", "emerald"],
+  green: ["green", "greens", "sage", "olive", "emerald"],
   white: ["white", "neutral"],
   ivory: ["ivory", "cream"],
   teal: ["teal", "petrol"],
@@ -27,6 +31,36 @@ const colors: Record<string, string[]> = {
   "american white": ["american white"],
   "super white": ["super white"],
   "bone white": ["bone white"],
+};
+const conceptWords: Record<string, string[]> = {
+  italian: ["italian", "trattoria", "osteria"],
+  french: ["french"],
+  bistro: ["bistro"],
+  mediterranean: ["mediterranean", "greek"],
+  japanese: ["japanese", "izakaya"],
+  asian: ["asian"],
+  sushi: ["sushi", "sashimi"],
+  steakhouse: ["steakhouse"],
+  cafe: ["cafe", "coffee shop"],
+};
+const dishWords: Record<DishIntent, string[]> = {
+  pasta: ["pasta", "risotto", "gnocchi", "grain bowl", "grain bowls"],
+  soup: ["soup", "soups", "ramen", "noodle", "noodles"],
+  steak: ["steak", "steaks", "grill", "grilled", "entree", "entrees"],
+  sushi: ["sushi", "sashimi", "dim sum", "izakaya"],
+  sharing: ["tapas", "sharing", "share plates"],
+};
+const visualWords: Record<string, string[]> = {
+  warm: ["warm"],
+  earthy: ["earthy", "earth", "terracotta"],
+  natural: ["natural", "oak", "wood", "wooden"],
+  rustic: ["rustic", "farmhouse"],
+  cool: ["cool"],
+  "coastal-tone": ["coastal", "beach", "ocean"],
+  modern: ["modern", "contemporary"],
+  "high-contrast": ["contrast", "bold"],
+  neutral: ["neutral", "neutrals", "minimal"],
+  artisan: ["artisan", "artisanal"],
 };
 const materials: Record<string, string[]> = {
   melamine: ["melamine"],
@@ -255,6 +289,25 @@ export function parseBrief(
         .filter((x) => x.length > 2),
     ),
   ];
+  const text = Object.values(brief)
+    .join(". ")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+  const concepts = interpret(text, conceptWords);
+  const dishes = interpret(text, dishWords);
+  const visuals = interpret(text, visualWords);
+  const durability = interpret(text, {
+    durability: [
+      "melamine",
+      "outdoor",
+      "patio",
+      "high-volume",
+      "unbreakable",
+      "durable",
+      "poolside",
+    ],
+  });
   if (brief.dimensions && !measurements.length)
     warnings.push(
       "Include a unit with dimensions, such as 10 inches or 42 oz.",
@@ -282,6 +335,24 @@ export function parseBrief(
     diameter: measurements.find((m) => m.diameter !== null)?.diameter ?? null,
     minCapacity: measurements.some((m) => m.minimum),
     keywords,
+    concepts: concepts.required.filter(
+      (value) => !concepts.excluded.includes(value),
+    ),
+    excludedConcepts: concepts.excluded,
+    dishes: dishes.required.filter(
+      (value) => !dishes.excluded.includes(value),
+    ) as DishIntent[],
+    visualPreferences: visuals.required.filter(
+      (value) => !visuals.excluded.includes(value),
+    ),
+    themeColors: interpret(brief.theme, colors).required,
+    durabilityRequested: durability.required.length > 0,
+    hasContext:
+      concepts.required.length > 0 ||
+      dishes.required.length > 0 ||
+      visuals.required.length > 0 ||
+      interpret(brief.theme, colors).required.length > 0 ||
+      durability.required.length > 0,
     warnings,
   };
 }
@@ -360,176 +431,76 @@ export function itemMatches(
   }
   return true;
 }
-const curated: Record<string, number> = {
-  abco: 6,
-  mars: 5,
-  legna: 4,
-  birmingham: 3,
-  "green-band": 2,
-  nessico: 1,
-};
 export function recommend(
   brief: RestaurantBrief,
   collections: Collection[],
   items: CatalogItem[],
 ): RecommendationResult {
-  const parsed = parseBrief(brief, { collections, items }),
-    map = new Map<string, CatalogItem[]>();
+  const parsed = parseBrief(brief, { collections, items });
   if (
-    parsed.warnings.some(
-      (w) =>
-        w.startsWith("Conflicting") ||
-        w.startsWith("Unsupported") ||
-        w.startsWith("Include a unit"),
+    parsed.warnings.some((warning) =>
+      /^(Conflicting|Unsupported|Include a unit)/.test(warning),
     )
-  )
+  ) {
     return {
       parsed,
       recommendations: [],
       totalMatches: 0,
+      totalFilteredCount: 0,
+      meaningfulMatchCount: 0,
       warnings: parsed.warnings,
     };
+  }
+  const byCollection = new Map<string, CatalogItem[]>();
   for (const item of items) {
-    const group = map.get(item.collectionId) || [];
+    const group = byCollection.get(item.collectionId) || [];
     group.push(item);
-    map.set(item.collectionId, group);
+    byCollection.set(item.collectionId, group);
   }
-  const theme = interpret(brief.theme, colors).required;
-  const candidates = collections
-    .filter(
-      (c) =>
-        parsed.materials.length ||
-        parsed.types.length ||
-        ["chinaware", "melamine"].includes(c.category),
-    )
-    .flatMap((collection) => {
-      const all = map.get(collection.id) || [],
-        matches = all.filter((i) => itemMatches(i, collection, parsed));
-      if (
-        !matches.length ||
-        parsed.types.some((t) => !matches.some((i) => i.type === t))
-      )
-        return [];
-      let score = 20 + (curated[collection.id] || 0);
-      const reasons: string[] = [];
-      const tags = collection.tags.filter((t) =>
-        parsed.keywords.some((k) => t.includes(k) || k.includes(t)),
-      );
-      score += tags.length * 7;
-      if (tags.length)
-        reasons.push(
-          `Its ${tags.slice(0, 2).join(" and ")} character suits your restaurant.`,
-        );
-      if (theme.some((c) => collection.colors.some((v) => has(v, colors[c])))) {
-        score += 12;
-        reasons.push("Its palette complements your restaurant colors.");
-      }
-      if (parsed.materials.length) {
-        score += 20;
-        const matchedMaterials = [
-          ...new Set(matches.map((i) => i.material || collection.material)),
-        ];
-        reasons.push(
-          `${matchedMaterials.join(" / ")} meets your material preference.`,
-        );
-      }
-      if (parsed.colors.length)
-        reasons.push(
-          `Available in your requested ${parsed.colors.join(" / ")} palette.`,
-        );
-      if (parsed.measurements.length)
-        reasons.push("Matching pieces meet your specified measurements.");
-      if (
-        /unique|distinctive|unusual|bold|interesting|less basic/i.test(
-          brief.feedback,
-        ) &&
-        collection.section === "signature"
-      )
-        score += 25;
-      if (
-        /budget|cheaper|affordable|less expensive|value/i.test(
-          `${brief.concept} ${brief.feedback}`,
-        )
-      )
-        score += (4 - collection.budget) * 12;
-      if (
-        /wood|rustic|warm/i.test(brief.tabletop) &&
-        collection.tags.includes("warm")
-      )
-        score += 8;
-      if (
-        /white/i.test(brief.tabletop) &&
-        collection.colors.some((c) => /blue|black|green/.test(c))
-      )
-        score += 5;
-      if (
-        all.some((i) => i.type === "bowl") &&
-        /pasta|soup|ramen/i.test(brief.foods)
-      ) {
-        score += 5;
-        reasons.push("Coordinating bowls support your menu.");
-      }
-      if (!reasons.length)
-        reasons.push(
-          collection.section === "signature"
-            ? "A distinctive finish brings character to the table."
-            : "A versatile collection offers a coordinated place setting.",
-        );
-      const sample: CatalogItem[] = [];
-      for (const type of parsed.types) {
-        const item = matches.find((i) => i.type === type);
-        if (item) sample.push(item);
-      }
-      for (const i of matches)
-        if (sample.length < 8 && !sample.includes(i)) sample.push(i);
-      return [
-        {
-          collection,
-          items: sample,
-          score,
-          group: (collection.section === "signature"
-            ? "Unique"
-            : collection.budget === 1
-              ? "Budget"
-              : "Popular") as "Unique" | "Budget" | "Popular",
-          reasons: reasons.slice(0, 3),
-          missing: [],
-        },
-      ];
-    })
-    .sort(
-      (a, b) =>
-        b.score - a.score || a.collection.name.localeCompare(b.collection.name),
-    );
-  const selected: typeof candidates = [];
-  for (const group of ["Popular", "Unique", "Budget"] as const) {
-    const pool = candidates.filter((c) =>
-      group === "Popular"
-        ? true
-        : group === "Unique"
-          ? c.collection.section === "signature"
-          : c.collection.budget === 1,
-    );
-    for (const candidate of pool
-      .filter((c) => !selected.some((s) => s.collection.id === c.collection.id))
-      .slice(0, 2))
-      selected.push({ ...candidate, group });
-  }
-  for (const candidate of candidates)
+  const conflicts = new Set<string>();
+  const candidates: Recommendation[] = [];
+  for (const collection of collections) {
     if (
-      selected.length < 6 &&
-      !selected.some((s) => s.collection.id === candidate.collection.id)
+      !parsed.materials.length &&
+      !parsed.types.length &&
+      !["chinaware", "melamine"].includes(collection.category)
     )
-      selected.push(candidate);
-  const warnings = [...parsed.warnings];
-  if (!candidates.length)
-    warnings.push(
-      "No catalog pieces meet all of these requirements. Adjust a requirement to explore alternatives.",
+      continue;
+    const matches = (byCollection.get(collection.id) || []).filter((item) =>
+      itemMatches(item, collection, parsed),
     );
-  return {
-    parsed,
-    recommendations: selected,
-    totalMatches: candidates.length,
-    warnings,
-  };
+    if (
+      !matches.length ||
+      parsed.types.some((type) => !matches.some((item) => item.type === type))
+    )
+      continue;
+    const scored = scoreCollection(collection, matches, parsed, brief);
+    if (scored.conceptConflict || scored.excludedConcept)
+      conflicts.add(collection.id);
+    const sample: CatalogItem[] = [];
+    const featuredItem = selectRepresentativeItem(matches, parsed);
+    if (featuredItem) sample.push(featuredItem);
+    for (const type of parsed.types) {
+      const item = matches.find((item) => item.type === type);
+      if (item && !sample.includes(item)) sample.push(item);
+    }
+    for (const item of matches)
+      if (sample.length < 8 && !sample.includes(item)) sample.push(item);
+    candidates.push({
+      collection,
+      items: sample,
+      featuredItem,
+      score: scored.score,
+      relevanceScore: scored.relevanceScore,
+      reasons: scored.reasons,
+      group:
+        collection.section === "signature"
+          ? "Signature"
+          : collection.budget === 1
+            ? "Value"
+            : "Concept",
+      missing: [],
+    });
+  }
+  return rankRecommendations(parsed, candidates, conflicts);
 }

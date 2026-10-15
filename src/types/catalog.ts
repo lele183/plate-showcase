@@ -1,6 +1,8 @@
 /** Shared browser-safe catalog presentation constants. */
 export const CATALOG_PDF_URL = "/catalog/yanco-2026.pdf";
 export const CATALOG_PDF_FILENAME = "Yanco-2026-Catalog.pdf";
+export type RecommendationGroup = "Concept" | "Signature" | "Value";
+export type DishIntent = "pasta" | "soup" | "steak" | "sushi" | "sharing";
 
 export const THREE_D_SUPPORTED_TYPES: ReadonlySet<string> = new Set([
   "plate",

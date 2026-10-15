@@ -63,6 +63,12 @@ export default function Selector({
     [error, setError] = useState(""),
     [chosen, setChosen] = useState<Collection | null>(null),
     [submitted, setSubmitted] = useState(false);
+  const [submittedBrief, setSubmittedBrief] = useState<RestaurantBrief | null>(
+    null,
+  );
+  const resultsChanged =
+    submittedBrief !== null &&
+    JSON.stringify(brief) !== JSON.stringify(submittedBrief);
   useEffect(() => {
     queueMicrotask(() => {
       try {
@@ -89,15 +95,17 @@ export default function Selector({
     event?.preventDefault();
     setBusy(true);
     setError("");
+    const sentBrief = { ...brief };
     try {
       const r = await fetch("/api/recommendations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(brief),
+        body: JSON.stringify(sentBrief),
       });
       const d = await r.json();
       if (!r.ok) throw Error(d.error);
       setResult(d);
+      setSubmittedBrief(sentBrief);
       setSubmitted(true);
       setTimeout(
         () =>
@@ -397,7 +405,9 @@ export default function Selector({
             </h2>
             <p>
               {submitted
-                ? `${result.totalMatches} collections fit your requirements. Here are our starting picks.`
+                ? result.parsed.hasContext
+                  ? `${result.meaningfulMatchCount} collections align with your brief (from ${result.totalFilteredCount} passing your filters). Here are our starting picks.`
+                  : `${result.totalFilteredCount} collections pass your product filters. Add a concept, menu, or color story to compare style alignment.`
                 : "Explore timeless favorites and something a little unexpected."}
             </p>
           </div>
@@ -409,6 +419,11 @@ export default function Selector({
           <div className="interpreted">
             <span>Your brief</span>
             {[
+              ...result.parsed.concepts.map((concept) => `Style: ${concept}`),
+              ...result.parsed.excludedConcepts.map(
+                (concept) => `Avoid ${concept} styling`,
+              ),
+              ...result.parsed.dishes.map((dish) => `Menu: ${dish}`),
               ...result.parsed.materials,
               ...result.parsed.excludedMaterials.map((m) => `Avoid ${m}`),
               ...result.parsed.excludedColors.map((c) => `Avoid ${c}`),
@@ -454,32 +469,54 @@ export default function Selector({
             </button>
           </div>
         )}
+        {resultsChanged && (
+          <p className="notice" role="status">
+            Your brief has changed. These are your previous results; select Find
+            my collections or Refine to apply your changes.
+          </p>
+        )}
         {result.warnings.map((w) => (
           <p className="notice" key={w} role="status">
             {w}
           </p>
         ))}
         <div className="recommendation-groups">
-          {["Popular", "Unique", "Budget"].map((group) => {
+          {[
+            {
+              id: "Concept",
+              eyebrow: "STRONGEST OVERALL ALIGNMENT",
+              title:
+                submitted && result.parsed.hasContext
+                  ? "Top concept matches"
+                  : "Starting collections",
+              subtitle:
+                submitted && result.parsed.hasContext
+                  ? "Highest combined score for your concept, tabletop, and color palette"
+                  : "Catalog starting points; add details to compare style alignment",
+            },
+            {
+              id: "Signature",
+              eyebrow: "DISTINCTIVE SILHOUETTES & GLAZES",
+              title: "Signature options",
+              subtitle: "Yanco Signature Selections ranked against your brief",
+            },
+            {
+              id: "Value",
+              eyebrow: "EVERYDAY COMMERCIAL VALUE",
+              title: "Value & high-durability options",
+              subtitle:
+                "Estimated relative budget and durable material options; no quoted prices",
+            },
+          ].map(({ id: group, eyebrow, title, subtitle }) => {
             const matches = result.recommendations.filter(
               (r) => r.group === group,
             );
             return matches.length ? (
               <div key={group} className="recommendation-group">
                 <div className="group-title">
-                  <span>
-                    {group === "Popular"
-                      ? "Timeless & versatile"
-                      : group === "Unique"
-                        ? "A little unexpected"
-                        : "Thoughtful value"}
-                  </span>
-                  <h3>{group} options</h3>
-                  <small>
-                    {group === "Budget"
-                      ? "Relative budget estimates"
-                      : "Curated for your concept"}
-                  </small>
+                  <span>{eyebrow}</span>
+                  <h3>{title}</h3>
+                  <small>{subtitle}</small>
                 </div>
                 <div className="collection-grid">
                   {matches.map((r) => (
