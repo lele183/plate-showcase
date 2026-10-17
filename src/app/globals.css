@@ -725,6 +725,24 @@ svg {
 .collection-photo:hover .card-photo {
   transform: scale(1.04);
 }
+.collection-photo-product {
+  background: #fff;
+}
+.collection-photo-product .card-photo {
+  object-fit: contain;
+  padding: 2.5rem 1.25rem 1.75rem;
+}
+.collection-photo-product .card-photo-completed {
+  /* Completed assets already include transparent space around the whole rim. */
+  padding: 0.25rem 0;
+}
+.collection-photo-product:hover .card-photo {
+  transform: none;
+}
+.image-completion-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .material-label {
   position: absolute;
   left: 15px;
@@ -816,6 +834,10 @@ svg {
   margin-top: 10px;
   color: var(--blue);
   font-size: 10px;
+}
+.card-body > .image-completion-note {
+  min-height: 0;
+  margin-top: 8px;
 }
 .card-actions {
   display: flex;

@@ -1,0 +1,22 @@
+{
+  "mode": "Built-in imagegen tool",
+  "date": "2026-10-17",
+  "purpose": "Complete clipped rims in recommendation-card previews. Separate illustrative presentation assets; original catalog photos, studio images, product specifications and source references are preserved.",
+  "optimization": "Sharp resize to 1000px wide, WebP quality 90, alphaQuality 100; generated alpha preserved. No silhouette or product edits after generation.",
+  "assets": [
+    {
+      "itemId": "green-band:GB-105",
+      "path": "public/catalog/previews/green-band-gb-105-completed-v1.webp",
+      "source": "public/catalog/verified-green-band-77-pasta.webp",
+      "generatedPath": "C:/Users/godsh/.codex/generated_images/01a13368-6c38-76b0-8ef9-63d5fb32a309/exec-4bd1564c-d20a-414e-bd89-cee8efef726e.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: Yanco website recommendation card, AI-completed product preview.\nInput image 1 is the edit target: the authentic Yanco Green Band GB-105 deep pasta bowl catalog photo. The source photograph is cropped across its upper rim and slightly at its lower rim.\nPrimary request: extend the canvas and reconstruct only the missing portion of this same bowl so the entire outer rim, base and silhouette are visible. Keep the existing product identity, off-white ceramic glaze, thin dark green concentric bands, curved broad rim, elliptical perspective, reflections, and proportions as in the source. The bowl must stay the same angled bowl, never change into a flat top-down plate.\nComposition: isolated single bowl, centered on a landscape 3:2 canvas, with at least 10 percent clear margin on every side around the complete object. Genuine transparent background and clean antialiased edges. No surrounding props, food, lettering, watermark, or extra decoration. Preserve the green bands' count, spacing and color. Photorealistic restoration, restrained detail."
+    },
+    {
+      "itemId": "glory:GL-410",
+      "path": "public/catalog/previews/glory-gl-410-completed-v1.webp",
+      "source": "public/catalog/verified-glory-13-soup.webp",
+      "generatedPath": "C:/Users/godsh/.codex/generated_images/01a13368-6c38-76b0-8ef9-63d5fb32a309/exec-f3655f7b-ceae-4619-9476-b3fb1bde6515.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: Yanco website recommendation card, AI-completed product preview.\nInput image 1 is the edit target: authentic Yanco Glory GL-410 round soup plate. The upper brown rim is cut off by the top image boundary.\nPrimary request: complete the cropped upper rim and extend the canvas so the entire same bowl silhouette and base are visible, with breathing room on every side. Keep the off-white lightly speckled glaze, single narrow warm brown rim, shallow curved bowl, exact elliptical perspective and width-to-height proportions. Keep existing highlights and product geometry. This is a photo restoration, not a redesign.\nComposition: isolated single bowl, centered on landscape 3:2 canvas, at least 10 percent transparent margin around the complete silhouette on every side. Genuine transparent background, crisp antialiased edges, no opaque backdrop, no halo. Natural product photography lighting. No props, food, lettering, or watermark. Preserve the source appearance and brown band width. Do not add extra concentric bands."
+    }
+  ]
+}

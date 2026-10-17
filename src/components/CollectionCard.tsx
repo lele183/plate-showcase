@@ -4,6 +4,12 @@ import Link from "next/link";
 import { ArrowRight, Check, ArrowUpRight } from "lucide-react";
 import type { Collection, Recommendation } from "@/lib/types";
 import { primarySize } from "@/lib/piece-groups";
+import productPreviews from "@/data/product-previews.json";
+
+const completedPreviews: Record<
+  string,
+  { image: string; sourceImage: string }
+> = productPreviews;
 const palette: Record<string, string> = {
   white: "#f6f5ef",
   "super white": "#fff",
@@ -58,11 +64,18 @@ export default function CollectionCard({
     recommendation?.featuredItem ||
     recommendation?.items.find((i) => i.type === "plate") ||
     recommendation?.items[0];
-  const photo = piece?.image || collection.heroImage;
+  const preview = piece ? completedPreviews[piece.id] : undefined;
+  const completion =
+    preview?.sourceImage === piece?.image ? preview : undefined;
+  const photo =
+    completion?.image ||
+    piece?.studioImage ||
+    piece?.image ||
+    collection.heroImage;
   return (
     <article className="collection-card">
       <button
-        className="collection-photo"
+        className={`collection-photo${piece ? " collection-photo-product" : ""}`}
         onClick={() => onSelect?.(collection)}
         aria-label={`Explore ${collection.name}`}
       >
@@ -70,15 +83,12 @@ export default function CollectionCard({
           src={photo}
           alt={
             piece
-              ? `${collection.name} · ${piece.sku} · ${piece.color}`
+              ? `${collection.name} · ${piece.sku} · ${piece.color}${completion ? " · AI-completed preview" : ""}`
               : `${collection.name} Yanco dinnerware`
           }
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw"
-          className="card-photo"
-          style={
-            piece ? { objectFit: "contain", padding: "1.25rem" } : undefined
-          }
+          className={`card-photo${completion ? " card-photo-completed" : ""}`}
           unoptimized={photo.startsWith("http")}
         />
         <span className="material-label">
@@ -114,6 +124,14 @@ export default function CollectionCard({
               ? `${piece.shape} `
               : ""}
             {piece.name} · {piece.sku}
+          </p>
+        )}
+        {completion && piece && (
+          <p className="small-note image-completion-note">
+            AI-completed preview ·{" "}
+            <a href={piece.image} target="_blank" rel="noopener noreferrer">
+              Original photo
+            </a>
           </p>
         )}
         {recommendation && (
