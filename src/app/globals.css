@@ -733,7 +733,7 @@ svg {
   padding: 2.5rem 1.25rem 1.75rem;
 }
 .collection-photo-product .card-photo-completed {
-  /* Completed assets already include transparent space around the whole rim. */
+  /* Restored photos already include white space around the whole rim. */
   padding: 0.25rem 0;
 }
 .collection-photo-product:hover .card-photo {

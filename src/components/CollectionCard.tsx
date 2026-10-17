@@ -67,11 +67,7 @@ export default function CollectionCard({
   const preview = piece ? completedPreviews[piece.id] : undefined;
   const completion =
     preview?.sourceImage === piece?.image ? preview : undefined;
-  const photo =
-    completion?.image ||
-    piece?.studioImage ||
-    piece?.image ||
-    collection.heroImage;
+  const photo = completion?.image || piece?.image || collection.heroImage;
   return (
     <article className="collection-card">
       <button
@@ -83,7 +79,7 @@ export default function CollectionCard({
           src={photo}
           alt={
             piece
-              ? `${collection.name} · ${piece.sku} · ${piece.color}${completion ? " · AI-completed preview" : ""}`
+              ? `${collection.name} · ${piece.sku} · ${piece.color}${completion ? " · AI-restored preview" : ""}`
               : `${collection.name} Yanco dinnerware`
           }
           fill
@@ -128,7 +124,7 @@ export default function CollectionCard({
         )}
         {completion && piece && (
           <p className="small-note image-completion-note">
-            AI-completed preview ·{" "}
+            AI-restored preview ·{" "}
             <a href={piece.image} target="_blank" rel="noopener noreferrer">
               Original photo
             </a>

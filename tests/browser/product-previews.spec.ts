@@ -1,10 +1,11 @@
 import { expect, test } from "@playwright/test";
 import previews from "../../src/data/product-previews.json";
 import seed from "../../src/data/catalog.json";
+import sharp from "sharp";
 
 test.use({ reducedMotion: "reduce" });
 
-test("recommendation photos fit and completed previews retain access to originals", async ({
+test("white-background recommendation photos fit and restored previews retain originals", async ({
   page,
 }, testInfo) => {
   await page.goto("/");
@@ -36,6 +37,7 @@ test("recommendation photos fit and completed previews retain access to original
     expect(await image.evaluate((el) => getComputedStyle(el).objectFit)).toBe(
       "contain",
     );
+    expect(await image.getAttribute("src")).not.toContain("/studio-");
     expect(
       await card.evaluate((el) => {
         const box = el.getBoundingClientRect();
@@ -45,6 +47,31 @@ test("recommendation photos fit and completed previews retain access to original
   }
 
   for (const [id, preview] of Object.entries(previews)) {
+    const response = await page.request.get(preview.image);
+    expect(response.ok()).toBe(true);
+    const photo = sharp(await response.body());
+    const metadata = await photo.metadata();
+    expect(metadata.hasAlpha).toBe(false);
+    expect(metadata.width).toBeGreaterThanOrEqual(1200);
+    const { data, info } = await photo
+      .removeAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    // An opaque white margin surrounds the whole photo, without a darker frame.
+    for (let y = 0; y < info.height; y++) {
+      for (let x = 0; x < info.width; x++) {
+        if (x > 3 && y > 3 && x < info.width - 4 && y < info.height - 4)
+          continue;
+        const offset = (y * info.width + x) * info.channels;
+        if (
+          data[offset] < 248 ||
+          data[offset + 1] < 248 ||
+          data[offset + 2] < 248
+        ) {
+          throw new Error(`Darker photo border at ${id} (${x}, ${y})`);
+        }
+      }
+    }
     const item = seed.items.find((value) => value.id === id)!;
     const collection = seed.collections.find(
       (value) => value.id === item.collectionId,
@@ -63,10 +90,10 @@ test("recommendation photos fit and completed previews retain access to original
       .toBe(preview.image);
     await expect(card.locator(".collection-photo img")).toHaveAttribute(
       "alt",
-      /AI-completed preview/,
+      /AI-restored preview/,
     );
     await expect(card.locator(".image-completion-note")).toContainText(
-      "AI-completed preview",
+      "AI-restored preview",
     );
     await expect(
       card.getByRole("link", { name: "Original photo", exact: true }),
@@ -100,10 +127,14 @@ test("recommendation photos fit and completed previews retain access to original
     await dialog.getByRole("button", { name: "Close collection" }).click();
   }
 
-  const legna = cards.filter({
-    has: page.getByRole("heading", { name: "Legna", exact: true }),
+  const champs = cards.filter({
+    has: page.getByRole("heading", { name: "Champs", exact: true }),
   });
-  await expect(legna.locator(".image-completion-note")).toHaveCount(0);
+  await expect(champs.locator(".image-completion-note")).toHaveCount(0);
+  await expect(champs.locator(".collection-photo img")).toHaveAttribute(
+    "src",
+    seed.items.find((item) => item.id === "champs:CH-510")!.image,
+  );
   await page.locator(".recommendation-groups").screenshot({
     path: `.cache/qa/product-previews-${testInfo.project.name}.png`,
   });
