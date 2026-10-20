@@ -31,7 +31,17 @@ import { saveGuestScene } from "@/lib/guest-workspace";
 const Plate3D = dynamic(() => import("./Plate3D"), {
   ssr: false,
   loading: () => (
-    <div className="three-view">
+    <div
+      className="three-view"
+      role="status"
+      aria-label="Loading 3D viewer"
+      style={{
+        display: "grid",
+        placeItems: "center",
+        aspectRatio: "auto",
+        height: "clamp(360px, 47vw, 650px)",
+      }}
+    >
       <LoaderCircle className="spin" />
     </div>
   ),
@@ -93,6 +103,15 @@ export default function Studio({
     [localPhoto, setLocalPhoto] = useState<string | null>(null),
     [jobId, setJobId] = useState<string | null>(previewJobId || null),
     [jobProgress, setJobProgress] = useState(0);
+  const [threeReady, setThreeReady] = useState(false);
+  const threeExport = useRef<(() => Promise<Blob>) | null>(null);
+  const handle3DExport = useCallback(
+    (capture: (() => Promise<Blob>) | null) => {
+      threeExport.current = capture;
+      setThreeReady(Boolean(capture));
+    },
+    [],
+  );
   const crop = scene.cropPercent || 100;
   const currentScene = useRef(initialScene);
   const currentView = useRef(initialView);
@@ -435,6 +454,18 @@ export default function Studio({
     setBusy(true);
     setMessage("");
     try {
+      if (view === "3d" && !detailOnly) {
+        if (!threeExport.current)
+          throw new Error("Wait for the 3D scene to finish loading.");
+        const blob = await threeExport.current();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `yanco-${collection.id}-3d.png`;
+        link.click();
+        URL.revokeObjectURL(url);
+        return;
+      }
       const canvas = document.createElement("canvas");
       canvas.width = 1400;
       canvas.height = 1400;
@@ -578,7 +609,10 @@ export default function Studio({
                 key={item.id}
                 item={item}
                 collection={collection}
+                scene={scene}
+                foodSource={foodSource}
                 onUnavailable={handleUnavailable3D}
+                onExportReady={handle3DExport}
                 detailOnly={detailOnly}
               />
             ) : (
@@ -811,6 +845,48 @@ export default function Studio({
               />
               <span>{scene.rotation}°</span>
             </div>
+            {view === "3d" && !detailOnly && foodSource && (
+              <>
+                <div className="slider-control">
+                  <label htmlFor="food-horizontal">Left / right</label>
+                  <input
+                    id="food-horizontal"
+                    type="range"
+                    min="-35"
+                    max="35"
+                    value={scene.x}
+                    aria-valuetext={
+                      scene.x === 0
+                        ? "Centered"
+                        : `${Math.abs(scene.x)} percent ${scene.x < 0 ? "left" : "right"}`
+                    }
+                    onChange={(event) =>
+                      change({ x: Number(event.target.value) })
+                    }
+                  />
+                  <span>{scene.x}%</span>
+                </div>
+                <div className="slider-control">
+                  <label htmlFor="food-vertical">Near / far</label>
+                  <input
+                    id="food-vertical"
+                    type="range"
+                    min="-35"
+                    max="35"
+                    value={scene.y}
+                    aria-valuetext={
+                      scene.y === 0
+                        ? "Centered"
+                        : `${Math.abs(scene.y)} percent ${scene.y < 0 ? "farther" : "nearer"}`
+                    }
+                    onChange={(event) =>
+                      change({ y: Number(event.target.value) })
+                    }
+                  />
+                  <span>{scene.y}%</span>
+                </div>
+              </>
+            )}
             <div className="studio-placement-actions">
               <button
                 className="text-link"
@@ -909,11 +985,13 @@ export default function Studio({
             )}
             <button
               className="button secondary"
-              disabled={busy}
+              disabled={busy || (view === "3d" && !detailOnly && !threeReady)}
               onClick={download}
             >
               <Download size={14} />
-              Download tabletop image
+              {view === "3d" && !detailOnly
+                ? "Download 3D image"
+                : "Download tabletop image"}
             </button>
           </div>
         </aside>

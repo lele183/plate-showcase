@@ -10,6 +10,9 @@ export const THREE_D_SUPPORTED_TYPES: ReadonlySet<string> = new Set([
   "platter",
   "tray",
   "saucer",
+  "bowl",
+  "sauce dish",
+  "ramekin",
 ]);
 
 /** Only applies to cropped source-photo fallbacks, never authentic cutouts. */

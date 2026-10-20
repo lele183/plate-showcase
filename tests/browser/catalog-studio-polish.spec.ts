@@ -66,11 +66,11 @@ test("announcement navigates from every page by pointer and keyboard", async ({
 test("unsupported pieces use an accurate detail label and preserve the tabletop scene", async ({
   page,
 }) => {
-  const bowl = seed.items.find(
-    (item) => item.collectionId === "legna" && item.type === "bowl",
+  const cup = seed.items.find(
+    (item) => item.collectionId === "legna" && item.type === "cup",
   )!;
   await page.goto(
-    `/studio?collection=legna&item=${encodeURIComponent(bowl.id)}`,
+    `/studio?collection=legna&item=${encodeURIComponent(cup.id)}`,
   );
   await page.getByRole("button", { name: "Black linen", exact: true }).click();
   const food = page.getByRole("button", { name: /Food layer/ });
@@ -81,7 +81,7 @@ test("unsupported pieces use an accurate detail label and preserve the tabletop 
   await page.getByRole("button", { name: "Detail view", exact: true }).click();
   await expect(
     page.getByText(
-      "Source photograph · 3D geometry is available for plates and trays",
+      "Source photograph · 3D geometry is available for plates, trays and bowls",
     ),
   ).toBeVisible();
   await expect(page.locator(".three-view canvas")).toHaveCount(0);
@@ -108,6 +108,11 @@ test("supported plate renders an angled model that responds to rotation", async 
     .click();
   const canvas = page.locator(".three-view canvas");
   await expect(canvas).toBeVisible();
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-ready",
+    "true",
+  );
+  await canvas.scrollIntoViewIfNeeded();
   await expect(
     page.getByText("Drag to rotate · Pinch to zoom · Illustrative geometry"),
   ).toBeVisible();
@@ -123,7 +128,7 @@ test("supported plate renders an angled model that responds to rotation", async 
     viewport.height,
     metadata.height! / pixelRatio,
   );
-  const visibleTop = Math.max(bounds.y, 140) + 10;
+  const visibleTop = Math.max(bounds.y + 120, 140) + 10;
   const visibleBottom = Math.min(bounds.y + bounds.height, visibleHeight) - 10;
   const pointerY = (visibleTop + visibleBottom) / 2;
   const crop = {
@@ -148,13 +153,14 @@ test("supported plate renders an angled model that responds to rotation", async 
   );
   await page.mouse.up();
   await expect
-    .poll(async () =>
-      (
-        await sharp(await page.screenshot())
-          .extract(crop)
-          .png()
-          .toBuffer()
-      ).equals(before),
+    .poll(
+      async () =>
+        (
+          await sharp(await page.screenshot())
+            .extract(crop)
+            .png()
+            .toBuffer()
+        ).equals(before),
       { timeout: 20000 },
     )
     .toBe(false);

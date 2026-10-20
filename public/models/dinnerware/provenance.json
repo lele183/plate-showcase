@@ -1,0 +1,88 @@
+{
+  "generator": "scripts/build-dinnerware.py",
+  "blender": "5.2.2 LTS",
+  "description": "Illustrative profile meshes; not manufacturer CAD or reconstructed product scans.",
+  "coordinates": "Y up, 2-unit footprint, 1-unit height, base at zero.",
+  "models": [
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "file": "rimmed-round.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "square",
+      "file": "rimmed-square.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "triangular",
+      "file": "rimmed-triangular.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "irregular",
+      "file": "rimmed-irregular.glb"
+    },
+    {
+      "family": "coupe",
+      "shape": "round",
+      "file": "coupe-round.glb"
+    },
+    {
+      "family": "coupe",
+      "shape": "square",
+      "file": "coupe-square.glb"
+    },
+    {
+      "family": "coupe",
+      "shape": "triangular",
+      "file": "coupe-triangular.glb"
+    },
+    {
+      "family": "coupe",
+      "shape": "irregular",
+      "file": "coupe-irregular.glb"
+    },
+    {
+      "family": "bowl",
+      "shape": "round",
+      "file": "bowl-round.glb"
+    },
+    {
+      "family": "bowl",
+      "shape": "square",
+      "file": "bowl-square.glb"
+    },
+    {
+      "family": "bowl",
+      "shape": "triangular",
+      "file": "bowl-triangular.glb"
+    },
+    {
+      "family": "bowl",
+      "shape": "irregular",
+      "file": "bowl-irregular.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "round",
+      "file": "tray-round.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "file": "tray-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "triangular",
+      "file": "tray-triangular.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "irregular",
+      "file": "tray-irregular.glb"
+    }
+  ]
+}
