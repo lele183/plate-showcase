@@ -120,6 +120,34 @@
   font-size: 11px;
 }
 
+.materialNote {
+  display: block;
+  color: #61716a;
+}
+
+.sourcePhoto {
+  position: absolute;
+  top: 125px;
+  left: 16px;
+  z-index: 2;
+  width: 160px;
+  height: 160px;
+  background: white;
+  border: 1px solid #d5ddd8;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px #28383214;
+}
+
+.sourcePhoto span {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+  color: #43554d;
+  text-align: center;
+  font-size: 10px;
+}
+
 .loading {
   position: absolute;
   inset: 0;
@@ -222,6 +250,13 @@
   .measurements {
     left: 10px;
     bottom: 115px;
+  }
+
+  .sourcePhoto {
+    top: 125px;
+    left: 10px;
+    width: 120px;
+    height: 120px;
   }
 }
 

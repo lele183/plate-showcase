@@ -40,6 +40,7 @@ export default async function StudioPage({
         itemId: piece?.id,
       }}
       initialView={studioView(params)}
+      initialFoodExplicit={params.has("food")}
     />
   );
 }

@@ -6,6 +6,7 @@ import {
   ArrowDownToLine,
   Box,
   Focus,
+  ImageIcon,
   LoaderCircle,
   Maximize,
   Minus,
@@ -20,10 +21,11 @@ import type { CatalogItem, Collection, Scene } from "@/lib/types";
 import type { DinnerwareScene } from "@/lib/dinnerware-scene";
 import {
   dinnerwareModel,
+  supportsDinnerware,
   type CameraView,
   type StudioLighting,
 } from "@/lib/dinnerware-model";
-import { THREE_D_SUPPORTED_TYPES } from "@/types/catalog";
+import type { SurfaceMode } from "@/lib/dinnerware-photo";
 import styles from "./Plate3D.module.css";
 
 export default function Plate3D({
@@ -57,8 +59,10 @@ export default function Plate3D({
   const [rotating, setRotating] = useState(false);
   const [measuring, setMeasuring] = useState(false);
   const [fullscreenMessage, setFullscreenMessage] = useState("");
+  const [surfaceMode, setSurfaceMode] = useState<SurfaceMode>("glaze");
+  const [showPhoto, setShowPhoto] = useState(false);
   const instructionsId = useId();
-  const supported = THREE_D_SUPPORTED_TYPES.has(item.type);
+  const supported = supportsDinnerware(item);
   const model = dinnerwareModel(item);
   const fallback = failed || !supported || detailOnly;
 
@@ -89,6 +93,7 @@ export default function Plate3D({
           onError: unavailable,
           onFoodError: setFoodFailed,
           onRotationStop: () => setRotating(false),
+          onSurfaceReady: setSurfaceMode,
           onOrbit() {
             setCameraView("custom");
             setRotating(false);
@@ -131,6 +136,9 @@ export default function Plate3D({
       data-camera={cameraView}
       data-lighting={lighting}
       data-food={foodSource ? scene.food : "none"}
+      data-model-family={model.family}
+      data-divider-layout={model.dividers || "none"}
+      data-surface={surfaceMode}
       onKeyDown={(event) => {
         if (!(event.target instanceof HTMLCanvasElement)) return;
         const moves: Record<string, [number, number]> = {
@@ -171,7 +179,7 @@ export default function Plate3D({
             role="status"
           >
             {!supported
-              ? "Source photograph · 3D geometry is available for plates, trays and bowls"
+              ? "Source photograph · A matching 3D model is not available for this piece"
               : "Static source preview · 3D is unavailable in this browser"}
           </span>
         </>
@@ -255,7 +263,34 @@ export default function Plate3D({
                 <Ruler size={15} aria-hidden="true" /> Size
               </button>
             )}
+            <button
+              type="button"
+              aria-label="Show source photograph"
+              aria-pressed={showPhoto}
+              onClick={() => setShowPhoto((value) => !value)}
+            >
+              <ImageIcon size={15} aria-hidden="true" /> Photo
+            </button>
           </div>
+          {showPhoto && (
+            <a
+              className={styles.sourcePhoto}
+              href={item.image}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${item.sku} source photograph`}
+            >
+              <Image
+                src={item.image}
+                alt={`${collection.name} ${item.sku} source photograph`}
+                fill
+                sizes="180px"
+                unoptimized
+                style={{ objectFit: "contain", padding: "8px 8px 25px" }}
+              />
+              <span>Source photograph</span>
+            </a>
+          )}
           {measuring && (
             <div className={styles.measurements} role="status">
               <strong>{model.dimensions.join(" × ")}</strong>
@@ -309,6 +344,16 @@ export default function Plate3D({
           </div>
           <p className={styles.note} id={instructionsId}>
             Drag to rotate · Pinch to zoom · Illustrative geometry
+            {ready && surfaceMode === "glaze" && (
+              <span className={styles.materialNote}>
+                Shape and glaze preview · See Photo for the original decoration
+              </span>
+            )}
+            {ready && surfaceMode === "glass" && (
+              <span className={styles.materialNote}>
+                Hollow glassware preview · See Photo for the original finish
+              </span>
+            )}
           </p>
           {(foodFailed || fullscreenMessage) && (
             <p className={styles.feedback} role="status">

@@ -13,6 +13,8 @@ export const THREE_D_SUPPORTED_TYPES: ReadonlySet<string> = new Set([
   "bowl",
   "sauce dish",
   "ramekin",
+  "cup",
+  "glass",
 ]);
 
 /** Only applies to cropped source-photo fallbacks, never authentic cutouts. */

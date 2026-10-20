@@ -2,6 +2,8 @@ import { test, expect, type Page } from "@playwright/test";
 import { readFile } from "node:fs/promises";
 import sharp from "sharp";
 
+test.setTimeout(60000);
+
 test.use({
   launchOptions: {
     args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"],
@@ -13,6 +15,7 @@ async function open3D(page: Page, query = "") {
   await expect(page.locator(".three-view")).toHaveAttribute(
     "data-ready",
     "true",
+    { timeout: 20000 },
   );
   await expect(
     page.getByRole("button", { name: "Download 3D image" }),
@@ -139,9 +142,9 @@ test("food and tabletop changes update the existing scene and export the current
   expect(placement).toEqual({ left: "62%", top: "42%" });
 });
 
-test("bowls load a hollow Blender profile and unsupported cups retain their source photo", async ({
+test("bowls and cups load hollow Blender profiles with source photographs available", async ({
   page,
-}) => {
+}, testInfo) => {
   const modelRequest = page.waitForResponse(
     "**/models/dinnerware/bowl-round.glb",
   );
@@ -149,16 +152,38 @@ test("bowls load a hollow Blender profile and unsupported cups retain their sour
   expect((await modelRequest).ok()).toBe(true);
   await page.getByRole("button", { name: "Side view", exact: true }).click();
   await expect(page.locator(".scene-caption")).toContainText("LE-308");
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-surface",
+    "glaze",
+  );
+  await page
+    .getByRole("button", { name: "Overhead view", exact: true })
+    .click();
+  await page.locator(".three-view").screenshot({
+    path: testInfo.outputPath("bowl-well.png"),
+  });
   await page
     .getByLabel("The piece", { exact: true })
     .selectOption("legna:LE-012");
-  await expect(
-    page.getByRole("button", { name: "Detail view", exact: true }),
-  ).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-ready",
+    "true",
+  );
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-model-family",
+    "mug",
+  );
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-surface",
+    "glaze",
+  );
+  await page.getByRole("button", { name: "Show source photograph" }).click();
   await expect(
     page.getByRole("img", { name: "Legna LE-012 source photograph" }),
   ).toBeVisible();
-  await expect(page.locator(".three-view canvas")).toHaveCount(0);
+  await page
+    .locator(".studio-scene-shell")
+    .screenshot({ path: testInfo.outputPath("cup-preview.png") });
 });
 
 test("a lost WebGL context releases the renderer and offers the source photograph", async ({
@@ -180,11 +205,81 @@ test("a lost WebGL context releases the renderer and offers the source photograp
   await expect(page.getByRole("button", { name: /Food layer/ })).toBeVisible();
 });
 
+test("AS-001 opens as hollow transparent glassware and exports its 3D camera", async ({
+  page,
+}, testInfo) => {
+  const requested = page.waitForResponse(
+    "**/models/dinnerware/glass-as-001.glb",
+  );
+  await open3D(
+    page,
+    "&collection=aqua-spirits&item=aqua-spirits%3AAS-001&layout=1&food=none",
+  );
+  expect((await requested).ok()).toBe(true);
+  const viewer = page.locator(".three-view");
+  await expect(viewer).toHaveAttribute("data-model-family", "glass");
+  await expect(viewer).toHaveAttribute("data-surface", "glass");
+  await expect(viewer).toHaveAttribute("data-food", "none");
+  await expect(page.locator(".scene-caption")).toContainText(
+    "Illustrative glassware",
+  );
+  await page.getByRole("button", { name: "Side view", exact: true }).click();
+  await page.getByRole("button", { name: "Show catalog dimensions" }).click();
+  await expect(
+    page.getByText("1 3/8 in × 2 5/8 in high", { exact: true }),
+  ).toBeVisible();
+  await viewer.screenshot({ path: testInfo.outputPath("shot-glass-side.png") });
+  await page
+    .getByRole("button", { name: "Overhead view", exact: true })
+    .click();
+  await viewer.screenshot({ path: testInfo.outputPath("shot-glass-well.png") });
+  await page
+    .getByRole("button", { name: "Perspective view", exact: true })
+    .click();
+  const pending = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download 3D image" }).click();
+  const download = await pending;
+  const image = sharp(await readFile((await download.path())!));
+  expect((await image.metadata()).width).toBe(1600);
+  expect(
+    (await image.stats()).channels.some((channel) => channel.stdev > 10),
+  ).toBe(true);
+});
+
+test("stemmed wine, martini and flute glasses load their own silhouettes and remain framed", async ({
+  page,
+}, testInfo) => {
+  await open3D(page, "&collection=aqua-spirits&item=aqua-spirits%3AAS-111");
+  for (const sku of ["AS-111", "AS-508", "AS-406"]) {
+    await page
+      .getByLabel("The piece", { exact: true })
+      .selectOption(`aqua-spirits:${sku}`);
+    await expect(page.locator(".three-view")).toHaveAttribute(
+      "data-ready",
+      "true",
+      { timeout: 20000 },
+    );
+    await expect(page.locator(".three-view")).toHaveAttribute(
+      "data-surface",
+      "glass",
+    );
+    await page.getByRole("button", { name: "Side view", exact: true }).click();
+    await page.locator(".three-view").screenshot({
+      path: testInfo.outputPath(`${sku.toLowerCase()}-profile.png`),
+    });
+  }
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+});
+
 test("model download failures fall back and failed food layers can be replaced", async ({
   page,
 }) => {
   await page.route("**/food/salmon-v2.webp", (route) => route.abort());
-  await open3D(page);
+  await open3D(page, "&food=salmon");
   await expect(
     page.getByText(
       "The food image could not load. Choose another food layer to try again.",
@@ -211,6 +306,92 @@ test("model download failures fall back and failed food layers can be replaced",
   ).toHaveAttribute("aria-pressed", "true");
   await expect(
     page.getByRole("img", { name: "Mars MR-508 source photograph" }),
+  ).toBeVisible();
+});
+
+test("3D starts without food, while explicitly chosen food survives view switches and reloads", async ({
+  page,
+}) => {
+  const foodRequests: string[] = [];
+  page.on("request", (request) => {
+    if (request.url().includes("/food/")) foodRequests.push(request.url());
+  });
+  await open3D(page);
+  await expect(
+    page.getByRole("button", { name: "No food", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-food",
+    "none",
+  );
+  expect(foodRequests).toEqual([]);
+  await page.getByRole("button", { name: "Tabletop", exact: true }).click();
+  await expect(page.getByRole("button", { name: /Food layer/ })).toBeVisible();
+  await page
+    .getByRole("button", { name: "Illustrative 3D", exact: true })
+    .click();
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-food",
+    "none",
+  );
+  await page.getByRole("button", { name: "Vegetables", exact: true }).click();
+  await page.getByRole("button", { name: "Tabletop", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Illustrative 3D", exact: true })
+    .click();
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-food",
+    "vegetables",
+  );
+  await page.reload();
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-food",
+    "vegetables",
+  );
+  await page.getByRole("button", { name: "No food", exact: true }).click();
+  await page.reload();
+  await page.getByRole("button", { name: "Tabletop", exact: true }).click();
+  await expect(page.getByRole("button", { name: /Food layer/ })).toHaveCount(0);
+});
+
+test("compartment pieces have raised dividers and cup recesses rather than projected photographs", async ({
+  page,
+}, testInfo) => {
+  await open3D(page, "&collection=compartment&item=compartment%3ANC-510I");
+  const viewer = page.locator(".three-view");
+  await expect(viewer).toHaveAttribute("data-divider-layout", "three-curved");
+  await expect(viewer).toHaveAttribute("data-surface", "glaze");
+  await page.getByRole("button", { name: "Show source photograph" }).click();
+  await expect(
+    page.getByRole("img", { name: "Compartment NC-510I source photograph" }),
+  ).toBeVisible();
+  await page
+    .locator(".studio-scene-shell")
+    .screenshot({ path: testInfo.outputPath("compartment-preview.png") });
+  for (const [sku, layout] of [
+    ["NC-511I", "three-holder"],
+    ["NC-801S", "six-left"],
+    ["NC-802S", "six-right"],
+  ]) {
+    const model = page.waitForResponse(
+      `**/models/dinnerware/divided-${layout}-${layout.startsWith("six") ? "square" : "round"}.glb`,
+    );
+    await page
+      .getByLabel("The piece", { exact: true })
+      .selectOption(`compartment:${sku}`);
+    expect((await model).ok()).toBe(true);
+    await expect(viewer).toHaveAttribute("data-ready", "true");
+    await expect(viewer).toHaveAttribute("data-divider-layout", layout);
+  }
+  await page
+    .getByLabel("The piece", { exact: true })
+    .selectOption("compartment:NC-1014");
+  await expect(
+    page.getByRole("button", { name: "Detail view", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(viewer.locator("canvas")).toHaveCount(0);
+  await expect(
+    page.getByRole("img", { name: "Compartment NC-1014 source photograph" }),
   ).toBeVisible();
 });
 

@@ -2,87 +2,1119 @@
   "generator": "scripts/build-dinnerware.py",
   "blender": "5.2.2 LTS",
   "description": "Illustrative profile meshes; not manufacturer CAD or reconstructed product scans.",
-  "coordinates": "Y up, 2-unit footprint, 1-unit height, base at zero.",
+  "coordinates": "Y up, 2-unit body footprint (handles extend beyond), 1-unit height, base at zero.",
   "models": [
     {
       "family": "rimmed",
       "shape": "round",
+      "layout": null,
       "file": "rimmed-round.glb"
     },
     {
       "family": "rimmed",
       "shape": "square",
+      "layout": null,
       "file": "rimmed-square.glb"
     },
     {
       "family": "rimmed",
       "shape": "triangular",
+      "layout": null,
       "file": "rimmed-triangular.glb"
     },
     {
       "family": "rimmed",
       "shape": "irregular",
+      "layout": null,
       "file": "rimmed-irregular.glb"
     },
     {
       "family": "coupe",
       "shape": "round",
+      "layout": null,
       "file": "coupe-round.glb"
     },
     {
       "family": "coupe",
       "shape": "square",
+      "layout": null,
       "file": "coupe-square.glb"
     },
     {
       "family": "coupe",
       "shape": "triangular",
+      "layout": null,
       "file": "coupe-triangular.glb"
     },
     {
       "family": "coupe",
       "shape": "irregular",
+      "layout": null,
       "file": "coupe-irregular.glb"
     },
     {
       "family": "bowl",
       "shape": "round",
+      "layout": null,
       "file": "bowl-round.glb"
     },
     {
       "family": "bowl",
       "shape": "square",
+      "layout": null,
       "file": "bowl-square.glb"
     },
     {
       "family": "bowl",
       "shape": "triangular",
+      "layout": null,
       "file": "bowl-triangular.glb"
     },
     {
       "family": "bowl",
       "shape": "irregular",
+      "layout": null,
       "file": "bowl-irregular.glb"
     },
     {
       "family": "tray",
       "shape": "round",
+      "layout": null,
       "file": "tray-round.glb"
     },
     {
       "family": "tray",
       "shape": "square",
+      "layout": null,
       "file": "tray-square.glb"
     },
     {
       "family": "tray",
       "shape": "triangular",
+      "layout": null,
       "file": "tray-triangular.glb"
     },
     {
       "family": "tray",
       "shape": "irregular",
+      "layout": null,
       "file": "tray-irregular.glb"
+    },
+    {
+      "family": "cup",
+      "shape": "round",
+      "layout": null,
+      "file": "cup-round.glb"
+    },
+    {
+      "family": "mug",
+      "shape": "round",
+      "layout": null,
+      "file": "mug-round.glb"
+    },
+    {
+      "family": "cup",
+      "shape": "square",
+      "layout": null,
+      "file": "cup-square.glb"
+    },
+    {
+      "family": "mug",
+      "shape": "square",
+      "layout": null,
+      "file": "mug-square.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "layout": "three-radial",
+      "file": "divided-three-radial-round.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "layout": "three-curved",
+      "file": "divided-three-curved-round.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "layout": "three-holder",
+      "file": "divided-three-holder-round.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "layout": "two",
+      "file": "divided-two-round.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "layout": "four",
+      "file": "divided-four-round.glb"
+    },
+    {
+      "family": "rimmed",
+      "shape": "round",
+      "layout": "holder",
+      "file": "divided-holder-round.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "two",
+      "file": "divided-two-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "three",
+      "file": "divided-three-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "four",
+      "file": "divided-four-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "four-server",
+      "file": "divided-four-server-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "four-server-reverse",
+      "file": "divided-four-server-reverse-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "six",
+      "file": "divided-six-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "six-left",
+      "file": "divided-six-left-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "six-right",
+      "file": "divided-six-right-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "six-center",
+      "file": "divided-six-center-square.glb"
+    },
+    {
+      "family": "tray",
+      "shape": "square",
+      "layout": "three-holders",
+      "file": "divided-three-holders-square.glb"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-005a.glb",
+      "item": "plastics:PT-005A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-008a.glb",
+      "item": "plastics:PT-008A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-010a.glb",
+      "item": "plastics:PT-010A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-012a.glb",
+      "item": "plastics:PT-012A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-016a.glb",
+      "item": "plastics:PT-016A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-020a.glb",
+      "item": "plastics:PT-020A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-032a.glb",
+      "item": "plastics:PT-032A",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-005b.glb",
+      "item": "plastics:PT-005B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-008b.glb",
+      "item": "plastics:PT-008B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-010b.glb",
+      "item": "plastics:PT-010B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-012b.glb",
+      "item": "plastics:PT-012B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-016b.glb",
+      "item": "plastics:PT-016B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-020b.glb",
+      "item": "plastics:PT-020B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-032b.glb",
+      "item": "plastics:PT-032B",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-005c.glb",
+      "item": "plastics:PT-005C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-008c.glb",
+      "item": "plastics:PT-008C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-010c.glb",
+      "item": "plastics:PT-010C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-012c.glb",
+      "item": "plastics:PT-012C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-016c.glb",
+      "item": "plastics:PT-016C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-020c.glb",
+      "item": "plastics:PT-020C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-032c.glb",
+      "item": "plastics:PT-032C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-005r.glb",
+      "item": "plastics:PT-005R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-008r.glb",
+      "item": "plastics:PT-008R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-010r.glb",
+      "item": "plastics:PT-010R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-012r.glb",
+      "item": "plastics:PT-012R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-016r.glb",
+      "item": "plastics:PT-016R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-020r.glb",
+      "item": "plastics:PT-020R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-pt-032r.glb",
+      "item": "plastics:PT-032R",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-01-s.glb",
+      "item": "stemware:SM-01-S",
+      "form": "shot"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-06-c.glb",
+      "item": "stemware:SM-06-C",
+      "form": "flute"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-08-wi.glb",
+      "item": "stemware:SM-08-WI",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-08-w.glb",
+      "item": "stemware:SM-08-W",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-06-mt.glb",
+      "item": "stemware:SM-06-MT",
+      "form": "martini"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-10-mt.glb",
+      "item": "stemware:SM-10-MT",
+      "form": "martini"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-12.glb",
+      "item": "stemware:SM-12",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-12-p.glb",
+      "item": "stemware:SM-12-P",
+      "form": "pilsner"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-08-g.glb",
+      "item": "stemware:SM-08-G",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-12-g.glb",
+      "item": "stemware:SM-12-G",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-14.glb",
+      "item": "stemware:SM-14",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-14-c.glb",
+      "item": "stemware:SM-14-C",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-16-h.glb",
+      "item": "stemware:SM-16-H",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-16-r.glb",
+      "item": "stemware:SM-16-R",
+      "form": "hurricane"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-16-mx.glb",
+      "item": "stemware:SM-16-MX",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-20-mx.glb",
+      "item": "stemware:SM-20-MX",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-16-mg.glb",
+      "item": "stemware:SM-16-MG",
+      "form": "margarita"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-10-mg.glb",
+      "item": "stemware:SM-10-MG",
+      "form": "margarita"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-sm-36-mg.glb",
+      "item": "stemware:SM-36-MG",
+      "form": "margarita"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-209.glb",
+      "item": "hawaii:HA-209",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-212.glb",
+      "item": "hawaii:HA-212",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-312.glb",
+      "item": "hawaii:HA-312",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-314.glb",
+      "item": "hawaii:HA-314",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-005.glb",
+      "item": "hawaii:HA-005",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-007.glb",
+      "item": "hawaii:HA-007",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-009.glb",
+      "item": "hawaii:HA-009",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-012.glb",
+      "item": "hawaii:HA-012",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-010.glb",
+      "item": "hawaii:HA-010",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-014.glb",
+      "item": "hawaii:HA-014",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-016.glb",
+      "item": "hawaii:HA-016",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-ha-020.glb",
+      "item": "hawaii:HA-020",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-001.glb",
+      "item": "aqua-spirits:AS-001",
+      "form": "shot"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-510.glb",
+      "item": "aqua-spirits:AS-510",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-511.glb",
+      "item": "aqua-spirits:AS-511",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-512.glb",
+      "item": "aqua-spirits:AS-512",
+      "form": "stemless"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-516.glb",
+      "item": "aqua-spirits:AS-516",
+      "form": "stemless"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-311.glb",
+      "item": "aqua-spirits:AS-311",
+      "form": "coupe"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-411.glb",
+      "item": "aqua-spirits:AS-411",
+      "form": "margarita"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-415.glb",
+      "item": "aqua-spirits:AS-415",
+      "form": "margarita"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-508.glb",
+      "item": "aqua-spirits:AS-508",
+      "form": "martini"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-505.glb",
+      "item": "aqua-spirits:AS-505",
+      "form": "brandy"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-509.glb",
+      "item": "aqua-spirits:AS-509",
+      "form": "brandy"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-108.glb",
+      "item": "aqua-spirits:AS-108",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-110.glb",
+      "item": "aqua-spirits:AS-110",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-111.glb",
+      "item": "aqua-spirits:AS-111",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-112.glb",
+      "item": "aqua-spirits:AS-112",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-113.glb",
+      "item": "aqua-spirits:AS-113",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-114.glb",
+      "item": "aqua-spirits:AS-114",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-208.glb",
+      "item": "aqua-spirits:AS-208",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-211.glb",
+      "item": "aqua-spirits:AS-211",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-214.glb",
+      "item": "aqua-spirits:AS-214",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-305.glb",
+      "item": "aqua-spirits:AS-305",
+      "form": "martini"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-308.glb",
+      "item": "aqua-spirits:AS-308",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-314.glb",
+      "item": "aqua-spirits:AS-314",
+      "form": "hurricane"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-406.glb",
+      "item": "aqua-spirits:AS-406",
+      "form": "flute"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-408.glb",
+      "item": "aqua-spirits:AS-408",
+      "form": "coupe"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-412.glb",
+      "item": "aqua-spirits:AS-412",
+      "form": "beer"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-413.glb",
+      "item": "aqua-spirits:AS-413",
+      "form": "pilsner"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-414.glb",
+      "item": "aqua-spirits:AS-414",
+      "form": "goblet"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-as-708.glb",
+      "item": "aqua-spirits:AS-708",
+      "form": "wine"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-101.glb",
+      "item": "aqua-mist:AM-101",
+      "form": "shot"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-105.glb",
+      "item": "aqua-mist:AM-105",
+      "form": "shot"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-209.glb",
+      "item": "aqua-mist:AM-209",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-210.glb",
+      "item": "aqua-mist:AM-210",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-212.glb",
+      "item": "aqua-mist:AM-212",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-213.glb",
+      "item": "aqua-mist:AM-213",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-214.glb",
+      "item": "aqua-mist:AM-214",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-416.glb",
+      "item": "aqua-mist:AM-416",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-420.glb",
+      "item": "aqua-mist:AM-420",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-110.glb",
+      "item": "aqua-mist:AM-110",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-112.glb",
+      "item": "aqua-mist:AM-112",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-116.glb",
+      "item": "aqua-mist:AM-116",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-309.glb",
+      "item": "aqua-mist:AM-309",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-310.glb",
+      "item": "aqua-mist:AM-310",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-316.glb",
+      "item": "aqua-mist:AM-316",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-509.glb",
+      "item": "aqua-mist:AM-509",
+      "form": "beer"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-406.glb",
+      "item": "aqua-mist:AM-406",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-408.glb",
+      "item": "aqua-mist:AM-408",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-409.glb",
+      "item": "aqua-mist:AM-409",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-410.glb",
+      "item": "aqua-mist:AM-410",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-512.glb",
+      "item": "aqua-mist:AM-512",
+      "form": "beer"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-515.glb",
+      "item": "aqua-mist:AM-515",
+      "form": "pilsner"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-713.glb",
+      "item": "aqua-mist:AM-713",
+      "form": "tumbler"
+    },
+    {
+      "family": "glass",
+      "shape": "round",
+      "layout": null,
+      "file": "glass-am-715.glb",
+      "item": "aqua-mist:AM-715",
+      "form": "beer-mug"
     }
   ]
 }

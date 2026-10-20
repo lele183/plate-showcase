@@ -54,7 +54,7 @@ export function studioSettings(params: URLSearchParams) {
       params,
       "food",
       ["salmon", "vegetables", "toast", "none", "custom", "ai"],
-      "salmon",
+      studioView(params) === "3d" ? "none" : "salmon",
     ),
     scale: Math.round(bounded(params, "portion", 1, 0.3, 1.8) * 20) / 20,
     rotation: Math.round(bounded(params, "rotation", 0, -180, 180)),
@@ -78,7 +78,7 @@ export function studioParams(
   params.set("item", scene.itemId);
   const fields = {
     surface: [scene.tabletop, "oak"],
-    food: [scene.food, "salmon"],
+    food: [scene.food, view === "3d" ? "none" : "salmon"],
     portion: [scene.scale, 1],
     rotation: [scene.rotation, 0],
     x: [scene.x, 0],
@@ -87,7 +87,8 @@ export function studioParams(
     view: [view, "top"],
   };
   for (const [key, [value, fallback]] of Object.entries(fields)) {
-    if (value === fallback) params.delete(key);
+    if (value === fallback && !(key === "food" && view === "3d"))
+      params.delete(key);
     else params.set(key, String(value));
   }
   return params;

@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 import { open } from "node:fs/promises";
-import sharp from "sharp";
 import seed from "../../src/data/catalog.json";
 
 test.use({
@@ -66,11 +65,11 @@ test("announcement navigates from every page by pointer and keyboard", async ({
 test("unsupported pieces use an accurate detail label and preserve the tabletop scene", async ({
   page,
 }) => {
-  const cup = seed.items.find(
-    (item) => item.collectionId === "legna" && item.type === "cup",
+  const pitcher = seed.items.find(
+    (item) => item.collectionId === "fuji" && item.type === "pitcher",
   )!;
   await page.goto(
-    `/studio?collection=legna&item=${encodeURIComponent(cup.id)}`,
+    `/studio?collection=fuji&item=${encodeURIComponent(pitcher.id)}`,
   );
   await page.getByRole("button", { name: "Black linen", exact: true }).click();
   const food = page.getByRole("button", { name: /Food layer/ });
@@ -81,7 +80,7 @@ test("unsupported pieces use an accurate detail label and preserve the tabletop 
   await page.getByRole("button", { name: "Detail view", exact: true }).click();
   await expect(
     page.getByText(
-      "Source photograph · 3D geometry is available for plates, trays and bowls",
+      "Source photograph · A matching 3D model is not available for this piece",
     ),
   ).toBeVisible();
   await expect(page.locator(".three-view canvas")).toHaveCount(0);
@@ -92,7 +91,7 @@ test("unsupported pieces use an accurate detail label and preserve the tabletop 
   ).toBe(position);
   await page
     .getByLabel("The piece", { exact: true })
-    .selectOption("legna:LE-106");
+    .selectOption("fuji:FU-2108");
   await expect(
     page.getByRole("button", { name: "Illustrative 3D", exact: true }),
   ).toBeVisible();
@@ -102,6 +101,7 @@ test("supported plate renders an angled model that responds to rotation", async 
   page,
 }) => {
   test.setTimeout(60000);
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/studio?collection=legna");
   await page
     .getByRole("button", { name: "Illustrative 3D", exact: true })
@@ -111,33 +111,22 @@ test("supported plate renders an angled model that responds to rotation", async 
   await expect(page.locator(".three-view")).toHaveAttribute(
     "data-ready",
     "true",
+    { timeout: 20000 },
   );
   await canvas.scrollIntoViewIfNeeded();
   await expect(
     page.getByText("Drag to rotate · Pinch to zoom · Illustrative geometry"),
   ).toBeVisible();
+  const before = await canvas.screenshot();
   const bounds = (await canvas.boundingBox())!;
   const viewport = await page.evaluate(() => ({
     width: innerWidth,
     height: innerHeight,
   }));
-  const firstScreenshot = await page.screenshot();
-  const metadata = await sharp(firstScreenshot).metadata();
-  const pixelRatio = metadata.width! / viewport.width;
-  const visibleHeight = Math.min(
-    viewport.height,
-    metadata.height! / pixelRatio,
-  );
   const visibleTop = Math.max(bounds.y + 120, 140) + 10;
-  const visibleBottom = Math.min(bounds.y + bounds.height, visibleHeight) - 10;
+  const visibleBottom =
+    Math.min(bounds.y + bounds.height, viewport.height) - 10;
   const pointerY = (visibleTop + visibleBottom) / 2;
-  const crop = {
-    left: Math.round(bounds.x * pixelRatio),
-    top: Math.round(visibleTop * pixelRatio),
-    width: Math.floor(bounds.width * pixelRatio),
-    height: Math.floor((visibleBottom - visibleTop) * pixelRatio),
-  };
-  const before = await sharp(firstScreenshot).extract(crop).png().toBuffer();
   expect(
     await page.evaluate(
       ({ x, y }) => document.elementFromPoint(x, y)?.tagName,
@@ -148,21 +137,18 @@ test("supported plate renders an angled model that responds to rotation", async 
   await page.mouse.down();
   await page.mouse.move(
     bounds.x + bounds.width * 0.7,
-    Math.min(visibleBottom, pointerY + 30),
-    { steps: 12 },
+    Math.min(visibleBottom, pointerY + 65),
+    { steps: 3 },
   );
   await page.mouse.up();
+  await expect(page.locator(".three-view")).toHaveAttribute(
+    "data-camera",
+    "custom",
+  );
   await expect
-    .poll(
-      async () =>
-        (
-          await sharp(await page.screenshot())
-            .extract(crop)
-            .png()
-            .toBuffer()
-        ).equals(before),
-      { timeout: 20000 },
-    )
+    .poll(async () => (await canvas.screenshot()).equals(before), {
+      timeout: 20000,
+    })
     .toBe(false);
   await expect(
     page.getByRole("button", { name: "Illustrative 3D", exact: true }),

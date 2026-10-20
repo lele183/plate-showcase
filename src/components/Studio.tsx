@@ -15,10 +15,8 @@ import {
   Link as LinkIcon,
 } from "lucide-react";
 import type { CatalogItem, Collection, Scene } from "@/lib/types";
-import {
-  THREE_D_SUPPORTED_TYPES,
-  STUDIO_FALLBACK_CROP_RADIUS,
-} from "@/types/catalog";
+import { STUDIO_FALLBACK_CROP_RADIUS } from "@/types/catalog";
+import { supportsDinnerware } from "@/lib/dinnerware-model";
 import { useAuth } from "./AuthProvider";
 import { uploadFile, studioPhoto } from "@/lib/upload";
 import {
@@ -72,6 +70,7 @@ export default function Studio({
   previewJobId,
   initialScene,
   initialView,
+  initialFoodExplicit = false,
 }: {
   collections: Collection[];
   initialCollection: Collection;
@@ -80,6 +79,7 @@ export default function Studio({
   previewJobId?: string;
   initialScene: Scene;
   initialView: "top" | "3d";
+  initialFoodExplicit?: boolean;
 }) {
   const { user, openAuth } = useAuth();
   const [collection, setCollection] = useState(initialCollection),
@@ -115,9 +115,11 @@ export default function Studio({
   const crop = scene.cropPercent || 100;
   const currentScene = useRef(initialScene);
   const currentView = useRef(initialView);
+  const foodExplicit = useRef(initialFoodExplicit);
   const selectionRequest = useRef(0);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const change = useCallback((patch: Partial<Scene>) => {
+    if (patch.food !== undefined) foodExplicit.current = true;
     const next = { ...currentScene.current, ...patch };
     if (!["custom", "ai"].includes(next.food)) next.foodUrl = undefined;
     currentScene.current = next;
@@ -133,6 +135,11 @@ export default function Studio({
   function changeView(next: "top" | "3d") {
     currentView.current = next;
     setView(next);
+    if (!foodExplicit.current) {
+      change({ food: next === "3d" ? "none" : "salmon", foodUrl: undefined });
+      foodExplicit.current = false;
+      return;
+    }
     replaceQuery(
       studioParams(
         currentScene.current,
@@ -571,8 +578,7 @@ export default function Studio({
       </div>
     );
   const detailOnly =
-    !THREE_D_SUPPORTED_TYPES.has(item.type) ||
-    Boolean(unavailable3DItems[item.id]);
+    !supportsDinnerware(item) || Boolean(unavailable3DItems[item.id]);
   const isFallbackStudioImage = !item.studioImage;
   return (
     <div className="page-container">
@@ -731,8 +737,12 @@ export default function Studio({
                     : "Illustrative tabletop scene"
                   : detailOnly
                     ? "Source photograph"
-                    : "Illustrative geometry; source imagery"}{" "}
-                · Original product colors
+                    : item.type === "glass"
+                      ? "Illustrative glassware"
+                      : "Illustrative shape and glaze"}{" "}
+                {view === "top" || detailOnly
+                  ? "· Original product colors"
+                  : "· See Photo for product detail"}
               </span>
             </div>
           </div>

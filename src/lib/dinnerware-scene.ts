@@ -8,6 +8,7 @@ import {
   type CameraView,
   type StudioLighting,
 } from "./dinnerware-model";
+import { analyzeDinnerwarePhoto, type SurfaceMode } from "./dinnerware-photo";
 
 export interface DinnerwareScene {
   update: (scene: Scene, foodSource: string) => void;
@@ -33,6 +34,7 @@ function bodyColor(item: CatalogItem, collection: Collection) {
   if (/wood|bamboo/i.test(collection.material)) return "#ae8b59";
   if (/white|ivory|cream|bone/i.test(item.color)) return "#e4e4dc";
   const colors: [RegExp, string][] = [
+    [/amber/i, "#c58b34"],
     [/black/i, "#303331"],
     [/blue|turquoise/i, "#527b93"],
     [/green/i, "#7a8b63"],
@@ -81,43 +83,42 @@ function imageCanvas(width = 1024, height = width) {
   return { canvas, context };
 }
 
-function catalogTexture(image: HTMLImageElement, cutout: boolean) {
+function catalogSurface(
+  image: HTMLImageElement,
+  item: CatalogItem,
+  color: string,
+) {
+  const sample = imageCanvas(256);
+  // Keep the photograph's aspect ratio while assessing its silhouette.
+  const height = Math.max(1, Math.round((256 * image.height) / image.width));
+  sample.canvas.height = height;
+  sample.context.drawImage(image, 0, 0, 256, height);
+  const surface = analyzeDinnerwarePhoto(
+    sample.context.getImageData(0, 0, 256, height).data,
+    256,
+    height,
+    item,
+    dinnerwareModel(item).photoProjection && Boolean(item.studioImage),
+    color,
+  );
+  if (surface.projection === "glaze") return { ...surface, texture: null };
   const { canvas, context } = imageCanvas();
-  context.drawImage(image, 0, 0, 1024, 1024);
-  const pixels = context.getImageData(0, 0, 1024, 1024).data;
-  let left = 1024,
-    top = 1024,
-    right = 0,
-    bottom = 0;
-  if (cutout) {
-    for (let y = 0; y < 1024; y++)
-      for (let x = 0; x < 1024; x++)
-        if (pixels[(y * 1024 + x) * 4 + 3] > 100) {
-          left = Math.min(left, x);
-          top = Math.min(top, y);
-          right = Math.max(right, x);
-          bottom = Math.max(bottom, y);
-        }
-  }
-  context.clearRect(0, 0, 1024, 1024);
-  context.fillStyle = "#ecebe4";
+  context.fillStyle = surface.color;
   context.fillRect(0, 0, 1024, 1024);
-  if (cutout && right > left && bottom > top)
-    context.drawImage(
-      image,
-      (left / 1024) * image.width,
-      (top / 1024) * image.height,
-      ((right - left + 1) / 1024) * image.width,
-      ((bottom - top + 1) / 1024) * image.height,
-      0,
-      0,
-      1024,
-      1024,
-    );
-  else context.drawImage(image, 0, 0, 1024, 1024);
+  context.drawImage(
+    image,
+    surface.bounds.x * image.width,
+    surface.bounds.y * image.height,
+    surface.bounds.width * image.width,
+    surface.bounds.height * image.height,
+    0,
+    0,
+    1024,
+    1024,
+  );
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
-  return texture;
+  return { ...surface, texture };
 }
 
 function surfaceTexture(surface: string) {
@@ -156,6 +157,7 @@ export function createDinnerwareScene(
     onFoodError: (failed: boolean) => void;
     onOrbit: () => void;
     onRotationStop: () => void;
+    onSurfaceReady: (mode: SurfaceMode) => void;
   },
 ): DinnerwareScene {
   const scene = new THREE.Scene();
@@ -185,6 +187,18 @@ export function createDinnerwareScene(
   let foodPending: Promise<void> = Promise.resolve();
   const camera = new THREE.PerspectiveCamera(35, 1, 0.05, 60);
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  const fitDistance = () => {
+    if (!model.isUpright) return measurements.visible ? 4.5 : 3.7;
+    const radius = Math.hypot(
+      (model.x / 2) * (model.hasHandle ? 1.3 : 1),
+      model.y / 2,
+      model.z / 2,
+    );
+    return (
+      (radius / Math.sin(THREE.MathUtils.degToRad(camera.fov / 2))) *
+      (measurements.visible ? 1.3 : 1.12)
+    );
+  };
   const floorMaterial = new THREE.MeshStandardMaterial({ roughness: 0.97 });
   materials.add(floorMaterial);
   const foodMaterial = new THREE.MeshBasicMaterial({
@@ -298,15 +312,22 @@ export function createDinnerwareScene(
   function setView(view: CameraView) {
     if (!controls) return;
     currentView = view;
-    const fit = measurements.visible ? 4.5 : 3.7;
+    const fit = fitDistance();
     const distance = fit / Math.min(camera.aspect, 1);
     const direction = {
-      perspective: new THREE.Vector3(2.6, 3.7, 3.5),
+      perspective: model.isGlass
+        ? new THREE.Vector3(2.4, 1.7, 4)
+        : new THREE.Vector3(2.6, 3.7, 3.5),
       overhead: new THREE.Vector3(0, 5, 0.005),
       profile: new THREE.Vector3(0, 0.8, 5),
     }[view].normalize();
     controls.enableDamping = false;
-    controls.target.set(0, model.y * 0.32, 0);
+    controls.target.set(0, model.y * (model.isUpright ? 0.5 : 0.32), 0);
+    controls.maxDistance = Math.max(12, distance * 2);
+    (scene.fog as THREE.Fog).near = Math.max(8, distance * 1.5);
+    (scene.fog as THREE.Fog).far = Math.max(24, distance * 3);
+    camera.far = Math.max(60, distance * 4);
+    camera.updateProjectionMatrix();
     camera.position.copy(controls.target).addScaledVector(direction, distance);
     controls.update();
     controls.enableDamping = !reducedMotion.matches;
@@ -334,7 +355,14 @@ export function createDinnerwareScene(
     key.intensity = daylight ? 3 : 3.4;
     key.position.set(daylight ? -3 : 1, 5, daylight ? 2 : -3);
     fill.intensity = daylight ? 1.2 : 0.8;
-    scene.environmentIntensity = daylight ? 0.35 : 0.6;
+    scene.environmentIntensity = model.isGlass
+      ? daylight
+        ? 1
+        : 1.3
+      : daylight
+        ? 0.35
+        : 0.6;
+    if (renderer) renderer.shadowMap.needsUpdate = true;
     requestRender();
   }
   function applyFoodPlacement() {
@@ -343,7 +371,7 @@ export function createDinnerwareScene(
     food.scale.set(size, size, 1);
     food.position.set(
       (currentScene.x / 100) * (2 / 0.68),
-      model.wellHeight + 0.025,
+      (model.isUpright ? model.y : model.wellHeight) + 0.025,
       (currentScene.y / 100) * (2 / 0.68),
     );
     food.rotation.set(
@@ -447,6 +475,7 @@ export function createDinnerwareScene(
     renderer.toneMappingExposure = 1.05;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFShadowMap;
+    renderer.shadowMap.autoUpdate = false;
     renderer.domElement.tabIndex = 0;
     renderer.domElement.setAttribute("role", "img");
     renderer.domElement.setAttribute(
@@ -471,9 +500,34 @@ export function createDinnerwareScene(
     controls.addEventListener("change", requestRender);
     controls.addEventListener("start", callbacks.onOrbit);
     const room = new RoomEnvironment();
+    if (model.isGlass) {
+      // Dark studio flags and tall softboxes keep transparent rims and stems
+      // legible against light tables as the camera moves.
+      room.traverse((object) => {
+        if (
+          object instanceof THREE.Mesh &&
+          object.material instanceof THREE.MeshStandardMaterial
+        )
+          object.material.color.set("#19262d");
+      });
+      const panelMaterial = new THREE.MeshBasicMaterial({
+        color: new THREE.Color(3, 3, 3),
+      });
+      const panelGeometry = new THREE.BoxGeometry(1, 1, 1);
+      for (const [x, z, width] of [
+        [-5, 3, 1.1],
+        [4, 5, 2.2],
+      ]) {
+        const panel = new THREE.Mesh(panelGeometry, panelMaterial);
+        panel.position.set(x, 5, z);
+        panel.scale.set(width, 12, 0.1);
+        panel.lookAt(0, 5, 0);
+        room.add(panel);
+      }
+    }
     const generator = new THREE.PMREMGenerator(renderer);
     try {
-      environment = generator.fromScene(room, 0.04);
+      environment = generator.fromScene(room, 0.04, 0.1, 100, { size: 128 });
       scene.environment = environment.texture;
     } finally {
       room.dispose();
@@ -574,9 +628,33 @@ export function createDinnerwareScene(
           .applyMatrix4(object.matrixWorld);
         geometries.add(geometry);
         if (disposed) return;
+        if (model.isGlass) {
+          const clear = /clear/i.test(item.color);
+          const glass = /glass/i.test(collection.material);
+          const material = new THREE.MeshPhysicalMaterial({
+            color: "#ffffff",
+            metalness: 0,
+            roughness: glass ? 0.065 : 0.15,
+            transmission: glass ? 1 : 0.92,
+            thickness: 0.06,
+            ior: glass ? 1.5 : 1.49,
+            attenuationColor: clear ? "#e4efeb" : bodyColor(item, collection),
+            attenuationDistance: clear ? 3 : 0.5,
+            envMapIntensity: 1.1,
+          });
+          materials.add(material);
+          product.add(new THREE.Mesh(geometry, material));
+          return;
+        }
         const position = geometry.getAttribute("position");
         const normal = geometry.getAttribute("normal");
-        const uv = geometry.getAttribute("uv");
+        const uv =
+          geometry.getAttribute("uv") ||
+          new THREE.Float32BufferAttribute(
+            new Float32Array(position.count * 2),
+            2,
+          );
+        geometry.setAttribute("uv", uv);
         for (let i = 0; i < position.count; i++)
           uv.setXY(i, (position.getX(i) + 1) / 2, (-position.getZ(i) + 1) / 2);
         const surface: number[] = [],
@@ -619,27 +697,42 @@ export function createDinnerwareScene(
         materials.forEach((material) => material.dispose());
         return;
       }
+      if (model.isGlass) {
+        product.scale.set(model.x / 2, model.y, model.z / 2);
+        scene.add(product);
+        renderer!.shadowMap.needsUpdate = true;
+        requestRender();
+        callbacks.onSurfaceReady("glass");
+        callbacks.onReady();
+        return;
+      }
       const image = await loadImage(
         item.studioImage || item.image,
         aborter.signal,
       );
       if (disposed) return;
-      const texture = catalogTexture(image, Boolean(item.studioImage));
-      texture.anisotropy = Math.min(
-        renderer!.capabilities.getMaxAnisotropy(),
-        8,
-      );
-      textures.add(texture);
+      const surface = catalogSurface(image, item, bodyColor(item, collection));
+      if (surface.texture) {
+        surface.texture.anisotropy = Math.min(
+          renderer!.capabilities.getMaxAnisotropy(),
+          8,
+        );
+        textures.add(surface.texture);
+      }
       product.traverse((object) => {
         if (object instanceof THREE.Mesh) {
-          const top = (object.material as THREE.MeshPhysicalMaterial[])[0];
-          top.map = texture;
+          const [top, bottom] = object.material as THREE.MeshPhysicalMaterial[];
+          top.map = surface.texture;
+          top.color.set(surface.texture ? "#ffffff" : surface.color);
+          bottom.color.set(surface.color);
           top.needsUpdate = true;
         }
       });
       product.scale.set(model.x / 2, model.y, model.z / 2);
       scene.add(product);
+      renderer!.shadowMap.needsUpdate = true;
       requestRender();
+      callbacks.onSurfaceReady(surface.projection);
       callbacks.onReady();
     };
     void loadModel().catch(() => {
@@ -658,7 +751,7 @@ export function createDinnerwareScene(
       measurements.visible = visible;
       if (visible && controls) {
         const offset = camera.position.clone().sub(controls.target);
-        const fit = 4.5 / Math.min(camera.aspect, 1);
+        const fit = fitDistance() / Math.min(camera.aspect, 1);
         if (offset.length() < fit) {
           camera.position.copy(controls.target).add(offset.setLength(fit));
           controls.update();

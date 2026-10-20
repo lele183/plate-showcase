@@ -50,6 +50,30 @@ describe("shareable settings", () => {
     expect(params.toString()).not.toContain("private");
     expect(params.get("item")).toBe(scene.itemId);
   });
+  it("starts 3D without food and preserves explicit food when sharing either view", () => {
+    expect(studioSettings(new URLSearchParams("view=3d")).food).toBe("none");
+    expect(
+      studioSettings(new URLSearchParams("view=3d&food=salmon")).food,
+    ).toBe("salmon");
+    for (const view of ["top", "3d"]) {
+      for (const food of ["none", "salmon", "vegetables"]) {
+        const params = studioParams(
+          {
+            collectionId: "mars",
+            itemId: "mars:MR-710",
+            tabletop: "oak",
+            food,
+            scale: 1,
+            rotation: 0,
+            x: 0,
+            y: 0,
+          },
+          view,
+        );
+        expect(studioSettings(params).food).toBe(food);
+      }
+    }
+  });
   it("cleans default placement and clamps malformed inputs", () => {
     const params = new URLSearchParams(
       "portion=Infinity&rotation=900&x=-999&y=NaN&surface=bad&food=bad&view=bad&crop=-1",

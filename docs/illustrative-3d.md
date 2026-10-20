@@ -8,9 +8,30 @@ catalog length and width. The catalog height sets the profile depth when
 available; otherwise the viewer identifies the height as estimated.
 
 These are illustrative profiles, not manufacturer CAD or reconstructed scans.
-Catalog photography supplies the top surface colors. Bowls, sauce dishes, and
-ramekins are supported alongside plates, platters, saucers, and trays.
-Other pieces retain the source photograph.
+Suitable top-view photographs supply surface detail. Angled photographs,
+bowls, cups, and compartment pieces use a sampled glaze color instead of
+stretching the whole photograph over their interior. The Photo button shows
+the original product photograph alongside the model, and opens the full image.
+Decoration on the glaze preview is not reconstructed.
+
+Hollow cups and mugs have round or square bodies, with handles on mug and
+coffee-cup profiles. Catalog heights preserve their upright proportions.
+Divided pieces use raised walls, curved or radial partitions, cup recesses,
+and mirrored lunch-tray layouts, with the walls fused into the well.
+Bowl centers are built from level profile rings rather than subdivided poles.
+These layouts approximate the catalog
+photographs. Specialist forms without an appropriate model, such as egg
+holders, taco plates, lidded servers, pitchers, and irregular divided bowls,
+retain their original photograph instead of receiving a generic plate.
+
+All 112 catalog glass records have hollow models: shots, tumblers, stemless
+wine, wine and goblet stems, brandy, coupe, martini, margarita, flute,
+hurricane, pilsner, and beer mugs. Separate assets use each record's
+top and base diameters where specified. Runtime height follows catalog
+measurements; missing measurements remain estimates. Glass and translucent
+plastic use transmission, refraction, and the appropriate color rather than
+photographs projected onto opaque ceramic. Surface decoration and fluting
+are not reconstructed. Camera framing accounts for tall stems.
 
 ## Rebuild the assets
 
@@ -23,14 +44,16 @@ in background mode from the project directory:
   --python scripts/build-dinnerware.py
 ```
 
-The script writes 16 GLB files and `provenance.json` into
+The script writes 148 GLB files and `provenance.json` into
 `public/models/dinnerware/`. Blender is an authoring dependency only;
 the deployed application serves these static files.
 
 ## Viewer behavior
 
-- Food, crop, portion, rotation, placement, and tabletop settings carry between
-  Tabletop and Illustrative 3D without rebuilding the renderer.
+- Illustrative 3D starts with No food. Explicit food choices, crop, portion,
+  rotation, placement, and tabletop settings carry between views without
+  rebuilding the renderer. The Tabletop view keeps its own starter default
+  until a food choice is made; shared links preserve the chosen food.
 - Perspective, top, and side presets accompany orbit, zoom, reset, full screen,
   optional rotation, two lighting setups, and catalog dimension guides.
 - Focus the canvas to orbit with arrow keys, zoom with `+` / `-`, or reset
@@ -47,6 +70,8 @@ the deployed application serves these static files.
 `tests/browser/illustrative-3d.spec.ts` checks interactions, export, setting
 continuity, bowls, and failures on desktop and phone. Existing lifecycle
 tests exercise repeated item switching and partial initialization failures.
+Geometry checks raycast bowl centers around a full circle to catch tilted
+wells, and distinguish the cavities of shots, wine glasses, martinis and flutes.
 
 ## Image-to-3D alternative
 
