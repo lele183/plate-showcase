@@ -87,7 +87,10 @@ test("studio supports keyboard placement, export, and authenticated feature gate
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download tabletop image" }).click();
   expect((await download).suggestedFilename()).toMatch(/yanco-.*\.png/);
-  await page.getByRole("button", { name: "Generate food preview" }).click();
+  await expect(
+    page.getByRole("button", { name: "Generate food preview" }),
+  ).toBeDisabled();
+  await page.getByRole("button", { name: "Upload your dish" }).click();
   await expect(page.getByRole("dialog")).toBeVisible();
 });
 test("3D falls back to the verified photograph when WebGL is unavailable", async ({

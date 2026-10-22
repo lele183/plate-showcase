@@ -25,7 +25,7 @@ test("the selector works when browser storage writes are blocked", async ({
     page.getByRole("status").filter({ hasText: "could not save" }),
   ).toBeVisible();
   await page.goto("/studio");
-  await page.getByRole("button", { name: "Generate food preview" }).click();
+  await page.getByRole("button", { name: "Upload your dish" }).click();
   await expect(
     page.getByRole("dialog", { name: "Welcome to the table." }),
   ).toBeVisible();

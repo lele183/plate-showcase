@@ -294,18 +294,15 @@ test("import corrections and activation require a source review", async ({
     page.getByRole("button", { name: "Confirm active catalog" }),
   ).toBeVisible();
 });
-test("AI failures preserve the uploaded photo scene", async ({ page }) => {
+test("paused generation still allows photo placement and export without starting jobs", async ({
+  page,
+}) => {
   await workspace(page);
-  await page.route("**/api/jobs", (r) =>
-    r.fulfill({
-      status: 503,
-      contentType: "application/json",
-      body: JSON.stringify({
-        error:
-          "AI food previews are temporarily unavailable. You can still crop and place your photo.",
-      }),
-    }),
-  );
+  const jobs: string[] = [];
+  page.on("request", (request) => {
+    if (request.url().endsWith("/api/jobs") && request.method() === "POST")
+      jobs.push(request.url());
+  });
   await page.goto("/studio");
   await page.locator("input[type=file]").setInputFiles({
     name: "food.webp",
@@ -313,12 +310,17 @@ test("AI failures preserve the uploaded photo scene", async ({ page }) => {
     buffer: await readFile("public/food/salmon.webp"),
   });
   await expect(page.getByRole("status")).toContainText("Photo uploaded");
-  await page.getByRole("button", { name: "Generate food preview" }).click();
-  await expect(page.getByRole("status")).toContainText(
-    "temporarily unavailable",
-  );
+  await expect(
+    page.getByRole("button", { name: "Generate food preview" }),
+  ).toBeDisabled();
+  await page.getByLabel("Crop", { exact: true }).fill("150");
+  await page.getByLabel("Rotation", { exact: true }).fill("30");
   await expect(page.locator(".scene-food img")).toHaveAttribute(
     "src",
     /^blob:/,
   );
+  const pending = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download tabletop image" }).click();
+  expect((await pending).suggestedFilename()).toMatch(/yanco-.*\.png/);
+  expect(jobs).toEqual([]);
 });

@@ -2,6 +2,10 @@ import { createClient } from "@supabase/supabase-js";
 import { FatalError } from "workflow";
 import type { Collection } from "@/lib/types";
 import { foodPreviewConfig, generateFoodLayer } from "@/lib/food-preview";
+import {
+  FOOD_GENERATION_PAUSED,
+  FOOD_GENERATION_PAUSED_MESSAGE,
+} from "@/lib/preview-policy";
 function service() {
   if (!process.env.SUPABASE_SECRET_KEY)
     throw new FatalError("Hosted storage is not configured.");
@@ -315,6 +319,8 @@ export async function failJob(id: string, message: string) {
 }
 export async function generateFood(id: string) {
   "use step";
+  if (FOOD_GENERATION_PAUSED)
+    throw new FatalError(FOOD_GENERATION_PAUSED_MESSAGE);
   const { client, job, upload } = await jobData(id);
   if (job.result?.path) return;
   const config = foodPreviewConfig();

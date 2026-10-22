@@ -125,7 +125,8 @@ test("missing cutouts are cropped on dark tables and in downloads while native s
   const pixel = (x: number, y: number) => [
     ...data.subarray((y * info.width + x) * 3, (y * info.width + x) * 3 + 3),
   ];
-  expect(pixel(240, 240)).toEqual([39, 40, 36]); // Outside the circle: tabletop, not a white photo corner.
+  // Outside the circle: textured dark tabletop, not a white photo corner.
+  expect(pixel(240, 240).every((channel) => channel < 80)).toBe(true);
   expect(pixel(700, 700).some((channel) => channel > 120)).toBe(true);
 });
 

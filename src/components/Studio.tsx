@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { CatalogItem, Collection, Scene } from "@/lib/types";
 import { STUDIO_FALLBACK_CROP_RADIUS } from "@/types/catalog";
+import TabletopPreview from "./TabletopPreview";
 import { supportsDinnerware } from "@/lib/dinnerware-model";
 import { useAuth } from "./AuthProvider";
 import { uploadFile, studioPhoto } from "@/lib/upload";
@@ -104,7 +105,6 @@ export default function Studio({
     >({}),
     [message, setMessage] = useState(""),
     [busy, setBusy] = useState(false),
-    [uploadId, setUploadId] = useState<string | null>(null),
     [localPhoto, setLocalPhoto] = useState<string | null>(null),
     [jobId, setJobId] = useState<string | null>(previewJobId || null),
     [jobProgress, setJobProgress] = useState(0);
@@ -114,6 +114,15 @@ export default function Studio({
     (capture: (() => Promise<Blob>) | null) => {
       threeExport.current = capture;
       setThreeReady(Boolean(capture));
+    },
+    [],
+  );
+  const [tabletopReady, setTabletopReady] = useState(false);
+  const tabletopExport = useRef<(() => Promise<Blob>) | null>(null);
+  const handleTabletopExport = useCallback(
+    (capture: (() => Promise<Blob>) | null) => {
+      tabletopExport.current = capture;
+      setTabletopReady(Boolean(capture));
     },
     [],
   );
@@ -398,7 +407,6 @@ export default function Studio({
       const entry = await uploadFile(optimized, "food", (p) =>
         setMessage(`Uploading photo · ${p}%`),
       );
-      setUploadId(entry.id);
       setLocalPhoto(URL.createObjectURL(optimized));
       change({
         food: "custom",
@@ -406,40 +414,11 @@ export default function Studio({
         foodUrl: `/api/assets?path=${encodeURIComponent(entry.path)}`,
       });
       setMessage(
-        "Photo uploaded. Crop and place it, or create an AI food layer.",
+        "Photo uploaded. Crop and place it to finish your tabletop preview.",
       );
     } catch (e) {
       setMessage(e instanceof Error ? e.message : "Upload failed.");
     } finally {
-      setBusy(false);
-    }
-  }
-  async function generate() {
-    if (!user) {
-      authenticate();
-      return;
-    }
-    if (!uploadId) {
-      setMessage("Upload a food photo first.");
-      return;
-    }
-    setBusy(true);
-    setMessage("Preparing your food preview…");
-    try {
-      const r = await fetch("/api/jobs", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          kind: "food-preview",
-          uploadId,
-          itemId: item.id,
-        }),
-      });
-      const d = await r.json();
-      if (!r.ok) throw Error(d.error);
-      setJobId(d.id);
-    } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Generation is unavailable.");
       setBusy(false);
     }
   }
@@ -497,89 +476,34 @@ export default function Studio({
         URL.revokeObjectURL(url);
         return;
       }
-      const canvas = document.createElement("canvas");
-      canvas.width = 1400;
-      canvas.height = 1400;
-      const ctx = canvas.getContext("2d")!;
-      ctx.fillStyle = (
-        {
-          oak: "#bda585",
-          dark: "#353b35",
-          white: "#eae9e1",
-          black: "#272824",
-          stone: "#b2b0a5",
-        } as Record<string, string>
-      )[scene.tabletop];
-      ctx.fillRect(0, 0, 1400, 1400);
-      if (scene.tabletop === "oak") {
-        ctx.strokeStyle = "#70553822";
-        for (let y = 0; y < 1400; y += 9) {
-          ctx.beginPath();
-          ctx.moveTo(0, y);
-          ctx.lineTo(1400, y + 3);
-          ctx.stroke();
-        }
-      }
-      const load = (src: string) =>
-        new Promise<HTMLImageElement>((resolve, reject) => {
-          const im = new window.Image();
-          im.crossOrigin = "anonymous";
-          im.onload = () => resolve(im);
-          im.onerror = reject;
-          im.src = src;
-        });
-      const plate = await load(item.studioImage || item.image);
-      const ratio = Math.min(952 / plate.width, 952 / plate.height);
-      ctx.save();
-      if (!item.studioImage) {
-        ctx.beginPath();
-        ctx.arc(700, 700, 952 * STUDIO_FALLBACK_CROP_RADIUS, 0, Math.PI * 2);
-        ctx.clip();
-      }
-      ctx.shadowColor = "#0004";
-      ctx.shadowBlur = 22;
-      ctx.shadowOffsetY = 20;
-      ctx.drawImage(
-        plate,
-        (1400 - plate.width * ratio) / 2,
-        (1400 - plate.height * ratio) / 2,
-        plate.width * ratio,
-        plate.height * ratio,
-      );
-      ctx.restore();
-      ctx.shadowColor = "transparent";
-      if (foodSource) {
-        const food = await load(foodSource);
-        const size = 448 * scene.scale;
-        ctx.save();
-        ctx.translate(700 + scene.x * 14, 700 + scene.y * 14);
-        ctx.rotate((scene.rotation * Math.PI) / 180);
-        if (scene.food === "custom") {
-          ctx.beginPath();
-          ctx.ellipse(0, 0, size / 2, size / 2, 0, 0, Math.PI * 2);
-          ctx.clip();
-        }
-        const foodRatio =
-          Math.min(size / food.width, size / food.height) * (crop / 100);
-        ctx.drawImage(
+      let blob: Blob | null;
+      if (view === "3d" && detailOnly) {
+        const {
+          loadTabletopImage,
+          prepareTabletop,
+          drawTabletop,
+          TABLETOP_SIZE,
+        } = await import("@/lib/tabletop-renderer");
+        const [plate, food] = await Promise.all([
+          loadTabletopImage(item.studioImage || item.image),
+          foodSource ? loadTabletopImage(foodSource) : Promise.resolve(null),
+        ]);
+        const canvas = document.createElement("canvas");
+        canvas.width = canvas.height = TABLETOP_SIZE;
+        drawTabletop(
+          canvas,
+          prepareTabletop(plate, scene.tabletop, !item.studioImage),
           food,
-          (-food.width * foodRatio) / 2,
-          (-food.height * foodRatio) / 2,
-          food.width * foodRatio,
-          food.height * foodRatio,
+          scene,
         );
-        ctx.restore();
+        blob = await new Promise<Blob | null>((resolve) =>
+          canvas.toBlob(resolve, "image/png"),
+        );
+      } else {
+        if (!tabletopExport.current)
+          throw Error("Wait for the tabletop preview to finish loading.");
+        blob = await tabletopExport.current();
       }
-      ctx.fillStyle = "#fff";
-      ctx.font = "16px Arial";
-      ctx.fillText(
-        `${collection.name} · ${item.sku} · Illustrative plating scene`,
-        35,
-        1360,
-      );
-      const blob = await new Promise<Blob | null>((resolve) =>
-        canvas.toBlob(resolve, "image/png"),
-      );
       if (!blob) throw Error();
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -650,9 +574,19 @@ export default function Studio({
                 className={`studio-scene surface-${scene.tabletop}`}
                 ref={sceneRef}
               >
-                <div className="scene-glass" />
-                <div className="cutlery fork" />
-                <div className="cutlery knife" />
+                <TabletopPreview
+                  key={JSON.stringify([
+                    item.studioImage || item.image,
+                    isFallbackStudioImage,
+                    foodSource,
+                    scene.tabletop,
+                  ])}
+                  plateSource={item.studioImage || item.image}
+                  fallback={isFallbackStudioImage}
+                  foodSource={foodSource}
+                  scene={scene}
+                  onExportReady={handleTabletopExport}
+                />
                 <div
                   className={`scene-plate${isFallbackStudioImage ? " scene-plate--fallback" : ""}`}
                   style={
@@ -744,7 +678,11 @@ export default function Studio({
                       src={foodSource}
                       alt="Plated food"
                       draggable={false}
-                      style={{ transform: `scale(${crop / 100})` }}
+                      style={{
+                        transform: `scale(${crop / 100})`,
+                        objectFit:
+                          scene.food === "custom" ? "cover" : "contain",
+                      }}
                     />
                   </div>
                 )}
@@ -992,15 +930,15 @@ export default function Studio({
             )}
             <button
               className="button secondary"
-              disabled={busy}
-              onClick={generate}
+              disabled
+              title="AI food generation is paused"
             >
               <Sparkles size={14} />
               Generate food preview
             </button>
             <p className="small-note">
-              Optional AI preview from your own photo. Generation runs only when
-              requested.
+              AI generation is paused. Arrange your food photo or a starter
+              dish, then download the preview.
             </p>
           </div>
           <hr />
@@ -1020,7 +958,10 @@ export default function Studio({
             )}
             <button
               className="button secondary"
-              disabled={busy || (view === "3d" && !detailOnly && !threeReady)}
+              disabled={
+                busy ||
+                (view === "3d" ? !detailOnly && !threeReady : !tabletopReady)
+              }
               onClick={download}
             >
               <Download size={14} />

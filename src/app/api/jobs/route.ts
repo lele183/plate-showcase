@@ -10,6 +10,10 @@ import {
 import { adminSupabase } from "@/lib/supabase/server";
 import { importCatalogOrMenu, createFoodPreview } from "@/workflows/import";
 import { foodPreviewConfig } from "@/lib/food-preview";
+import {
+  FOOD_GENERATION_PAUSED,
+  FOOD_GENERATION_PAUSED_MESSAGE,
+} from "@/lib/preview-policy";
 export async function GET() {
   try {
     const { client } = await requireUser();
@@ -38,6 +42,8 @@ export async function POST(request: Request) {
     if (!parsed.success)
       throw new ApiError("Please choose a supported upload.");
     const body = parsed.data;
+    if (body.kind === "food-preview" && FOOD_GENERATION_PAUSED)
+      throw new ApiError(FOOD_GENERATION_PAUSED_MESSAGE, 503);
     const { data: upload } = await client
       .from("yanco_uploads")
       .select("*")
