@@ -51,6 +51,7 @@
     "axe-core": "^4.14.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.2",
+    "fast-glob": "file:tooling/next-eslint-glob",
     "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
@@ -58,6 +59,9 @@
     "vitest": "^5.0.5"
   },
   "overrides": {
+    "@next/eslint-plugin-next@16.4.2": {
+      "fast-glob": "$fast-glob"
+    },
     "devalue": "5.9.4",
     "mammoth": {
       "argparse": "2.0.1"
