@@ -6,8 +6,8 @@
     "node": "24.x"
   },
   "scripts": {
-    "predev": "node scripts/prepare-pdf-worker.mjs",
-    "prebuild": "node scripts/prepare-pdf-worker.mjs",
+    "predev": "node scripts/prepare-pdf-worker.mjs && node scripts/prepare-catalog-thumbnails.mjs",
+    "prebuild": "node scripts/prepare-pdf-worker.mjs && node scripts/prepare-catalog-thumbnails.mjs",
     "dev": "next dev --port 4173",
     "build": "next build --webpack",
     "start": "next start",
@@ -15,6 +15,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "audit:ui": "node scripts/audit-site.mjs",
     "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs",
     "db:seed": "node --env-file-if-exists=.env.local scripts/seed.mjs",
     "catalog:check": "node scripts/check-catalog.mjs",
@@ -47,6 +48,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/three": "^0.186.0",
+    "axe-core": "^4.14.0",
     "eslint": "^9",
     "eslint-config-next": "^16.4.0",
     "prettier": "^3.9.10",
@@ -57,6 +59,9 @@
   },
   "overrides": {
     "devalue": "5.9.4",
+    "mammoth": {
+      "argparse": "2.0.1"
+    },
     "nanoid": "5.1.16"
   }
 }

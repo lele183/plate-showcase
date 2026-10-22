@@ -108,9 +108,7 @@ test("food and tabletop changes update the existing scene and export the current
     .getByRole("slider", { name: "Near / far", exact: true })
     .fill("-8");
   await page.getByRole("slider", { name: "Portion", exact: true }).fill("1.25");
-  await page
-    .getByRole("button", { name: "Studio lighting", exact: true })
-    .click();
+  await page.getByRole("button", { name: /Studio lighting/ }).click();
   await expect(
     page.getByRole("button", { name: "Overhead view" }),
   ).toHaveAttribute("aria-pressed", "true");

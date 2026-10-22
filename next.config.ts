@@ -2,6 +2,33 @@ import type { NextConfig } from "next";
 import { withWorkflow } from "workflow/next";
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+        ],
+      },
+      {
+        source: "/api/:path*",
+        headers: [
+          { key: "Cache-Control", value: "private, no-store" },
+          { key: "X-Robots-Tag", value: "noindex" },
+        ],
+      },
+      {
+        source: "/auth/:path*",
+        headers: [
+          { key: "Cache-Control", value: "private, no-store" },
+          { key: "X-Robots-Tag", value: "noindex" },
+        ],
+      },
+    ];
+  },
   turbopack: { root: process.cwd() },
   experimental: { cpus: 2, webpackMemoryOptimizations: true },
   serverExternalPackages: [

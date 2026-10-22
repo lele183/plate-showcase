@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Studio from "@/components/Studio";
 import { availableCatalog } from "@/lib/catalog";
 import { studioSettings, studioView } from "@/lib/url-state";
-export const metadata: Metadata = { title: "Plating studio" };
+export const metadata: Metadata = {
+  title: "Plating studio",
+  description:
+    "Arrange Yanco dinnerware on different tabletops, explore illustrative 3D previews, and save or download your plating ideas.",
+  alternates: { canonical: "/studio" },
+};
 export default async function StudioPage({
   searchParams,
 }: {

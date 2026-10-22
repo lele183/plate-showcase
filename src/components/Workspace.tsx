@@ -15,6 +15,7 @@ import {
 import { useAuth } from "./AuthProvider";
 import { uploadFile } from "@/lib/upload";
 import { emptyBrief, type Scene, type RestaurantBrief } from "@/lib/types";
+import { readStoredBrief, writeStoredBrief } from "@/lib/brief-storage";
 import GuestWorkspace from "./GuestWorkspace";
 type Job = {
   id: string;
@@ -119,14 +120,14 @@ export default function Workspace() {
     }
   }
   function applyMenu(text: string) {
-    localStorage.setItem(
-      "yanco-brief",
-      JSON.stringify({
-        ...emptyBrief,
-        ...JSON.parse(localStorage.getItem("yanco-brief") || "{}"),
-        foods: text.slice(0, 80000),
-      }),
-    );
+    if (
+      !writeStoredBrief({ ...readStoredBrief(), foods: text.slice(0, 80000) })
+    ) {
+      setMessage(
+        "This browser could not save the menu. Copy its text before opening the selector.",
+      );
+      return;
+    }
     router.push("/#selector");
   }
   async function saveSelection() {
@@ -136,7 +137,7 @@ export default function Workspace() {
     }
     setBusy(true);
     try {
-      const data = JSON.parse(localStorage.getItem("yanco-brief") || "{}");
+      const data = readStoredBrief();
       const r = await fetch("/api/sessions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -399,10 +400,12 @@ export default function Workspace() {
                   <button
                     className="text-link"
                     onClick={() => {
-                      localStorage.setItem(
-                        "yanco-brief",
-                        JSON.stringify(s.data),
-                      );
+                      if (!writeStoredBrief(s.data)) {
+                        setMessage(
+                          "This browser could not open the saved brief. Enable device storage and try again.",
+                        );
+                        return;
+                      }
                       router.push("/#selector");
                     }}
                   >

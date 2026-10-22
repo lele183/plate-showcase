@@ -73,7 +73,7 @@ test("Italian preset features the actual pasta plate with honest groups and coun
   await page.screenshot({
     path: `.cache/qa/concept-matching-${testInfo.project.name}.png`,
   });
-  await card.getByRole("link", { name: "Preview Legna on your table" }).click();
+  await card.getByRole("link", { name: "Try on your table: Legna" }).click();
   await expect(page.getByLabel("The piece", { exact: true })).toHaveValue(
     piece.id,
   );

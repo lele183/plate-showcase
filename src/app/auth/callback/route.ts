@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 import { serverSupabase } from "@/lib/supabase/server";
+import { safeReturnPath } from "@/lib/request-security";
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const code = url.searchParams.get("code");
-  const raw = url.searchParams.get("next") || "/";
-  const next = raw.startsWith("/") && !raw.startsWith("//") ? raw : "/";
+  const next = safeReturnPath(url.searchParams.get("next"));
   if (code) {
     const client = await serverSupabase();
     const { error } = await client.auth.exchangeCodeForSession(code);

@@ -13,6 +13,8 @@
 # testing
 /coverage
 /public/vendor/pdf.worker-*.min.mjs
+/public/catalog-thumbnails/
+/public/yanco-logo.webp
 /.cache/
 /test-results/
 /playwright-report/

@@ -1,6 +1,7 @@
 "use client";
 import { Upload } from "tus-js-client";
 import { browserSupabase } from "./supabase/browser";
+import { readStorage, removeStorage, writeStorage } from "./browser-storage";
 export async function uploadFile(
   file: File,
   purpose: "catalog" | "menu" | "food",
@@ -14,7 +15,7 @@ export async function uploadFile(
   const key = `yanco-upload:${session.user.id}:${purpose}:${file.name}:${file.size}:${file.lastModified}`;
   let entry: { id: string; path: string; bucket: string } | undefined;
   try {
-    const saved = JSON.parse(localStorage.getItem(key) || "null");
+    const saved = JSON.parse(readStorage(key) || "null");
     if (saved && Date.now() - saved.created < 86400000) entry = saved.entry;
   } catch {}
   if (!entry) {
@@ -31,7 +32,7 @@ export async function uploadFile(
     const value = await response.json();
     if (!response.ok) throw Error(value.error);
     entry = value;
-    localStorage.setItem(key, JSON.stringify({ entry, created: Date.now() }));
+    writeStorage(key, JSON.stringify({ entry, created: Date.now() }));
   }
   const registered = entry!;
   const endpoint = `${process.env.NEXT_PUBLIC_SUPABASE_URL!.replace(".supabase.co", ".storage.supabase.co")}/storage/v1/upload/resumable`;
@@ -65,7 +66,7 @@ export async function uploadFile(
       })
       .catch(reject);
   });
-  localStorage.removeItem(key);
+  removeStorage(key);
   return registered;
 }
 export async function studioPhoto(file: File) {

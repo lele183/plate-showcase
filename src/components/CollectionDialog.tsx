@@ -21,7 +21,8 @@ export default function CollectionDialog({
   const [items, setItems] = useState<CatalogItem[]>([]),
     [error, setError] = useState(""),
     [search, setSearch] = useState(""),
-    [loading, setLoading] = useState(false);
+    [loading, setLoading] = useState(false),
+    [attempt, setAttempt] = useState(0);
   const groups = useMemo(
     () =>
       groupPieces(items)
@@ -43,8 +44,17 @@ export default function CollectionDialog({
     document.body.style.overflow = "hidden";
     element.showModal();
     closeButton.current?.focus({ preventScroll: true });
+    return () => {
+      element.close();
+      document.body.style.overflow = overflow;
+      if (trigger?.isConnected) trigger.focus({ preventScroll: true });
+    };
+  }, [collection]);
+  useEffect(() => {
+    if (!collection) return;
     const controller = new AbortController();
     queueMicrotask(() => {
+      if (controller.signal.aborted) return;
       setItems([]);
       setSearch("");
       setError("");
@@ -61,19 +71,14 @@ export default function CollectionDialog({
         if (!controller.signal.aborted) setItems(data.items || []);
       })
       .catch((error) => {
-        if (error.name !== "AbortError")
+        if (!controller.signal.aborted && error.name !== "AbortError")
           setError("Unable to load pieces. Please try again.");
       })
       .finally(() => {
         if (!controller.signal.aborted) setLoading(false);
       });
-    return () => {
-      controller.abort();
-      element.close();
-      document.body.style.overflow = overflow;
-      if (trigger?.isConnected) trigger.focus({ preventScroll: true });
-    };
-  }, [collection]);
+    return () => controller.abort();
+  }, [collection, attempt]);
   return (
     <dialog
       ref={dialog}
@@ -184,9 +189,15 @@ export default function CollectionDialog({
                 />
               </label>
               {error ? (
-                <p role="alert" className="notice">
-                  {error}
-                </p>
+                <div role="alert" className="notice">
+                  <p>{error}</p>
+                  <button
+                    className="text-link"
+                    onClick={() => setAttempt((value) => value + 1)}
+                  >
+                    Retry loading pieces
+                  </button>
+                </div>
               ) : loading ? (
                 <LoaderCircle className="spin" aria-label="Loading pieces" />
               ) : groups.length ? (

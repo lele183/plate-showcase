@@ -2,7 +2,7 @@ import { z } from "zod";
 import { recommend } from "@/lib/recommendations";
 import { availableCatalog } from "@/lib/catalog";
 import { emptyBrief } from "@/lib/types";
-import { apiError, sameOrigin } from "@/lib/api";
+import { apiError, sameOrigin, readJson } from "@/lib/api";
 const schema = z.object(
   Object.fromEntries(
     Object.keys(emptyBrief).map((k) => [
@@ -17,7 +17,7 @@ const schema = z.object(
 export async function POST(request: Request) {
   try {
     sameOrigin(request);
-    const input = schema.safeParse(await request.json());
+    const input = schema.safeParse(await readJson(request));
     if (!input.success)
       return Response.json(
         {

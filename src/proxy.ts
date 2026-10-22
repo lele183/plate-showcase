@@ -3,6 +3,8 @@ import { NextResponse, type NextRequest } from "next/server";
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request });
   if (
+    !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    !process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
     !request.cookies
       .getAll()
       .some((c) => c.name.startsWith("sb-") && c.name.includes("auth-token"))
@@ -29,6 +31,6 @@ export async function proxy(request: NextRequest) {
 }
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|\\.well-known/workflow/|catalog/|.*\\.(?:png|jpg|webp|svg|ico|pdf)$).*)",
+    "/((?!_next/static|_next/image|\\.well-known/workflow/|catalog/|models/|vendor/|robots\\.txt|sitemap\\.xml|.*\\.(?:png|jpe?g|webp|svg|ico|pdf|glb|woff2?|mjs)$).*)",
   ],
 };

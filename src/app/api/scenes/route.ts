@@ -1,5 +1,11 @@
 import { z } from "zod";
-import { requireUser, apiError, ApiError, sameOrigin } from "@/lib/api";
+import {
+  requireUser,
+  apiError,
+  ApiError,
+  sameOrigin,
+  readJson,
+} from "@/lib/api";
 const scene = z.object({
   collectionId: z.string().max(200),
   itemId: z.string().max(250),
@@ -31,7 +37,7 @@ export async function POST(request: Request) {
     const { client, user } = await requireUser();
     const body = z
       .object({ name: z.string().min(1).max(100), data: scene })
-      .safeParse(await request.json());
+      .safeParse(await readJson(request));
     if (!body.success) throw new ApiError("This scene is incomplete.");
     if (
       body.data.data.foodUrl?.startsWith("blob:") ||

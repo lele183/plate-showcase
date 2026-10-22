@@ -101,7 +101,7 @@ test("white-background recommendation photos fit and restored previews retain or
     await expect(card.locator(".featured-piece")).toContainText(item.sku);
     await expect(
       card.getByRole("link", {
-        name: `Preview ${collection.name} on your table`,
+        name: `Try on your table: ${collection.name}`,
       }),
     ).toHaveAttribute("href", new RegExp(`item=${encodeURIComponent(id)}`));
 

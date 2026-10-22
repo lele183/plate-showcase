@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { FatalError } from "workflow";
 import type { Collection } from "@/lib/types";
+import { foodPreviewConfig, generateFoodLayer } from "@/lib/food-preview";
 function service() {
   if (!process.env.SUPABASE_SECRET_KEY)
     throw new FatalError("Hosted storage is not configured.");
@@ -316,7 +317,8 @@ export async function generateFood(id: string) {
   "use step";
   const { client, job, upload } = await jobData(id);
   if (job.result?.path) return;
-  if (!process.env.OPENAI_API_KEY)
+  const config = foodPreviewConfig();
+  if (!config)
     throw new FatalError(
       "Food generation is temporarily unavailable. Your tabletop preview is still ready to use.",
     );
@@ -340,44 +342,14 @@ export async function generateFood(id: string) {
       fit: "inside",
       withoutEnlargement: true,
     })
+    .flatten({ background: "#ffffff" })
     .jpeg({ quality: 88 })
     .toBuffer();
-  const response = await fetch("https://api.openai.com/v1/images/edits", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: "gpt-image-2",
-      images: [
-        { image_url: `data:image/jpeg;base64,${image.toString("base64")}` },
-      ],
-      prompt:
-        "Extract ONLY the edible food from this photograph. Remove every plate, bowl, tray, container, utensil and surrounding surface. Arrange the same recognizable food naturally for a top-down restaurant plating preview. Output only the food and garnishes on a fully transparent background, no plate, no shadow, no background. Preserve the dish identity, ingredients, and food colors. This layer will be composited onto exact product photographs.",
-      background: "transparent",
-      output_format: "png",
-      size: "1024x1024",
-      quality: "low",
-      n: 1,
-    }),
-    signal: AbortSignal.timeout(230000),
-  });
-  const data = await response.json();
-  if (!response.ok)
-    throw new FatalError(
-      response.status === 401
-        ? "Food generation needs an updated API credential. Please try again later."
-        : response.status === 429
-          ? "Preview capacity is busy. Please try again later."
-          : "Unable to generate a food preview. Your tabletop scene has been preserved.",
-    );
-  const b64 = data.data?.[0]?.b64_json;
-  if (!b64) throw new FatalError("No food image was returned.");
+  const generated = await generateFoodLayer(image, config);
   const path = `${job.owner_id}/previews/${id}.png`;
   const { error: e } = await client.storage
     .from("yanco-user-assets")
-    .upload(path, Buffer.from(b64, "base64"), {
+    .upload(path, generated, {
       contentType: "image/png",
       upsert: true,
     });
@@ -387,7 +359,7 @@ export async function generateFood(id: string) {
     .update({
       status: "completed",
       progress: 100,
-      result: { path },
+      result: { path, provider: config.provider, model: config.model },
       updated_at: new Date().toISOString(),
     })
     .eq("id", id)

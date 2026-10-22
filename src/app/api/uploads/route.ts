@@ -1,5 +1,11 @@
 import { z } from "zod";
-import { requireUser, apiError, ApiError, sameOrigin } from "@/lib/api";
+import {
+  requireUser,
+  apiError,
+  ApiError,
+  sameOrigin,
+  readJson,
+} from "@/lib/api";
 const schema = z.object({
   filename: z.string().min(1).max(180),
   size: z.number().int().positive().max(104857600),
@@ -17,7 +23,7 @@ export async function POST(request: Request) {
   try {
     sameOrigin(request);
     const { client, user } = await requireUser();
-    const input = schema.safeParse(await request.json());
+    const input = schema.safeParse(await readJson(request));
     if (!input.success)
       throw new ApiError("Use a supported file smaller than 100 MB.");
     const v = input.data;

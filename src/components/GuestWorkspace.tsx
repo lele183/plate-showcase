@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, FileText, LoaderCircle } from "lucide-react";
 import { useAuth } from "./AuthProvider";
-import { emptyBrief } from "@/lib/types";
+import { readStoredBrief, writeStoredBrief } from "@/lib/brief-storage";
 import {
   emptyGuestWorkspace,
   readGuestWorkspace,
@@ -93,18 +93,13 @@ export default function GuestWorkspace({
   }
   function applyMenu() {
     try {
-      let previous = {};
-      try {
-        previous = JSON.parse(localStorage.getItem("yanco-brief") || "{}");
-      } catch {}
-      localStorage.setItem(
-        "yanco-brief",
-        JSON.stringify({
-          ...emptyBrief,
-          ...previous,
+      if (
+        !writeStoredBrief({
+          ...readStoredBrief(),
           foods: draft.menu.text.slice(0, 80000),
-        }),
-      );
+        })
+      )
+        throw Error("Device storage is unavailable.");
       writeGuestMenu(draft.menu);
       router.push("/#selector");
     } catch {

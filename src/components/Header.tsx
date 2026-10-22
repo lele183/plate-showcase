@@ -3,12 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, UserRound, LogOut, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useAuth } from "./AuthProvider";
 export default function Header() {
   const path = usePathname();
   const { user, openAuth, signOut } = useAuth();
   const [mobile, setMobile] = useState(false);
+  const toggle = useRef<HTMLButtonElement>(null);
   return (
     <>
       <Link href="/catalog" className="announcement">
@@ -22,9 +23,13 @@ export default function Header() {
       </Link>
       <header className="site-header">
         <div className="header-inner">
-          <Link href="/" className="brand" aria-label="Yanco home">
+          <Link
+            href="/"
+            className="brand"
+            aria-label="Yanco dinnerware selector home"
+          >
             <Image
-              src="/yanco-logo.png"
+              src="/yanco-logo.webp"
               alt="Yanco"
               width={148}
               height={71}
@@ -36,6 +41,12 @@ export default function Header() {
             id="main-navigation"
             aria-label="Main navigation"
             className={mobile ? "main-nav open" : "main-nav"}
+            onKeyDown={(event) => {
+              if (event.key === "Escape" && mobile) {
+                setMobile(false);
+                toggle.current?.focus();
+              }
+            }}
           >
             {[
               ["/", "Find your dinnerware"],
@@ -48,6 +59,7 @@ export default function Header() {
                 key={href}
                 href={href}
                 className={path === href ? "active" : ""}
+                aria-current={path === href ? "page" : undefined}
               >
                 {label}
               </Link>
@@ -75,6 +87,7 @@ export default function Header() {
               </button>
             )}
             <button
+              ref={toggle}
               className="icon-button mobile-toggle"
               onClick={() => setMobile(!mobile)}
               aria-expanded={mobile}

@@ -30,10 +30,9 @@ test("anonymous selector preserves mode answers and enforces constraints", async
       "alt",
       /black/,
     );
-    await expect(card.getByRole("link", { name: /Preview/ })).toHaveAttribute(
-      "href",
-      /&item=/,
-    );
+    await expect(
+      card.getByRole("link", { name: /^Try on your table:/ }),
+    ).toHaveAttribute("href", /&item=/);
   }
 });
 test("full catalog search opens correct source details", async ({ page }) => {
@@ -45,7 +44,7 @@ test("full catalog search opens correct source details", async ({ page }) => {
   await expect(page.locator(".all-collections article")).toHaveCount(1);
   await page
     .locator(".all-collections")
-    .getByRole("button", { name: "Explore Mars", exact: true })
+    .getByRole("button", { name: /^Explore Mars:/ })
     .click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByPlaceholder("SKU, bowl, plate, capacity…").fill("MR-710");
@@ -63,9 +62,7 @@ test("printed discrepancies link both sources and studio uses a cutout", async (
   await page
     .getByPlaceholder("Search a collection, piece, or item number…")
     .fill("Milestone");
-  await page
-    .getByRole("button", { name: "Explore Milestone", exact: true })
-    .click();
+  await page.getByRole("button", { name: /^Explore Milestone:/ }).click();
   const dialog = page.getByRole("dialog");
   await page.getByPlaceholder("SKU, bowl, plate, capacity…").fill("MS-710BU");
   await expect(dialog).toContainText(/confirm diameter/i);

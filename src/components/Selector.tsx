@@ -21,6 +21,7 @@ import type {
   RestaurantBrief,
 } from "@/lib/types";
 import { emptyBrief } from "@/lib/types";
+import { readStoredBrief, writeStoredBrief } from "@/lib/brief-storage";
 import CollectionCard from "./CollectionCard";
 import CollectionDialog from "./CollectionDialog";
 const examples = [
@@ -61,6 +62,7 @@ export default function Selector({
     [result, setResult] = useState(initial),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
+    [storageWarning, setStorageWarning] = useState(""),
     [chosen, setChosen] = useState<Collection | null>(null),
     [submitted, setSubmitted] = useState(false);
   const [submittedBrief, setSubmittedBrief] = useState<RestaurantBrief | null>(
@@ -71,22 +73,19 @@ export default function Selector({
     JSON.stringify(brief) !== JSON.stringify(submittedBrief);
   useEffect(() => {
     queueMicrotask(() => {
-      try {
-        const saved = localStorage.getItem("yanco-brief");
-        if (saved) {
-          const data = { ...emptyBrief, ...JSON.parse(saved) };
-          setBrief(data);
-          if (data.foods) setExpert(true);
-        }
-      } catch {}
+      const data = readStoredBrief();
+      setBrief(data);
+      if (data.foods) setExpert(true);
     });
   }, []);
   function updateBrief(changes: Partial<RestaurantBrief>) {
-    setBrief((prev) => {
-      const next = { ...prev, ...changes };
-      localStorage.setItem("yanco-brief", JSON.stringify(next));
-      return next;
-    });
+    const next = { ...brief, ...changes };
+    setBrief(next);
+    setStorageWarning(
+      writeStoredBrief(next)
+        ? ""
+        : "Your answers work for this visit, but this browser could not save them. Keep a copy before leaving.",
+    );
   }
   function update(key: keyof RestaurantBrief, value: string) {
     updateBrief({ [key]: value });
@@ -386,6 +385,11 @@ export default function Selector({
           {error && (
             <p className="notice" role="alert">
               {error}
+            </p>
+          )}
+          {storageWarning && (
+            <p className="notice" role="status">
+              {storageWarning}
             </p>
           )}
         </form>

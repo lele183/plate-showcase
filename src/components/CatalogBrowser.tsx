@@ -22,7 +22,9 @@ export default function CatalogBrowser({
     [budget, setBudget] = useState(initialFilters.budget),
     [selected, setSelected] = useState<Collection | null>(null),
     [page, setPage] = useState(1),
-    [loading, setLoading] = useState(false);
+    [loading, setLoading] = useState(Boolean(initialFilters.query.trim())),
+    [error, setError] = useState(""),
+    [attempt, setAttempt] = useState(0);
   useEffect(() => {
     const restore = () => {
       const filters = catalogFilters(new URLSearchParams(location.search));
@@ -53,24 +55,50 @@ export default function CatalogBrowser({
   }, [query, category, color, budget]);
   useEffect(() => {
     const controller = new AbortController();
+    queueMicrotask(() => {
+      if (controller.signal.aborted) return;
+      setError("");
+      setLoading(Boolean(query.trim()));
+      if (!query.trim()) {
+        setCollections(initial);
+        setPage(1);
+      }
+    });
+    if (!query.trim()) return () => controller.abort();
     const timeout = setTimeout(() => {
-      setLoading(true);
       fetch(`/api/catalog?q=${encodeURIComponent(query)}`, {
         signal: controller.signal,
       })
-        .then((r) => r.json())
+        .then(async (response) => {
+          if (!response.ok)
+            throw Error("Search is temporarily unavailable. Please try again.");
+          const data = await response.json();
+          if (!Array.isArray(data.collections))
+            throw Error(
+              "Search returned an incomplete response. Please try again.",
+            );
+          return data;
+        })
         .then((d) => {
-          setCollections(d.collections || initial);
+          if (controller.signal.aborted) return;
+          setCollections(d.collections);
           setPage(1);
         })
-        .catch(() => {})
-        .finally(() => setLoading(false));
+        .catch(() => {
+          if (!controller.signal.aborted)
+            setError(
+              "Unable to search the catalog. Check your connection and try again.",
+            );
+        })
+        .finally(() => {
+          if (!controller.signal.aborted) setLoading(false);
+        });
     }, 150);
     return () => {
       clearTimeout(timeout);
       controller.abort();
     };
-  }, [query, initial]);
+  }, [query, initial, attempt]);
   const filtered = useMemo(
     () =>
       collections.filter(
@@ -185,17 +213,38 @@ export default function CatalogBrowser({
         ))}
       </div>
       <p className="catalog-count" aria-live="polite">
-        {loading
-          ? "Searching…"
-          : `${filtered.length} collections · ${itemCount.toLocaleString()} catalog entries`}{" "}
+        {error
+          ? "Search unavailable"
+          : loading
+            ? "Searching…"
+            : `${filtered.length} collections · ${itemCount.toLocaleString()} catalog entries`}{" "}
         · Prices shown as relative estimates
       </p>
-      <div className="all-collections">
-        {filtered.slice((page - 1) * 12, page * 12).map((c) => (
-          <CollectionCard key={c.id} collection={c} onSelect={setSelected} />
-        ))}
+      {error && (
+        <div className="notice" role="alert">
+          <p>{error}</p>
+          <button
+            className="text-link"
+            onClick={() => setAttempt((value) => value + 1)}
+          >
+            Retry search
+          </button>
+        </div>
+      )}
+      <div className="all-collections" aria-busy={loading}>
+        {!error &&
+          !loading &&
+          filtered
+            .slice((page - 1) * 12, page * 12)
+            .map((c) => (
+              <CollectionCard
+                key={c.id}
+                collection={c}
+                onSelect={setSelected}
+              />
+            ))}
       </div>
-      {!filtered.length && (
+      {!loading && !error && !filtered.length && (
         <div className="empty-state">
           <h2>A different detail may help.</h2>
           <p>
@@ -215,7 +264,7 @@ export default function CatalogBrowser({
           </button>
         </div>
       )}
-      {pages > 1 && (
+      {!loading && !error && pages > 1 && (
         <div className="pagination">
           <button
             className="icon-button"
@@ -234,7 +283,13 @@ export default function CatalogBrowser({
             disabled={page >= pages}
             onClick={() => {
               setPage(page + 1);
-              window.scrollTo({ top: 280, behavior: "smooth" });
+              window.scrollTo({
+                top: 280,
+                behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
+                  .matches
+                  ? "auto"
+                  : "smooth",
+              });
             }}
           >
             <ChevronRight size={18} />

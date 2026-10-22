@@ -9,6 +9,8 @@ import {
 } from "react";
 import type { User } from "@supabase/supabase-js";
 import { browserSupabase } from "@/lib/supabase/browser";
+import { removeStorage } from "@/lib/browser-storage";
+import { supabaseConfigured } from "@/lib/supabase/config";
 import { X, ArrowRight, LoaderCircle, Mail } from "lucide-react";
 const Context = createContext<{
   user: User | null;
@@ -26,12 +28,19 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     [busy, setBusy] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const account = useRef<string | null | undefined>(undefined);
+  const configured = supabaseConfigured();
   useEffect(() => {
+    if (!supabaseConfigured()) return;
     const client = browserSupabase();
-    client.auth.getUser().then(({ data }) => {
-      account.current = data.user?.id || null;
-      setUser(data.user);
-    });
+    client.auth
+      .getUser()
+      .then(({ data }) => {
+        account.current = data.user?.id || null;
+        setUser(data.user);
+      })
+      .catch(() => {
+        account.current = null;
+      });
     const { data } = client.auth.onAuthStateChange((event, session) => {
       const nextAccount = session?.user.id || null;
       if (
@@ -40,8 +49,8 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         account.current !== nextAccount
       ) {
         if (account.current) {
-          localStorage.removeItem("yanco-brief");
-          localStorage.removeItem("yanco-studio-auth-draft");
+          removeStorage("yanco-brief");
+          removeStorage("yanco-studio-auth-draft");
         }
         location.reload();
         return;
@@ -67,8 +76,20 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     return () => data.subscription.unsubscribe();
   }, []);
   useEffect(() => {
-    if (open) dialog.current?.showModal();
-    else dialog.current?.close();
+    if (!open) return;
+    const element = dialog.current;
+    const trigger =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    element?.showModal();
+    return () => {
+      element?.close();
+      document.body.style.overflow = overflow;
+      if (trigger?.isConnected) trigger.focus({ preventScroll: true });
+    };
   }, [open]);
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -77,8 +98,8 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     const form = new FormData(event.currentTarget);
     const email = String(form.get("email") || "");
     const password = String(form.get("password") || "");
-    const client = browserSupabase();
     try {
+      const client = browserSupabase();
       if (mode === "signin") {
         const { error } = await client.auth.signInWithPassword({
           email,
@@ -127,13 +148,17 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         user,
         openAuth: () => {
           setMode("signin");
-          setMessage("");
+          setMessage(
+            configured
+              ? ""
+              : "Account services are temporarily unavailable. You can still browse and save starter scenes on this device.",
+          );
           setOpen(true);
         },
         signOut: async () => {
           await browserSupabase().auth.signOut();
-          localStorage.removeItem("yanco-brief");
-          localStorage.removeItem("yanco-studio-auth-draft");
+          removeStorage("yanco-brief");
+          removeStorage("yanco-studio-auth-draft");
           setUser(null);
           location.reload();
         },
@@ -176,7 +201,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
                 type="email"
                 autoComplete="email"
                 required
-                placeholder="you@restaurant.com"
+                placeholder="you@example.com"
               />
             </label>
           )}
@@ -203,7 +228,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
               {message}
             </p>
           )}
-          <button className="button primary" disabled={busy}>
+          <button className="button primary" disabled={busy || !configured}>
             {busy ? <LoaderCircle className="spin" size={18} /> : null}
             {mode === "signup"
               ? "Create account"

@@ -1,8 +1,15 @@
 import { z } from "zod";
 import { start } from "workflow/api";
-import { requireUser, apiError, ApiError, sameOrigin } from "@/lib/api";
+import {
+  requireUser,
+  apiError,
+  ApiError,
+  sameOrigin,
+  readJson,
+} from "@/lib/api";
 import { adminSupabase } from "@/lib/supabase/server";
 import { importCatalogOrMenu, createFoodPreview } from "@/workflows/import";
+import { foodPreviewConfig } from "@/lib/food-preview";
 export async function GET() {
   try {
     const { client } = await requireUser();
@@ -27,7 +34,7 @@ export async function POST(request: Request) {
         uploadId: z.uuid(),
         itemId: z.string().max(250).optional(),
       })
-      .safeParse(await request.json());
+      .safeParse(await readJson(request));
     if (!parsed.success)
       throw new ApiError("Please choose a supported upload.");
     const body = parsed.data;
@@ -42,7 +49,7 @@ export async function POST(request: Request) {
       upload.purpose !== (body.kind === "food-preview" ? "food" : body.kind)
     )
       throw new ApiError("Upload not found.", 404);
-    if (body.kind === "food-preview" && !process.env.OPENAI_API_KEY)
+    if (body.kind === "food-preview" && !foodPreviewConfig())
       throw new ApiError(
         "AI food previews are temporarily unavailable. You can still crop and place your photo.",
         503,

@@ -26,6 +26,11 @@ import {
   replaceQuery,
 } from "@/lib/url-state";
 import { saveGuestScene } from "@/lib/guest-workspace";
+import {
+  readStorage,
+  removeStorage,
+  writeStorage,
+} from "@/lib/browser-storage";
 const Plate3D = dynamic(() => import("./Plate3D"), {
   ssr: false,
   loading: () => (
@@ -117,8 +122,10 @@ export default function Studio({
   const currentView = useRef(initialView);
   const foodExplicit = useRef(initialFoodExplicit);
   const selectionRequest = useRef(0);
+  const sceneRevision = useRef(0);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const change = useCallback((patch: Partial<Scene>) => {
+    sceneRevision.current++;
     if (patch.food !== undefined) foodExplicit.current = true;
     const next = { ...currentScene.current, ...patch };
     if (!["custom", "ai"].includes(next.food)) next.foodUrl = undefined;
@@ -169,6 +176,7 @@ export default function Studio({
   const selectCollection = useCallback(
     async (id: string, itemId?: string, restored?: Scene) => {
       const request = ++selectionRequest.current;
+      const revision = sceneRevision.current;
       setMessage("");
       try {
         const r = await fetch(
@@ -190,7 +198,11 @@ export default function Studio({
           data.items.find((i: CatalogItem) => i.type === "plate") ||
           data.items[0];
         setItem(next);
-        change({ ...(restored || {}), collectionId: id, itemId: next.id });
+        change({
+          ...(revision === sceneRevision.current ? restored : {}),
+          collectionId: id,
+          itemId: next.id,
+        });
       } catch (e) {
         if (request !== selectionRequest.current) return;
         setMessage(
@@ -222,14 +234,14 @@ export default function Studio({
   useEffect(() => {
     try {
       const pending = JSON.parse(
-        localStorage.getItem("yanco-studio-auth-draft") || "null",
+        readStorage("yanco-studio-auth-draft") || "null",
       );
       if (
         pending &&
         pending.returnTo === location.pathname + location.search &&
         Date.now() - pending.created < 600000
       ) {
-        localStorage.removeItem("yanco-studio-auth-draft");
+        removeStorage("yanco-studio-auth-draft");
         queueMicrotask(() => {
           void selectCollection(
             pending.scene.collectionId,
@@ -263,7 +275,7 @@ export default function Studio({
     };
   }, [collections, selectCollection, cancelSelection]);
   function authenticate() {
-    localStorage.setItem(
+    writeStorage(
       "yanco-studio-auth-draft",
       JSON.stringify({
         created: Date.now(),
@@ -276,13 +288,25 @@ export default function Studio({
   useEffect(() => {
     if (!sceneId || !user) return;
     const controller = new AbortController();
+    const revision = sceneRevision.current;
+    const selection = selectionRequest.current;
     fetch("/api/scenes", { signal: controller.signal })
-      .then((r) => r.json())
+      .then(async (response) => {
+        const data = await response.json();
+        if (!response.ok)
+          throw Error(data.error || "Unable to load this saved scene.");
+        return data;
+      })
       .then((data) => {
         const saved = data.scenes?.find(
           (s: { id: string; data: Scene }) => s.id === sceneId,
         );
-        if (saved && !controller.signal.aborted) {
+        if (
+          saved &&
+          !controller.signal.aborted &&
+          revision === sceneRevision.current &&
+          selection === selectionRequest.current
+        ) {
           const params = new URLSearchParams(location.search);
           const restored =
             params.get("layout") === "1"
@@ -939,6 +963,7 @@ export default function Studio({
             <input
               ref={fileRef}
               type="file"
+              aria-label="Upload food photo"
               accept="image/jpeg,image/png,image/webp"
               className="sr-only"
               onChange={(e) => photo(e.target.files?.[0])}

@@ -1,5 +1,11 @@
 import { getRun, start } from "workflow/api";
-import { requireUser, apiError, ApiError, sameOrigin } from "@/lib/api";
+import {
+  requireUser,
+  apiError,
+  ApiError,
+  sameOrigin,
+  readJson,
+} from "@/lib/api";
 import { adminSupabase } from "@/lib/supabase/server";
 import { importCatalogOrMenu } from "@/workflows/import";
 export async function GET(
@@ -41,7 +47,7 @@ export async function PATCH(
       .eq("owner_id", user.id)
       .single();
     if (!job) throw new ApiError("Job not found.", 404);
-    const body = await request.json();
+    const body = await readJson(request);
     const admin = adminSupabase();
     if (body.action === "cancel") {
       if (!["queued", "running"].includes(job.status))

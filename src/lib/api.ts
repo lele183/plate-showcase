@@ -1,5 +1,7 @@
 import "server-only";
 import { serverSupabase } from "./supabase/server";
+import { requestHasAllowedOrigin } from "./request-security";
+import { supabaseConfigured } from "./supabase/config";
 export class ApiError extends Error {
   constructor(
     message: string,
@@ -9,6 +11,11 @@ export class ApiError extends Error {
   }
 }
 export async function requireUser() {
+  if (!supabaseConfigured())
+    throw new ApiError(
+      "Account services are temporarily unavailable. You can still browse and use the on-device workspace.",
+      503,
+    );
   const client = await serverSupabase();
   const {
     data: { user },
@@ -31,8 +38,17 @@ export function apiError(error: unknown) {
   );
 }
 export function sameOrigin(request: Request) {
-  const origin = request.headers.get("origin");
-  const host = request.headers.get("host") || new URL(request.url).host;
-  if (origin && new URL(origin).host !== host)
+  if (!requestHasAllowedOrigin(request))
     throw new ApiError("Request origin is not allowed.", 403);
+}
+export async function readJson(request: Request) {
+  try {
+    const body = await request.json();
+    if (body === null || typeof body !== "object" || Array.isArray(body))
+      throw new ApiError("Send a JSON object with the request details.");
+    return body;
+  } catch (error) {
+    if (error instanceof ApiError) throw error;
+    throw new ApiError("The request contains invalid JSON.");
+  }
 }

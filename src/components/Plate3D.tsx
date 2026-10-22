@@ -194,7 +194,7 @@ export default function Plate3D({
               {(
                 [
                   ["perspective", "Perspective view", "Perspective", Box],
-                  ["overhead", "Overhead view", "Top", Focus],
+                  ["overhead", "Overhead view", "Overhead", Focus],
                   ["profile", "Side view", "Side", ArrowDownToLine],
                 ] as const
               ).map(([value, label, title, Icon]) => (
@@ -214,7 +214,7 @@ export default function Plate3D({
             <button
               className={styles.rotate}
               type="button"
-              aria-label="Auto rotate"
+              aria-label={rotating ? "Auto rotate: Pause" : "Auto rotate"}
               aria-pressed={rotating}
               disabled={!ready}
               onClick={() => {
@@ -237,7 +237,7 @@ export default function Plate3D({
           <div className={styles.settings}>
             <button
               type="button"
-              aria-label="Studio lighting"
+              aria-label={`${lighting === "daylight" ? "Daylight" : "Studio light"}: Studio lighting`}
               aria-pressed={lighting === "studio"}
               disabled={!ready}
               onClick={() => {
@@ -252,7 +252,7 @@ export default function Plate3D({
             {model.dimensions.length > 0 && (
               <button
                 type="button"
-                aria-label="Show catalog dimensions"
+                aria-label="Size: Show catalog dimensions"
                 aria-pressed={measuring}
                 disabled={!ready}
                 onClick={() => {
@@ -265,7 +265,7 @@ export default function Plate3D({
             )}
             <button
               type="button"
-              aria-label="Show source photograph"
+              aria-label="Photo: Show source photograph"
               aria-pressed={showPhoto}
               onClick={() => setShowPhoto((value) => !value)}
             >

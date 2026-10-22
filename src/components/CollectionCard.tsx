@@ -67,13 +67,16 @@ export default function CollectionCard({
   const preview = piece ? completedPreviews[piece.id] : undefined;
   const completion =
     preview?.sourceImage === piece?.image ? preview : undefined;
-  const photo = completion?.image || piece?.image || collection.heroImage;
+  const thumbnail = /^\/catalog\/[^/]+\.webp$/.test(collection.heroImage)
+    ? collection.heroImage.replace("/catalog/", "/catalog-thumbnails/")
+    : collection.heroImage;
+  const photo = completion?.image || piece?.image || thumbnail;
   return (
     <article className="collection-card">
       <button
         className={`collection-photo${piece ? " collection-photo-product" : ""}`}
         onClick={() => onSelect?.(collection)}
-        aria-label={`Explore ${collection.name}`}
+        aria-label={`Explore ${collection.name}: ${piece?.material || collection.material}`}
       >
         <Image
           src={photo}
@@ -153,7 +156,7 @@ export default function CollectionCard({
           </button>
           <Link
             href={`/studio?collection=${encodeURIComponent(collection.id)}${piece ? `&item=${encodeURIComponent(piece.id)}` : ""}`}
-            aria-label={`Preview ${collection.name} on your table`}
+            aria-label={`Try on your table: ${collection.name}`}
           >
             Try on your table
           </Link>

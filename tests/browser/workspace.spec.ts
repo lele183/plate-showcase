@@ -168,6 +168,60 @@ test("saved studio scenes reopen with the same surface and placement", async ({
   await page.reload();
   await expect(page.getByLabel("Rotation", { exact: true })).toHaveValue("0");
 });
+for (const delayed of ["saved scene", "collection"] as const) {
+  test(`late ${delayed} restoration preserves a newer placement reset`, async ({
+    page,
+  }) => {
+    const { state, json } = await workspace(page);
+    state.scenes.push({
+      id: upload,
+      name: "Saved Mars",
+      data: {
+        collectionId: "mars",
+        itemId: "mars:MR-710",
+        tabletop: "dark",
+        food: "salmon",
+        scale: 1,
+        rotation: 45,
+        x: 0,
+        y: 0,
+      },
+    });
+    let release!: () => void;
+    let requested!: () => void;
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    const started = new Promise<void>((resolve) => {
+      requested = resolve;
+    });
+    if (delayed === "saved scene") {
+      await page.route("**/api/scenes", async (route) => {
+        requested();
+        await gate;
+        await json(route, { scenes: state.scenes });
+      });
+    } else {
+      await page.route("**/api/catalog?collection=mars", async (route) => {
+        requested();
+        await gate;
+        await route.continue();
+      });
+    }
+    await page.goto(
+      `/studio?scene=${upload}&layout=1&collection=mars&item=mars%3AMR-710&rotation=45`,
+    );
+    await started;
+    await page
+      .getByRole("button", { name: "Reset placement", exact: true })
+      .click();
+    await expect(page.getByLabel("Rotation", { exact: true })).toHaveValue("0");
+    release();
+    await page.waitForLoadState("networkidle");
+    await expect(page.getByLabel("Rotation", { exact: true })).toHaveValue("0");
+    await expect(page).not.toHaveURL(/rotation=45/);
+  });
+}
 test("import corrections and activation require a source review", async ({
   page,
 }) => {

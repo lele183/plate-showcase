@@ -65,9 +65,7 @@ test("auth and collection popups stay centered on wide and small screens", async
     await expectCentered(auth);
     await page.keyboard.press("Escape");
     await expect(auth).not.toBeVisible();
-    await page
-      .getByRole("button", { name: "Explore ABCO", exact: true })
-      .click();
+    await page.getByRole("button", { name: /^Explore ABCO:/ }).click();
     const collection = page.getByRole("dialog", { name: "ABCO", exact: true });
     await expect(
       collection.locator(".item-grid article").first(),

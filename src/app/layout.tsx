@@ -3,6 +3,7 @@ import { DM_Sans, Cormorant_Garamond } from "next/font/google";
 import AuthProvider from "@/components/AuthProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { siteUrl } from "@/lib/site-url";
 import "./globals.css";
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -11,9 +12,7 @@ const display = Cormorant_Garamond({
 });
 const body = DM_Sans({ subsets: ["latin"], variable: "--font-body" });
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://plate-showcase.vercel.app",
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Yanco — A table that feels like you",
     template: "%s | Yanco Dinnerware",

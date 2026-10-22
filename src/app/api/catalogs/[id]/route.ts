@@ -1,6 +1,12 @@
 import { z } from "zod";
 import sharp from "sharp";
-import { requireUser, apiError, ApiError, sameOrigin } from "@/lib/api";
+import {
+  requireUser,
+  apiError,
+  ApiError,
+  sameOrigin,
+  readJson,
+} from "@/lib/api";
 import { adminSupabase } from "@/lib/supabase/server";
 export async function GET(
   request: Request,
@@ -77,7 +83,7 @@ export async function PATCH(
       .eq("owner_id", user.id)
       .single();
     if (!catalog) throw new ApiError("Catalog not found.", 404);
-    const body = await request.json();
+    const body = await readJson(request);
     if (body.action === "activate") {
       if (body.reviewConfirmed !== true)
         throw new ApiError("Confirm you have reviewed the imported records.");

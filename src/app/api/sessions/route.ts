@@ -1,6 +1,12 @@
 import { z } from "zod";
 import { emptyBrief } from "@/lib/types";
-import { requireUser, apiError, ApiError, sameOrigin } from "@/lib/api";
+import {
+  requireUser,
+  apiError,
+  ApiError,
+  sameOrigin,
+  readJson,
+} from "@/lib/api";
 export async function GET() {
   try {
     const { client } = await requireUser();
@@ -33,7 +39,7 @@ export async function POST(request: Request) {
           ),
         ),
       })
-      .safeParse(await request.json());
+      .safeParse(await readJson(request));
     if (!body.success)
       throw new ApiError("Please check your selection details.");
     const { data, error } = await client

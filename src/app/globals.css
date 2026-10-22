@@ -52,7 +52,7 @@
   --ivory: #f8f7f3;
   --paper: #fff;
   --ink: #283832;
-  --muted: #747c76;
+  --muted: #606c60;
   --blue: #163f57;
   --blue-light: #eef2f3;
   --line: #dedfd6;
@@ -386,7 +386,7 @@ svg {
 }
 .hero-copy > p {
   font-size: 13px;
-  color: #6d766d;
+  color: var(--muted);
   line-height: 1.95;
   margin-bottom: 30px;
 }
@@ -554,7 +554,7 @@ svg {
   font-size: 9px;
   display: block;
   font-weight: 400;
-  color: #9a9e93;
+  color: var(--muted);
   letter-spacing: 1px;
   margin-bottom: 12px;
 }
@@ -593,7 +593,7 @@ svg {
   font-size: 9px;
 }
 .example-prompts > span {
-  color: #989f95;
+  color: var(--muted);
   margin-right: 3px;
 }
 .example-prompts button {
@@ -602,7 +602,7 @@ svg {
   border-radius: 20px;
   padding: 6px 9px;
   background: #f9faf6;
-  color: #777f72;
+  color: var(--muted);
 }
 .example-prompts button:hover {
   background: #edf1e5;
@@ -639,7 +639,7 @@ svg {
   flex-direction: column;
   gap: 12px;
   align-self: center;
-  color: #7a8375;
+  color: var(--muted);
   font-size: 11px;
 }
 .menu-upload-link a {
@@ -659,7 +659,7 @@ svg {
 }
 .checklist legend {
   font-size: 10px;
-  color: #858f7d;
+  color: var(--muted);
   margin-bottom: 14px;
 }
 .checklist label {
@@ -687,7 +687,7 @@ svg {
 }
 .group-title > span {
   font-size: 8px;
-  color: #8b9683;
+  color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -697,7 +697,7 @@ svg {
 }
 .group-title small {
   font-size: 9px;
-  color: #949b8f;
+  color: var(--muted);
 }
 .collection-grid {
   display: grid;
@@ -794,7 +794,7 @@ svg {
   font-size: 7px;
   display: block;
   letter-spacing: 0;
-  color: #959e8d;
+  color: var(--muted);
 }
 .card-meta {
   display: flex;
@@ -803,7 +803,7 @@ svg {
   gap: 10px;
   margin: 7px 0 15px;
   font-size: 9px;
-  color: #929a8b;
+  color: var(--muted);
 }
 .color-dots {
   display: flex;
@@ -817,7 +817,7 @@ svg {
 }
 .card-body > p {
   font-size: 11px;
-  color: #7a8476;
+  color: var(--muted);
   min-height: 42px;
   line-height: 1.7;
 }
@@ -827,7 +827,7 @@ svg {
   align-items: center;
   margin-top: 12px;
   font-size: 9px;
-  color: #6d8265;
+  color: var(--muted);
 }
 .card-body > .featured-piece {
   min-height: 0;
@@ -859,7 +859,7 @@ svg {
   color: var(--blue);
 }
 .card-actions a {
-  color: #788a72;
+  color: var(--muted);
   font-size: 8px;
 }
 .interpreted {
@@ -871,7 +871,7 @@ svg {
 }
 .interpreted > span {
   font-size: 10px;
-  color: #8e9686;
+  color: var(--muted);
 }
 .interpreted button {
   display: flex;
@@ -903,7 +903,7 @@ svg {
 }
 .feedback-form p {
   font-size: 10px;
-  color: #809176;
+  color: var(--muted);
 }
 .feedback-form > input {
   flex: 1;
@@ -960,7 +960,7 @@ svg {
   color: var(--blue);
 }
 .footer-main p {
-  color: #7c8874;
+  color: var(--muted);
   font-size: 12px;
   margin: 13px 0;
 }
@@ -972,7 +972,7 @@ svg {
 }
 .footer-main .eyebrow {
   font-size: 8px;
-  color: #8f9887;
+  color: var(--muted);
   margin-bottom: 5px;
 }
 .footer-main a {
@@ -988,7 +988,7 @@ svg {
   border-top: 1px solid #d9decf;
   padding-top: 19px;
   font-size: 9px;
-  color: #8f9886;
+  color: var(--muted);
 }
 dialog {
   margin: auto;
@@ -1093,7 +1093,7 @@ dialog::backdrop {
 }
 .detail-intro p {
   font-size: 13px;
-  color: #74836d;
+  color: var(--muted);
   max-width: 520px;
 }
 .detail-specs {
@@ -1102,7 +1102,7 @@ dialog::backdrop {
   align-items: center;
   margin-top: 15px;
   font-size: 10px;
-  color: #8a9583;
+  color: var(--muted);
   text-transform: capitalize;
 }
 .compact {
@@ -1117,7 +1117,7 @@ dialog::backdrop {
   gap: 5px;
   align-items: center;
   font-size: 11px;
-  color: #87947e;
+  color: var(--muted);
 }
 .item-search {
   margin-bottom: 20px;
@@ -1148,12 +1148,12 @@ dialog::backdrop {
 .sku {
   font-family: monospace;
   font-size: 10px;
-  color: #809172;
+  color: var(--muted);
 }
 .item-grid p {
   font-size: 9px;
   line-height: 1.8;
-  color: #8a9580;
+  color: var(--muted);
   margin-top: 7px;
 }
 .item-grid article > a {
@@ -1161,7 +1161,7 @@ dialog::backdrop {
   gap: 3px;
   align-items: center;
   font-size: 8px;
-  color: #768c67;
+  color: var(--muted);
   margin-top: 12px;
 }
 .item-grid .piece-formats {
@@ -1252,7 +1252,7 @@ dialog::backdrop {
 }
 .catalog-count {
   font-size: 10px;
-  color: #8e9983;
+  color: var(--muted);
   margin-bottom: 22px;
 }
 .empty-state {
@@ -1430,7 +1430,7 @@ dialog::backdrop {
   gap: 20px;
   padding-top: 16px;
   font-size: 10px;
-  color: #817b6d;
+  color: #625c50;
 }
 .scene-caption strong {
   font-weight: 500;
@@ -1453,7 +1453,7 @@ dialog::backdrop {
   display: block;
   font-size: 10px;
   letter-spacing: 0.2px;
-  color: #6f7d66;
+  color: var(--muted);
   margin-bottom: 10px;
 }
 .control-group select {
@@ -1503,7 +1503,7 @@ dialog::backdrop {
 }
 .slider-control label {
   font-size: 10px;
-  color: #8a9680;
+  color: var(--muted);
   min-width: 55px;
 }
 .slider-control input {
@@ -1559,7 +1559,7 @@ dialog::backdrop {
   width: 100%;
   text-align: center;
   font-size: 10px;
-  color: #7b8970;
+  color: var(--muted);
 }
 .studio-controls hr {
   border: 0;
@@ -1568,7 +1568,7 @@ dialog::backdrop {
 }
 .small-note {
   font-size: 9px;
-  color: #8b9581;
+  color: var(--muted);
   line-height: 1.7;
   margin: 12px 0;
 }
@@ -1623,7 +1623,7 @@ dialog::backdrop {
 }
 .upload-zone small {
   font-size: 9px;
-  color: #8d9c80;
+  color: var(--muted);
 }
 .job-list {
   display: grid;
@@ -1644,7 +1644,7 @@ dialog::backdrop {
 }
 .job-row p {
   font-size: 10px;
-  color: #7c8c6f;
+  color: var(--muted);
 }
 .job-row progress {
   width: 100%;

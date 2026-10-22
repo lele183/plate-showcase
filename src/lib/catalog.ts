@@ -2,11 +2,13 @@ import "server-only";
 import seed from "@/data/catalog.json";
 import type { CatalogItem, Collection } from "./types";
 import { serverSupabase } from "./supabase/server";
+import { supabaseConfigured } from "./supabase/config";
 
 export const collections = seed.collections as Collection[];
 export const items = seed.items as CatalogItem[];
 export const catalogId = "00000000-0000-4000-8000-000000002026";
 export async function availableCatalog() {
+  if (!supabaseConfigured()) return { collections, items };
   const supabase = await serverSupabase();
   const {
     data: { user },
