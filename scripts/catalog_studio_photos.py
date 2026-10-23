@@ -11,11 +11,12 @@ import json
 import re
 import time
 from pathlib import Path
+import numpy as np
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
-from PIL import Image, ImageCms, ImageOps
-from catalog_studio_images import cutout
+from PIL import Image, ImageCms, ImageDraw, ImageOps
+from catalog_studio_images import cutout, refine_edges
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'resources/studio-photo-sources.json'
@@ -42,16 +43,75 @@ def public_bytes(url):
     return data
 
 
-def prepare_photo(image):
+def glass_cutout(image):
+    """Keep glass highlights connected to the white photographic backdrop.
+
+    Use observed outer edges for the convex cup and base, while keeping the
+    normal cutout around a narrow stem. Source RGB remains unchanged.
+    """
+    from scipy import ndimage
+    from scipy.spatial import ConvexHull
+
+    foreground = np.asarray(image.convert('RGB')).min(axis=2) < 235
+    labels, count = ndimage.label(foreground)
+    if not count:
+        raise ValueError('Glass photograph has no visible boundary')
+    sizes = np.bincount(labels.ravel())
+    sizes[0] = 0
+    foreground = sizes[labels] >= max(8, sizes.max() * .00005)
+    rows = foreground.any(axis=1)
+    ys = np.flatnonzero(rows)
+    xs = np.flatnonzero(foreground.any(axis=0))
+    left = foreground.argmax(axis=1)
+    right = image.width - 1 - foreground[:, ::-1].argmax(axis=1)
+    widths = right - left + 1
+    center = (xs[0] + xs[-1]) / 2
+    narrow = (
+        rows & (widths < widths.max() * .18)
+        & (np.abs((left + right) / 2 - center) < widths.max() * .14)
+    )
+    narrow = ndimage.binary_closing(narrow, structure=np.ones(9))
+    labels, count = ndimage.label(narrow)
+    sizes = np.bincount(labels)
+    sizes[0] = 0
+    stem = np.flatnonzero(labels == sizes.argmax()) if count else []
+    ranges = [(ys[0], ys[-1] + 1)]
+    mask = Image.new('L', image.size)
+    if len(stem) > len(ys) * .08:
+        mask = cutout(image).getchannel('A')
+        ranges = [(ys[0], stem[0] + 4), (stem[-1] - 3, ys[-1] + 1)]
+    draw = ImageDraw.Draw(mask)
+    for start, end in ranges:
+        y, x = np.nonzero(foreground[start:end])
+        points = np.column_stack((x, y + start))
+        if len(points) >= 3:
+            hull = ConvexHull(points)
+            draw.polygon([tuple(point) for point in points[hull.vertices]], fill=255)
+    result = image.convert('RGBA')
+    result.putalpha(mask)
+    return refine_edges(result)
+
+
+def prepare_photo(image, treatment=None):
     image = ImageOps.exif_transpose(image)
+    alpha = image.convert('RGBA').getchannel('A') if (
+        'A' in image.getbands() or 'transparency' in image.info
+    ) else None
+    transparent = alpha is not None and alpha.getextrema()[0] < 255
     if image.info.get('icc_profile'):
         profile = ImageCms.ImageCmsProfile(io.BytesIO(image.info['icc_profile']))
         image = ImageCms.profileToProfile(
             image.convert('RGB'), profile, ImageCms.createProfile('sRGB'), outputMode='RGB'
         )
-    image = image.convert('RGB')
+    if transparent:
+        image = image.convert('RGBA')
+        image.putalpha(alpha)
+    else:
+        image = image.convert('RGB')
     image.thumbnail((2200, 2200), Image.Resampling.LANCZOS)
-    prepared = cutout(image)
+    prepared = glass_cutout(image) if (
+        treatment == 'glass-highlights-v1' and not transparent
+    ) else cutout(image)
     bounds = prepared.getchannel('A').getbbox()
     if not bounds:
         raise ValueError('Official photo contains no usable dinnerware silhouette')
@@ -152,7 +212,7 @@ def refresh(fetch=False, collections=None):
         else:
             with Image.open(io.BytesIO(original)) as image:
                 source_size = list(image.size)
-                prepared = prepare_photo(image)
+                prepared = prepare_photo(image, entry.get('photoTreatment'))
             # Never disguise a small source as a high-resolution replacement.
             bounds = prepared.getchannel('A').getbbox()
             if max(bounds[2] - bounds[0], bounds[3] - bounds[1]) < 1000:

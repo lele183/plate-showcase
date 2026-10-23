@@ -155,3 +155,51 @@ test("LE-711 loads its detailed SKU photograph and exports the same scene", asyn
   ).toBe(true);
   expect(externalImages).toEqual([]);
 });
+
+for (const id of [
+  "glory:GL-309",
+  "lyon:LY-307YL",
+  "birmingham:BM-107GR",
+  "milestone:MS-106IV",
+  "honda:HO-2406",
+  "legna:LE-012",
+  "aqua-spirits:AS-001",
+  "houston:HS-9018",
+]) {
+  test(`${id} uses its official detailed photograph in the tabletop and download`, async ({
+    page,
+  }) => {
+    const failures: string[] = [];
+    page.on("pageerror", (error) => failures.push(error.message));
+    await page.goto(
+      `/studio?collection=${id.split(":")[0]}&item=${encodeURIComponent(id)}&layout=1&surface=dark&food=none`,
+    );
+    await snapshot(page);
+    await expect(page.getByLabel("The piece", { exact: true })).toHaveValue(id);
+    const photo = page.locator(".scene-plate img");
+    await expect(photo).toHaveAttribute(
+      "src",
+      `/catalog/studio-photo-${id.toLowerCase().replace(":", "-")}.webp`,
+    );
+    expect(
+      await photo.evaluate((image: HTMLImageElement) =>
+        Math.max(image.naturalWidth, image.naturalHeight),
+      ),
+    ).toBeGreaterThanOrEqual(id === "houston:HS-9018" ? 640 : 1000);
+    const pending = page.waitForEvent("download");
+    await page.getByRole("button", { name: "Download tabletop image" }).click();
+    const downloaded = await readFile((await (await pending).path())!);
+    const visible = Buffer.from((await snapshot(page)).split(",")[1], "base64");
+    expect(
+      (await sharp(downloaded).raw().toBuffer()).equals(
+        await sharp(visible).raw().toBuffer(),
+      ),
+    ).toBe(true);
+    expect(failures).toEqual([]);
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+  });
+}

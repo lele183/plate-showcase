@@ -9,6 +9,11 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
+try:
+    from scipy import ndimage
+except ImportError:
+    ndimage = None
+
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = 'border-white-245-inset-v4'
 
@@ -19,6 +24,9 @@ def blur_colors(values, sigma=1.2):
     kernel = np.exp(-(offsets ** 2) / (2 * sigma ** 2))
     kernel /= kernel.sum()
     for axis in [0, 1]:
+        if ndimage is not None:
+            values = ndimage.convolve1d(values, kernel, axis=axis, mode='constant')
+            continue
         padding = [(0, 0)] * values.ndim
         padding[axis] = (radius, radius)
         padded = np.pad(values, padding)
@@ -66,9 +74,12 @@ def cutout(image):
     pixels = np.asarray(image).copy()
     rgb = pixels[:, :, :3].astype('int16')
     white = (rgb.min(axis=2) >= 245) & (rgb.max(axis=2) - rgb.min(axis=2) <= 7)
-    mask = ImageOps.expand(Image.fromarray((white * 255).astype('uint8')), 1, fill=255)
-    ImageDraw.floodfill(mask, (0, 0), 128)
-    outside = np.asarray(mask)[1:-1, 1:-1] == 128
+    if ndimage is not None:
+        outside = ~ndimage.binary_fill_holes(~white)
+    else:
+        mask = ImageOps.expand(Image.fromarray((white * 255).astype('uint8')), 1, fill=255)
+        ImageDraw.floodfill(mask, (0, 0), 128)
+        outside = np.asarray(mask)[1:-1, 1:-1] == 128
     pixels[:, :, 3][outside] = 0
     # Soften only the immediate margin; never key out enclosed white dinnerware.
     edge = np.asarray(Image.fromarray((outside * 255).astype('uint8')).filter(ImageFilter.MaxFilter(3))) > 0
@@ -80,10 +91,14 @@ def cutout(image):
     if foreground.any():
         ys, xs = np.nonzero(foreground)
         index = np.argmin((xs - image.width / 2) ** 2 + (ys - image.height / 2) ** 2)
-        # fromarray can share a read-only buffer; floodfill needs a writable copy.
-        component = Image.fromarray((foreground * 255).astype('uint8')).copy()
-        ImageDraw.floodfill(component, (int(xs[index]), int(ys[index])), 128)
-        connected = np.asarray(component) == 128
+        if ndimage is not None:
+            labels, _ = ndimage.label(foreground)
+            connected = labels == labels[int(ys[index]), int(xs[index])]
+        else:
+            # fromarray can share a read-only buffer; floodfill needs a writable copy.
+            component = Image.fromarray((foreground * 255).astype('uint8')).copy()
+            ImageDraw.floodfill(component, (int(xs[index]), int(ys[index])), 128)
+            connected = np.asarray(component) == 128
         if connected.sum() >= foreground.sum() * .85:
             pixels[:, :, 3][~connected] = 0
     return refine_edges(Image.fromarray(pixels))

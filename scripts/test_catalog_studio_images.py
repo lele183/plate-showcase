@@ -6,6 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 import numpy as np
 from PIL import Image, ImageDraw
+import catalog_studio_images
 from catalog_studio_images import apply_studio_images, cutout, refine_edges
 
 
@@ -44,6 +45,25 @@ class StudioEdgesTest(unittest.TestCase):
         result = np.asarray(cutout(image))
         self.assertEqual(result[60, 113, 3], 0)
         self.assertEqual(tuple(result[45, 60]), (50, 80, 120, 255))
+
+    @unittest.skipIf(catalog_studio_images.ndimage is None, 'SciPy is optional')
+    def test_acceleration_preserves_glaze_holes_handles_and_detached_components(self):
+        image = Image.new('RGB', (150, 120), 'white')
+        draw = ImageDraw.Draw(image)
+        draw.polygon([(20, 20), (95, 12), (118, 82), (42, 105)],
+                     fill=(55, 86, 115))
+        draw.ellipse((35, 30, 87, 78), fill=(252, 252, 252))
+        draw.ellipse((90, 28, 135, 72), outline=(55, 86, 115), width=7)
+        draw.rectangle((4, 85, 8, 100), fill=(160, 160, 160))
+        accelerated = np.asarray(cutout(image))
+        with patch('catalog_studio_images.ndimage', None):
+            fallback = np.asarray(cutout(image))
+        np.testing.assert_array_equal(accelerated[:, :, 3], fallback[:, :, 3])
+        self.assertLessEqual(
+            np.abs(accelerated[:, :, :3].astype('int16') -
+                   fallback[:, :, :3].astype('int16')).max(), 1
+        )
+        self.assertEqual(tuple(accelerated[50, 60]), (252, 252, 252, 255))
 
     def test_catalog_refresh_retains_official_sku_photo(self):
         with tempfile.TemporaryDirectory() as temporary:

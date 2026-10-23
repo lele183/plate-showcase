@@ -1,0 +1,694 @@
+{
+  "officialInventoryCount": 2978,
+  "matchedCatalogRecords": 3011,
+  "preparedCatalogRecords": 3000,
+  "unavailable": [
+    {
+      "itemId": "black-and-red:CR-0002",
+      "sku": "CR-0002",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 384,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/CR-0002.jpg"
+    },
+    {
+      "itemId": "black-and-red:CR-1028",
+      "sku": "CR-1028",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 345,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/CR-1028.jpg"
+    },
+    {
+      "itemId": "black-and-red:CR-130",
+      "sku": "CR-130",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 381,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/CR-130.jpg"
+    },
+    {
+      "itemId": "black-and-red:CR-3006",
+      "sku": "CR-3006",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 369,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/CR-3006.jpg"
+    },
+    {
+      "itemId": "black-and-red:CR-7002",
+      "sku": "CR-7002",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 400,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/CR-7002.jpg"
+    },
+    {
+      "itemId": "catering:CAT-1016G",
+      "sku": "CAT-1016G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "catering:CAT-2024G",
+      "sku": "CAT-2024G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "catering:CAT-7010B",
+      "sku": "CAT-7010B",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "catering:CAT-7010IV",
+      "sku": "CAT-7010IV",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "compartment:NC-510I",
+      "sku": "NC-510I",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 458,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/NC-510I.jpg"
+    },
+    {
+      "itemId": "compartment:NC-512I",
+      "sku": "NC-512I",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 454,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/NC-512I.jpg"
+    },
+    {
+      "itemId": "fuji:FU-508",
+      "sku": "FU-508",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 281,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/FU-508.jpg"
+    },
+    {
+      "itemId": "longevity:LG-1003",
+      "sku": "LG-1003",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1006",
+      "sku": "LG-1006",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1007",
+      "sku": "LG-1007",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1008",
+      "sku": "LG-1008",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1009",
+      "sku": "LG-1009",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1010",
+      "sku": "LG-1010",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1012",
+      "sku": "LG-1012",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1014",
+      "sku": "LG-1014",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1016",
+      "sku": "LG-1016",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1028",
+      "sku": "LG-1028",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1101",
+      "sku": "LG-1101",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-1102",
+      "sku": "LG-1102",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-2008",
+      "sku": "LG-2008",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-2009",
+      "sku": "LG-2009",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-2010",
+      "sku": "LG-2010",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-2012",
+      "sku": "LG-2012",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-2014",
+      "sku": "LG-2014",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-2016",
+      "sku": "LG-2016",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-3004",
+      "sku": "LG-3004",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-3006",
+      "sku": "LG-3006",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-3008A",
+      "sku": "LG-3008A",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5060",
+      "sku": "LG-5060",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5070",
+      "sku": "LG-5070",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5075",
+      "sku": "LG-5075",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5085",
+      "sku": "LG-5085",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5206",
+      "sku": "LG-5206",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5207",
+      "sku": "LG-5207",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-5208",
+      "sku": "LG-5208",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-7005",
+      "sku": "LG-7005",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:LG-9152",
+      "sku": "LG-9152",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:NS-7003",
+      "sku": "NS-7003",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "longevity:NS-7008",
+      "sku": "NS-7008",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "miami:MM-17",
+      "sku": "MM-17",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 591,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MM-17.jpg"
+    },
+    {
+      "itemId": "nessico:NS-209G",
+      "sku": "NS-209G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-211G",
+      "sku": "NS-211G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-215G",
+      "sku": "NS-215G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-215Y",
+      "sku": "NS-215Y",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-803G",
+      "sku": "NS-803G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-803Y",
+      "sku": "NS-803Y",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-9019G",
+      "sku": "NS-9019G",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-9019T",
+      "sku": "NS-9019T",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-9019W",
+      "sku": "NS-9019W",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "nessico:NS-9019Y",
+      "sku": "NS-9019Y",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "orchis:OR-1704",
+      "sku": "OR-1704",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "orchis:OR-3705",
+      "sku": "OR-3705",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1003",
+      "sku": "PO-1003",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1006",
+      "sku": "PO-1006",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1007",
+      "sku": "PO-1007",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1008",
+      "sku": "PO-1008",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1009",
+      "sku": "PO-1009",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1010",
+      "sku": "PO-1010",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1012",
+      "sku": "PO-1012",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1014",
+      "sku": "PO-1014",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1016",
+      "sku": "PO-1016",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1028",
+      "sku": "PO-1028",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1101",
+      "sku": "PO-1101",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-1102",
+      "sku": "PO-1102",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-2008",
+      "sku": "PO-2008",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-2009",
+      "sku": "PO-2009",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-2010",
+      "sku": "PO-2010",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-2012",
+      "sku": "PO-2012",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-2014",
+      "sku": "PO-2014",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-2016",
+      "sku": "PO-2016",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-3004",
+      "sku": "PO-3004",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-3006",
+      "sku": "PO-3006",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-3008A",
+      "sku": "PO-3008A",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5060",
+      "sku": "PO-5060",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5070",
+      "sku": "PO-5070",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5075",
+      "sku": "PO-5075",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5085",
+      "sku": "PO-5085",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5206",
+      "sku": "PO-5206",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5207",
+      "sku": "PO-5207",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-5208",
+      "sku": "PO-5208",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-7003",
+      "sku": "PO-7003",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-7005",
+      "sku": "PO-7005",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-7008",
+      "sku": "PO-7008",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "peony:PO-9152",
+      "sku": "PO-9152",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-001",
+      "sku": "PL-001",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-002",
+      "sku": "PL-002",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-106",
+      "sku": "PL-106",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-108",
+      "sku": "PL-108",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-110",
+      "sku": "PL-110",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-112",
+      "sku": "PL-112",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-208",
+      "sku": "PL-208",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-210",
+      "sku": "PL-210",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-212",
+      "sku": "PL-212",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-214",
+      "sku": "PL-214",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-407",
+      "sku": "PL-407",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-408",
+      "sku": "PL-408",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "prideland:PL-410",
+      "sku": "PL-410",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:RM-406",
+      "sku": "RM-406",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-101BK",
+      "sku": "ST-101BK",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-101WT",
+      "sku": "ST-101WT",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-102BK",
+      "sku": "ST-102BK",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-102WT",
+      "sku": "ST-102WT",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-103BK",
+      "sku": "ST-103BK",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-103WT",
+      "sku": "ST-103WT",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-112BK",
+      "sku": "ST-112BK",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "rome:ST-112WT",
+      "sku": "ST-112WT",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "stemware:SM-01-S",
+      "sku": "SM-01-S",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 528,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/SM-01-S.jpg"
+    },
+    {
+      "itemId": "urban-line:UR-001",
+      "sku": "UR-001",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-002",
+      "sku": "UR-002",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-106",
+      "sku": "UR-106",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-107",
+      "sku": "UR-107",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-109",
+      "sku": "UR-109",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-110",
+      "sku": "UR-110",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-112",
+      "sku": "UR-112",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-210",
+      "sku": "UR-210",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-212",
+      "sku": "UR-212",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-214",
+      "sku": "UR-214",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-309",
+      "sku": "UR-309",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-311",
+      "sku": "UR-311",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-406",
+      "sku": "UR-406",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-504",
+      "sku": "UR-504",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-506",
+      "sku": "UR-506",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-612",
+      "sku": "UR-612",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-PC",
+      "sku": "UR-PC",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-PS",
+      "sku": "UR-PS",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "urban-line:UR-SS",
+      "sku": "UR-SS",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "woodland:WL-503",
+      "sku": "WL-503",
+      "reason": "No verified SKU with a photograph in the official public inventory."
+    },
+    {
+      "itemId": "yofo:YO-5005",
+      "sku": "YO-5005",
+      "reason": "Official photograph has insufficient native subject detail.",
+      "nativeSubjectPixels": 572,
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/YO-5005.jpg"
+    }
+  ]
+}

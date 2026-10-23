@@ -1,0 +1,25 @@
+{
+  "method": "Explicit associations reviewed against catalog photographs, color, form, and capacity. Catalog SKUs and specifications remain unchanged.",
+  "aliases": {
+    "mayor:MA-001": {
+      "officialSku": "MA-1",
+      "note": "The official site omits the zero padding for the same Mayor white 7 oz low cup."
+    },
+    "mayor:MA-002": {
+      "officialSku": "MA-2",
+      "note": "The official site omits the zero padding for the same Mayor white 6 inch saucer."
+    },
+    "milestone:NC-536YL": {
+      "officialSku": "NC-536YW",
+      "note": "The catalog's yellow suffix YL is YW on the official site; the same yellow 2 oz smooth ramekin is pictured."
+    },
+    "milestone:NC-538YL": {
+      "officialSku": "NC-538YW",
+      "note": "The catalog's yellow suffix YL is YW on the official site; the same yellow 4 oz smooth ramekin is pictured."
+    },
+    "catering:CAT-1015W": {
+      "officialSku": "CAT-1015",
+      "note": "The official white 15.5 inch Catering round plate omits the catalog's W suffix."
+    }
+  }
+}
