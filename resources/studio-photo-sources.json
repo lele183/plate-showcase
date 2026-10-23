@@ -1,0 +1,2602 @@
+{
+  "version": "official-photo-cutout-v1",
+  "method": "Official SKU-matched product photography; background removal and downsampling only. No AI or upscaling.",
+  "images": [
+    {
+      "itemId": "iris-blue:IB-106",
+      "sku": "IB-106",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-106-iris-blue-6-1-8-x-1-2-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-106-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-106.webp",
+      "sourceSize": [
+        2560,
+        2529
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "5537792800e4c3d8dffa69fa8d8cadebf33193e7cf7ad5ebc004521faaf608d2",
+      "sourceSha256": "d92eace57184c033ae374fd9fedd8ab0f0bde52978b9c503189f2e4c065ab201",
+      "outputSha256": "e222471406c75d5a10f4b8d9cb149328a133f693181f690bf901743f3bc94189",
+      "outputSize": [
+        1400,
+        1393
+      ],
+      "outputBytes": 125056,
+      "catalogImage": "/catalog/verified-iris-blue-6-round.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-107",
+      "sku": "IB-107",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-107-iris-blue-7-1-8-x-3-4-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-107-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-107.webp",
+      "sourceSize": [
+        2560,
+        2529
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "5537792800e4c3d8dffa69fa8d8cadebf33193e7cf7ad5ebc004521faaf608d2",
+      "sourceSha256": "d92eace57184c033ae374fd9fedd8ab0f0bde52978b9c503189f2e4c065ab201",
+      "outputSha256": "e222471406c75d5a10f4b8d9cb149328a133f693181f690bf901743f3bc94189",
+      "outputSize": [
+        1400,
+        1393
+      ],
+      "outputBytes": 125056,
+      "catalogImage": "/catalog/verified-iris-blue-6-round.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-109",
+      "sku": "IB-109",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-109-iris-blue-9-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-109-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-109.webp",
+      "sourceSize": [
+        2560,
+        2419
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "8e896240d7da876713e69e5128cf556ba76aa53248a6036984bd6981978161a7",
+      "sourceSha256": "70bcb605a4310e423dc7a56b5591ec37b9f0d50985bc6526ded7d498a6551a53",
+      "outputSha256": "de95dbae6612c308c6c592f45ad1b52a13d2df71b389ae355d2e799f175927db",
+      "outputSize": [
+        1400,
+        1399
+      ],
+      "outputBytes": 167218,
+      "catalogImage": "/catalog/verified-iris-blue-6-round.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-110",
+      "sku": "IB-110",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-110-iris-blue-10-1-4-x-1-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-110-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-110.webp",
+      "sourceSize": [
+        2560,
+        2419
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "8e896240d7da876713e69e5128cf556ba76aa53248a6036984bd6981978161a7",
+      "sourceSha256": "70bcb605a4310e423dc7a56b5591ec37b9f0d50985bc6526ded7d498a6551a53",
+      "outputSha256": "de95dbae6612c308c6c592f45ad1b52a13d2df71b389ae355d2e799f175927db",
+      "outputSize": [
+        1400,
+        1399
+      ],
+      "outputBytes": 167218,
+      "catalogImage": "/catalog/verified-iris-blue-6-round.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-111",
+      "sku": "IB-111",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-111-iris-blue-11-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-111-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-111.webp",
+      "sourceSize": [
+        2560,
+        2419
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "8e896240d7da876713e69e5128cf556ba76aa53248a6036984bd6981978161a7",
+      "sourceSha256": "70bcb605a4310e423dc7a56b5591ec37b9f0d50985bc6526ded7d498a6551a53",
+      "outputSha256": "de95dbae6612c308c6c592f45ad1b52a13d2df71b389ae355d2e799f175927db",
+      "outputSize": [
+        1400,
+        1399
+      ],
+      "outputBytes": 167218,
+      "catalogImage": "/catalog/verified-iris-blue-6-round.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-213",
+      "sku": "IB-213",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-213-iris-blue-12-7-8-x-7-x-1-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-213-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-213.webp",
+      "sourceSize": [
+        2560,
+        1612
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "b4b9cea1960fcfc709d92423047385e906cc5e8d690615423d0b9f57c7f1b45d",
+      "sourceSha256": "342f7f92d515db2e9c841902dc3ef6bcdc67c442942d1f37dd3dcb5abdf8cb7e",
+      "outputSha256": "1c185e067b282988e6bbe594657a61c8284f544be7ab8cc1f38ccff2d977e8c6",
+      "outputSize": [
+        1400,
+        771
+      ],
+      "outputBytes": 143984,
+      "catalogImage": "/catalog/verified-iris-blue-7-oval-small.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-214",
+      "sku": "IB-214",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-214-iris-blue-13-5-8-x-7-7-8-x-7-8-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-214-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-214.webp",
+      "sourceSize": [
+        2560,
+        1901
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "abb432a6086ba4e39f6565c43d22d598425fc313961e3d536f76778d0fa53a49",
+      "sourceSha256": "7b00440327fe93b949841d56a623524171c690e8386679567768c3d7aa9cbbd7",
+      "outputSha256": "ce9e01cb43e35bafa5b8eaeb0950b71ffed5172ed9c924b9a4e1dfa7acfa8903",
+      "outputSize": [
+        1400,
+        815
+      ],
+      "outputBytes": 174212,
+      "catalogImage": "/catalog/verified-iris-blue-7-oval-large.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-215",
+      "sku": "IB-215",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-215-iris-blue-15-1-2-x-9-x-1-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-215-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-215.webp",
+      "sourceSize": [
+        2560,
+        1901
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "abb432a6086ba4e39f6565c43d22d598425fc313961e3d536f76778d0fa53a49",
+      "sourceSha256": "7b00440327fe93b949841d56a623524171c690e8386679567768c3d7aa9cbbd7",
+      "outputSha256": "ce9e01cb43e35bafa5b8eaeb0950b71ffed5172ed9c924b9a4e1dfa7acfa8903",
+      "outputSize": [
+        1400,
+        815
+      ],
+      "outputBytes": 174212,
+      "catalogImage": "/catalog/verified-iris-blue-7-oval-large.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-303",
+      "sku": "IB-303",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-303-iris-blue-3-1-8-x-1-1-2-sauce-dish-3-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-303.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-303.webp",
+      "sourceSize": [
+        2440,
+        2096
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "f513374bb7ede9570c1e460d23b3e06ee7dbe79ffb5a7f3deeb5949eeb151c08",
+      "sourceSha256": "e0bb51e0377f01c0a122bc09ef58a93668db16bfe400faeecf6384b8dd3dd089",
+      "outputSha256": "5dc61987f092590d79cbbb64da0f0d5ba27c1648382771e8399c3542bdcf5864",
+      "outputSize": [
+        1400,
+        1085
+      ],
+      "outputBytes": 76302,
+      "catalogImage": "/catalog/verified-iris-blue-7-sauce.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-306",
+      "sku": "IB-306",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-306-iris-blue-6-3-8-x-2-1-8-salad-bowl-18-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-306-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-306.webp",
+      "sourceSize": [
+        2560,
+        1792
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "42f6f309343aebe0b9fabc09cae1cd02a1b8046176ee02527a57d4fb4fbf64e2",
+      "sourceSha256": "6a0a045f898aa88b03d59edade9e476c22a2bc44e931178be4eab1b8fd9d8972",
+      "outputSha256": "a437b2ee2199b7f8115f1ff695187342da764bbdb0aaa7241665aec7fc418b95",
+      "outputSize": [
+        1400,
+        801
+      ],
+      "outputBytes": 65308,
+      "catalogImage": "/catalog/verified-iris-blue-7-salad.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-308",
+      "sku": "IB-308",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-308-iris-blue-8-3-8-x-2-bowl-30-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-308-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-308.webp",
+      "sourceSize": [
+        2560,
+        1665
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "bd0ec4369f7f219e8e1a8ea2c43802273dbf3cb6ea4fdd941c5837933e3d069e",
+      "sourceSha256": "26c37115c6d8e2e7592533024b3ffd1a2f1a259b28212f2b1153d4b9122e4329",
+      "outputSha256": "b144ce3c1194dc0d530a6241c0b6943bb0e12ae7f4017594cd002491f229ebcb",
+      "outputSize": [
+        1400,
+        754
+      ],
+      "outputBytes": 77070,
+      "catalogImage": "/catalog/verified-iris-blue-7-bowl.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-309",
+      "sku": "IB-309",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-309-iris-blue-9-1-4-x-2-1-4-bowl-45-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-309-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-309.webp",
+      "sourceSize": [
+        2560,
+        1665
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "bd0ec4369f7f219e8e1a8ea2c43802273dbf3cb6ea4fdd941c5837933e3d069e",
+      "sourceSha256": "26c37115c6d8e2e7592533024b3ffd1a2f1a259b28212f2b1153d4b9122e4329",
+      "outputSha256": "b144ce3c1194dc0d530a6241c0b6943bb0e12ae7f4017594cd002491f229ebcb",
+      "outputSize": [
+        1400,
+        754
+      ],
+      "outputBytes": 77070,
+      "catalogImage": "/catalog/verified-iris-blue-7-bowl.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-310",
+      "sku": "IB-310",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-310-iris-blue-10-1-4-x-2-1-2-bowl-60-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-310-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-310.webp",
+      "sourceSize": [
+        2560,
+        1665
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "bd0ec4369f7f219e8e1a8ea2c43802273dbf3cb6ea4fdd941c5837933e3d069e",
+      "sourceSha256": "26c37115c6d8e2e7592533024b3ffd1a2f1a259b28212f2b1153d4b9122e4329",
+      "outputSha256": "b144ce3c1194dc0d530a6241c0b6943bb0e12ae7f4017594cd002491f229ebcb",
+      "outputSize": [
+        1400,
+        754
+      ],
+      "outputBytes": 77070,
+      "catalogImage": "/catalog/verified-iris-blue-7-bowl.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-311",
+      "sku": "IB-311",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-311-iris-blue-11-3-4-x-7-x-1-7-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-311-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-311.webp",
+      "sourceSize": [
+        2560,
+        1409
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "b999afadbee5862e86d268732bcb6d664ee77ac4eb4b65e2bc96f88c6f6d2471",
+      "sourceSha256": "d0437b2eb120561b26ef8a09ece90fea6fa0db63bbc2efc9e22bc49fd2faeded",
+      "outputSha256": "29308d785613078e0ef3412d5fbff94c47f0687aff7ccaaf77008742ee11589f",
+      "outputSize": [
+        1400,
+        415
+      ],
+      "outputBytes": 54482,
+      "catalogImage": "/catalog/verified-iris-blue-7-deep-oval.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-313",
+      "sku": "IB-313",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-313-iris-blue-13-3-4-x-8-1-4-x-2-1-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-313-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-313.webp",
+      "sourceSize": [
+        2560,
+        1409
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "b999afadbee5862e86d268732bcb6d664ee77ac4eb4b65e2bc96f88c6f6d2471",
+      "sourceSha256": "d0437b2eb120561b26ef8a09ece90fea6fa0db63bbc2efc9e22bc49fd2faeded",
+      "outputSha256": "29308d785613078e0ef3412d5fbff94c47f0687aff7ccaaf77008742ee11589f",
+      "outputSize": [
+        1400,
+        415
+      ],
+      "outputBytes": 54482,
+      "catalogImage": "/catalog/verified-iris-blue-7-deep-oval.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-405",
+      "sku": "IB-405",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-405-iris-blue-5-x-3-1-2-x-1-rectangular-bowl-4-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-405-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-405.webp",
+      "sourceSize": [
+        2560,
+        1529
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "e50acf0945dfe3c0aa0b2132e17a97cef697e356c81bbc4f1ef31f214f76e9d1",
+      "sourceSha256": "e704f8da5e9bb81ecdeae9b00649c029df8b2fc6fad1707b4496d47a7c64b7f6",
+      "outputSha256": "c2d30c3f081aaa3b071a189152f33c1d5447d7888c3c26a4824ff1f727036ce5",
+      "outputSize": [
+        1400,
+        624
+      ],
+      "outputBytes": 65000,
+      "catalogImage": "/catalog/verified-iris-blue-7-rectangle.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-406",
+      "sku": "IB-406",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-406-iris-blue-6-x-4-3-8-x-1-1-4-rectangular-bowl-8-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-406-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-406.webp",
+      "sourceSize": [
+        2560,
+        1529
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "e50acf0945dfe3c0aa0b2132e17a97cef697e356c81bbc4f1ef31f214f76e9d1",
+      "sourceSha256": "e704f8da5e9bb81ecdeae9b00649c029df8b2fc6fad1707b4496d47a7c64b7f6",
+      "outputSha256": "c2d30c3f081aaa3b071a189152f33c1d5447d7888c3c26a4824ff1f727036ce5",
+      "outputSize": [
+        1400,
+        624
+      ],
+      "outputBytes": 65000,
+      "catalogImage": "/catalog/verified-iris-blue-7-rectangle.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-408",
+      "sku": "IB-408",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-408-iris-blue-8-5-8-x-2-soup-plate-10-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-408-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-408.webp",
+      "sourceSize": [
+        2560,
+        1609
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "928ecbe1750cdd5b568198acbdc9288ac1b0cb255a4a74336f1073161306f73c",
+      "sourceSha256": "b513145f8c12de4567aca319ac3ef0f03a6808e47a7b8a9ec88731a9e8a0ffaf",
+      "outputSha256": "6d3360125f9239d4cdc15753443810ded37df2fc314bd521dd3362906b531484",
+      "outputSize": [
+        1400,
+        657
+      ],
+      "outputBytes": 78220,
+      "catalogImage": "/catalog/verified-iris-blue-7-soup.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-409",
+      "sku": "IB-409",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-409-iris-blue-9-1-8-x-4-7-8-x-1-1-4-fish-deep-plate-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-409-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-409.webp",
+      "sourceSize": [
+        2560,
+        1416
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "13bab1ddceb0835760c724b8bb70bab62118032c015944edd6ab3b58ed992b6e",
+      "sourceSha256": "16c69f08a23c273170a74f8a9acfa796cf7f226300bb2ad8ec2b45ed37b8748c",
+      "outputSha256": "48a8763c5bdfad7bd78b30431f32f4a4c2ea0bb26b3cccab40c934fad879388e",
+      "outputSize": [
+        1400,
+        411
+      ],
+      "outputBytes": 69966,
+      "catalogImage": "/catalog/verified-iris-blue-7-fish.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-410",
+      "sku": "IB-410",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-410-iris-blue-10-1-4-x-2-1-4-soup-pasta-plate-20-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-410-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-410.webp",
+      "sourceSize": [
+        2560,
+        1782
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "d9772a75c8984a6b9c5cfd3b5fb6a53128ae46a972daa03a452cad21be0e00a2",
+      "sourceSha256": "afeb64ccf38cc0b2f17414414dadf0ea44503bc83aff53685baa7f1e72c42be5",
+      "outputSha256": "75da4ddc96aa29a1392ad07b3f1830748ba6b8859fc18b93fc948c98020b4aad",
+      "outputSize": [
+        1400,
+        642
+      ],
+      "outputBytes": 85844,
+      "catalogImage": "/catalog/verified-iris-blue-7-soup-pasta.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-411",
+      "sku": "IB-411",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-411-iris-blue-11-1-8-x-2-1-2-pasta-bowl-25-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-411-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-411.webp",
+      "sourceSize": [
+        2560,
+        1669
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "594adeab4af78585a32842f4fd420a24fdea7d7311427cde7c17b1addb9c13a1",
+      "sourceSha256": "a420c3ace0208a308ebdaa82aafd142f0c75c78603e26dc3f1e662461ec6dac2",
+      "outputSha256": "91134494a02da11b584ac535b254c51d5eed682ed9f50baa5711015d435def94",
+      "outputSize": [
+        1400,
+        637
+      ],
+      "outputBytes": 79140,
+      "catalogImage": "/catalog/verified-iris-blue-7-pasta.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-504",
+      "sku": "IB-504",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-504-iris-blue-4-1-2-x-2-1-2-rice-bowl-10-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-504-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-504.webp",
+      "sourceSize": [
+        2560,
+        2225
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "7b303acf8be6b2fcc5e0a8d92a1c0af4c6365f02b59fc99b63c5dcb30ed1b2bf",
+      "sourceSha256": "b236c5a0ef23dc51437d639283757ef615e35ac1b9e54ab2eaa01330d7424a23",
+      "outputSha256": "22f5984e406249a252cb037a8cfbbf9e9bb333785c825f7d7dc7bb1c1577a2d6",
+      "outputSize": [
+        1400,
+        1007
+      ],
+      "outputBytes": 68148,
+      "catalogImage": "/catalog/verified-iris-blue-7-rice.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-506",
+      "sku": "IB-506",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-506-iris-blue-6-1-4-x-2-1-2-cereal-bowl-22-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-506-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-506.webp",
+      "sourceSize": [
+        2560,
+        2096
+      ],
+      "version": "official-photo-cutout-v1",
+      "checksum": "04f4cdcc8ea43c8b3112774a79fb98f9fb68754ca4aac418c2af4bb0aef96946",
+      "sourceSha256": "da0bcf34aa8d51661b4d1329c489a733c65d1bdd98f8bf8b84b9a405155bab06",
+      "outputSha256": "9208a6d7549118b2a18732d1da3879cd2cca10fb7abdea367151a372fd5e9fd2",
+      "outputSize": [
+        1400,
+        914
+      ],
+      "outputBytes": 81300,
+      "catalogImage": "/catalog/verified-iris-blue-7-cereal.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-507",
+      "sku": "IB-507",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-507-iris-blue-7-1-4-x-2-shallow-bowl-25-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-507-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-507.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "57ceab0cebbe52465ea49f16095c7787ab52cdd197c0af7f816da66bbd100b00",
+      "sourceSha256": "47aa90a6f1538397ae396f81d91dc22f4488c6f91873821f9afee31df078377c",
+      "outputSha256": "d32efcd0801e81352b06368f5da12a965df0f22dba75b8b41f71379591f29ca0",
+      "sourceSize": [
+        2560,
+        1838
+      ],
+      "outputSize": [
+        1400,
+        910
+      ],
+      "outputBytes": 123372,
+      "catalogImage": "/catalog/verified-iris-blue-7-shallow.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-508",
+      "sku": "IB-508",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-508-iris-blue-8-1-2-x-2-1-8-shallow-bowl-35-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-508-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-508.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "57ceab0cebbe52465ea49f16095c7787ab52cdd197c0af7f816da66bbd100b00",
+      "sourceSha256": "47aa90a6f1538397ae396f81d91dc22f4488c6f91873821f9afee31df078377c",
+      "outputSha256": "d32efcd0801e81352b06368f5da12a965df0f22dba75b8b41f71379591f29ca0",
+      "sourceSize": [
+        2560,
+        1838
+      ],
+      "outputSize": [
+        1400,
+        910
+      ],
+      "outputBytes": 123372,
+      "catalogImage": "/catalog/verified-iris-blue-7-shallow.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-706",
+      "sku": "IB-706",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-706-iris-blue-6-1-4-x-3-4-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-706-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-706.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "1b89b28e87199f9aaba0e14b1ca5229c1908ed574c9968a26c4608330ecbc66e",
+      "sourceSha256": "f2b3b33c1a6b199bb247b241444ed64ac9fdf8c0df2b244a3168588ecf1c94a9",
+      "outputSha256": "5f5827d4b1f26de7e05710048c146290ea51918f5f9c578adb2b66fe88357b19",
+      "sourceSize": [
+        2557,
+        2560
+      ],
+      "outputSize": [
+        1396,
+        1400
+      ],
+      "outputBytes": 155210,
+      "catalogImage": "/catalog/verified-iris-blue-6-coupe.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-707",
+      "sku": "IB-707",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-707-iris-blue-7-1-4-x-3-4-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-707-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-707.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "1b89b28e87199f9aaba0e14b1ca5229c1908ed574c9968a26c4608330ecbc66e",
+      "sourceSha256": "f2b3b33c1a6b199bb247b241444ed64ac9fdf8c0df2b244a3168588ecf1c94a9",
+      "outputSha256": "5f5827d4b1f26de7e05710048c146290ea51918f5f9c578adb2b66fe88357b19",
+      "sourceSize": [
+        2557,
+        2560
+      ],
+      "outputSize": [
+        1396,
+        1400
+      ],
+      "outputBytes": 155210,
+      "catalogImage": "/catalog/verified-iris-blue-6-coupe.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-710",
+      "sku": "IB-710",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-710-iris-blue-10-1-4-x-1-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-710-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-710.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b31f6b7bef834117a18d6b56242efeac591a168516e0490489b03479e838564f",
+      "sourceSha256": "26cae4c976e8973f9db1a3498fe4e4b21317e77f144fec19839c583a8321cdab",
+      "outputSha256": "b3b9bb9be02f16c6db3c9273d95fbdc1d8f95b17076d0fa9b9aff42c2f55b2ad",
+      "sourceSize": [
+        2560,
+        2487
+      ],
+      "outputSize": [
+        1400,
+        1397
+      ],
+      "outputBytes": 210338,
+      "catalogImage": "/catalog/verified-iris-blue-6-coupe.webp"
+    },
+    {
+      "itemId": "iris-blue:IB-711",
+      "sku": "IB-711",
+      "collectionId": "iris-blue",
+      "productUrl": "https://yancochina.com/product/ib-711-iris-blue-11-1-4-x-1-1-8-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/IB-711-scaled.jpg",
+      "output": "/catalog/studio-photo-iris-blue-ib-711.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b31f6b7bef834117a18d6b56242efeac591a168516e0490489b03479e838564f",
+      "sourceSha256": "26cae4c976e8973f9db1a3498fe4e4b21317e77f144fec19839c583a8321cdab",
+      "outputSha256": "b3b9bb9be02f16c6db3c9273d95fbdc1d8f95b17076d0fa9b9aff42c2f55b2ad",
+      "sourceSize": [
+        2560,
+        2487
+      ],
+      "outputSize": [
+        1400,
+        1397
+      ],
+      "outputBytes": 210338,
+      "catalogImage": "/catalog/verified-iris-blue-6-coupe.webp"
+    },
+    {
+      "itemId": "legna:LE-106",
+      "sku": "LE-106",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-106-legna-6-1-8-x-1-2-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-106-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-106.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b874f8866e6cb542c92f9ec940c0fa8550680a57668a1c313e09b2cbf24d2e4b",
+      "sourceSha256": "a18a361f75228ae63bbc978eb89a188089afcc5cc67bbbd5329439657657f5fa",
+      "outputSha256": "b62af3a709743124e5b8a59dcf855ffcf1ff10594e02088aa89034cc964e9906",
+      "sourceSize": [
+        2462,
+        2560
+      ],
+      "outputSize": [
+        1400,
+        1380
+      ],
+      "outputBytes": 172648,
+      "catalogImage": "/catalog/verified-legna-4-dinner.webp"
+    },
+    {
+      "itemId": "legna:LE-107",
+      "sku": "LE-107",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-107-legna-7-1-8-x-3-4-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-107-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-107.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b874f8866e6cb542c92f9ec940c0fa8550680a57668a1c313e09b2cbf24d2e4b",
+      "sourceSha256": "a18a361f75228ae63bbc978eb89a188089afcc5cc67bbbd5329439657657f5fa",
+      "outputSha256": "b62af3a709743124e5b8a59dcf855ffcf1ff10594e02088aa89034cc964e9906",
+      "sourceSize": [
+        2462,
+        2560
+      ],
+      "outputSize": [
+        1400,
+        1380
+      ],
+      "outputBytes": 172648,
+      "catalogImage": "/catalog/verified-legna-4-dinner.webp"
+    },
+    {
+      "itemId": "legna:LE-109",
+      "sku": "LE-109",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-109-legna-9-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-109-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-109.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "0674dc13d30b5b52cc9bfe12d4aa34bf067211f027df31aa18fc34fc29786844",
+      "sourceSha256": "702cbc94226b716899d763d6731aa42f5d382a56eb127bbc53ea0793d2b3e205",
+      "outputSha256": "44e2a0a1cc3a4e967ccf4578680a46f8f247e8853627757ca431d087425ae901",
+      "sourceSize": [
+        2560,
+        2199
+      ],
+      "outputSize": [
+        1400,
+        1399
+      ],
+      "outputBytes": 220704,
+      "catalogImage": "/catalog/verified-legna-4-dinner.webp"
+    },
+    {
+      "itemId": "legna:LE-110",
+      "sku": "LE-110",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-110-legna-10-1-4-x-1-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-110-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-110.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "0674dc13d30b5b52cc9bfe12d4aa34bf067211f027df31aa18fc34fc29786844",
+      "sourceSha256": "702cbc94226b716899d763d6731aa42f5d382a56eb127bbc53ea0793d2b3e205",
+      "outputSha256": "44e2a0a1cc3a4e967ccf4578680a46f8f247e8853627757ca431d087425ae901",
+      "sourceSize": [
+        2560,
+        2199
+      ],
+      "outputSize": [
+        1400,
+        1399
+      ],
+      "outputBytes": 220704,
+      "catalogImage": "/catalog/verified-legna-4-dinner.webp"
+    },
+    {
+      "itemId": "legna:LE-111",
+      "sku": "LE-111",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-111-legna-11-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-111-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-111.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "0674dc13d30b5b52cc9bfe12d4aa34bf067211f027df31aa18fc34fc29786844",
+      "sourceSha256": "702cbc94226b716899d763d6731aa42f5d382a56eb127bbc53ea0793d2b3e205",
+      "outputSha256": "44e2a0a1cc3a4e967ccf4578680a46f8f247e8853627757ca431d087425ae901",
+      "sourceSize": [
+        2560,
+        2199
+      ],
+      "outputSize": [
+        1400,
+        1399
+      ],
+      "outputBytes": 220704,
+      "catalogImage": "/catalog/verified-legna-4-dinner.webp"
+    },
+    {
+      "itemId": "legna:LE-213",
+      "sku": "LE-213",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-213-legna-12-7-8-x-7-x-1-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-213-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-213.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "19e4b7f7cd0a1d7fd835377ac8e8257312066dc35f3d46815dcba248b52f6916",
+      "sourceSha256": "ffa63210b3396fa4573515d33ca01e01d59d2ec473e06b8224b5edf1b2645d7e",
+      "outputSha256": "d1a825cbe82d8df0738e5326c2349188ed038d58d649638055c5011148530956",
+      "sourceSize": [
+        2560,
+        1811
+      ],
+      "outputSize": [
+        1400,
+        764
+      ],
+      "outputBytes": 263632,
+      "catalogImage": "/catalog/verified-legna-5-oval-small.webp"
+    },
+    {
+      "itemId": "legna:LE-214",
+      "sku": "LE-214",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-214-legna-13-5-8-x-7-7-8-x-7-8-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-214-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-214.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "21980225904653375c4a863c496836b0034a8ba9a88a240adae68cf66c475216",
+      "sourceSha256": "2ad343ac9935e74d48d4cc8f131310ef283ba4d3c4d65624ce439ef3627699ea",
+      "outputSha256": "e11f9f77d85150321d8779f0c855d16e531022a2c05b344efb0263cd766acd9e",
+      "sourceSize": [
+        2560,
+        1728
+      ],
+      "outputSize": [
+        1400,
+        818
+      ],
+      "outputBytes": 305786,
+      "catalogImage": "/catalog/verified-legna-5-oval-large.webp"
+    },
+    {
+      "itemId": "legna:LE-215",
+      "sku": "LE-215",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-215-legna-15-1-2-x-9-x-1-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-215-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-215.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "21980225904653375c4a863c496836b0034a8ba9a88a240adae68cf66c475216",
+      "sourceSha256": "2ad343ac9935e74d48d4cc8f131310ef283ba4d3c4d65624ce439ef3627699ea",
+      "outputSha256": "e11f9f77d85150321d8779f0c855d16e531022a2c05b344efb0263cd766acd9e",
+      "sourceSize": [
+        2560,
+        1728
+      ],
+      "outputSize": [
+        1400,
+        818
+      ],
+      "outputBytes": 305786,
+      "catalogImage": "/catalog/verified-legna-5-oval-large.webp"
+    },
+    {
+      "itemId": "legna:LE-303",
+      "sku": "LE-303",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-303-legna-3-1-8-x-1-1-2-sauce-dish-3-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-303.jpg",
+      "output": "/catalog/studio-photo-legna-le-303.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "1b35188702317c15c1cdd3d5bc6b9bb712a87b1cd3b0cacf4318443759d37c89",
+      "sourceSha256": "afc7055674f8ccde468f81421812ac6040ab15981aee753bd87b948e9465750c",
+      "outputSha256": "2ecfba1ec526c2770320c593d4a36df3810537446fd9b85b661439add2edfa8a",
+      "sourceSize": [
+        1860,
+        1584
+      ],
+      "outputSize": [
+        1400,
+        1057
+      ],
+      "outputBytes": 99004,
+      "catalogImage": "/catalog/verified-legna-5-sauce.webp"
+    },
+    {
+      "itemId": "legna:LE-306",
+      "sku": "LE-306",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-306-legna-6-3-8-x-2-1-8-salad-bowl-18-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-306-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-306.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "056df0b136c57bedfa23fc3f52fb619683599f6aa3a7b452c71bd2b522b66547",
+      "sourceSha256": "3921726165023b829536d7d59bed04d054fe731756d40318b7a670399caebf31",
+      "outputSha256": "c389eab39f55b62f3a0914f1384ae6ac649a229bb562699527dfa1d315810c32",
+      "sourceSize": [
+        2560,
+        2098
+      ],
+      "outputSize": [
+        1400,
+        807
+      ],
+      "outputBytes": 78104,
+      "catalogImage": "/catalog/verified-legna-5-salad.webp"
+    },
+    {
+      "itemId": "legna:LE-308",
+      "sku": "LE-308",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-308-legna-8-3-8-x-2-bowl-30-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-308-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-308.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "c51c63c6e6dba2eba87cf840564f528aa45ada7d8d655af021bf65bba2e108b1",
+      "sourceSha256": "9da026a4950d8df37b84145f8bb94e12a73ecaab4f0915a14aeed9c18840a075",
+      "outputSha256": "2a626cd9c2bcc516c88e57bc166f1fa4034e278cc108b6ca8dd37b252a87d49c",
+      "sourceSize": [
+        2560,
+        1955
+      ],
+      "outputSize": [
+        1400,
+        710
+      ],
+      "outputBytes": 74552,
+      "catalogImage": "/catalog/verified-legna-5-bowl.webp"
+    },
+    {
+      "itemId": "legna:LE-309",
+      "sku": "LE-309",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-309-legna-9-1-4-x-2-1-4-bowl-45-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-309-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-309.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "c51c63c6e6dba2eba87cf840564f528aa45ada7d8d655af021bf65bba2e108b1",
+      "sourceSha256": "9da026a4950d8df37b84145f8bb94e12a73ecaab4f0915a14aeed9c18840a075",
+      "outputSha256": "2a626cd9c2bcc516c88e57bc166f1fa4034e278cc108b6ca8dd37b252a87d49c",
+      "sourceSize": [
+        2560,
+        1955
+      ],
+      "outputSize": [
+        1400,
+        710
+      ],
+      "outputBytes": 74552,
+      "catalogImage": "/catalog/verified-legna-5-bowl.webp"
+    },
+    {
+      "itemId": "legna:LE-310",
+      "sku": "LE-310",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-310-legna-10-1-4-x-2-1-2-bowl-60-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-310-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-310.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "c51c63c6e6dba2eba87cf840564f528aa45ada7d8d655af021bf65bba2e108b1",
+      "sourceSha256": "9da026a4950d8df37b84145f8bb94e12a73ecaab4f0915a14aeed9c18840a075",
+      "outputSha256": "2a626cd9c2bcc516c88e57bc166f1fa4034e278cc108b6ca8dd37b252a87d49c",
+      "sourceSize": [
+        2560,
+        1955
+      ],
+      "outputSize": [
+        1400,
+        710
+      ],
+      "outputBytes": 74552,
+      "catalogImage": "/catalog/verified-legna-5-bowl.webp"
+    },
+    {
+      "itemId": "legna:LE-311",
+      "sku": "LE-311",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-311-legna-11-3-4-x-7-x-1-7-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-311-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-311.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "d9a05a3ab7f0b7637d4920801edb6839574ff419543e3025a9573ff483bc4c18",
+      "sourceSha256": "efe0c1b6aa5e9eba8267aa596bf38e9b5385bdbe24292b0e145dbf62f26ed527",
+      "outputSha256": "5bf157cfbdc2fe52942ab0ac8d733a8c02f16f3e9b6765d35c90f8be6e797b2c",
+      "sourceSize": [
+        2560,
+        1603
+      ],
+      "outputSize": [
+        1400,
+        428
+      ],
+      "outputBytes": 71976,
+      "catalogImage": "/catalog/verified-legna-5-deep-oval.webp"
+    },
+    {
+      "itemId": "legna:LE-313",
+      "sku": "LE-313",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-313-legna-13-3-4-x-8-1-4-x-2-1-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-313-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-313.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "d9a05a3ab7f0b7637d4920801edb6839574ff419543e3025a9573ff483bc4c18",
+      "sourceSha256": "efe0c1b6aa5e9eba8267aa596bf38e9b5385bdbe24292b0e145dbf62f26ed527",
+      "outputSha256": "5bf157cfbdc2fe52942ab0ac8d733a8c02f16f3e9b6765d35c90f8be6e797b2c",
+      "sourceSize": [
+        2560,
+        1603
+      ],
+      "outputSize": [
+        1400,
+        428
+      ],
+      "outputBytes": 71976,
+      "catalogImage": "/catalog/verified-legna-5-deep-oval.webp"
+    },
+    {
+      "itemId": "legna:LE-405",
+      "sku": "LE-405",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-405-legna-5-x-3-1-2-x-1-rectangular-bowl-4-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-405-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-405.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "7682f7c3b8ccdb31855d1f8d3ebeead8a2169df83f1c9baf78e487ae194b6579",
+      "sourceSha256": "ecb92bb251fade735b34383683f4c282324d35a3939d434dcd05ba773adce8b8",
+      "outputSha256": "a5c0761c15413c58526697962cfe1e31b74c0b826c24063ec0fb8ee797f3e8c0",
+      "sourceSize": [
+        2560,
+        1719
+      ],
+      "outputSize": [
+        1400,
+        613
+      ],
+      "outputBytes": 90286,
+      "catalogImage": "/catalog/verified-legna-5-rectangular-bowl.webp"
+    },
+    {
+      "itemId": "legna:LE-406",
+      "sku": "LE-406",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-406-legna-6-x-4-3-8-x-1-1-4-rectangular-bowl-8-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-406-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-406.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "7682f7c3b8ccdb31855d1f8d3ebeead8a2169df83f1c9baf78e487ae194b6579",
+      "sourceSha256": "ecb92bb251fade735b34383683f4c282324d35a3939d434dcd05ba773adce8b8",
+      "outputSha256": "a5c0761c15413c58526697962cfe1e31b74c0b826c24063ec0fb8ee797f3e8c0",
+      "sourceSize": [
+        2560,
+        1719
+      ],
+      "outputSize": [
+        1400,
+        613
+      ],
+      "outputBytes": 90286,
+      "catalogImage": "/catalog/verified-legna-5-rectangular-bowl.webp"
+    },
+    {
+      "itemId": "legna:LE-408",
+      "sku": "LE-408",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-408-legna-8-5-8-x-2-soup-plate-10-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-408-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-408.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "ec39548830e6d77a2a654ee2f77f64f2744df2c70035801d585778e9c1c68fa5",
+      "sourceSha256": "81c9dbd87a50eb80fd8c9d1c44ff27e2c9799950780b8c6591cd5222a9f7e364",
+      "outputSha256": "4c5fef5ef617e4d0e6316a50cc0452a96cf17709788ec9f6f254e0fe844505f1",
+      "sourceSize": [
+        2560,
+        1651
+      ],
+      "outputSize": [
+        1400,
+        650
+      ],
+      "outputBytes": 103314,
+      "catalogImage": "/catalog/verified-legna-5-soup.webp"
+    },
+    {
+      "itemId": "legna:LE-409",
+      "sku": "LE-409",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-409-legna-9-1-8-x-4-7-8-x-1-1-4-fish-deep-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-409-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-409.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "89f7ff71340f235d8c497820f3cbdd9ec1bde874b5379655bfbf3d2379705077",
+      "sourceSha256": "7cabf593093cd34b239c3f541c90904c3660c9da1d1ae11db0d92420a74f5591",
+      "outputSha256": "ff54c5bc7b1ef47c025a8a6c3a084d48259c54f6ab1c1e6308aa308d3877f22b",
+      "sourceSize": [
+        2560,
+        1452
+      ],
+      "outputSize": [
+        1400,
+        456
+      ],
+      "outputBytes": 128680,
+      "catalogImage": "/catalog/verified-legna-5-fish.webp"
+    },
+    {
+      "itemId": "legna:LE-410",
+      "sku": "LE-410",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-410-legna-10-1-4-x-2-1-4-soup-pasta-plate-20-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-410-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-410.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "971feae944e74f9310eefe571383b715a0fc477eedcaf98d2cd69a4e22dd40cd",
+      "sourceSha256": "cb01b6346e4adbd9bc5e4b5a3002abf56343c923abb2f5f5a70925be47e29f21",
+      "outputSha256": "e98c669d033b963bb3f81eb3cf46b465172adba22821d468b3fccc9b254054c9",
+      "sourceSize": [
+        2560,
+        1685
+      ],
+      "outputSize": [
+        1400,
+        666
+      ],
+      "outputBytes": 116590,
+      "catalogImage": "/catalog/verified-legna-5-soup-pasta.webp"
+    },
+    {
+      "itemId": "legna:LE-411",
+      "sku": "LE-411",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-411-legna-11-1-8-x-2-1-2-pasta-bowl-25-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-411-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-411.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "e4b09c886f0d2f46c8e0d61f357d7c92aa49ad10aaac06db03520ed5be71f53d",
+      "sourceSha256": "bcc7e0d300e62478e37ffdf9ea57278fde9e3c53fd3684741dbb961c08ec47eb",
+      "outputSha256": "e3d16654989de14084195945e3835a56e63d7d99a1a9cdea66a65ead39d3a682",
+      "sourceSize": [
+        2560,
+        1849
+      ],
+      "outputSize": [
+        1400,
+        663
+      ],
+      "outputBytes": 115788,
+      "catalogImage": "/catalog/verified-legna-5-pasta.webp"
+    },
+    {
+      "itemId": "legna:LE-504",
+      "sku": "LE-504",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-504-legna-4-1-2x-2-1-2-rice-bowl-10-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-504-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-504.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "359010d5771cdce7f0ef91ef63dd683a5df7a3233c3a3b6788c4e5f7e2a1a2e8",
+      "sourceSha256": "bdd212178cc3e0a0e6d4a259849fbe175fdac091237387387614a316707b09ea",
+      "outputSha256": "95391657c20cae050ee52c844ee6daf5c31ce28f909676f678d1c920135df243",
+      "sourceSize": [
+        2560,
+        1982
+      ],
+      "outputSize": [
+        1400,
+        1012
+      ],
+      "outputBytes": 66668,
+      "catalogImage": "/catalog/verified-legna-5-rice.webp"
+    },
+    {
+      "itemId": "legna:LE-506",
+      "sku": "LE-506",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-506-legna-6-1-4-x-2-1-2-cereal-bowl-22-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-506-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-506.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "04d4eb5dcae0166ca8304f7034172e62fd713ee36609024029c46753cd1c5486",
+      "sourceSha256": "93a098a75327b587af572dbb7759676d5f02764940dbd384ea694423ee89d112",
+      "outputSha256": "2310fb80ca576a68afbaade9ec32b0dbb032c13660fb64cde81367197c6292a7",
+      "sourceSize": [
+        2560,
+        2167
+      ],
+      "outputSize": [
+        1400,
+        923
+      ],
+      "outputBytes": 66586,
+      "catalogImage": "/catalog/verified-legna-5-cereal.webp"
+    },
+    {
+      "itemId": "legna:LE-507",
+      "sku": "LE-507",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-507-legna-7-1-4-x-2-shallow-bowl-25-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-507-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-507.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "a48be07e4143571a052145094a0c5287b0931c4429fa71d818176866708333d6",
+      "sourceSha256": "6ec0d4899967b66682b47856ef7501d2ae38694f87bc467f59470c082da1dc06",
+      "outputSha256": "4dfe628490940d433a72e3c24a4542b754968e78e09b2db223974b1604ed0a75",
+      "sourceSize": [
+        2560,
+        1959
+      ],
+      "outputSize": [
+        1400,
+        845
+      ],
+      "outputBytes": 120046,
+      "catalogImage": "/catalog/verified-legna-5-shallow.webp"
+    },
+    {
+      "itemId": "legna:LE-508",
+      "sku": "LE-508",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-508-legna-8-1-2-x-2-1-8-shallow-bowl-35-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-508-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-508.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "a48be07e4143571a052145094a0c5287b0931c4429fa71d818176866708333d6",
+      "sourceSha256": "6ec0d4899967b66682b47856ef7501d2ae38694f87bc467f59470c082da1dc06",
+      "outputSha256": "4dfe628490940d433a72e3c24a4542b754968e78e09b2db223974b1604ed0a75",
+      "sourceSize": [
+        2560,
+        1959
+      ],
+      "outputSize": [
+        1400,
+        845
+      ],
+      "outputBytes": 120046,
+      "catalogImage": "/catalog/verified-legna-5-shallow.webp"
+    },
+    {
+      "itemId": "legna:LE-706",
+      "sku": "LE-706",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-706-legna-6-1-4-x-3-4-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-706-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-706.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "ba8d71831b5c69852f56fa694db5616f813bf462fe9d9227feb0dc754e306886",
+      "sourceSha256": "04ef54051fee40b4d89ffed57fb033098d4749e7d90d411e6b747bc126b263bf",
+      "outputSha256": "8214e751ff5178dc76dfb6b78418a5085b9257e0b7517f810e9d7cda85aa9414",
+      "sourceSize": [
+        2560,
+        2450
+      ],
+      "outputSize": [
+        1400,
+        1392
+      ],
+      "outputBytes": 287690,
+      "catalogImage": "/catalog/verified-legna-4-coupe.webp"
+    },
+    {
+      "itemId": "legna:LE-707",
+      "sku": "LE-707",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-707-legna-7-1-4-x-3-4-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-707-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-707.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "ba8d71831b5c69852f56fa694db5616f813bf462fe9d9227feb0dc754e306886",
+      "sourceSha256": "04ef54051fee40b4d89ffed57fb033098d4749e7d90d411e6b747bc126b263bf",
+      "outputSha256": "8214e751ff5178dc76dfb6b78418a5085b9257e0b7517f810e9d7cda85aa9414",
+      "sourceSize": [
+        2560,
+        2450
+      ],
+      "outputSize": [
+        1400,
+        1392
+      ],
+      "outputBytes": 287690,
+      "catalogImage": "/catalog/verified-legna-4-coupe.webp"
+    },
+    {
+      "itemId": "legna:LE-710",
+      "sku": "LE-710",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-710-legna-10-1-4-x-1-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-710-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-710.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "f1c9a444452836634fe7a3b973ea0edfeb8a06b34eb4bda6e201d6c8c388e47c",
+      "sourceSha256": "1b500e2e88f966af8442a89c4aa5401ac6e9f56a4343c3cec836e33e9281158c",
+      "outputSha256": "e4deedc504bc3b9e4699ea447c5f7dbcf785fc505f0d5ebba96f6e1fb149e2ca",
+      "sourceSize": [
+        2560,
+        2150
+      ],
+      "outputSize": [
+        1400,
+        1396
+      ],
+      "outputBytes": 393334,
+      "catalogImage": "/catalog/verified-legna-4-coupe.webp"
+    },
+    {
+      "itemId": "legna:LE-711",
+      "sku": "LE-711",
+      "collectionId": "legna",
+      "productUrl": "https://yancochina.com/product/le-711-legna-11-1-4-x-1-1-8-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2026/03/LE-711-scaled.jpg",
+      "output": "/catalog/studio-photo-legna-le-711.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "f1c9a444452836634fe7a3b973ea0edfeb8a06b34eb4bda6e201d6c8c388e47c",
+      "sourceSha256": "1b500e2e88f966af8442a89c4aa5401ac6e9f56a4343c3cec836e33e9281158c",
+      "outputSha256": "e4deedc504bc3b9e4699ea447c5f7dbcf785fc505f0d5ebba96f6e1fb149e2ca",
+      "sourceSize": [
+        2560,
+        2150
+      ],
+      "outputSize": [
+        1400,
+        1396
+      ],
+      "outputBytes": 393334,
+      "catalogImage": "/catalog/verified-legna-4-coupe.webp"
+    },
+    {
+      "itemId": "mars:MR-106",
+      "sku": "MR-106",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-6-1-4-x-1-2-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-106-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-106.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "4f100a7cc8590d8c5cc5d04a003a2b8912f1cf20ba6171f45ab39395d4cb9517",
+      "sourceSha256": "25b762b5f8834cc5cb55fb495aeb19fc7f2a9cbbee1c21fc8f267e3f201a86d6",
+      "outputSha256": "c1822b13e1f00850bdbd6734e1f795f04d442e5fae5c8a9d11b2027e645967fe",
+      "sourceSize": [
+        2505,
+        2560
+      ],
+      "outputSize": [
+        1126,
+        1129
+      ],
+      "outputBytes": 78362,
+      "catalogImage": "/catalog/mars-10-1260-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-107",
+      "sku": "MR-107",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-7-1-4-x-3-4-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-107-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-107.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "1822c3d7323501b97672d389a61a8fa7d0bc424fe1b169ab6c411e83614fb1e3",
+      "sourceSha256": "b01f4c7dec478301a440b575d79171501e8474e1c54c7cf102a1a5c3a8e0b505",
+      "outputSha256": "d5f4de02a3cdec99bb94d77ad5b7ddfb3463d174fcc68bc43d566c7b3400908f",
+      "sourceSize": [
+        2505,
+        2560
+      ],
+      "outputSize": [
+        1292,
+        1296
+      ],
+      "outputBytes": 94190,
+      "catalogImage": "/catalog/mars-10-1260-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-109",
+      "sku": "MR-109",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-9-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-109-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-109.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "eb5f96027dc86ac524e1d3917695398b15ca9fa87ab5568a38638d3a616ead9f",
+      "sourceSha256": "65898d9cb42ec4fd70d339aa7816500d83664f6aa0da654267bf700aa6432c70",
+      "outputSha256": "639bde6fafdf285231f1df492df7cbff1cb9f106fcfaa4cd9e0d5804b94d6222",
+      "sourceSize": [
+        2505,
+        2560
+      ],
+      "outputSize": [
+        1395,
+        1400
+      ],
+      "outputBytes": 125910,
+      "catalogImage": "/catalog/mars-10-1260-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-110",
+      "sku": "MR-110",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-10-1-4-x-1-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-110-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-110.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "33d54dfc4d787ffd8be3976ac238b3e150ce3bbcc1dd5083f36e2e612beb2403",
+      "sourceSha256": "9530a467b5ebeddb3badcc61212485f74142f599942879625c6dcddaa1423b42",
+      "outputSha256": "c94ce7e8219f17677ab2afcf118104f3b90be1d58c956a080beb4421f3ceffd1",
+      "sourceSize": [
+        2505,
+        2560
+      ],
+      "outputSize": [
+        1397,
+        1400
+      ],
+      "outputBytes": 124918,
+      "catalogImage": "/catalog/mars-10-1260-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-111",
+      "sku": "MR-111",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-11-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-111-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-111.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "c0e18441e16515cc276bde2610036c3300ac6edc91f48ca0bbc565043ae3e5c1",
+      "sourceSha256": "af3b2c7d9da134cf1c022be059d09e5c2665ace7b66258b06208c4461094802a",
+      "outputSha256": "9868dedff71eaaf5751f258bed3c7c00c1963a95f10d02274d6da39a433e087b",
+      "sourceSize": [
+        2505,
+        2560
+      ],
+      "outputSize": [
+        1397,
+        1400
+      ],
+      "outputBytes": 125514,
+      "catalogImage": "/catalog/mars-10-1260-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-112",
+      "sku": "MR-112",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-12-1-4-x-1-1-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-112-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-112.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "a33d40131474a994edf486bfd16855062150645d671fd4690f20090ce48d2472",
+      "sourceSha256": "d840461039b9b15cda40d6f2b09f069db90c4f592a3c9a1a2a0c752578f784e0",
+      "outputSha256": "ba9b4b9d7ebf6bdf208aa1ecebd5df6936e4c08680fb922e2b8f4d48723856de",
+      "sourceSize": [
+        2505,
+        2560
+      ],
+      "outputSize": [
+        1396,
+        1400
+      ],
+      "outputBytes": 125500,
+      "catalogImage": "/catalog/mars-10-1260-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-210",
+      "sku": "MR-210",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-10-x-7-7-8-x-1-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-210-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-210.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "4d249c84ff990f0a3c936be42e98f89d71bcb5f1a7a68e4d4976bc026b6eb2b9",
+      "sourceSha256": "b9e07d65995e3dc35bd98b66d0cddaba98f01dcd951a6350225d29572237cb6d",
+      "outputSha256": "e34706c897a1b271a79cf962da23ed26fc1c096e3a225cc405a234f8761641e1",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1104,
+        879
+      ],
+      "outputBytes": 69050,
+      "catalogImage": "/catalog/mars-11-160-580.webp"
+    },
+    {
+      "itemId": "mars:MR-212",
+      "sku": "MR-212",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-12-x-9-1-2-x-1-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-212-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-212.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "01ef27c9cbdf255c549cca3f5efe65e64a5f7bc062c94accf28ac15945754dd2",
+      "sourceSha256": "959e5881d0619e04561146b2ae71fb8cf3051dcc1d4a986fc3bfdb6e2099c690",
+      "outputSha256": "35ba2da504ffca54f41b1851e5b4195a9aa6ddaa89f9163cb2dc10686db4af24",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1234,
+        982
+      ],
+      "outputBytes": 79914,
+      "catalogImage": "/catalog/mars-11-160-580.webp"
+    },
+    {
+      "itemId": "mars:MR-213",
+      "sku": "MR-213",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-12-7-8-x-10-1-8-x-1-1-8-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-213-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-213.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "5e363cf9460c78afc8777e1b6fa967a3faadebacdfa7975ae38b6b852f8aee83",
+      "sourceSha256": "9b3461c9598bb8ee4142429c29e927dae7337e768064ddc20b917256bd8159de",
+      "outputSha256": "082e20781e832e0365c7f9f272e630377fb1850415e0a033a8745703344c65e0",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1367,
+        1087
+      ],
+      "outputBytes": 91958,
+      "catalogImage": "/catalog/mars-11-160-580.webp"
+    },
+    {
+      "itemId": "mars:MR-214",
+      "sku": "MR-214",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-13-5-8-x-7-7-8-x-7-8-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-214-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-214.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b85617fe7f5efa35ae1e3d38f0d4d6033cafa944c363b0673db3eb842900c097",
+      "sourceSha256": "3dbc012d744a535be0c5386ea1ade68a9319547f8c9d87d605be3e33920fc066",
+      "outputSha256": "87bb46145d2e6da77766a885458c80e8e8d566f3e4560c499547a3a997667f8a",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1400,
+        826
+      ],
+      "outputBytes": 112812,
+      "catalogImage": "/catalog/mars-11-660-580.webp"
+    },
+    {
+      "itemId": "mars:MR-215",
+      "sku": "MR-215",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-15-1-2-x-9-x-1-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-215-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-215.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "7f6487e35d4ac1964acbdfac843c1090a6cf593b0f88c091d2f1e69c820fbcbd",
+      "sourceSha256": "fa5035b74ebf71f8d51d853f7b62426cffa2a378181778078fd2ad7bee75d1d4",
+      "outputSha256": "b7c220921ec6ddb0a3051ae86d7f7a98a1997e7d7ba21407dd3e534914c77f9d",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1400,
+        824
+      ],
+      "outputBytes": 116518,
+      "catalogImage": "/catalog/mars-11-660-580.webp"
+    },
+    {
+      "itemId": "mars:MR-311",
+      "sku": "MR-311",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-11-3-4-x-7-x-1-7-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-311-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-311.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "266f8fde5054150c0e7d372896dbb714ff43a4464fec45b04bf2d243572810dd",
+      "sourceSha256": "7061958785c1658c1b35d132bb222b22535afac8a050008d72a084f74969b2d3",
+      "outputSha256": "9892cf887cd4f4ee7a6ffe4f49b29913dcd9d8554817f76a4ae0e3f6db667142",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1317,
+        442
+      ],
+      "outputBytes": 39356,
+      "catalogImage": "/catalog/mars-11-1140-580.webp"
+    },
+    {
+      "itemId": "mars:MR-313",
+      "sku": "MR-313",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-13-3-4-x-8-1-4-x-2-1-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-313-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-313.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "bd0665cbd4cb37a4a8d501adabcd3a33739f7eef5183000f14890c5ae010b913",
+      "sourceSha256": "833f1cfaa51e7bded66c861c3be979a1de6ba70b0197dfd4a751b27ae2092ff6",
+      "outputSha256": "44f7f30ee42ea55fa5867d2ffc79397a829e085a7d232438db7d65d91e33f2a8",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1400,
+        468
+      ],
+      "outputBytes": 55664,
+      "catalogImage": "/catalog/mars-11-1140-580.webp"
+    },
+    {
+      "itemId": "mars:MR-408",
+      "sku": "MR-408",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-9-x-2-3-8-soup-plate-12-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-408-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-408.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "94635f6af9316f987f7e6ab35321fd15a3e95709d604441b7c464a349bce3949",
+      "sourceSha256": "96dc8d82005d4ea561abab3a52e165ecabe18a3733b6880138485df02cdef99a",
+      "outputSha256": "fc42466b02baf3cd18ffae85576ac4d89306dbeab46705ce8c0c6b3b380e3587",
+      "sourceSize": [
+        2560,
+        1824
+      ],
+      "outputSize": [
+        1400,
+        664
+      ],
+      "outputBytes": 62366,
+      "catalogImage": "/catalog/mars-11-660-1480.webp"
+    },
+    {
+      "itemId": "mars:MR-409",
+      "sku": "MR-409",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-9-1-8-x-1-5-8-soup-plate-9-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-409-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-409.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "e57c7a9a35add9519dd7519766aac3077e33bf8498944aee75455772247dd8bf",
+      "sourceSha256": "f1243e9c9ab0afb2f07a169c71e6c0246b44705279140172c49c8f478f00985c",
+      "outputSha256": "4f2bbea92e1a211355bd29f35ec84c41db99ed455644fcb7e0222c3e0256c0fe",
+      "sourceSize": [
+        2560,
+        1789
+      ],
+      "outputSize": [
+        1400,
+        794
+      ],
+      "outputBytes": 62942,
+      "catalogImage": "/catalog/mars-11-1140-1480.webp"
+    },
+    {
+      "itemId": "mars:MR-410",
+      "sku": "MR-410",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-10-1-4-x-2-1-4-soup-salad-plate-22-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-410-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-410.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "f74a28bada1626579a7796c7ff4924f9ff6b668144c7e995b40b91ca78b041ee",
+      "sourceSha256": "eea9e2aacaeb4917ee6597b70a2bbfa1a10d15f6e28dd936bce28c4ed1e58e3e",
+      "outputSha256": "a7069a5cd0cbd0d50f6711b5ecb6ba20adf6a9da40459aafa9c36843fc32caa3",
+      "sourceSize": [
+        2560,
+        1789
+      ],
+      "outputSize": [
+        1400,
+        792
+      ],
+      "outputBytes": 68170,
+      "catalogImage": "/catalog/mars-11-1140-1480.webp"
+    },
+    {
+      "itemId": "mars:MR-411",
+      "sku": "MR-411",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-11-1-4-x-1-7-8-pasta-bowl-12-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-411-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-411.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "d44712a27e2f8462bf4deae746f8e20364c042e7dd27db028b4e9f3fd710aeaa",
+      "sourceSha256": "c2d6551d4f6203193df7c69e5c298c2aa30129ee4205cd0a78548b18f4faf52d",
+      "outputSha256": "962b7d3e42ff6a69fd20d78ba3cff073f354dec2820cf08992f47dd45ce780cc",
+      "sourceSize": [
+        2560,
+        2136
+      ],
+      "outputSize": [
+        1400,
+        1007
+      ],
+      "outputBytes": 132118,
+      "catalogImage": "/catalog/mars-11-660-2000.webp"
+    },
+    {
+      "itemId": "mars:MR-412",
+      "sku": "MR-412",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-11-3-4-x-2-3-8-salad-plate-30-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-412-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-412.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b0a342afcc1c4c1db6970fb9eb03c047e1b9760eb67a2427e1597f4756578a85",
+      "sourceSha256": "aceb67064fedd335b80a98dfd746fadf4244260e5f3c9a18e144f2ba6fb3dcd2",
+      "outputSha256": "622d4a0f90f3521f0b101ce8c50777847e2a76cfc8ea8b06b19ff8cc0382cef0",
+      "sourceSize": [
+        2560,
+        1784
+      ],
+      "outputSize": [
+        1400,
+        751
+      ],
+      "outputBytes": 65078,
+      "catalogImage": "/catalog/mars-11-160-2000.webp"
+    },
+    {
+      "itemId": "mars:MR-502",
+      "sku": "MR-502",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-2-7-8-x-1-sauce-dish-1-5-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-502.jpg",
+      "output": "/catalog/studio-photo-mars-mr-502.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "d21eac1c2b48d5fbb4b28bf4ea9954bad7cac83c081b649e7e4d00a26bc99681",
+      "sourceSha256": "f17d0ae573026823fa354f1b67e49d2e708124eb9f551e32222715b58b62667c",
+      "outputSha256": "4b2a08ee70cb8797be067ec7d9ff5e5f084d2ce499fe9420c8c4cfe26b585dd2",
+      "sourceSize": [
+        2106,
+        1572
+      ],
+      "outputSize": [
+        1395,
+        895
+      ],
+      "outputBytes": 49348,
+      "catalogImage": "/catalog/mars-11-140-1020.webp"
+    },
+    {
+      "itemId": "mars:MR-503",
+      "sku": "MR-503",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-3-3-4-x-1-1-2snack-bowl-3-5-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-503-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-503.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "ea6420c615227ee89286688718f425ba50eb94c203819a1b30cd3fbecf2c0c3e",
+      "sourceSha256": "cbca2a6784de16c8926053512c0bf883ff256e2a519d054862204336890773b6",
+      "outputSha256": "bd255ec34e4103868d43880b83cf1f3f430f1ade46f7df22fc0baf865af61931",
+      "sourceSize": [
+        2560,
+        2016
+      ],
+      "outputSize": [
+        1400,
+        891
+      ],
+      "outputBytes": 54998,
+      "catalogImage": "/catalog/mars-11-500-1020.webp"
+    },
+    {
+      "itemId": "mars:MR-504",
+      "sku": "MR-504",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-4-1-2x-2-1-2rice-bowl-10-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-504-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-504.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "9ba37545787cb8d5f3568ff678e6951e2ac6479bba97742f8422a42a6517bcb0",
+      "sourceSha256": "aa9d5d6e8994e16e5e86895d793e30984756ca2fd9dfed0aee832c0e2d0cb376",
+      "outputSha256": "5d666597e818f7611eca66ff298f8a77c1637302726be59dccce6509c9d4b7dd",
+      "sourceSize": [
+        2560,
+        2055
+      ],
+      "outputSize": [
+        1400,
+        994
+      ],
+      "outputBytes": 66064,
+      "catalogImage": "/catalog/mars-11-840-1020.webp"
+    },
+    {
+      "itemId": "mars:MR-506",
+      "sku": "MR-506",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-6-1-4-x-2-1-2cereal-bowl-22-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-506-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-506.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "a50301eca47ff6a0b57b5348419d3067704599f1d118c6394b079e77957fec04",
+      "sourceSha256": "691dd045a6392f13aec2838256b463664857594a514a2717467d1deaac0f42c7",
+      "outputSha256": "a0ad269d4e352f5257c86c6af4cc1e407cb9f0d3ad0a5006d8775f910189653a",
+      "sourceSize": [
+        2560,
+        1884
+      ],
+      "outputSize": [
+        1400,
+        873
+      ],
+      "outputBytes": 62536,
+      "catalogImage": "/catalog/mars-11-1200-1020.webp"
+    },
+    {
+      "itemId": "mars:MR-507",
+      "sku": "MR-507",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-7-5-8-x2-5-8bowl-23-5-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-507-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-507.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "041596d5d019e1eb24df66e3712e3138136383c21d3b08751ead580da5eeebe2",
+      "sourceSha256": "cc576b1a7faf5fc7bf217ff9069dd67c95c6e49f54fca9678acc449bb4981ace",
+      "outputSha256": "44b7bcc8890219e27a86419dd3464979754b9e1ba6ef6c943090a430c2874eaa",
+      "sourceSize": [
+        2560,
+        1966
+      ],
+      "outputSize": [
+        1254,
+        703
+      ],
+      "outputBytes": 43920,
+      "catalogImage": "/catalog/mars-11-180-1480.webp"
+    },
+    {
+      "itemId": "mars:MR-508",
+      "sku": "MR-508",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-8-3-4-x-3bowl-38-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-508-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-508.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "8897ed80cb554269e611634d4597ece1958d458e94479e5c8291c569cd90c24c",
+      "sourceSha256": "0bfe7c1318599ac4a15bb271481c88712b4e253eb98464a83d0859a6a0e8d81c",
+      "outputSha256": "9276329f5dcc979b21b74069eb82a5c5e58aaba68a2a00d04799861603d8b022",
+      "sourceSize": [
+        2560,
+        1966
+      ],
+      "outputSize": [
+        1400,
+        783
+      ],
+      "outputBytes": 64612,
+      "catalogImage": "/catalog/mars-11-180-1480.webp"
+    },
+    {
+      "itemId": "mars:MR-509",
+      "sku": "MR-509",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-9-3-4-x-3-1-8-bowl-50-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-509-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-509.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "5de7f9bdce79f9627f44006ac833de2f113dcf5ff00a5704524a8ec23e42f2a0",
+      "sourceSha256": "b5c9e46d26c9ce04a5b793c3b75dbc8ba92829b32a15a5596884c8ecbfad552c",
+      "outputSha256": "afcab88f705a2ad74d0ed408dc4c85d6789a8c8a30b01573da145432fac5372f",
+      "sourceSize": [
+        2560,
+        1966
+      ],
+      "outputSize": [
+        1400,
+        782
+      ],
+      "outputBytes": 66756,
+      "catalogImage": "/catalog/mars-11-180-1480.webp"
+    },
+    {
+      "itemId": "mars:MR-611",
+      "sku": "MR-611",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-11-1-2-x2-dessert-plate-9-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-611-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-611.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "58b45ad1b0b640712fda6479d7b2661bd9c86689dd3d5004eb905d7f67d09e90",
+      "sourceSha256": "63c42f86c88d33076ba1288043a9c62014ce6d51728a43460d622b3071617bc0",
+      "outputSha256": "c6d132327a59b1ef85aa4fbdc8f8204c0813c6d683ef1b326f90e28d3f974bca",
+      "sourceSize": [
+        2560,
+        1990
+      ],
+      "outputSize": [
+        1400,
+        1031
+      ],
+      "outputBytes": 105886,
+      "catalogImage": "/catalog/mars-11-1140-2000.webp"
+    },
+    {
+      "itemId": "mars:MR-706",
+      "sku": "MR-706",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-6-1-4x-3-4coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-706-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-706.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "4242687e9189c78ad5630a9ca2a794c118ba45c0707814c6c46b4be0948b3d2b",
+      "sourceSha256": "8ab6b7373c94fe67ade7cb6e81bd47a11efe34169cd3505b10f3a9dc2f6dd3de",
+      "outputSha256": "ed264ef771e3d2c674f9ec14495be4545ede230ca90631fc80bbb45e2a77ffee",
+      "sourceSize": [
+        2560,
+        2458
+      ],
+      "outputSize": [
+        1329,
+        1330
+      ],
+      "outputBytes": 110280,
+      "catalogImage": "/catalog/mars-10-520-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-707",
+      "sku": "MR-707",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-7-1-4x-3-4coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-707-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-707.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "71e636ed7a627d947b1c6c98d5acead4332530a08868f5d60e90edba213f820b",
+      "sourceSha256": "f73ac8f95f1113c487c491f239c2d9fd48743725e99cf235afc3276274975d36",
+      "outputSha256": "a9d7dcb6ef0a20d13b2ede3a8de1439e8c3164c52620e55ba4de796d9ff144e4",
+      "sourceSize": [
+        2560,
+        2458
+      ],
+      "outputSize": [
+        1399,
+        1400
+      ],
+      "outputBytes": 138566,
+      "catalogImage": "/catalog/mars-10-520-1900.webp"
+    },
+    {
+      "itemId": "mars:MR-710",
+      "sku": "MR-710",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-10-1-4x-1coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-710-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-710.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "2b669c16fe6f12bc42e499ee1a7c13446a8ddc20e3b25061783e5ca04523b595",
+      "sourceSha256": "b176a6c1fd4018f2536cb61e379f28963efbeb31bed5ab18493445146e7bf0c2",
+      "outputSha256": "f3c5a1e543b820a3a69253cd6cfcf2b8f3962ead7f2b7c0194a9f32d2b30928c",
+      "sourceSize": [
+        2560,
+        2301
+      ],
+      "outputSize": [
+        1396,
+        1400
+      ],
+      "outputBytes": 153472,
+      "catalogImage": "/catalog/MR-710.webp"
+    },
+    {
+      "itemId": "mars:MR-711",
+      "sku": "MR-711",
+      "collectionId": "mars",
+      "productUrl": "https://yancochina.com/product/yanco-mars-chinaware-11-1-4x-1-1-8coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/MR-711-scaled.jpg",
+      "output": "/catalog/studio-photo-mars-mr-711.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "1916640dab357b9440259cefa06589591cd8068b73686cf0d1fe9ef167d718d7",
+      "sourceSha256": "40c3e87330b8749a2115c88555cf0004b3d0260c6c68f89f66fcf30095efa1b8",
+      "outputSha256": "f26283c95350108ad69d2d5c34e208f576b56bbe4676b3fdd8b3229bf98438c5",
+      "sourceSize": [
+        2560,
+        2301
+      ],
+      "outputSize": [
+        1395,
+        1400
+      ],
+      "outputBytes": 157412,
+      "catalogImage": "/catalog/mars-10-520-1900.webp"
+    },
+    {
+      "itemId": "porto:PR-106",
+      "sku": "PR-106",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-6-1-4-x-1-2-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-106-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-106.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "73a2427d7e642471242baea27d8f7a3b22dbda9c065ddd40bc4eba78932844e7",
+      "sourceSha256": "129e603cb456c2f2a65f4f580d283ea46c353a8de5df4d04f47a3a9717d3f3ab",
+      "outputSha256": "0971897599b44a07aefeb167563636e8a242a0ce6e3046269268f9bf41ed705f",
+      "sourceSize": [
+        2560,
+        2523
+      ],
+      "outputSize": [
+        1087,
+        1089
+      ],
+      "outputBytes": 94552,
+      "catalogImage": "/catalog/verified-porto-10-round.webp"
+    },
+    {
+      "itemId": "porto:PR-107",
+      "sku": "PR-107",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-7-1-4-x-3-4-bread-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-107-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-107.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "89fd2fd3b1749fcf49ac15023125c2fc7eb9f5e81d953ebe11fd8dcab6348d95",
+      "sourceSha256": "dd703e77b90b88d33c55a3c5dcd50ceaff431a208ec49c279885f759a0f5ec29",
+      "outputSha256": "11f9e4028c87518be625d814ff04aaa27bfba42622aea632cd4b3ce2d3f89bb7",
+      "sourceSize": [
+        2560,
+        2523
+      ],
+      "outputSize": [
+        1238,
+        1239
+      ],
+      "outputBytes": 115036,
+      "catalogImage": "/catalog/verified-porto-10-round.webp"
+    },
+    {
+      "itemId": "porto:PR-109",
+      "sku": "PR-109",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-9-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-109-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-109.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "af18709195c8f353b7dff0a807235ffe8c72d55aa0d4da9eae8bacded5aa9828",
+      "sourceSha256": "d0fa416048756ec23ebf482a08488e22dcb9744e7176475cef36d88394714451",
+      "outputSha256": "0fd66875e6d91f39d5406f46e2f396993272bcabcbea438ff48eb2c185f525d0",
+      "sourceSize": [
+        2560,
+        2523
+      ],
+      "outputSize": [
+        1354,
+        1355
+      ],
+      "outputBytes": 132120,
+      "catalogImage": "/catalog/verified-porto-10-round.webp"
+    },
+    {
+      "itemId": "porto:PR-110",
+      "sku": "PR-110",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-10-1-4-x-1-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-110-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-110.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "e4c7bae70a68569789619db851c5b5062d4bc114ce49184375f26c902d315af5",
+      "sourceSha256": "5ed3dbff4333776f1c1f5a0a921ed25ce8bbda95c49d0f9fc5fb522e09b6782b",
+      "outputSha256": "6c8cbb0ea7e836892c85afaa2a5c0bcf4187dfb6ffcc895fc3f8402dc8d4f2f7",
+      "sourceSize": [
+        2560,
+        2523
+      ],
+      "outputSize": [
+        1399,
+        1400
+      ],
+      "outputBytes": 155186,
+      "catalogImage": "/catalog/verified-porto-10-round.webp"
+    },
+    {
+      "itemId": "porto:PR-111",
+      "sku": "PR-111",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-11-1-4-x-7-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-111-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-111.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "c6bf211441aa73e667c31293993fe0926864182d57954f852deee837cfe9a890",
+      "sourceSha256": "cda33a4d459de715eccbfcf372f3e10dd39233da2bb4d10d9d35acebaa41c3fa",
+      "outputSha256": "1f371be7966d58c21469c0a21402c453bf76522a7f295451ad374164400ae43b",
+      "sourceSize": [
+        2560,
+        2523
+      ],
+      "outputSize": [
+        1399,
+        1400
+      ],
+      "outputBytes": 160502,
+      "catalogImage": "/catalog/verified-porto-10-round.webp"
+    },
+    {
+      "itemId": "porto:PR-112",
+      "sku": "PR-112",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-12-1-4-x-1-1-8-dinner-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-112-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-112.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "12993ea7746b8a35d6c31da3a0ad9cd239115dae79a62fd70a54aa1496cae5e4",
+      "sourceSha256": "8d225e20bb5328b5fb11b3e78546ab551ceb1885b3c401defe5beb832964d335",
+      "outputSha256": "5422505858abddd8c189411b67c119a8ba1471b79923b458c55a3a5c3fe5dc1b",
+      "sourceSize": [
+        2560,
+        2523
+      ],
+      "outputSize": [
+        1398,
+        1400
+      ],
+      "outputBytes": 161458,
+      "catalogImage": "/catalog/verified-porto-10-round.webp"
+    },
+    {
+      "itemId": "porto:PR-210",
+      "sku": "PR-210",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-10-x-7-7-8-x-1-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-210-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-210.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "7228cb5ad47fa6f05e46a35a9da2c14c6e051d644e971e56db0ed2d29adf08bc",
+      "sourceSha256": "426df5476d755f6d833d2a5b90bbc36496efae11275707a88813c6f74fdd553b",
+      "outputSha256": "16050190780987daeaaf43029d1d2efe6a253ac6ae33679047150592c989a443",
+      "sourceSize": [
+        2560,
+        2251
+      ],
+      "outputSize": [
+        1400,
+        1110
+      ],
+      "outputBytes": 180764,
+      "catalogImage": "/catalog/verified-porto-11-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-212",
+      "sku": "PR-212",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-12-x-9-1-2-x-1-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-212-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-212.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "0cfd7b3dbcec81c415600f9100544686cc524b69f5e5c2cee6ad97a032115c90",
+      "sourceSha256": "58e76961524764184dc16a6ab2e06328754f2dae58a0e2a77b1787a38507bfb2",
+      "outputSha256": "c996c4d58af675867be7170fbf4a418c3c47fe2645a940772814ffe92163ecc8",
+      "sourceSize": [
+        2560,
+        2251
+      ],
+      "outputSize": [
+        1400,
+        1109
+      ],
+      "outputBytes": 185006,
+      "catalogImage": "/catalog/verified-porto-11-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-213",
+      "sku": "PR-213",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-12-7-8-x-10-1-8-x-1-1-8-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-213-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-213.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "b8822ec548b9c3d8bd99f39753704282ea7fb93dd79a988f0effd325d8bf7187",
+      "sourceSha256": "025b420e5fd3624f1072a29bfc45ddc53fb4600dd3ceb94f4dff9f0c954fa3ff",
+      "outputSha256": "697294ff6dbf5a7173ffc781da90a6828bf2592e0e4e73fca35ac9a47b7372fd",
+      "sourceSize": [
+        2560,
+        2251
+      ],
+      "outputSize": [
+        1400,
+        1108
+      ],
+      "outputBytes": 188128,
+      "catalogImage": "/catalog/verified-porto-11-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-214",
+      "sku": "PR-214",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-13-5-8-x-7-7-8-x-7-8-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-214-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-214.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "f17584f14671d2e067ee0676ca63fbd76d89ca229b262a8b214c723131a04aad",
+      "sourceSha256": "19aa4a26e2fe6c43171d35c40a7b4ba9d3508d07f824f3040c6c64f853ee9b34",
+      "outputSha256": "ed70838fc027f5cf4c8ae0e94fcf10bb3ae3cbb29ba2039deabc0364a7c304d5",
+      "sourceSize": [
+        2560,
+        1884
+      ],
+      "outputSize": [
+        1400,
+        817
+      ],
+      "outputBytes": 167656,
+      "catalogImage": "/catalog/verified-porto-11-coupe-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-215",
+      "sku": "PR-215",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-15-1-2-x-9-x-1-coupe-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-215-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-215.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "28b75b929363c4999461a6e0579a0b2b807cfb0b87dfab287cb65cb08037ae7b",
+      "sourceSha256": "601e8a9e362e73b199e93c290d03c38f43776bc6f27dac7bbe0ad6bd3c69e9d5",
+      "outputSha256": "13ba5420ad0a358edabf7cb2520cc6effcafea37373d33193ba07be9b530e0ef",
+      "sourceSize": [
+        2560,
+        1884
+      ],
+      "outputSize": [
+        1400,
+        817
+      ],
+      "outputBytes": 172986,
+      "catalogImage": "/catalog/verified-porto-11-coupe-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-311",
+      "sku": "PR-311",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-11-3-4-x-7-x-1-7-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-311-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-311.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "6d4a2e527f90a2a8c2864cc4d9878d53a73a77075c0e6fc216d1c7c73c42cc96",
+      "sourceSha256": "70f3061dd0bbd78aaf479c5be83a0fced2c1d7c2d378fdde164e6e1a9df418c4",
+      "outputSha256": "fdd621de6ada4a2ce5a0241c0a22d10feb3ff7a76f1cb0e92e5439f9a0ccc86b",
+      "sourceSize": [
+        2560,
+        1533
+      ],
+      "outputSize": [
+        1400,
+        528
+      ],
+      "outputBytes": 73720,
+      "catalogImage": "/catalog/verified-porto-11-deep-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-313",
+      "sku": "PR-313",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-13-3-4-x-8-1-4-x-2-1-8-deep-oval-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-313-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-313.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "9a64355340c2481e72f53564f92e7b32d2ac101bdb64b15da9be855f92c08db0",
+      "sourceSha256": "46285b91671b3f2b6755373893c49de4a25acd9a1e50005a093a7625c8106399",
+      "outputSha256": "e7e432e81e80a6fade050f27c639e19792f4c803584fef82a722ac13d16db473",
+      "sourceSize": [
+        2560,
+        1533
+      ],
+      "outputSize": [
+        1400,
+        525
+      ],
+      "outputBytes": 77636,
+      "catalogImage": "/catalog/verified-porto-11-deep-oval.webp"
+    },
+    {
+      "itemId": "porto:PR-408",
+      "sku": "PR-408",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-9-x-2-3-8-soup-plate-12-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-408-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-408.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "bc9fb2de423669b848c1f9d4687304420e7b8beaa5e46466ac68076dc983ac7e",
+      "sourceSha256": "5a42af8af84ad1b2cdb0c67242837a9bd98cce009853d676f5cb736ff65d3ed9",
+      "outputSha256": "a78d32c0b23cbfba47d707baf0cad0e8bbad25f1f7f0aac500e90ec606ba4fae",
+      "sourceSize": [
+        2560,
+        1729
+      ],
+      "outputSize": [
+        1400,
+        681
+      ],
+      "outputBytes": 72422,
+      "catalogImage": "/catalog/verified-porto-11-soup.webp"
+    },
+    {
+      "itemId": "porto:PR-409",
+      "sku": "PR-409",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-9-1-8-x-1-5-8-soup-plate-9-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-409-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-409.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "7278ddb18f38d0a7ecccb9a65bbec2fc1f9a3a054b2724952411410df942f182",
+      "sourceSha256": "2739dbaa31facdebce5db23651c6a1fe040560a150e389aa897497d5206175b6",
+      "outputSha256": "d912fb81335a53c20c0a234a8e0d9d2eaa1797ef44daf5eeb823621c16c65683",
+      "sourceSize": [
+        2560,
+        1853
+      ],
+      "outputSize": [
+        1400,
+        782
+      ],
+      "outputBytes": 74232,
+      "catalogImage": "/catalog/verified-porto-11-soup-salad.webp"
+    },
+    {
+      "itemId": "porto:PR-410",
+      "sku": "PR-410",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-10-1-4-x-2-1-4-soup-salad-plate-22-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-410-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-410.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "ef8363baec165d4b63b3e39487378dfd0e7068a0af4fdacaaba1be484e413b69",
+      "sourceSha256": "209b055128471c34c4debc9ce61bbd4feea3ea38d9d956ec34acd3201f25361f",
+      "outputSha256": "d0a418a868e07d88ce2bbd425b4be73c72140e3e3a714875d7c3d9ddf0cf9a3c",
+      "sourceSize": [
+        2560,
+        1853
+      ],
+      "outputSize": [
+        1400,
+        781
+      ],
+      "outputBytes": 76814,
+      "catalogImage": "/catalog/verified-porto-11-soup-salad.webp"
+    },
+    {
+      "itemId": "porto:PR-411",
+      "sku": "PR-411",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-11-1-4-x-1-7-8-pasta-bowl-12-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-411-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-411.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "5badaeb1bc28901c80caa205b622d6e0062759b079bd2b94a2c82aa68dc66a0c",
+      "sourceSha256": "8fb4f872d183e64e14c3250d8e7ff4fea036e798893a44c72c956417978ffc4a",
+      "outputSha256": "53c7cc98ef8379bb5946d36ec7824fea42b247d5b3ebded96aef7ef2466c6ed9",
+      "sourceSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1251,
+        879
+      ],
+      "outputBytes": 128562,
+      "catalogImage": "/catalog/verified-porto-11-pasta.webp"
+    },
+    {
+      "itemId": "porto:PR-412",
+      "sku": "PR-412",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-11-3-4-x-2-3-8-salad-plate-30-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-412-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-412.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "40f3c42183905889e9b1c05bc5a7d65b824b1566741f1c43c19b2ba2932ebadb",
+      "sourceSha256": "b07d8ef5e979082e0a65e41104d5498aead179e1609760bc8193c68f1fc3263d",
+      "outputSha256": "46708c9dbfdfe6ecd5b73cd05cc7831a9ff5d9196681f7524dda3ecf51a541a9",
+      "sourceSize": [
+        2560,
+        1884
+      ],
+      "outputSize": [
+        1400,
+        799
+      ],
+      "outputBytes": 84808,
+      "catalogImage": "/catalog/verified-porto-11-salad.webp"
+    },
+    {
+      "itemId": "porto:PR-502",
+      "sku": "PR-502",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-2-7-8-x-1-sauce-dish-1-5-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-502.jpg",
+      "output": "/catalog/studio-photo-porto-pr-502.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "fe9b8240b21364123b86e47deb9af8fc62c3e6ef20fcb19751cdd23ff2057d6d",
+      "sourceSha256": "fef130d470b71ea0a9c8baba8a093777205fc1c86a4c997bdb1c7ebeaf60b951",
+      "outputSha256": "4ef2936c52a00c00948958e209ba2f0bc28d95b335d380db81a78c40f13b58d5",
+      "sourceSize": [
+        2016,
+        1488
+      ],
+      "outputSize": [
+        1284,
+        829
+      ],
+      "outputBytes": 51032,
+      "catalogImage": "/catalog/verified-porto-11-sauce.webp"
+    },
+    {
+      "itemId": "porto:PR-503",
+      "sku": "PR-503",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-3-3-4-x-1-1-2-snack-bowl-3-5-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-503.jpg",
+      "output": "/catalog/studio-photo-porto-pr-503.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "659a1c16b7b4ee806da930820e6317cdf61f2540296bba1b38a6c939e9579f7d",
+      "sourceSha256": "e515a9b26209522711b6ffa5a631658d10cebce5ab1a689b488d8759d023f044",
+      "outputSha256": "48a3bcf19a88589d7afe86102e8051d2d8484e5d9d2e5ef72925a037f3453f66",
+      "sourceSize": [
+        2356,
+        1716
+      ],
+      "outputSize": [
+        1400,
+        908
+      ],
+      "outputBytes": 63578,
+      "catalogImage": "/catalog/verified-porto-11-snack.webp"
+    },
+    {
+      "itemId": "porto:PR-504",
+      "sku": "PR-504",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-4-1-2-x-2-1-2-rice-bowl-10-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-504-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-504.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "a5c62f8fffce2e9c6772f18f90a3d33d20b3729f7ac12333eebcea3bd6d26678",
+      "sourceSha256": "5f9046bce22f52ea5efa3ed3076984f04ee195e536c360e2f5c43d7987b8ae05",
+      "outputSha256": "f1316b2247c0a43bd517413c56b30ad7a96461ab48573af28695fb2955f2e665",
+      "sourceSize": [
+        2560,
+        2152
+      ],
+      "outputSize": [
+        1400,
+        1013
+      ],
+      "outputBytes": 72332,
+      "catalogImage": "/catalog/verified-porto-11-rice.webp"
+    },
+    {
+      "itemId": "porto:PR-506",
+      "sku": "PR-506",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-6-1-4-x-2-1-2-cereal-bowl-22-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-506-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-506.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "069a4852f12e130247a55545510fe72ea38affa360989d97f1f2acf0dfa8b8ea",
+      "sourceSha256": "405bbdaee3d6306f6e83f0c41fd3d06917442ab345a5bc8767ec36a723378e77",
+      "outputSha256": "e1d9b1e346147d723a7d27b510e8201aa63fcd2e5490c5147b357b88c047436e",
+      "sourceSize": [
+        2560,
+        1894
+      ],
+      "outputSize": [
+        1400,
+        859
+      ],
+      "outputBytes": 70016,
+      "catalogImage": "/catalog/verified-porto-11-cereal.webp"
+    },
+    {
+      "itemId": "porto:PR-507",
+      "sku": "PR-507",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-7-5-8-x-2-5-8-bowl-23-5-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-507-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-507.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "90be05e607cd5bd0ccc2d94bf200e949c091afeeee1fd7c7e64c17f2d44e3b79",
+      "sourceSha256": "a3557653e1dc20b0f824f8317d883a0aaa19a4e64b9a37b9238ef1b198b95216",
+      "outputSha256": "c00bc578ce3ec5bfc9a686cb3fde05af174988a8d5db09ebc296458cccee4f1c",
+      "sourceSize": [
+        2560,
+        1869
+      ],
+      "outputSize": [
+        1227,
+        745
+      ],
+      "outputBytes": 51092,
+      "catalogImage": "/catalog/verified-porto-11-bowl.webp"
+    },
+    {
+      "itemId": "porto:PR-508",
+      "sku": "PR-508",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-8-3-4-x-3-bowl-38-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-508-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-508.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "e3174e04ce7844c253b092ca8586c3a5ab568dafcb4d6ea5349704cfcecf005d",
+      "sourceSha256": "04993c698411de8b52e2795439c54cf78f82c7e6d79c8554285df74e376fc889",
+      "outputSha256": "83170b296e3075f6d30e456b99e763ee06b0693522beb56922d6ad9372fc1f4b",
+      "sourceSize": [
+        2560,
+        1869
+      ],
+      "outputSize": [
+        1400,
+        848
+      ],
+      "outputBytes": 75220,
+      "catalogImage": "/catalog/verified-porto-11-bowl.webp"
+    },
+    {
+      "itemId": "porto:PR-509",
+      "sku": "PR-509",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-9-3-4-x-3-1-8-bowl-50-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-509-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-509.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "7d18e729854563c01bed4c8ac550345e5dc18bc950bb2137d1c444d23772c537",
+      "sourceSha256": "7fea43dfbba64b073cb135e9e2d9926636c61fa7119bc11df6f6a6ead9988153",
+      "outputSha256": "354d63817976cf09029eae5148271eaf830b0e11110e664969765feaf170f9a6",
+      "sourceSize": [
+        2560,
+        1869
+      ],
+      "outputSize": [
+        1400,
+        847
+      ],
+      "outputBytes": 75772,
+      "catalogImage": "/catalog/verified-porto-11-bowl.webp"
+    },
+    {
+      "itemId": "porto:PR-611",
+      "sku": "PR-611",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-11-1-2-x-2-dessert-plate-9-oz/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-611-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-611.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "8d053746ffe4ea8e01ccf14c3052ffa42a7787ad116b778459db83a5291a2a43",
+      "sourceSha256": "71ec34254782b63e0aadeb49f33fa6501949c1a2d7af4044d6a431d6442c9cfe",
+      "outputSha256": "b5fde00e938372e5ee8d0711842fff3fdfde3d6bae11471532ce3ca5b390d36a",
+      "sourceSize": [
+        2560,
+        2113
+      ],
+      "outputSize": [
+        1400,
+        1046
+      ],
+      "outputBytes": 154614,
+      "catalogImage": "/catalog/verified-porto-11-dessert.webp"
+    },
+    {
+      "itemId": "porto:PR-706",
+      "sku": "PR-706",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-6-1-4-x-3-4-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-706-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-706.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "96d8b0def1b2341121a72b005c4d34c2b82a8ed21fc92fc31d0db592e5b95175",
+      "sourceSha256": "b7342ee4a8c05b628c50746a922c99f4b310c5d6277bd2469236d8e7e8c3dd51",
+      "outputSha256": "ac69005cd66ed7f21a921d5236f9fc295cc610112869327c59d5f7cc6fae4d1e",
+      "sourceSize": [
+        2560,
+        2375
+      ],
+      "outputSize": [
+        1322,
+        1325
+      ],
+      "outputBytes": 160046,
+      "catalogImage": "/catalog/verified-porto-10-coupe.webp"
+    },
+    {
+      "itemId": "porto:PR-707",
+      "sku": "PR-707",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-7-1-4-x-3-4-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-707-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-707.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "cc58dfdf0b2a78b44530090b1738eaf30bcf660f661a9e7c5f42be9bdee2e391",
+      "sourceSha256": "c6080342bc3eed412ccbc414dae5f79ce8e44552abc8131dba45572609215983",
+      "outputSha256": "ea585657328e5bf628d13e776f9c4653437f8852549d6bb2bd771b55cd3cca6e",
+      "sourceSize": [
+        2560,
+        2375
+      ],
+      "outputSize": [
+        1397,
+        1400
+      ],
+      "outputBytes": 196290,
+      "catalogImage": "/catalog/verified-porto-10-coupe.webp"
+    },
+    {
+      "itemId": "porto:PR-710",
+      "sku": "PR-710",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-10-1-4-x-1-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-710-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-710.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "e74bad5446a19c85c7ff788a01a5f9081bc378ff0013c806715d90553cae861a",
+      "sourceSha256": "2d2263738fbd42219810c77e3eeb63ae157612c9d2f9536505c7c9e42f6f5de4",
+      "outputSha256": "f2e6f83490bd13472fb064766773e803042d5ac4aa0d70b96ee13b94853544f8",
+      "sourceSize": [
+        2560,
+        2505
+      ],
+      "outputSize": [
+        1395,
+        1400
+      ],
+      "outputBytes": 229900,
+      "catalogImage": "/catalog/verified-porto-10-coupe.webp"
+    },
+    {
+      "itemId": "porto:PR-711",
+      "sku": "PR-711",
+      "collectionId": "porto",
+      "productUrl": "https://yancochina.com/product/yanco-porto-chinaware-11-1-4-x-1-1-8-coupe-round-plate/",
+      "sourceUrl": "https://yancochina.com/wp-content/uploads/2025/02/PR-711-scaled.jpg",
+      "output": "/catalog/studio-photo-porto-pr-711.webp",
+      "version": "official-photo-cutout-v1",
+      "checksum": "047a49eeefdbb32b7ab59451edd11bdd62026f54ae78ae9741c08a16408e56e6",
+      "sourceSha256": "a5620349f5abb4c847ce35da0cc6fd4026dc2fd15bc40733c3860b399736313e",
+      "outputSha256": "90a59d915c550429b666779a4f5bce533afd614f64508e080abe1b966b96579d",
+      "sourceSize": [
+        2560,
+        2505
+      ],
+      "outputSize": [
+        1395,
+        1400
+      ],
+      "outputBytes": 236376,
+      "catalogImage": "/catalog/verified-porto-10-coupe.webp"
+    }
+  ]
+}

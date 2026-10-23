@@ -93,8 +93,19 @@ def apply_studio_images(items):
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
     images = {}
+    manifest = ROOT / 'resources/studio-photo-sources.json'
+    official = {
+        row['itemId']: row['output']
+        for row in json.loads(manifest.read_text(encoding='utf-8'))['images']
+    } if manifest.exists() else {}
     generated = 0
     for item in items:
+        if item['id'] in official:
+            target = official[item['id']]
+            if not (ROOT / ('public' + target)).is_file():
+                raise FileNotFoundError('Missing official studio photo: ' + target)
+            item['studioImage'] = target
+            continue
         source = item['image']
         if source in images:
             item['studioImage'] = images[source]

@@ -1,8 +1,12 @@
 """Regression checks for matte removal without trimming a nominal circle."""
 import unittest
+import json
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
 import numpy as np
 from PIL import Image, ImageDraw
-from catalog_studio_images import cutout, refine_edges
+from catalog_studio_images import apply_studio_images, cutout, refine_edges
 
 
 class StudioEdgesTest(unittest.TestCase):
@@ -40,6 +44,39 @@ class StudioEdgesTest(unittest.TestCase):
         result = np.asarray(cutout(image))
         self.assertEqual(result[60, 113, 3], 0)
         self.assertEqual(tuple(result[45, 60]), (50, 80, 120, 255))
+
+    def test_catalog_refresh_retains_official_sku_photo(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / 'resources').mkdir()
+            destination = root / 'public/catalog/studio-photo-legna-le-711.webp'
+            destination.parent.mkdir(parents=True)
+            Image.new('RGBA', (16, 16), (90, 80, 60, 255)).save(destination, format='WEBP')
+            output = '/catalog/studio-photo-legna-le-711.webp'
+            (root / 'resources/studio-photo-sources.json').write_text(json.dumps({
+                'images': [{'itemId': 'legna:LE-711', 'output': output}]
+            }), encoding='utf-8')
+            items = [{'id': 'legna:LE-711', 'image': '/catalog/original-scan.webp'}]
+            before = destination.read_bytes()
+            with patch('catalog_studio_images.ROOT', root):
+                apply_studio_images(items)
+            self.assertEqual(items[0]['studioImage'], output)
+            self.assertEqual(items[0]['image'], '/catalog/original-scan.webp')
+            self.assertEqual(destination.read_bytes(), before)
+
+    def test_missing_official_photo_fails_before_replacing_it_with_a_scan(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / 'resources').mkdir()
+            (root / 'resources/studio-photo-sources.json').write_text(json.dumps({
+                'images': [{
+                    'itemId': 'legna:LE-711',
+                    'output': '/catalog/studio-photo-missing.webp',
+                }]
+            }), encoding='utf-8')
+            with patch('catalog_studio_images.ROOT', root):
+                with self.assertRaisesRegex(FileNotFoundError, 'Missing official studio photo'):
+                    apply_studio_images([{'id': 'legna:LE-711', 'image': '/catalog/scan.webp'}])
 
 
 if __name__ == '__main__':

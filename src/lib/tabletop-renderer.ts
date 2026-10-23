@@ -159,6 +159,7 @@ export function prepareTabletop(
   drawSurface(ctx, surface);
   const layer = canvas();
   const plateContext = layer.getContext("2d")!;
+  plateContext.imageSmoothingQuality = "high";
   const bounds = fallback
     ? { x: 0, y: 0, width: plate.width, height: plate.height }
     : imageBounds(plate);

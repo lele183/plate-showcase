@@ -117,3 +117,41 @@ test("failed images disable export and another food selection recovers", async (
   ).toBeEnabled();
   await expect(page.locator(".tabletop-load-error")).toHaveCount(0);
 });
+
+test("LE-711 loads its detailed SKU photograph and exports the same scene", async ({
+  page,
+}) => {
+  const externalImages: string[] = [];
+  page.on("request", (request) => {
+    if (
+      request.resourceType() === "image" &&
+      request.url().includes("yancochina")
+    )
+      externalImages.push(request.url());
+  });
+  await page.goto(
+    "/studio?collection=legna&item=legna%3ALE-711&layout=1&surface=dark&food=vegetables",
+  );
+  await snapshot(page);
+  const photo = page.locator(".scene-plate img");
+  await expect(photo).toHaveAttribute(
+    "src",
+    "/catalog/studio-photo-legna-le-711.webp",
+  );
+  expect(
+    await photo.evaluate((image: HTMLImageElement) => image.naturalWidth),
+  ).toBeGreaterThanOrEqual(1200);
+  await expect(page.getByLabel("The piece", { exact: true })).toHaveValue(
+    "legna:LE-711",
+  );
+  const pending = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download tabletop image" }).click();
+  const downloaded = await readFile((await (await pending).path())!);
+  const visible = Buffer.from((await snapshot(page)).split(",")[1], "base64");
+  expect(
+    (await sharp(downloaded).raw().toBuffer()).equals(
+      await sharp(visible).raw().toBuffer(),
+    ),
+  ).toBe(true);
+  expect(externalImages).toEqual([]);
+});
