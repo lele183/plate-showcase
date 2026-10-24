@@ -10,6 +10,8 @@ Catalog filters and studio arrangements have shareable URLs. Collection details 
 
 Guest menus and up to 20 studio settings use `yanco_guest_workspace_v1` in this browser's local storage. Text, DOCX, and text-based PDF menus (first 40 pages, 20 MB) are read locally; images get a local preview with editable menu text. Scanned text extraction and larger hosted imports require sign-in. Drafts are not automatically uploaded on sign-in; open a local scene to save it to your account, or copy menu text into the account's menu panel. Shared studio links include starter layers and placement, without private image references.
 
+My Workspace guides menu imports through adding a file, reviewing the dishes, and continuing in Expert mode. Upload and processing feedback stays beside the menu input; completed account imports fill the editor automatically unless the user has edited it. Local reading reports PDF page progress, and images, empty extraction, unsupported files, storage failures, and interrupted uploads each explain how to continue. The selector confirms when a menu has been carried across. Signed-in menu edits use an account-scoped browser draft, and background results never replace those edits. Account sections load independently and retain the last loaded work on errors. Saved selections can be named, while personal catalogs explain review and activation before their pieces appear in recommendations.
+
 ## Development
 
 Use Node **24**. Read the installed Next.js guides in `node_modules/next/dist/docs` before changing framework code.

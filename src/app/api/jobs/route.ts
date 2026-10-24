@@ -62,10 +62,12 @@ export async function POST(request: Request) {
       );
     const admin = adminSupabase();
     let id: string;
-    const input =
-      body.kind === "catalog"
+    const input = {
+      ...(body.kind === "catalog"
         ? { catalogId: crypto.randomUUID() }
-        : { itemId: body.itemId || "" };
+        : { itemId: body.itemId || "" }),
+      filename: upload.filename,
+    };
     if (body.kind === "food-preview") {
       const { data, error } = await admin.rpc("yanco_reserve_preview", {
         p_owner: user.id,

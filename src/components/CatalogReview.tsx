@@ -9,11 +9,11 @@ import {
   ChevronLeft,
   ChevronRight,
   Crop,
-  LoaderCircle,
   ArrowUpRight,
 } from "lucide-react";
 import { useAuth } from "./AuthProvider";
 import type { CatalogItem, Collection } from "@/lib/types";
+import WorkspaceFeedback from "./WorkspaceFeedback";
 type Entry = {
   id: string;
   data: CatalogItem;
@@ -30,6 +30,7 @@ export default function CatalogReview({ id }: { id: string }) {
     [page, setPage] = useState(1),
     [status, setStatus] = useState("draft"),
     [message, setMessage] = useState(""),
+    [messageError, setMessageError] = useState(false),
     [busy, setBusy] = useState(false),
     [confirmed, setConfirmed] = useState(false),
     [cropping, setCropping] = useState<string | null>(null),
@@ -48,11 +49,20 @@ export default function CatalogReview({ id }: { id: string }) {
     if (user)
       Promise.resolve()
         .then(load)
-        .catch((e) => setMessage(e.message));
+        .catch((e) => {
+          setMessageError(true);
+          setMessage(e.message);
+        });
   }, [user, load]);
-  async function patch(body: unknown) {
+  async function patch(body: {
+    action?: "activate" | "archive";
+    reviewConfirmed?: boolean;
+    item?: unknown;
+    collection?: unknown;
+  }) {
     setBusy(true);
     setMessage("");
+    setMessageError(false);
     try {
       const r = await fetch(`/api/catalogs/${id}`, {
         method: "PATCH",
@@ -61,10 +71,30 @@ export default function CatalogReview({ id }: { id: string }) {
       });
       const d = await r.json();
       if (!r.ok) throw Error(d.error);
-      setMessage("Changes saved.");
+      if (body.action === "activate") {
+        setStatus("active");
+        setMessage(
+          "Catalog activated. Its pieces are now included in your recommendations.",
+        );
+      } else if (body.action === "archive") {
+        setStatus("archived");
+        setMessage(
+          "Catalog archived. Its pieces are no longer included in recommendations. You can review and activate it again later.",
+        );
+      } else {
+        setMessage(
+          "Changes saved. Continue checking the pieces against the source.",
+        );
+      }
       setCropping(null);
-      await load();
+      await load().catch(() => {
+        setMessage(
+          (previous) =>
+            `${previous} The list could not be refreshed; reload this page to check the latest details.`,
+        );
+      });
     } catch (e) {
+      setMessageError(true);
       setMessage(e instanceof Error ? e.message : "Unable to save changes.");
     } finally {
       setBusy(false);
@@ -113,10 +143,44 @@ export default function CatalogReview({ id }: { id: string }) {
       ) : (
         <>
           {message && (
-            <p className="notice" role="status">
-              {busy && <LoaderCircle className="spin" size={16} />} {message}
-            </p>
+            <WorkspaceFeedback
+              title={
+                messageError
+                  ? "Catalog needs your attention"
+                  : "Catalog updated"
+              }
+              tone={messageError ? "error" : "success"}
+              busy={busy}
+            >
+              <p>{message}</p>
+              {!messageError && status === "active" && (
+                <Link href="/#selector" className="text-link">
+                  Find dinnerware with this catalog <ArrowRight size={16} />
+                </Link>
+              )}
+            </WorkspaceFeedback>
           )}
+          <div className="workspace-review-guide">
+            <h2>From import to recommendations</h2>
+            <ol>
+              <li>
+                <strong>Check the source.</strong> Open the PDF and compare the
+                extracted collections and pieces.
+              </li>
+              <li>
+                <strong>Correct and save.</strong> Fix names, measurements or
+                crops, and save each change.
+              </li>
+              <li>
+                <strong>Activate the catalog.</strong> Confirm your review below
+                to include its pieces in your recommendations.
+              </li>
+            </ol>
+            <p>
+              Measurements are in inches and capacities in fluid ounces.
+              Uploading alone does not activate a catalog.
+            </p>
+          </div>
           <div className="section-heading compact">
             <h2>Collection details</h2>
             <a

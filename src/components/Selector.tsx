@@ -63,6 +63,7 @@ export default function Selector({
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
     [storageWarning, setStorageWarning] = useState(""),
+    [menuImported, setMenuImported] = useState(false),
     [chosen, setChosen] = useState<Collection | null>(null),
     [submitted, setSubmitted] = useState(false);
   const [submittedBrief, setSubmittedBrief] = useState<RestaurantBrief | null>(
@@ -76,6 +77,10 @@ export default function Selector({
       const data = readStoredBrief();
       setBrief(data);
       if (data.foods) setExpert(true);
+      setMenuImported(
+        Boolean(data.foods) &&
+          new URLSearchParams(location.search).get("menu") === "ready",
+      );
     });
   }, []);
   function updateBrief(changes: Partial<RestaurantBrief>) {
@@ -195,6 +200,18 @@ export default function Selector({
         </span>
       </div>
       <section id="selector" className="selector-section">
+        {menuImported && Boolean(brief.foods.trim()) && !submitted && (
+          <div className="workspace-handoff" role="status">
+            <Check size={21} aria-hidden="true" />
+            <div>
+              <strong>Your menu is ready to use.</strong>
+              <p>
+                Your dishes are filled in under Expert mode. Add your restaurant
+                style and requirements, then choose Find my collections.
+              </p>
+            </div>
+          </div>
+        )}
         <div className="section-heading">
           <div>
             <span className="eyebrow">LET’S FIND YOUR FIT</span>

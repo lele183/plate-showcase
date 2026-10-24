@@ -14,9 +14,10 @@ import { supabaseConfigured } from "@/lib/supabase/config";
 import { X, ArrowRight, LoaderCircle, Mail } from "lucide-react";
 const Context = createContext<{
   user: User | null;
+  loading: boolean;
   openAuth: () => void;
   signOut: () => Promise<void>;
-}>({ user: null, openAuth: () => {}, signOut: async () => {} });
+}>({ user: null, loading: true, openAuth: () => {}, signOut: async () => {} });
 export const useAuth = () => useContext(Context);
 export default function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null),
@@ -26,6 +27,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     );
   const [message, setMessage] = useState(""),
     [busy, setBusy] = useState(false);
+  const [loading, setLoading] = useState(supabaseConfigured);
   const dialog = useRef<HTMLDialogElement>(null);
   const account = useRef<string | null | undefined>(undefined);
   const configured = supabaseConfigured();
@@ -40,7 +42,8 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
       })
       .catch(() => {
         account.current = null;
-      });
+      })
+      .finally(() => setLoading(false));
     const { data } = client.auth.onAuthStateChange((event, session) => {
       const nextAccount = session?.user.id || null;
       if (
@@ -146,6 +149,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     <Context.Provider
       value={{
         user,
+        loading,
         openAuth: () => {
           setMode("signin");
           setMessage(
